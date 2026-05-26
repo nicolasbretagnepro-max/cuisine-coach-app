@@ -1,0 +1,16 @@
+{
+  "name": "Coach Cuisine",
+  "short_name": "Cuisine",
+  "description": "Web app personnelle pour apprendre la cuisine par leçons, quiz, recettes guidées et journal.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
