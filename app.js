@@ -27,6 +27,7 @@
     recipeDurationFilter: "all",
     trainingSearch: "",
     selectedLessonId: null,
+    lessonMode: "lesson",
     selectedRecipeId: null,
     cooking: null,
     activeTimer: null,
@@ -72,6 +73,7 @@
       completedRecipes: [],
       favoriteRecipes: [],
       plannedRecipes: [],
+      recipeCovers: {},
       completedDrills: [],
       recipeStats: {},
       masteredSkills: {},
@@ -140,6 +142,7 @@
       completedRecipes,
       favoriteRecipes,
       plannedRecipes,
+      recipeCovers: sanitizeRecipeCovers(source.recipeCovers),
       completedDrills,
       recipeStats: sanitizeRecipeStats(source.recipeStats),
       masteredSkills: sanitizeSkillScores(source.masteredSkills),
@@ -286,6 +289,17 @@
       checkedItems: input.checkedItems && typeof input.checkedItems === "object" ? sanitizeBooleanMap(input.checkedItems, 200) : {},
       stepNotes: input.stepNotes && typeof input.stepNotes === "object" ? sanitizeTextMap(input.stepNotes, 500, 50) : {}
     };
+  }
+
+  function sanitizeRecipeCovers(input) {
+    const output = {};
+    if (!input || typeof input !== "object") return output;
+    Object.entries(input).forEach(([recipeId, photoId]) => {
+      const safeRecipeId = sanitizeId(recipeId);
+      const safePhotoId = sanitizeId(photoId);
+      if (recipeIds.has(safeRecipeId) && safePhotoId) output[safeRecipeId] = safePhotoId;
+    });
+    return output;
   }
 
   function sanitizeXpHistory(input) {
@@ -572,6 +586,16 @@
     hydrateLogPhotos();
   }
 
+  function renderPreserveModalScroll() {
+    const modal = document.querySelector(".modal");
+    const scrollTop = modal ? modal.scrollTop : null;
+    render();
+    if (scrollTop !== null) {
+      const nextModal = document.querySelector(".modal");
+      if (nextModal) nextModal.scrollTop = scrollTop;
+    }
+  }
+
   function renderTopbar(level) {
     const xpLabel = level.maxed
       ? `${state.progress.xp} XP · max`
@@ -583,7 +607,7 @@
             <div class="brand-mark">🍳</div>
             <div>
               <h1>Coach Cuisine</h1>
-              <p>${escapeHtml(level.current.name)} · niv. ${level.rank} · série ${state.progress.streak.current}j</p>
+              <p>${escapeHtml(level.current.name)} · niveau ${level.rank} · série ${state.progress.streak.current}j</p>
             </div>
           </div>
           <div class="topbar-xp">
@@ -993,7 +1017,7 @@
 
   function renderMapNode({ type, item, index }) {
     const done = type === "lesson" ? completedLesson(item.id) : completedRecipe(item.id);
-    const unlocked = type === "boss" || isLessonUnlocked(item);
+    const unlocked = type === "boss" ? isBossUnlocked(item) : isLessonUnlocked(item);
     const label = type === "boss" ? "Boss" : `Étape ${index + 1}`;
     const data = type === "boss" ? `data-open-recipe="${escapeAttr(item.id)}"` : `data-open-lesson="${escapeAttr(item.id)}"`;
     return `
@@ -1003,6 +1027,13 @@
         <small>${escapeHtml(item.title)}</small>
       </button>
     `;
+  }
+
+  function isBossUnlocked(recipe) {
+    const path = (DATA.learningPaths || []).find((item) => (item.bossRecipeIds || []).includes(recipe.id));
+    if (!path) return true;
+    const lessons = (path.lessonIds || []).map(getLesson).filter(Boolean);
+    return lessons.length ? lessons.every((lesson) => completedLesson(lesson.id)) : true;
   }
 
   function renderRecipeIntelligence(recipe) {
@@ -1292,9 +1323,9 @@
           </div>
           <div class="progress-track"><div class="progress-fill" style="width:${level.percent}%"></div></div>
           <div class="hero-grid compact-stats">
-            <div class="hero-stat"><strong>${state.progress.streak.current}</strong><span>jours série</span></div>
-            <div class="hero-stat"><strong>${lessonsDone}</strong><span>leçons</span></div>
-            <div class="hero-stat"><strong>${recipesDone}</strong><span>recettes</span></div>
+            <div class="hero-stat"><strong>${state.progress.streak.current}j</strong><span>série active</span></div>
+            <div class="hero-stat"><strong>${lessonsDone}/${DATA.lessons.length}</strong><span>leçons validées</span></div>
+            <div class="hero-stat"><strong>${recipesDone}/${DATA.recipes.length}</strong><span>recettes terminées</span></div>
           </div>
         </section>
 
@@ -1881,11 +1912,12 @@
   }
 
   function renderRecipeImage(recipe, mode = "card") {
+    const coverPhotoId = state.progress.recipeCovers?.[recipe.id];
     const url = getRecipeVisualUrl(recipe);
     const title = escapeAttr(recipe.title);
     return `
       <figure class="recipe-visual ${escapeAttr(mode)}">
-        <img src="${escapeAttr(url)}" alt="Illustration de ${title}" loading="lazy" />
+        <img ${coverPhotoId ? `data-photo-id="${escapeAttr(coverPhotoId)}" data-fallback-src="${escapeAttr(url)}"` : `src="${escapeAttr(url)}"`} alt="Illustration de ${title}" loading="lazy" />
         <figcaption>${mode === "detail" ? escapeHtml(recipe.title) : ""}</figcaption>
       </figure>
     `;
@@ -2115,13 +2147,74 @@
     return "";
   }
 
+  function getLessonQuiz(lesson) {
+    const seen = new Set();
+    const genericFragments = [
+      "observer le signe technique",
+      "ajouter du sel au hasard",
+      "changer tous les paramètres",
+      "ignorer le résultat",
+      "le hasard",
+      "la taille de l’assiette",
+      "volume sonore de la cuisine"
+    ];
+    const base = (lesson.quiz || []).filter((question) => {
+      const text = `${question.question || ""} ${(question.options || []).join(" ")}`.toLowerCase();
+      if (genericFragments.some((fragment) => text.includes(fragment))) return false;
+      const key = sanitizeText(question.question, 180).toLowerCase();
+      if (!key || seen.has(key)) return false;
+      seen.add(key);
+      return Array.isArray(question.options) && question.options.length >= 3 && Number.isInteger(question.answer);
+    });
+    const cleaned = [...base, ...buildLessonQuizFallback(lesson)].slice(0, 5);
+    return cleaned.length ? cleaned : (lesson.quiz || []).slice(0, 3);
+  }
+
+  function buildLessonQuizFallback(lesson) {
+    const items = [];
+    const steps = Array.isArray(lesson.techniqueSteps) ? lesson.techniqueSteps : [];
+    steps.slice(0, 4).forEach((step, index) => {
+      const correct = sanitizeText(step.action || step.cue || step.title, 180);
+      const trap = sanitizeText(step.commonMistake || step.failureMode || "Changer plusieurs paramètres sans observer", 180);
+      if (!correct || correct === trap) return;
+      items.push({
+        question: `Dans « ${lesson.title} », quelle décision correspond le mieux à l'étape ${index + 1} ?`,
+        options: [
+          correct,
+          trap,
+          "Augmenter l'intensité sans vérifier le résultat",
+          "Attendre la fin pour corriger toute la méthode"
+        ],
+        answer: 0
+      });
+    });
+    (lesson.troubleshooting || []).slice(0, 2).forEach((item) => {
+      const problem = sanitizeText(item.problem, 160);
+      const fix = sanitizeText(item.fix, 180);
+      if (!problem || !fix) return;
+      items.push({
+        question: `Si tu observes : « ${problem} », quelle correction est la plus professionnelle ?`,
+        options: [
+          fix,
+          "Masquer le défaut avec une finition plus forte",
+          "Accélérer la cuisson pour compenser le retard",
+          "Continuer sans isoler la cause du problème"
+        ],
+        answer: 0
+      });
+    });
+    return items;
+  }
+
   function renderLessonModal(lesson) {
     if (!lesson) return "";
+    const quiz = getLessonQuiz(lesson);
     const done = completedLesson(lesson.id);
     const answers = state.quizAnswers[lesson.id] || {};
-    const score = calculateQuizScore(lesson);
-    const allAnswered = lesson.quiz.every((_, index) => Number.isInteger(answers[index]));
-    const allCorrect = score.correct === score.total && allAnswered;
+    const score = calculateQuizScore(lesson, quiz);
+    const allAnswered = quiz.every((_, index) => Number.isInteger(answers[index]));
+    const allCorrect = score.total > 0 && score.correct === score.total && allAnswered;
+    const mode = state.lessonMode === "quiz" ? "quiz" : "lesson";
     return `
       <div class="modal-backdrop" data-close-modal="1">
         <section class="modal" role="dialog" aria-modal="true" aria-label="Leçon">
@@ -2133,23 +2226,25 @@
             <button class="close-btn" data-close-modal="1">×</button>
           </div>
           <div class="list">
-            <article class="card flat">
-              ${lesson.objective ? `<div class="signal-card"><strong>Objectif</strong><span>${escapeHtml(lesson.objective)}</span></div>` : ""}
-              ${lesson.content.map((p) => `<p>${escapeHtml(p)}</p>`).join("")}
-              ${renderDeepLessonContent(lesson)}
-              ${lesson.practice ? `<div class="why"><strong>Mise en pratique :</strong> ${escapeHtml(lesson.practice)}</div>` : ""}
-            </article>
-            <article class="card flat" id="quiz-zone">
-              <div class="section-head">
-                <div>
-                  <h2>Quiz rapide</h2>
-                  <p>Score : ${score.correct}/${score.total}. Validation seulement si toutes les réponses sont correctes.</p>
+            ${mode === "lesson" ? `
+              ${renderLessonCore(lesson)}
+              <button class="btn primary full" data-start-quiz="${escapeAttr(lesson.id)}">${done ? "Revoir le quiz" : "Passer au quiz"}</button>
+            ` : `
+              <article class="card flat quiz-page" id="quiz-zone">
+                <div class="section-head">
+                  <div>
+                    <h2>Quiz</h2>
+                    <p>Score : ${score.correct}/${score.total}. Validation seulement si toutes les réponses sont correctes.</p>
+                  </div>
                 </div>
+                ${quiz.map((q, qIndex) => renderQuizQuestion(lesson, q, qIndex, answers[qIndex])).join("")}
+              </article>
+              <div class="actions">
+                <button class="btn" data-back-lesson="${escapeAttr(lesson.id)}">Relire la leçon</button>
+                <button class="btn primary" data-complete-lesson="${escapeAttr(lesson.id)}" ${allCorrect ? "" : "disabled"}>${done ? "Révision réussie" : "Valider la leçon"}</button>
               </div>
-              ${lesson.quiz.map((q, qIndex) => renderQuizQuestion(lesson, q, qIndex, answers[qIndex])).join("")}
-            </article>
-            <button class="btn primary full" data-complete-lesson="${escapeAttr(lesson.id)}" ${allCorrect ? "" : "disabled"}>${done ? "Révision réussie" : "Valider la leçon"}</button>
-            ${!allCorrect ? `<p class="small-note">Réponds correctement à toutes les questions pour débloquer la validation.</p>` : ""}
+              ${!allCorrect ? `<p class="small-note">Réponds correctement à toutes les questions pour débloquer la validation.</p>` : ""}
+            `}
           </div>
         </section>
       </div>
@@ -2170,6 +2265,35 @@
         </div>
         ${Number.isInteger(selected) ? `<p class="muted">${selected === question.answer ? "Correct." : "À revoir."} ${escapeHtml(question.explanation)}</p>` : ""}
       </div>
+    `;
+  }
+
+  function renderLessonCore(lesson) {
+    const methodSteps = Array.isArray(lesson.techniqueSteps) && lesson.techniqueSteps.length
+      ? lesson.techniqueSteps.slice(0, 5).map((step) => ({ title: step.title || "Méthode", body: step.action || step.cue || "" }))
+      : (lesson.content || []).slice(0, 5).map((body, index) => ({ title: `Point ${index + 1}`, body }));
+    const errors = Array.isArray(lesson.troubleshooting) ? lesson.troubleshooting.slice(0, 3) : [];
+    return `
+      <article class="card flat lesson-core">
+        ${lesson.objective ? `<div class="signal-card"><strong>Objectif</strong><span>${escapeHtml(lesson.objective)}</span></div>` : ""}
+        <section class="deep-section compact-lesson">
+          <h3>Méthode pro</h3>
+          <div class="technique-list">
+            ${methodSteps.map((step, index) => `
+              <article class="technique-step">
+                <span class="step-number">${index + 1}</span>
+                <div><strong>${escapeHtml(step.title)}</strong><p>${escapeHtml(step.body)}</p></div>
+              </article>
+            `).join("")}
+          </div>
+        </section>
+        ${errors.length ? `<section class="deep-section compact-lesson"><h3>Erreurs à éviter</h3><div class="correction-grid">${errors.map((item) => `<article class="correction-card"><strong>${escapeHtml(item.problem)}</strong><p>${escapeHtml(item.fix)}</p></article>`).join("")}</div></section>` : ""}
+        ${lesson.practice ? `<div class="why"><strong>Exercice :</strong> ${escapeHtml(lesson.practice)}</div>` : ""}
+        <details class="deep-section advanced-lesson">
+          <summary>Voir les détails avancés</summary>
+          ${renderDeepLessonContent(lesson)}
+        </details>
+      </article>
     `;
   }
 
@@ -2257,6 +2381,20 @@
     if (!recipe) return "";
     const skills = recipe.skillIds.map((id) => getSkill(id)?.name).filter(Boolean);
     const activeSameRecipe = state.progress.activeSession?.recipeId === recipe.id;
+    const advancedDetails = [
+      renderRecipeCapSheet(recipe),
+      renderRecipePrepDetails(recipe),
+      renderRecipeTechniqueSheet(recipe),
+      renderRecipeV19Deepening(recipe),
+      renderAdvancedRecipeCoach(recipe),
+      renderRecipeIntelligence(recipe),
+      renderRecipeQuality(recipe),
+      renderTimingPlan(recipe),
+      renderMiseEnPlaceTimeline(recipe),
+      renderDecisionMatrix(recipe),
+      renderServiceAndStorage(recipe),
+      renderExecutionPlan(recipe)
+    ].filter(Boolean).join("");
     return `
       <div class="modal-backdrop" data-close-modal="1">
         <section class="modal" role="dialog" aria-modal="true" aria-label="Recette">
@@ -2276,7 +2414,6 @@
               ${skills.map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}
             </div>
             ${recipe.objective ? `<section class="card flat"><h3>Objectif technique</h3><p>${escapeHtml(recipe.objective)}</p></section>` : ""}
-            ${renderRecipeCapSheet(recipe)}
             <section class="card flat">
               <h3>Ingrédients</h3>
               <ul class="ingredients">${recipe.ingredients.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
@@ -2285,18 +2422,13 @@
               <h3>Matériel</h3>
               <ul class="ingredients">${recipe.tools.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
             </section>
-            ${renderRecipePrepDetails(recipe)}
-            ${renderRecipeTechniqueSheet(recipe)}
-            ${renderRecipeV19Deepening(recipe)}
-            ${renderAdvancedRecipeCoach(recipe)}
             ${recipe.successSigns?.length ? `<section class="card flat"><h3>Signes de réussite</h3><ul class="ingredients">${recipe.successSigns.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section>` : ""}
-            ${renderRecipeIntelligence(recipe)}
-            ${renderRecipeQuality(recipe)}
-            ${renderTimingPlan(recipe)}
-            ${renderMiseEnPlaceTimeline(recipe)}
-            ${renderDecisionMatrix(recipe)}
-            ${renderServiceAndStorage(recipe)}
-            ${renderExecutionPlan(recipe)}
+            ${advancedDetails ? `
+              <details class="card flat recipe-advanced-details">
+                <summary>Détails avancés</summary>
+                ${advancedDetails}
+              </details>
+            ` : ""}
             <div class="actions">
               <button class="btn" data-toggle-favorite="${escapeAttr(recipe.id)}">${state.progress.favoriteRecipes.includes(recipe.id) ? "Retirer des favoris" : "Ajouter aux favoris"}</button>
               <button class="btn" data-toggle-plan="${escapeAttr(recipe.id)}">${state.progress.plannedRecipes.includes(recipe.id) ? "Retirer du plan" : "Ajouter au plan"}</button>
@@ -2434,66 +2566,18 @@
           </div>
           <form class="form-grid" id="finish-recipe-form">
             <input type="hidden" name="recipeId" value="${escapeAttr(recipe.id)}" />
+            <input type="hidden" name="rating" value="4" />
+            <input type="hidden" name="difficulty" value="3" />
+            <input type="hidden" name="errorType" value="" />
             <div class="field">
-              <label for="rating">Résultat obtenu</label>
-              <select id="rating" name="rating">
-                <option value="5">5/5 · très réussi</option>
-                <option value="4" selected>4/5 · réussi</option>
-                <option value="3">3/5 · correct</option>
-                <option value="2">2/5 · à retravailler</option>
-                <option value="1">1/5 · raté</option>
-              </select>
+              <label for="comment">Commentaire facultatif</label>
+              <textarea id="comment" name="comment" placeholder="Notes libres sur le résultat, le goût, la cuisson...">${escapeHtml(allNotes)}</textarea>
             </div>
-            <div class="field">
-              <label for="difficulty">Difficulté ressentie</label>
-              <select id="difficulty" name="difficulty">
-                <option value="1">1/5 · facile</option>
-                <option value="2">2/5</option>
-                <option value="3" selected>3/5 · moyen</option>
-                <option value="4">4/5</option>
-                <option value="5">5/5 · difficile</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="errorType">Erreur principale</label>
-              <select id="errorType" name="errorType">
-                <option value="">Aucune / non précisé</option>
-                <option value="assaisonnement">Assaisonnement</option>
-                <option value="cuisson">Cuisson</option>
-                <option value="texture">Texture</option>
-                <option value="organisation">Organisation / timing</option>
-                <option value="decoupe">Découpe</option>
-                <option value="sauce">Sauce / liaison</option>
-                <option value="dressage">Dressage</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="comment">Commentaire</label>
-              <textarea id="comment" name="comment" placeholder="Ce qui était réussi, raté, surprenant...">${escapeHtml(allNotes)}</textarea>
-            </div>
-            <div class="field">
-              <label for="nextFocus">À travailler la prochaine fois</label>
-              <textarea id="nextFocus" name="nextFocus" placeholder="Ex : plus sécher la viande, goûter avant citron, baisser le feu..."></textarea>
-            </div>
-            <section class="card flat self-eval-card">
-              <h3>Auto-évaluation technique</h3>
-              <p class="small-note">Note chaque axe pour savoir précisément quoi retravailler. 1 = insuffisant, 5 = très maîtrisé.</p>
-              <div class="evaluation-grid">
-                ${["organisation", "cuisson", "assaisonnement", "texture", "dressage"].map((key) => `
-                  <label>${escapeHtml(labelEvaluationKey(key))}
-                    <select name="eval_${key}">
-                      <option value="0">Non évalué</option>
-                      <option value="1">1/5</option><option value="2">2/5</option><option value="3" selected>3/5</option><option value="4">4/5</option><option value="5">5/5</option>
-                    </select>
-                  </label>
-                `).join("")}
-              </div>
-            </section>
-            ${recipe.v19PhotoTargets?.length ? `<section class="card flat photo-targets"><h3>Photos pédagogiques conseillées</h3><div class="rubric-grid">${recipe.v19PhotoTargets.map((item) => `<article><strong>${escapeHtml(item.target)}</strong><p>${escapeHtml(item.instruction)}</p><p class="micro"><b>Pourquoi :</b> ${escapeHtml(item.purpose)}</p></article>`).join("")}</div></section>` : ""}
+            <input type="hidden" name="nextFocus" value="" />
             <div class="field">
               <label for="photo">Photo du plat</label>
               <input id="photo" type="file" accept="image/jpeg,image/png,image/webp,image/*" capture="environment" />
-              <p class="small-note">Photo compressée puis stockée dans IndexedDB. L'export complet les réintègre dans le fichier JSON.</p>
+              <p class="small-note">Optionnel : cette photo deviendra la couverture de la recette.</p>
             </div>
             <div id="photo-preview"></div>
             <button class="btn primary full" type="submit">Enregistrer dans mon journal</button>
@@ -2509,6 +2593,7 @@
         const lesson = getLesson(button.dataset.openLesson);
         if (!lesson || !isLessonUnlocked(lesson)) return;
         state.selectedLessonId = lesson.id;
+        state.lessonMode = "lesson";
         state.quizAnswers[lesson.id] = state.quizAnswers[lesson.id] || {};
         render();
       });
@@ -2664,16 +2749,35 @@
   }
 
   function bindLessonEvents() {
+    if (bindLessonEvents._quizKeyHandler) {
+      document.removeEventListener("keydown", bindLessonEvents._quizKeyHandler);
+      bindLessonEvents._quizKeyHandler = null;
+    }
+    document.querySelectorAll("[data-start-quiz]").forEach((button) => {
+      button.addEventListener("click", () => {
+        state.lessonMode = "quiz";
+        renderPreserveModalScroll();
+      });
+    });
+
+    document.querySelectorAll("[data-back-lesson]").forEach((button) => {
+      button.addEventListener("click", () => {
+        state.lessonMode = "lesson";
+        renderPreserveModalScroll();
+      });
+    });
+
     document.querySelectorAll("[data-quiz-answer]").forEach((button) => {
       button.addEventListener("click", () => {
         const [lessonId, qIndexRaw, answerRaw] = button.dataset.quizAnswer.split("|");
         const lesson = getLesson(lessonId);
         const qIndex = Number(qIndexRaw);
         const selected = Number(answerRaw);
-        if (!lesson || !lesson.quiz[qIndex]) return;
+        const quiz = lesson ? getLessonQuiz(lesson) : [];
+        if (!lesson || !quiz[qIndex]) return;
         state.quizAnswers[lessonId] = state.quizAnswers[lessonId] || {};
         state.quizAnswers[lessonId][qIndex] = selected;
-        render();
+        renderPreserveModalScroll();
       });
     });
 
@@ -2682,19 +2786,20 @@
     if (quizZone && state.selectedLessonId) {
       const lesson = getLesson(state.selectedLessonId);
       if (lesson) {
+        const quiz = getLessonQuiz(lesson);
         const keyHandler = (event) => {
           const key = event.key;
           if (!["1", "2", "3", "4"].includes(key)) return;
           const answerIndex = Number(key) - 1;
           // Trouver la question active (première non répondue)
           const answers = state.quizAnswers[lesson.id] || {};
-          const activeQIndex = lesson.quiz.findIndex((_, i) => !Number.isInteger(answers[i]));
+          const activeQIndex = quiz.findIndex((_, i) => !Number.isInteger(answers[i]));
           if (activeQIndex === -1) return;
-          const question = lesson.quiz[activeQIndex];
+          const question = quiz[activeQIndex];
           if (!question || answerIndex >= question.options.length) return;
           state.quizAnswers[lesson.id] = state.quizAnswers[lesson.id] || {};
           state.quizAnswers[lesson.id][activeQIndex] = answerIndex;
-          render();
+          renderPreserveModalScroll();
         };
         document.addEventListener("keydown", keyHandler, { once: false });
         // Nettoyer quand le modal se ferme (au prochain closeModal)
@@ -2741,10 +2846,10 @@
     closeModal();
   }
 
-  function calculateQuizScore(lesson) {
+  function calculateQuizScore(lesson, quiz = getLessonQuiz(lesson)) {
     const answers = state.quizAnswers[lesson.id] || {};
-    const total = lesson.quiz.length;
-    const correct = lesson.quiz.reduce((sum, question, index) => sum + (answers[index] === question.answer ? 1 : 0), 0);
+    const total = quiz.length;
+    const correct = quiz.reduce((sum, question, index) => sum + (answers[index] === question.answer ? 1 : 0), 0);
     return { correct, total };
   }
 
@@ -2990,6 +3095,11 @@
       }
     }
 
+    if (photoId) {
+      state.progress.recipeCovers = state.progress.recipeCovers || {};
+      state.progress.recipeCovers[recipe.id] = photoId;
+    }
+
     state.progress.recipeLogs.push({
       id: logId,
       recipeId: recipe.id,
@@ -3035,6 +3145,7 @@
       bindLessonEvents._quizKeyHandler = null;
     }
     state.selectedLessonId = null;
+    state.lessonMode = "lesson";
     state.selectedRecipeId = null;
     render();
   }
@@ -3052,7 +3163,7 @@
         stopTimer(false);
         setToast("Minuteur terminé.");
         if (navigator.vibrate) navigator.vibrate([180, 100, 180]);
-        render();
+        renderPreserveModalScroll();
         return;
       }
       // Mise à jour ciblée : évite un full re-render toutes les secondes
@@ -3061,17 +3172,17 @@
         const remaining = Math.max(0, Math.ceil((state.activeTimer.endAt - Date.now()) / 1000));
         timerEl.textContent = formatSeconds(remaining);
       } else {
-        render();
+        renderPreserveModalScroll();
       }
     }, 1000);
-    render();
+    renderPreserveModalScroll();
   }
 
   function stopTimer(refresh) {
     if (state.timerIntervalId) window.clearInterval(state.timerIntervalId);
     state.timerIntervalId = null;
     state.activeTimer = null;
-    if (refresh) render();
+    if (refresh) renderPreserveModalScroll();
   }
 
   function getTimerRemaining(stepKey, fallbackSeconds) {
@@ -3590,6 +3701,11 @@
         img.src = dataUrl;
         img.classList.remove("photo-loading");
       } else if (document.body.contains(img)) {
+        if (img.dataset.fallbackSrc) {
+          img.src = img.dataset.fallbackSrc;
+          img.removeAttribute("data-photo-id");
+          return;
+        }
         img.replaceWith(Object.assign(document.createElement("div"), {
           className: "photo-omitted",
           textContent: "Photo locale indisponible. Réimporte un export complet si besoin."

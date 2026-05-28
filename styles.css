@@ -817,6 +817,41 @@ img {
   font-weight: 900;
 }
 
+.recipe-advanced-details {
+  display: block;
+}
+
+.recipe-advanced-details > summary,
+.advanced-lesson > summary {
+  cursor: pointer;
+  font-weight: 900;
+  color: var(--ink);
+}
+
+.recipe-advanced-details > summary {
+  list-style-position: inside;
+}
+
+.recipe-advanced-details[open] > summary,
+.advanced-lesson[open] > summary {
+  margin-bottom: 12px;
+}
+
+.recipe-advanced-details > .card,
+.advanced-lesson > .deep-section {
+  margin-top: 12px;
+}
+
+.lesson-core,
+.quiz-page {
+  display: grid;
+  gap: 14px;
+}
+
+.compact-lesson {
+  margin-top: 0;
+}
+
 .checklist-grid {
   display: grid;
   gap: 12px;
