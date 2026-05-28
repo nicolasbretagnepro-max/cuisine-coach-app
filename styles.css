@@ -1392,3 +1392,252 @@ img {
 .compact-coach div { display: grid; gap: 3px; padding-top: 9px; }
 .compact-coach div + div { border-top: 1px solid var(--border); margin-top: 8px; }
 .compact-coach span { color: var(--muted); line-height: 1.45; }
+
+/* ── Topbar XP progress bar ───────────────────────────── */
+.topbar-xp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+  min-width: 120px;
+  max-width: 160px;
+}
+.topbar-xp-label {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  text-align: right;
+}
+.topbar-xp-track {
+  width: 100%;
+  height: 7px;
+  border-radius: 99px;
+  background: var(--line);
+  overflow: hidden;
+}
+.topbar-xp-fill {
+  height: 100%;
+  min-width: 3px;
+  border-radius: 99px;
+  background: linear-gradient(90deg, var(--primary), #facc15);
+  transition: width 400ms ease;
+}
+
+/* ── Training search field ────────────────────────────── */
+.training-search-field {
+  margin-bottom: 12px;
+}
+
+/* ── Dark mode ────────────────────────────────────────── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --ink: #f1f5f9;
+    --muted: #94a3b8;
+    --line: #334155;
+    --soft: #1e293b;
+    --shadow: 0 14px 40px rgba(0, 0, 0, 0.4);
+    --primary-soft: #431407;
+    --green-soft: #14532d;
+    --blue-soft: #1e3a8a;
+    --red-soft: #450a0a;
+    --yellow-soft: #422006;
+  }
+
+  .topbar {
+    background: rgba(15, 23, 42, 0.94);
+    border-bottom-color: rgba(51, 65, 85, 0.8);
+  }
+
+  .bottom-nav {
+    background: rgba(15, 23, 42, 0.96);
+    border-top-color: rgba(51, 65, 85, 0.8);
+  }
+
+  .lesson-card,
+  .recipe-card,
+  .log-card,
+  .skill-card,
+  .step-card,
+  .quiz-option,
+  .prep-checklist,
+  .filter-chip,
+  .chip-check,
+  .program-item,
+  .mini-recipe,
+  .drill-card,
+  .map-node,
+  .gate-card,
+  .proof-card,
+  .tech-block,
+  .path-depth,
+  .compact-coach,
+  .world-card {
+    background: var(--card);
+    border-color: var(--line);
+    color: var(--ink);
+  }
+
+  .field input,
+  .field select,
+  .field textarea {
+    background: #0f172a;
+    border-color: var(--line);
+    color: var(--ink);
+    color-scheme: dark;
+  }
+
+  .progress-track {
+    background: #334155;
+  }
+
+  .empty-state {
+    background: var(--card);
+    border-color: var(--line);
+  }
+
+  .empty-state p { color: var(--muted); }
+
+  .photo-omitted {
+    background: var(--card);
+    border-color: var(--line);
+  }
+
+  .signal-card {
+    background: #172554;
+    border-color: #1e40af;
+    color: #bfdbfe;
+  }
+  .signal-card strong { color: #93c5fd; }
+
+  .why { background: #172554; color: #bfdbfe; }
+  .mistake { background: var(--red-soft); color: #fca5a5; }
+
+  .correction-card {
+    background: #2d1506;
+    border-color: #78350f;
+  }
+  .correction-card p { color: #fdba74; }
+
+  .chef-note { background: #0f172a; }
+  .sensory-grid div { background: var(--card); border-color: var(--line); }
+
+  .step-precision { background: #1c1108; border-color: rgba(217, 143, 56, 0.2); }
+  .step-precision strong { color: #d97706; }
+
+  .step-deep-coach div { background: #1c0e04; border-color: rgba(234, 88, 12, 0.2); }
+  .step-deep-coach strong { color: #fb923c; }
+
+  .timer-box { background: var(--yellow-soft); color: #fef08a; }
+
+  .onboarding-card {
+    border-color: #78350f;
+    background: linear-gradient(180deg, #1c0e04, #1e293b 72%);
+  }
+
+  .program-card {
+    border-color: #1e3a8a;
+    background: linear-gradient(180deg, #0f1f3d, #1e293b 76%);
+  }
+
+  .program-date { background: #1e3a8a; color: #93c5fd; }
+
+  .active-session {
+    border-color: #a16207;
+    background: linear-gradient(180deg, #1c1108, #1e293b);
+  }
+
+  .lesson-card.due { border-color: #a16207; background: #1c1108; }
+  .boss-card.done, .program-item.done, .technique-card.done, .assessment-card.done, .drill-card.done, .visual-guide-card.done {
+    border-color: rgba(34, 197, 94, 0.3);
+    background: linear-gradient(135deg, #0a2318, #1e293b);
+  }
+
+  .world-card { background: linear-gradient(180deg, #1e293b, #17202e); }
+  .mastery-program { background: linear-gradient(135deg, #1e293b, #1c1108); }
+  .skill-proof-panel { background: linear-gradient(135deg, #0f1e0a, #1c1108); }
+  .quality-rules { background: #1a0e08; border-color: rgba(154, 52, 18, 0.25); }
+  .v19-deepening { background: linear-gradient(180deg, #1a1208, #1c1108); border-color: rgba(132, 82, 48, 0.25); }
+  .technique-sheet { background: linear-gradient(180deg, #1a1208, #1e293b); border-color: rgba(120, 72, 24, 0.25); }
+  .training-hero { background: radial-gradient(circle at top left, rgba(120, 80, 20, 0.4), transparent 45%), linear-gradient(135deg, #1a1208, #1e293b); }
+  .coach-hero { background: radial-gradient(circle at top left, rgba(120, 60, 20, 0.45), transparent 34%), linear-gradient(135deg, #0f172a, #1a1208 58%, #220e04); }
+  .kitchen-plan-card { background: linear-gradient(135deg, rgba(50, 30, 10, 0.7), rgba(30, 41, 59, 0.9)); }
+
+  .deep-section {
+    background: linear-gradient(180deg, #1e293b, #1a1208);
+    border-color: rgba(120, 80, 40, 0.2);
+  }
+  .principle-grid article, .sensory-grid article, .practice-grid article,
+  .technique-step, .vocab-grid article, .rubric-grid article, .stage-list article, .mastery-stage {
+    background: rgba(30, 41, 59, 0.85);
+    border-color: rgba(51, 65, 85, 0.5);
+  }
+  .principle-grid p, .sensory-grid p, .practice-grid p { color: var(--muted); }
+
+  .path-depth { background: rgba(30, 41, 59, 0.85); border-color: var(--line); }
+  .path-depth-grid article, .coach-grid article, .mini-columns article {
+    background: rgba(15, 23, 42, 0.8);
+    border-color: var(--line);
+  }
+
+  .modal { background: #0f172a; }
+  .modal-backdrop { background: rgba(0, 0, 0, 0.7); }
+  .close-btn { background: var(--soft); color: var(--ink); }
+
+  .execution-grid div { background: rgba(28, 17, 8, 0.9); }
+  .execution-grid span { color: var(--muted); }
+
+  .map-node span { background: #334155; color: var(--ink); }
+  .map-node.done span { background: #14532d; color: #86efac; }
+  .map-node.boss span { background: #422006; color: #fcd34d; }
+
+  .path-list::before { background: var(--line); }
+  .path-node::before { background: var(--card); }
+
+  .mission-card, .boss-card {
+    background: var(--card);
+    border-color: var(--line);
+  }
+  .mission-icon { background: #1c1108; }
+
+  .green-tag { background: #14532d !important; color: #86efac !important; border-color: #166534 !important; }
+  .red-tag { background: var(--red-soft) !important; color: #fca5a5 !important; }
+
+  .self-eval-card { background: rgba(28, 17, 8, 0.8); }
+  .photo-targets { background: var(--card); }
+  .mentor-brief { background: linear-gradient(135deg, rgba(120, 40, 20, 0.2), rgba(30, 41, 59, 0.8)); }
+
+  .warn-list li { background: rgba(69, 10, 10, 0.6); border-color: rgba(220, 38, 38, 0.2); }
+  .evaluation-mini span { background: rgba(30, 58, 138, 0.2); border-color: rgba(37, 99, 235, 0.2); }
+
+  .toast { background: #1e293b; color: var(--ink); }
+  .pill.primary { background: var(--primary-soft); color: #fdba74; }
+  .pill.green { background: var(--green-soft); color: #86efac; }
+  .pill.blue { background: var(--blue-soft); color: #93c5fd; }
+  .pill.red { background: var(--red-soft); color: #fca5a5; }
+  .pill.yellow { background: var(--yellow-soft); color: #fcd34d; }
+
+  .filter-chip { background: var(--card); color: var(--muted); border-color: var(--line); }
+  .filter-chip.active { background: var(--ink); color: #0f172a; border-color: var(--ink); }
+
+  .nav-item.active { color: #fb923c; background: var(--primary-soft); }
+  .chip-check { background: var(--card); }
+  .chip-check:has(input:checked) { border-color: #ea580c; background: var(--primary-soft); color: #fb923c; }
+
+  .quiz-option { background: var(--card); color: var(--ink); border-color: var(--line); }
+  .quiz-option.correct { background: var(--green-soft); border-color: #166534; color: #86efac; }
+  .quiz-option.wrong { background: var(--red-soft); border-color: #7f1d1d; color: #fca5a5; }
+
+  .program-card.program-card { background: linear-gradient(180deg, #1a1208, var(--card)); }
+  .technique-card, .assessment-card, .visual-guide-card, .program-card {
+    background: linear-gradient(180deg, var(--card), #1a1208);
+    border-color: var(--line);
+  }
+
+  .compact-coach span { color: var(--muted); }
+}

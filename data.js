@@ -516,17 +516,21 @@ window.CUISINE_DATA = {
     {
       "id": "l-couteau-1",
       "module": "Découpe",
-      "title": "Tenir son couteau et couper régulièrement",
+      "title": "Maîtriser le couteau : anatomie, taillages classiques et entretien",
       "level": 1,
-      "xp": 35,
+      "xp": 60,
       "skillIds": [
         "couteau"
       ],
-      "summary": "Comprendre la sécurité, la régularité et l'effet de la taille sur la cuisson.",
+      "summary": "Du choix du couteau à la taxonomie complète des taillages français : julienne, brunoise, chiffonade, paysanne, mirepoix, ciseler, concasser. Plus l'entretien qui change tout.",
       "content": [
-        "Une découpe régulière donne une cuisson régulière. Les petits morceaux cuisent plus vite que les gros.",
-        "La main qui tient l'aliment doit former une griffe : les doigts sont repliés, la lame glisse contre les phalanges.",
-        "Ne cherche pas la vitesse. Cherche d'abord la stabilité, puis la précision."
+        "Un bon cuisinier n'est pas jugé sur sa vitesse mais sur sa régularité. Des morceaux réguliers cuisent au même rythme — c'est la base de tout contrôle en cuisine.",
+        "Comprendre ton couteau commence par son anatomie. La lame comporte : le tranchant (fil), le dos (dos de lame), la pointe, le talon (partie la plus proche du manche) et le plat. Le bolster est l'épaulement métallique entre lame et manche — il équilibre le couteau et protège les doigts. La soie est la partie de la lame qui s'insère dans le manche ; une soie pleine longueur (full tang) garantit la solidité.",
+        "La prise pincée est fondamentale : pouce et côté de l'index pincent directement la lame au niveau du bolster. Les trois autres doigts enroulent le manche. Cette prise te donne le contrôle de la trajectoire et réduit la fatigue. Si tu tiens le couteau trop en arrière, par le manche uniquement, tu perds tout contrôle fin.",
+        "La main guide forme une griffe : doigts repliés, phalanges en avant comme un guide pour la lame. La lame appuie contre les phalanges du milieu, jamais contre les bouts des doigts. Cette position te permet de mesurer l'épaisseur à chaque coup : avance la main de 2 mm pour un 2 mm, de 5 mm pour un 5 mm.",
+        "Le mouvement de coupe correct utilise toute la longueur de la lame en arc de cercle, pointe proche de la planche. Ce balancier évite de lever la lame complètement et crée une coupe glissée, non écrasée. Frapper verticalement (comme un couperet) est une erreur courante qui écrase les fibres et noircit les herbes.",
+        "Les taillages classiques de la cuisine française ne sont pas arbitraires — chaque forme répond à un usage précis : temps de cuisson, texture dans l'assiette, diffusion des arômes. Les apprendre, c'est apprendre à penser la cuisson avant même d'allumer le feu.",
+        "Enfin, un couteau mal entretenu est dangereux et inefficace. Un couteau émoussé glisse sur l'aliment, force la main et provoque des accidents. L'affûtage régulier avec un fusil (acier à aiguiser) maintient le fil entre deux séances de pierre à aiguiser."
       ],
       "quiz": [
         {
@@ -652,179 +656,338 @@ window.CUISINE_DATA = {
           "explanation": "Plus la cuisson est rapide, plus la taille doit être régulière et assez fine."
         }
       ],
-      "objective": "Maîtriser les bases de sécurité, de régularité et de contrôle au couteau pour améliorer cuisson, texture et vitesse.",
+      "objective": "Comprendre l’anatomie du couteau, exécuter les 10 taillages classiques de la cuisine française avec les dimensions professionnelles, maîtriser la sécurité, la prise en main et l’entretien du fil.",
       "principles": [
         {
-          "title": "La régularité vaut plus que la vitesse",
-          "body": "Des morceaux réguliers cuisent au même rythme. Une brunoise irrégulière donne des parties brûlées et d’autres crues."
+          "title": "La régularité, pas la vitesse",
+          "body": "Des morceaux réguliers cuisent au même rythme. Une brunoise irrégulière donne simultanément des morceaux brûlés et des morceaux crus. La vitesse vient seule après 50 répétitions propres — elle ne s’enseigne pas."
         },
         {
-          "title": "Le couteau coupe, la main guide",
-          "body": "La main qui tient l’aliment n’est pas passive : elle forme une griffe et règle l’épaisseur de coupe."
+          "title": "La taille détermine le résultat gustatif",
+          "body": "Une brunoise de 3 mm fond dans une sauce et parfume discrètement. La même carotte en mirepoix de 12 mm garde de la mâche et de la présence visuelle. Ce n’est pas une question d’esthétique : c’est la physique du transfert de chaleur et de la diffusion des arômes."
         },
         {
-          "title": "Un couteau stable est plus sûr",
-          "body": "Un couteau mal affûté glisse et force. La sécurité vient de la stabilité, pas de la lenteur extrême."
+          "title": "Le couteau coupe, la main mesure",
+          "body": "La main en griffe n’est pas là pour protéger passivement les doigts. Elle est le référentiel de mesure : chaque avancée de la main équivaut à l’épaisseur de coupe. C’est le moyen le plus rapide d’obtenir une régularité reproductible."
+        },
+        {
+          "title": "Un fil vif est une condition de sécurité",
+          "body": "Un couteau émoussé glisse sur la peau de la tomate, dérape sur la carotte et force la main à appuyer. La force crée l’accident. Un couteau tranchant coupe avec le poids du couteau seul — la lame va là où tu la diriges, pas là où elle glisse."
+        },
+        {
+          "title": "Chaque taillage répond à un usage",
+          "body": "Les Français ont codifié leurs taillages parce que la cuisine de restaurant exige une précision reproductible sur des centaines de couverts. Apprendre ces codes, c’est parler le même langage qu’une brigade professionnelle et comprendre pourquoi une recette donne une taille précise."
         }
       ],
       "techniqueSteps": [
         {
-          "title": "Installer la planche",
-          "action": "Pose un torchon humide sous la planche pour l’empêcher de glisser.",
-          "cue": "La planche ne bouge pas quand tu appuies sur un angle.",
-          "mistake": "Couper sur une planche instable.",
-          "correction": "Stabilise avant de toucher le couteau."
+          "title": "Préparer le poste : planche stable",
+          "action": "Pose un torchon humide (ou un tapis antidérapant) sous la planche. Règle la hauteur : tes coudes à 90°, mains au-dessus de la planche signifient un plan de travail trop haut. Coudes légèrement fléchis, avant-bras quasi horizontaux = hauteur idéale.",
+          "cue": "La planche ne bouge pas quand tu appuies fort sur un coin.",
+          "mistake": "Planche qui glisse ou plan de travail trop haut/bas — les deux fatiguent et réduisent la précision.",
+          "correction": "Utilise un torchon humide. Si le plan est trop haut, travaille debout sur un repose-pieds ou utilise une planche plus épaisse."
         },
         {
-          "title": "Prise pincée",
-          "action": "Pince la lame entre le pouce et l’index, puis enroule les autres doigts autour du manche.",
-          "cue": "Tu contrôles la lame, pas seulement le manche.",
-          "mistake": "Tenir le couteau trop en arrière.",
-          "correction": "Avance la main pour sentir le point d’équilibre."
+          "title": "Prise pincée (pinch grip)",
+          "action": "Pince la lame directement entre le côté de l’index (pas le bout) et le pouce, juste devant le bolster. Les trois autres doigts enroulent naturellement le manche. Tu dois sentir la lame entre tes doigts — c’est voulu.",
+          "cue": "Ton pouce est visible sur le côté gauche (ou droit) de la lame. Tu contrôles la direction, pas juste la force.",
+          "mistake": "Tenir uniquement le manche ‘comme un marteau’ : tu perds tout contrôle de direction et tu fatigues plus vite.",
+          "correction": "Avance la main jusqu’à sentir le métal, puis enroule les doigts. Ça paraît bizarre les 5 premières minutes, puis c’est naturel."
         },
         {
-          "title": "Main en griffe",
-          "action": "Replie les doigts de la main qui tient l’aliment. La lame glisse contre les phalanges, jamais contre le bout des doigts.",
-          "cue": "Les ongles ne sont pas exposés.",
-          "mistake": "Doigts allongés devant la lame.",
-          "correction": "Ralentis et reforme la griffe avant chaque série."
+          "title": "Main en griffe : le guide de précision",
+          "action": "Sur la main qui tient l’aliment : replie tous les doigts pour rentrer les bouts, puis avance les phalanges du milieu vers l’avant. Ces phalanges forment un mur vertical contre lequel la lame glisse. Ton pouce reste derrière, tirant l’aliment vers toi.",
+          "cue": "Tes ongles ne sont pas visibles. La lame touche les phalanges à chaque coup.",
+          "mistake": "Doigts tendus, bout des doigts en avant — c’est l’erreur n°1 qui provoque les coupures.",
+          "correction": "Pratique la griffe à vide, sans couteau, jusqu’à ce que la position soit automatique. Reforme-la consciemment avant chaque série."
         },
         {
-          "title": "Mouvement de balancier",
-          "action": "Garde la pointe proche de la planche et fais avancer la lame dans un mouvement fluide.",
-          "cue": "La coupe est nette, sans écraser l’aliment.",
-          "mistake": "Hacher verticalement en frappant.",
-          "correction": "Utilise toute la longueur de la lame."
+          "title": "Mouvement de balancier (rocking motion)",
+          "action": "La pointe du couteau reste au contact ou très proche de la planche. La lame pivote en arc de cercle, de l’arrière vers l’avant. La coupe est glissée, pas verticale. Pour les légumes durs (carotte, céleri-rave), une légère pression vers l’avant en plus.",
+          "cue": "Tu entends un son régulier et sec. La section coupée est nette, non écrasée.",
+          "mistake": "Lever le couteau complètement et frapper à la verticale. Résultat : arrachage des fibres, herbes noircies, légumes écrasés.",
+          "correction": "Garde la pointe basse. Imagine que la pointe est un pivot fixe autour duquel la lame tourne."
+        },
+        {
+          "title": "Tailler une julienne (3 × 3 × 60 mm)",
+          "action": "1/ Parer le légume en rectangle net (carotte, courgette, navet). 2/ Trancher des plaques de 3 mm d’épaisseur sur la longueur. 3/ Empiler 2-3 plaques, tailler des bâtonnets de 3 mm de large × 6 cm de long. La longueur classique est 6 cm mais 4-5 cm est acceptable selon le plat.",
+          "cue": "Bâtonnets fins, réguliers, se tenant presque debout dans la main. Aspect filamenteux.",
+          "mistake": "Plaques d’épaisseur irrégulière : les bâtonnets seront triangulaires ou trapézoïdaux au lieu de carrés.",
+          "correction": "Parer d’abord correctement le légume en pavé rectangulaire. Une face plate stable = plaques régulières."
+        },
+        {
+          "title": "Tailler une brunoise (3 × 3 × 3 mm)",
+          "action": "1/ Exécuter la julienne (3 × 3 × 60 mm). 2/ Rassembler les bâtonnets en faisceau serré. 3/ Couper transversalement tous les 3 mm. Chaque tranche de bâtonnets donne une brunoise.",
+          "cue": "Petits cubes parfaits, 3 mm de côté. Ressemblent à des grains de maïs en plus petit.",
+          "mistake": "Bâtonnets pas assez serrés : la brunoise s’éparpille et les cubes sont instables.",
+          "correction": "Maintiens fermement les bâtonnets avec la main en griffe. Coupe lentement. La brunoise demande patience et un fil vif."
+        },
+        {
+          "title": "Ciseler un oignon ou une échalote",
+          "action": "1/ Couper l’oignon en deux par le pôle, conserver la racine (elle tient les couches). 2/ Poser à plat, côté coupé vers toi. 3/ Faire 2 à 3 coupes horizontales parallèles à la planche sans aller jusqu’à la racine (technique dite ‘coupes horizontales’). 4/ Faire des coupes verticales en éventail (radiales) de la racine vers toi, sans aller jusqu’à la racine. 5/ Trancher perpendiculairement : les coupes libèrent des dés réguliers. La finesse (1-2 mm) ou grossièreté (3-4 mm) se règle à l’étape 5.",
+          "cue": "Les dés s’effondrent régulièrement. La racine reste intacte jusqu’à la fin et sert de maintien.",
+          "mistake": "Couper jusqu’à la racine aux étapes 3 et 4 : l’oignon s’effondre en morceaux ingérables.",
+          "correction": "Stoppe toujours 5 mm avant la racine. C’est la règle absolue du ciselage."
+        },
+        {
+          "title": "Réaliser une chiffonade d’herbes ou feuilles",
+          "action": "1/ Superposer les feuilles propres et sèches (basilic, sauge, oseille...). 2/ Rouler en cigare serré. 3/ Émincer finement en lanières transversales. Pour les herbes fragiles (basilic), une seule passe du couteau — ne reviens jamais en arrière pour cisailler.",
+          "cue": "Lanières fines et régulières, feuilles non noircies, parfum intact.",
+          "mistake": "Revenir plusieurs fois en va-et-vient sur les herbes : la chaleur de friction + l’écrasement oxyde la chlorophylle et noircit immédiatement.",
+          "correction": "Une seule passe glissée, couteau très affûté, feuilles sèches. Si les herbes mouillent, sèche-les d’abord."
+        },
+        {
+          "title": "Entretien : le fusil (acier à aiguiser)",
+          "action": "Le fusil remet le fil d’aplomb sans enlever de métal — c’est un réalignement, pas un affûtage. Méthode statique (plus sûre) : pointe du fusil sur planche, couteau à 15-20° contre la tige, tirer vers soi de la pointe au talon. 5 passages par côté avant chaque session.",
+          "cue": "La lame accroche légèrement le poil de ton avant-bras (test du poil) ou glisse nettement sur une tomate sans appuyer.",
+          "mistake": "Croire que le fusil remplace la pierre. Le fusil maintient, la pierre crée le fil. Un couteau vraiment émoussé demande une pierre.",
+          "correction": "Passe au fusil systématiquement avant usage. Pierre à grain 1000 tous les 2-3 mois selon usage."
         }
       ],
       "sensoryCues": {
-        "see": "Morceaux de taille proche, coupe nette, aliment non écrasé.",
-        "hear": "Son régulier et sec, pas de coups violents.",
-        "touch": "Main stable, poignet relâché, pression modérée."
+        "see": "Coupes nettes et lisses (non effilochées). Morceaux de taille identique — si tu poses 10 brunoise côte à côte elles ont la même hauteur. Herbes vertes vives, non noircies.",
+        "hear": "Son régulier, sec et rythmé. Pas de coups sourds (couteau émoussé qui écrase) ni de coups violents (frappe verticale). Le rythme est celui d’une horloge.",
+        "touch": "Poignet souple, pression légère. La lame glisse — si tu forces, le couteau est émoussé ou tu travailles dans le mauvais sens des fibres.",
+        "smell": "Une chiffonade de basilic bien réalisée libère immédiatement son parfum sans amertume oxydée."
       },
       "troubleshooting": [
         {
           "problem": "Les morceaux sont très irréguliers",
-          "cause": "Tu avances l’aliment sans utiliser la griffe comme guide.",
-          "fix": "Ralentis et choisis une épaisseur cible avant de couper."
+          "cause": "Tu avances l’aliment sans utiliser la griffe comme règle de mesure, ou la planche glisse.",
+          "fix": "Stabilise la planche, reforme la griffe, choisis une épaisseur cible avant de commencer et compte mentalement : même avancée = même épaisseur."
         },
         {
-          "problem": "Les herbes noircissent",
-          "cause": "La lame écrase au lieu de trancher.",
-          "fix": "Affûte, sèche les herbes et utilise un mouvement glissé."
+          "problem": "Les herbes noircissent immédiatement",
+          "cause": "La lame écrase au lieu de trancher (couteau émoussé), ou les herbes étaient mouillées, ou tu es revenu plusieurs fois sur la coupe.",
+          "fix": "Affûte le couteau, sèche les herbes dans du papier absorbant, et une seule passe glissée. Coupe en dernier, juste avant le service."
+        },
+        {
+          "problem": "La brunoise est irrégulière (cubes non carrés)",
+          "cause": "Les plaques de la julienne initiale n’étaient pas d’épaisseur uniforme.",
+          "fix": "Reviens à l’étape de parer : crée un pavé rectangulaire avec des faces parfaitement plates avant de commencer à trancher."
+        },
+        {
+          "problem": "L’oignon cisélé s’effondre et s’éparpille",
+          "cause": "Les coupes horizontales ou radiales ont traversé la racine.",
+          "fix": "La racine est le pivot. Arrête chaque coupe à 5 mm de la racine, sans exception."
+        },
+        {
+          "problem": "La main fatigue rapidement",
+          "cause": "Tu forces à cause d’un couteau émoussé, d’une prise incorrecte (trop en arrière sur le manche) ou d’une posture trop haute.",
+          "fix": "Ajuste la hauteur du plan de travail, passe au fusil, et reviens à la prise pincée qui répartit mieux l’effort."
+        },
+        {
+          "problem": "La julienne colle à la lame",
+          "cause": "Légumes légèrement humides créant un effet ventouse sur la plat de lame.",
+          "fix": "Trempe rapidement le légume dans l’eau froide et sèche-le, ou utilise la technique de la lame mouillée : passe très légèrement l’éponge humide sur la lame."
         }
       ],
       "practiceDrills": [
         {
-          "title": "Oignon régulier",
-          "duration": "12 min",
-          "instructions": "Coupe un oignon en lamelles régulières, puis compare les extrémités et le centre.",
-          "goal": "Obtenir une épaisseur visuellement stable."
+          "title": "Brunoise de carotte : 100 cubes",
+          "duration": "25 min",
+          "instructions": "Pare une grosse carotte en pavé rectangulaire. Taille 100 brunoise de 3 mm. Compte-les. Évalue le pourcentage qui sont des cubes parfaits vs irréguliers. Répète chaque semaine et mesure ta progression.",
+          "goal": "Atteindre 80% de cubes réguliers. Comprendre par la pratique que la régularité vient du parer initial, pas de la coupe finale."
         },
         {
-          "title": "Herbes sans les abîmer",
-          "duration": "8 min",
-          "instructions": "Cisèle persil ou ciboulette avec une lame sèche et un mouvement fluide.",
-          "goal": "Garder couleur et parfum."
+          "title": "Julienne de courgette pour une cuisson flash",
+          "duration": "15 min",
+          "instructions": "Taille une julienne de courgette 3×3×60mm. Saute à feu vif 30 secondes dans un filet d’huile chaude. Goûte : al dente, légèrement colorée, intense en goût. Compare avec des rondelles de 5mm cuites au même temps.",
+          "goal": "Ressentir concrètement comment la taille change la texture et la cuisson."
+        },
+        {
+          "title": "Ciseler 2 oignons chrono",
+          "duration": "15 min",
+          "instructions": "Cisèle deux oignons en dés de 3-4 mm. Note ton temps. La semaine suivante, refais. L’objectif n’est pas de battre un record mais de stabiliser le geste : même qualité à chaque fois.",
+          "goal": "Geste fluide et sécurisé : racine préservée jusqu’à la fin, dés réguliers, pas de morceaux éparpillés."
+        },
+        {
+          "title": "Chiffonade basilic vs persil ciselé",
+          "duration": "10 min",
+          "instructions": "Chiffonade de 6-8 feuilles de basilic. Puis cisèle une poignée de persil plat. Compare les couleurs (basilic doit être vert vif, non noirci) et les parfums. Goûte les deux.",
+          "goal": "Comprendre la différence de traitement selon la fragilité de l’herbe."
+        },
+        {
+          "title": "Test du fusil",
+          "duration": "5 min",
+          "instructions": "Passe ton couteau au fusil (5 passages par côté, 15-20°). Puis coupe une tomate mûre sans aucune pression : le couteau doit s’enfoncer dans la peau par son propre poids. Si ça glisse, le couteau est émoussé.",
+          "goal": "Comprendre ce que ‘tranchant’ signifie concrètement et intégrer le rituel pré-session."
         }
       ],
       "masteryCriteria": [
-        "Tu installes toujours une planche stable.",
-        "Tu utilises une prise pincée sans y penser.",
-        "Tes morceaux cuisent plus régulièrement.",
-        "Tu privilégies netteté et sécurité à la vitesse."
+        "Tu utilises la prise pincée naturellement, sans y penser.",
+        "Ta main en griffe sert activement de règle de mesure, pas juste de protection.",
+        "Tu peux réaliser une brunoise régulière de 3 mm sur une carotte.",
+        "Tu cisèles un oignon sans que ça s’effondre.",
+        "Tu sais passer le fusil correctement avant chaque session.",
+        "Tu choisis le bon taillage selon le temps de cuisson et le rendu désiré."
       ],
-      "proTip": "La vitesse au couteau est une conséquence de gestes propres répétés, pas un objectif de début.",
-      "mentorBrief": "Le couteau n’est pas un geste décoratif : il conditionne sécurité, régularité, cuisson et présentation. Une découpe irrégulière crée des légumes à moitié crus et à moitié mous.",
+      "proTip": "Les chefs professionnels ne pensent pas ‘je vais couper’ — ils pensent ‘ce légume doit disparaître dans la sauce’ ou ‘il doit rester croquant et visible’. La taille découle toujours d’une intention culinaire, jamais d’une habitude.",
+      "mentorBrief": "La découpe est la compétence de base la plus révélatrice du niveau d’un cuisinier. Un plat photographiable en restaurant commence 80% du temps par une découpe disciplinée. Le couteau n’est pas un outil dangereux à manipuler avec précaution — c’est un instrument de précision à maîtriser avec confiance. La confiance vient de la technique, la technique vient de la répétition intentionnelle.",
       "technicalVocabulary": [
         {
-          "term": "Prise pincée",
-          "definition": "Pouce et index pincent la lame près du manche pour contrôler la trajectoire."
+          "term": "Bolster",
+          "definition": "Épaulement métallique entre lame et manche. Équilibre le couteau et protège l’index. Absent sur les couteaux estampés bon marché, présent sur les couteaux forgés."
         },
         {
-          "term": "Main guide",
-          "definition": "Main qui tient l’aliment en griffe et règle l’épaisseur."
+          "term": "Soie pleine (full tang)",
+          "definition": "La lame se prolonge sur toute la longueur du manche, visible sur les côtés. Signe de solidité et d’équilibre. Une soie courte (rat tail) est moins robuste."
         },
         {
-          "term": "Point d’appui",
-          "definition": "Zone stable de l’aliment contre la planche."
+          "term": "Prise pincée (pinch grip)",
+          "definition": "Technique de tenue où l’index et le pouce pincent directement la lame au niveau du bolster. Donne le contrôle maximal de la direction de coupe."
         },
         {
-          "term": "Régularité",
-          "definition": "Morceaux de taille similaire pour une cuisson homogène."
+          "term": "Main en griffe (claw grip)",
+          "definition": "Position de la main qui tient l’aliment : doigts repliés, phalanges du milieu en avant. La lame glisse contre ces phalanges et mesure l’épaisseur."
+        },
+        {
+          "term": "Julienne",
+          "definition": "Bâtonnets de 3×3×60 mm. Légumes (carotte, céleri, poireau), garniture de consommé ou garnitures rapides sautées. Cuisson : 1-3 min."
+        },
+        {
+          "term": "Brunoise",
+          "definition": "Dés de 3×3×3 mm. Dérivée de la julienne par coupe transversale. Aromates de sauce, farces fines, garnitures de présentation. Cuisson : 2-4 min à feu moyen."
+        },
+        {
+          "term": "Petite brunoise",
+          "definition": "Dés de 1,5×1,5×1,5 mm. Usage : garnitures de haute cuisine, consommés, tartares. Exige un couteau parfaitement affûté."
+        },
+        {
+          "term": "Macédoine",
+          "definition": "Dés de 5×5×5 mm. Salade de légumes classique, garnitures chaudes. Plus de mâche que la brunoise, moins que la mirepoix."
+        },
+        {
+          "term": "Jardinière",
+          "definition": "Bâtonnets de 4×4×20 mm. Légumes cuits à l’anglaise (à l’eau bouillante salée), garniture classique de plats mijotés."
+        },
+        {
+          "term": "Paysanne",
+          "definition": "Tranches fines de 12×12×3 mm en forme de carré, triangle ou losange selon le légume. Potages, braisés. Donne une texture rustique qui tient la cuisson longue."
+        },
+        {
+          "term": "Mirepoix",
+          "definition": "Dés grossiers de 12-15 mm, taillés de façon non-géométrique. Usage : bases de sauces, fonds, braisés. N’a pas besoin d’être parfait — la taille compte, pas la forme exacte. La mirepoix disparaît dans la préparation ou est passée au chinois."
+        },
+        {
+          "term": "Ciseler",
+          "definition": "Technique spécifique pour les oignons, échalotes, fenouil : coupes horizontales + coupes radiales + tranches finales. Donne des dés réguliers en exploitant la structure naturelle de l’alliacé."
+        },
+        {
+          "term": "Concasser",
+          "definition": "Couper grossièrement une tomate mondée et épépinée en dés de 1-1,5 cm. Les concassés de tomates sont la base de nombreuses sauces. La forme imprécise est normale et voulue."
+        },
+        {
+          "term": "Chiffonade",
+          "definition": "Feuilles (basilic, oseille, sauge) roulées en cigare et émincées en fines lanières. Ne jamais revenir en arrière avec la lame — une seule passe pour éviter l’oxydation."
+        },
+        {
+          "term": "Tourné",
+          "definition": "Forme ovale à 7 facettes, comme un ballon de rugby. Carottes, navets, pommes de terre. Taille : 5-6 cm × 2 cm. Cuisson à l’anglaise. Technique de haute cuisine, demande un couteau à tourner (bec d’oiseau)."
+        },
+        {
+          "term": "Fusil (acier à aiguiser)",
+          "definition": "Tige d’acier dur ou céramique pour réaligner le fil d’une lame. N’enlève pas de métal — maintient le tranchant entre deux séances de pierre. Usage : avant chaque session de coupe."
+        },
+        {
+          "term": "Pierre à affûter",
+          "definition": "Pierre abrasive qui recrée le fil par enlèvement de métal. Grains : 200-400 (réparation), 800-1000 (affûtage courant), 2000-3000 (finition). Mouvement : 15-20° contre la pierre, en poussant l’arête."
         }
       ],
       "guidedLab": [
         {
-          "task": "Oignon en trois tailles",
-          "duration": "20 min",
-          "instructions": "Émince un oignon fin, moyen puis grossier. Fais revenir séparément et compare la vitesse de cuisson.",
-          "expected": "Tu comprends visuellement l’effet de la taille sur la cuisson."
+          "task": "La carotte en 4 taillages",
+          "duration": "35 min",
+          "instructions": "Prends 2 grosses carottes. Taille chaque portion en : (1) mirepoix, (2) jardinière, (3) julienne, (4) brunoise. Fais revenir chaque taillage séparément dans une poêle chaude avec une noisette de beurre, même durée (2 min). Compare la texture, la couleur, la douceur de chacun. Note tes observations.",
+          "expected": "Tu comprends physiquement que la même carotte donne 4 résultats gustatifs complètement différents selon le taillage. La julienne est déjà sucrée et légèrement caramélisée à 2 min. La mirepoix est encore presque crue."
         },
         {
-          "task": "Herbes sans écraser",
+          "task": "Ciseler un oignon : progression en 3 finesse",
+          "duration": "20 min",
+          "instructions": "Cisèle un oignon en dés grossiers (5 mm), puis un deuxième en ciselage fin (2 mm), puis un troisième en ciselage très fin (1 mm). Fais suer chaque dés à feu doux avec un filet d’huile. Goûte à intervalles de 2 min.",
+          "expected": "Le ciselage très fin fond en 2-3 min et disparaît dans le corps de la sauce. Le grossier reste présent et texturé à 10 min. Tu choisis en fonction du plat, pas par habitude."
+        },
+        {
+          "task": "Entretien : tester avant et après le fusil",
           "duration": "10 min",
-          "instructions": "Cisèle persil ou ciboulette avec lame affûtée, sans repasser dix fois au même endroit.",
-          "expected": "Les herbes restent vertes, pas noircies ni mouillées."
+          "instructions": "Commence par tester ton couteau sur une tomate sans pression. Mémorise la sensation. Passe 5 fois par côté au fusil à 15-20°. Reteste la tomate. Compare.",
+          "expected": "Tu perçois la différence entre un fil aligné et un fil dévié. Tu intègres que le fusil n’est pas optionnel mais fait partie du geste de cuisiner."
         }
       ],
       "progressionStages": [
         {
           "level": "Débutant",
-          "standard": "Tu coupes lentement mais sans danger."
+          "standard": "Tu coupes sans danger avec prise pincée et griffe. Les morceaux sont encore irréguliers mais dans la bonne catégorie de taille."
         },
         {
           "level": "Intermédiaire",
-          "standard": "Tes morceaux sont réguliers et adaptés à la cuisson."
+          "standard": "Tu exécutes brunoise, julienne et ciselage de façon reproductible. Tu choisis la taille selon la cuisson prévue."
         },
         {
-          "level": "Excellent amateur",
-          "standard": "Tu choisis la découpe selon texture, cuisson et dressage."
+          "level": "Avancé",
+          "standard": "Tu tailles sans réfléchir au geste. Tu adaptes spontanément le taillage au rendu voulu : texture, présentation, temps de cuisson. Tu entretiens ton couteau régulièrement."
+        },
+        {
+          "level": "Expert",
+          "standard": "Tu maîtrises les 10 taillages classiques. Tu peux corriger une découpe d’une autre personne en nommant précisément l’erreur. Ton poste est toujours installé avant le premier coup de couteau."
         }
       ],
       "assessmentRubric": [
         {
-          "criterion": "Organisation",
-          "standard": "La mise en place est complète, les gestes s’enchaînent sans chercher un outil ou un ingrédient."
+          "criterion": "Sécurité & posture",
+          "standard": "Planche stable, prise pincée, main en griffe maintenue pendant toute la session sans relâchement."
         },
         {
-          "criterion": "Observation",
-          "standard": "Tu prends tes décisions sur des signes visibles, sonores, olfactifs ou tactiles, pas seulement sur le minuteur."
+          "criterion": "Régularité",
+          "standard": "80% des morceaux dans une tolérance de ±1 mm pour la brunoise, ±2 mm pour la julienne et macédoine."
         },
         {
-          "criterion": "Correction",
-          "standard": "Tu sais identifier une erreur probable et proposer une correction réaliste avant la fin de la recette."
+          "criterion": "Choix du taillage",
+          "standard": "Tu nommes spontanément le bon taillage pour un usage donné (ex: ‘pour cette sauce courte, brunoise 2-3 mm’)."
         },
         {
-          "criterion": "Répétabilité",
-          "standard": "Tu peux refaire la technique avec un résultat similaire au moins deux fois."
+          "criterion": "Entretien",
+          "standard": "Tu passes le fusil avant chaque session. Tu sais tester le tranchant sans te couper."
+        },
+        {
+          "criterion": "Vitesse relative",
+          "standard": "La régularité est maintenue même quand tu acceleres légèrement. La vitesse ne doit pas dégrader la qualité."
         }
       ],
       "antiBacle": [
-        "Ne valide pas mentalement une technique si tu ne peux pas expliquer pourquoi elle fonctionne.",
-        "Ne te fie pas uniquement au temps : vérifie au moins deux repères sensoriels.",
-        "Note l’erreur principale après pratique, même si le plat est bon."
+        "Ne saute jamais l’étape de parer : un pavé mal équarri donne des coupes irrégulières quelle que soit ta maîtrise.",
+        "N’évalue pas ta brunoise à l’œil en regardant le tas — aligne 5 cubes côte à côte et mesure.",
+        "Ne considère pas le fusil comme optionnel : c’est 30 secondes qui changent le résultat de toute la session."
       ],
       "commonMisconceptions": [
-        "Régulier ne veut pas toujours dire minuscule : la bonne taille dépend de la cuisson recherchée."
+        "Régulier ne veut pas dire identique au millimètre — ça veut dire dans la même catégorie de taille. Une brunoise à 3-4 mm est acceptable ; une brunoise avec des morceaux de 2 mm et 8 mm dans le même lot ne l’est pas.",
+        "Un couteau cher ne remplace pas un couteau bien entretenu. Un couteau basique mais aiguisé coupe mieux qu’un couteau de chef émoussé.",
+        "La chiffonade de basilic ne supporte pas le réfrigérateur : elle noircit au froid. Prépare-la au dernier moment, juste avant le service.",
+        "La mirepoix n’a pas besoin d’être parfaite parce qu’elle est passée ou concentrée — mais la taille doit quand même être cohérente pour que tout cuise au même rythme.",
+        "Ciseler n’est pas la même chose qu’émincer. Émincer, c’est trancher en lamelles (rondelles d’oignon, feuilles de chou). Ciseler, c’est la technique à 3 étapes qui donne des dés depuis la structure interne de l’alliacé."
       ],
-      "realKitchenTransfer": "Une découpe régulière rend les temps fiables et donne une texture plus professionnelle.",
+      "realKitchenTransfer": "Dès que tu lis ‘brunoise d’échalote’ dans une recette, tu sais que c’est 3 mm, que ça va fondre rapidement, et qu’une échalote plus grosse ralentirait la sauce. Dès que tu vois ‘mirepoix de légumes’, tu sais que tu cherches la saveur et le corps, pas la présentation. Ces codes te permettent de lire une recette comme un musicien lit une partition — pas note par note, mais en comprenant l’intention.",
       "capstonePractice": {
-        "title": "Exercice de transfert",
-        "instructions": "Choisis une recette déjà faite, applique volontairement cette technique, puis note ce qui a changé dans le résultat.",
-        "expected": "Tu dois pouvoir expliquer une décision concrète : taille, feu, couvercle, ordre ou correction."
+        "title": "La garniture de 4 taillages en simultané",
+        "instructions": "Prépare une garniture complète pour une soupe rustique : mirepoix (carottes, céleri, oignon) + une julienne fine de blanc de poireau + brunoise de navets + chiffonade de persil plat pour finir. Coordonne les cuissons : mirepoix d’abord (5-7 min), puis jardinière (3 min), julienne (1-2 min), chiffonade au dernier moment hors feu.",
+        "expected": "Chaque élément garde sa texture prévue. La mirepoix est fondante, la julienne al dente, la chiffonade verte et parfumée. Tu as planifié les taillages en fonction des temps de cuisson, pas l’inverse."
       },
       "advancedCases": [
-        "Oignon de sauce : 2–3 mm pour fondre vite.",
-        "Carotte de mijoté : 8–12 mm pour tenir une cuisson longue.",
-        "Légume rôti : 1,5–2,5 cm pour colorer dehors et rester tendre dedans."
+        "Oignon de sauce courte : ciselé très fin (1-2 mm) pour fondre et parfumer sans texture résiduelle.",
+        "Légume de mijoté (bœuf bourguignon) : mirepoix 12-15 mm ou jardinière 20 mm pour tenir 2h de cuisson sans disparaître.",
+        "Garniture de consommé : brunoise 1,5-2 mm qui flotte élégamment dans le liquide clair.",
+        "Légume rôti au four : tronçons de 2-3 cm pour colorer dehors et rester fondant dedans.",
+        "Légume sauté minute : julienne ou émincer fin pour cuisson flash (<2 min) à feu très vif.",
+        "Décoration d’assiette : tourné ou paysanne pour les présentations soignées."
       ],
       "expertMistakes": [
-        "Couper trop petit les légumes de cuisson longue : ils disparaissent.",
-        "Couper trop gros les aromates de sauce : ils restent crus ou grossiers.",
-        "Chercher la vitesse avant la stabilité."
+        "Trop petit les légumes de cuisson longue : ils disparaissent dans le fond et laissent un goût de brûlé après 1h.",
+        "Trop gros les aromates de sauce : ils restent partiellement crus et donnent un goût âcre.",
+        "Travailler avec un couteau émoussé par habitude — ne pas voir que la qualité de coupe se dégrade progressivement.",
+        "Oublier de parer : essayer de faire une brunoise depuis un légume de forme irrégulière donne des résultats frustratnts.",
+        "Faire la chiffonade à l’avance et la mettre au frigo."
       ],
-      "transferRule": "Avant chaque découpe, demande-toi : cet ingrédient doit-il disparaître, rester visible, colorer, diffuser un parfum ou garder du croquant ?",
+      "transferRule": "Avant chaque découpe, pose-toi deux questions : (1) cet ingrédient doit-il disparaître, se fondre, garder de la texture ou décorer ? (2) quel est le temps de cuisson prévu ? La réponse à ces deux questions détermine le bon taillage.",
       "quizIds": [
         "q-v19-l-couteau-1-0",
         "q-v19-l-couteau-1-1",
@@ -850,17 +1013,24 @@ window.CUISINE_DATA = {
     {
       "id": "l-assaisonnement-1",
       "module": "Saveurs",
-      "title": "Sel, gras, acide : le triangle de base",
+      "title": "Assaisonnement : les 5 saveurs et l'art de corriger un plat",
       "level": 1,
-      "xp": 40,
+      "xp": 55,
       "skillIds": [
         "assaisonnement"
       ],
-      "summary": "Apprendre à corriger un plat fade sans ajouter au hasard.",
+      "summary": "Sel, acide, gras, umami, sucré, amer : comprendre comment chaque saveur agit sur les autres et corriger méthodiquement plutôt qu'ajouter au hasard.",
       "content": [
-        "Un plat fade manque souvent de sel, mais pas toujours. Il peut aussi manquer d'acidité ou de matière grasse.",
-        "Le sel intensifie les goûts. L'acide réveille. Le gras arrondit et porte les arômes.",
-        "Réflexe : goûte, corrige peu à peu, puis goûte encore."
+        "L'assaisonnement n'est pas 'mettre du sel'. C'est construire un équilibre dynamique entre 5 saveurs fondamentales : salé, acide, sucré, amer et umami. À ces 5 axes s'ajoute le gras, qui n'est pas une saveur au sens strict mais un vecteur d'arômes fondamental.",
+        "Le sel (NaCl) agit à deux niveaux : il supprime l'amer en bloquant les récepteurs amers sur la langue, et il amplifie la perception des arômes volatils en modifiant leur diffusion. C'est pourquoi une soupe sans sel ne goûte pas 'pas salée' — elle goûte fade, grise, sans relief. Le sel en cuisine n'est pas un goût à rechercher : c'est un révélateur.",
+        "Le sodium a aussi un effet de seuil : en dessous d'une certaine concentration (environ 0,5% dans un liquide), le goût reste plat quelle que soit la qualité des ingrédients. Au-dessus de 1,5-2%, le plat devient désagréablement salé. La zone de travail est étroite — et c'est pour ça qu'il faut goûter constamment plutôt que de saler une fois à la fin.",
+        "L'acidité (pH bas) joue un rôle antagoniste au gras : elle coupe la sensation de lourdeur, réveille les notes fraîches, et allonge la persistance en bouche. Une sauce bolognaise sans acidité de la tomate est lourde et plate ; avec, elle est vivante. Les sources d'acidité : citron, vinaigre (différents grades de douceur), vin blanc réduit, verjus, crème fraîche épaisse, yaourt, tomate fraîche.",
+        "Le gras enrobe les récepteurs gustatifs et prolonge le contact des molécules aromatiques avec la langue. C'est pour ça qu'une touche de beurre en finition 'rondit' une sauce — pas uniquement pour la texture mais parce que le gras ralentit la diffusion des arômes. Beurre, huile d'olive, crème, jaune d'œuf, fromage, marrow : chaque gras a un profil aromatique propre.",
+        "L'umami est la 5e saveur, identifiée par le chimiste japonais Kikunae Ikeda en 1908. Le glutamate monosodique en est la forme pure, mais il est présent naturellement dans : parmesan, anchois, sauce soja, miso, champignons séchés (notamment shiitake), tomate concentrée, bouillon réduit. L'umami seul ne fait pas grand chose — associé au sel et à l'acidité, il donne de la profondeur et de la persistance (ce qu'on appelle 'longueur en bouche').",
+        "Le sucré atténue l'amertume et l'acidité excessive. Une pincée de sucre dans une sauce tomate trop acide ou trop amère est une correction légitime et professionnelle. Le sucré peut venir de l'ingrédient lui-même (oignon caramélisé, carotte, panais) ou être ajouté (sucre, miel, vinaigre balsamique vieilli).",
+        "L'amertume est la saveur la plus incomprise. Une touche d'amertume (zeste de citron, quelques feuilles de roquette, radicchio, chicorée, café) donne de la complexité et empêche un plat d'être monodimensionnel. Mais l'amertume non contrôlée (légumes brûlés, café sur-extrait) est agressive. Le sel est le meilleur antidote à l'amertume.",
+        "La méthode de correction professionnelle : goûte d'abord en identifiant le manque précis. Un plat 'fade' peut manquer de sel, mais aussi d'acidité, d'umami ou de fraîcheur. Corrige une seule variable à la fois, en micro-dose. Attends 10-15 secondes pour que la correction diffuse. Puis goûte à nouveau. Cette méthode te permet d'apprendre ce que chaque correctif fait — au lieu de tout empiler et de ne plus savoir ce qui a changé.",
+        "Attention particulière à l'ordre du sel dans la cuisson : dans une préparation qui va réduire fortement (sauce, jus), sale légèrement en cours et corriger après réduction — la concentration décuple le sel. Dans une viande marinée, le sel va extraire l'eau si laissé trop longtemps (plus de 45 min avant cuisson) — soit tu sales juste avant cuisson, soit tu marines 12-24h pour que le sel pénètre profondément et se redistribue (technique du salage à sec ou 'dry brine')."
       ],
       "quiz": [
         {
@@ -987,182 +1157,258 @@ window.CUISINE_DATA = {
           "explanation": "Un plat peut être salé sans être vivant."
         }
       ],
-      "objective": "Comprendre comment ajuster un plat avec sel, gras, acidité, fraîcheur, sucre, amertume et umami au lieu d’ajouter au hasard.",
-      "principles": [
+      “objective”: “Maîtriser les 5 saveurs fondamentales et le rôle du gras ; corriger méthodiquement un plat en identifiant précisément ce qui manque avant d’ajouter quoi que ce soit.”,
+      “principles”: [
         {
-          "title": "Le sel révèle",
-          "body": "Le sel ne sert pas seulement à rendre salé : il augmente la perception des arômes. Trop peu de sel rend un plat flou."
+          “title”: “Le sel révèle, il ne ‘sale’ pas”,
+          “body”: “En dessous du seuil de 0,5%, tous les goûts sont ternes. Le sel supprime l’amertume et amplifie la diffusion des arômes. Son rôle n’est pas d’être perçu mais d’amplifier ce qui est déjà là. Un plat bien salé ne goûte pas le sel — il goûte lui-même, mais en plus fort.”
         },
         {
-          "title": "L’acide donne de la tension",
-          "body": "Citron, vinaigre, vin ou tomate réveillent un plat lourd ou plat. L’acide doit être ajouté progressivement."
+          “title”: “L’acide crée la tension”,
+          “body”: “Une sauce sans acidité est molle. L’acidité coupe le gras, réveille les notes fraîches et allonge la persistance en bouche. Sources : citron, vinaigre (vin blanc, de Xérès, balsamique), vin blanc réduit, verjus, yaourt, tomate. Attention : l’acide se concentre aussi à la réduction — ajoute-le à la fin pour garder le contrôle.”
         },
         {
-          "title": "Le gras porte les arômes",
-          "body": "Beurre, huile, crème, jaune d’œuf ou fromage arrondissent, prolongent et diffusent les saveurs."
+          “title”: “Le gras est un vecteur, pas un goût”,
+          “body”: “Le gras enrobe les récepteurs gustatifs et ralentit la diffusion des molécules aromatiques — ce qui prolonge le goût. Beurre, huile d’olive, crème, jaune d’œuf ont chacun leur profil. Une cuillerée de beurre froid montée hors feu ne ‘graisse’ pas : elle arrondit, lie et enrichit simultanément.”
         },
         {
-          "title": "La fraîcheur finit le plat",
-          "body": "Herbes, zeste, crudité ou pointe d’acide donnent du relief juste avant service."
+          “title”: “L’umami donne de la profondeur”,
+          “body”: “L’umami (glutamate) seul ne fait presque rien. Associé au sel et à l’acidité, il crée de la longueur en bouche et de la complexité. Sources naturelles : parmesan, anchois, sauce soja, miso, champignons séchés, concentré de tomate, fond de veau réduit. Ajouter un soupçon d’anchois dans une sauce tomate — même si personne ne le détecte — double la profondeur.”
+        },
+        {
+          “title”: “Sucré et amer s’équilibrent mutuellement”,
+          “body”: “Une pointe de sucre corrige une acidité ou amertume excessive (sauce tomate trop acide). Une touche d’amertume (radicchio, zeste, café) évite la monotonie d’un plat très doux ou très gras. Le sel est aussi le meilleur antidote à l’amertume.”
+        },
+        {
+          “title”: “Corriger une variable à la fois”,
+          “body”: “Si tu ajoutes sel + citron + beurre en même temps, tu ne sauras jamais lequel a tout changé. La méthode professionnelle : identifie le manque, ajoute un seul correctif en micro-dose, attends 15 secondes, goûte. Répète si nécessaire. C’est ainsi que tu formes ton palais.”
         }
       ],
-      "techniqueSteps": [
+      “techniqueSteps”: [
         {
-          "title": "Goûter avant de corriger",
-          "action": "Prends une petite bouchée complète : sauce + garniture + élément principal.",
-          "cue": "Tu dois identifier ce qui manque, pas seulement dire “c’est fade”.",
-          "mistake": "Ajouter du sel automatiquement.",
-          "correction": "Demande-toi : manque-t-il de sel, d’acide, de gras ou de fraîcheur ?"
+          “title”: “Goûter en contexte complet”,
+          “action”: “Prends une bouchée qui combine tous les éléments du plat : sauce + protéine + garniture. Le goût d’un élément isolé n’est pas représentatif de l’ensemble.”,
+          “cue”: “Tu dois identifier précisément ce qui manque : sel, tension, profondeur, fraîcheur ou longueur.”,
+          “mistake”: “Goûter uniquement la sauce en la trempant du bout du doigt.”,
+          “correction”: “Use une petite cuillère avec tous les éléments, comme au service.”
         },
         {
-          "title": "Corriger par micro-doses",
-          "action": "Ajoute une petite quantité, mélange, attends quelques secondes, goûte encore.",
-          "cue": "Le plat s’ouvre sans devenir agressif.",
-          "mistake": "Tout corriger d’un coup.",
-          "correction": "Procède en 2 ou 3 ajustements."
+          “title”: “Diagnostiquer avant de corriger”,
+          “action”: “Pose-toi : est-ce fade (manque de sel) ? lourd (manque d’acidité) ? plat (manque d’umami ou de fraîcheur) ? âcre/amer (brûlé, sauce réduite à l’excès) ? trop acide (excès de citron ou vinaigre) ?”,
+          “cue”: “Tu peux nommer le manque en un mot avant d’ouvrir un flacon.”,
+          “mistake”: “Ajouter sel en réflexe conditionné à chaque fois que quelque chose ne va pas.”,
+          “correction”: “Oblige-toi à nommer le manque à voix haute. Ça force l’analyse plutôt que le réflexe.”
         },
         {
-          "title": "Finir hors du feu",
-          "action": "Ajoute herbes, citron, zeste ou bonne huile à la fin quand la chaleur est moins forte.",
-          "cue": "Les arômes restent nets.",
-          "mistake": "Cuire les herbes fraîches trop longtemps.",
-          "correction": "Réserve-les pour la finition."
+          “title”: “Corriger en micro-doses”,
+          “action”: “Ajoute 1 pincée de sel, ou 5 gouttes de citron, ou une larme de vinaigre. Mélange. Attends 15 secondes que la chaleur diffuse la correction. Goûte. Si pas assez, répète.”,
+          “cue”: “Le plat s’ouvre progressivement. Les arômes que tu ne percevais pas deviennent visibles.”,
+          “mistake”: “Tout corriger d’un coup par impatience.”,
+          “correction”: “Travaille en 2-3 micro-ajustements successifs. C’est plus lent mais irréversible — un plat trop salé ne se corrige pas.”
+        },
+        {
+          “title”: “Saler en cours de cuisson, ajuster en fin”,
+          “action”: “Sale les légumes dès la sauteuse (pour extraire l’humidité et concentrer les saveurs). Pour une sauce qui réduit, sale légèrement à mi-cuisson et ajuste après réduction. Pour une viande : soit juste avant cuisson, soit dry brine 12-24h à l’avance.”,
+          “cue”: “La sauce a la même concentration saline en fin de réduction qu’au service.”,
+          “mistake”: “Saler une sauce au début sans anticiper la réduction.”,
+          “correction”: “Une sauce réduite de moitié double sa concentration en sel. Sale à 10% du niveau souhaité en début, et finis au service.”
+        },
+        {
+          “title”: “La finition : le dernier coup de pinceau”,
+          “action”: “Hors feu ou juste au moment de dresser : quelques gouttes de jus de citron frais, un filet d’huile d’olive, quelques feuilles d’herbes cisélées, un tour de moulin à poivre. Ces éléments fragiles perdent tout intérêt à la chaleur.”,
+          “cue”: “Le plat a une note fraîche et lumineuse au premier nez et en bouche.”,
+          “mistake”: “Mettre les herbes fraîches 10 minutes avant la fin et couvrir.”,
+          “correction”: “Toutes les notes fragiles (citron, herbes tendres, huile de qualité, vinaigrette) se mettent au dernier moment, jamais avant.”
         }
       ],
-      "sensoryCues": {
-        "taste": "Un plat juste a du relief, pas seulement du sel. Il donne envie d’une deuxième bouchée.",
-        "smell": "Les notes fraîches doivent rester perceptibles en finition.",
-        "see": "Une finition acide ou herbacée ajoute souvent contraste et couleur.",
-        "hear": "Le son doit rester cohérent avec la technique : frémissement doux, crépitement vif ou silence de repos."
+      “sensoryCues”: {
+        “taste”: “Un plat bien assaisonné donne envie d’une deuxième bouchée. Il a du relief : une attaque, un développement et une fin. Un plat sous-assaisonné est flou et disparaît immédiatement. Sur-salé : sensation persistante et agressive.”,
+        “smell”: “Les herbes fraîches et le zeste donnent des notes volatiles immédiatement perceptibles au nez. Si tu ne les sens pas dans l’assiette, ils ont été ajoutés trop tôt ou chauffés trop longtemps.”,
+        “see”: “Une finition herbacée ou acide ajoute souvent de la couleur et du contraste visuel — le vert d’un persil ciselé, le jaune-orange d’un zeste, le brillant d’un filet d’huile verte.”,
+        “touch”: “Un plat bien lié et assaisonné a une texture en bouche lisse, ni aqueuse ni grasse. Le sel influence aussi la texture : une viande dry brinée a une chair plus ferme et plus juteuse.”
       },
-      "troubleshooting": [
+      “troubleshooting”: [
         {
-          "problem": "Plat fade",
-          "cause": "Manque de sel, d’acidité ou d’umami.",
-          "fix": "Ajoute d’abord une petite pincée de sel, puis teste quelques gouttes de citron ou vinaigre."
+          “problem”: “Plat fade, sans relief”,
+          “cause”: “Manque de sel en dessous du seuil de révélation des arômes.”,
+          “fix”: “Pincée de sel. Goûte 15s plus tard. Si ça ne change rien, le problème est ailleurs (manque d’umami ou d’acide).”
         },
         {
-          "problem": "Plat trop lourd",
-          "cause": "Trop de gras sans tension acide.",
-          "fix": "Ajoute acidité, herbes fraîches ou élément croquant."
+          “problem”: “Plat salé mais toujours plat”,
+          “cause”: “Manque d’acidité, d’umami, ou de fraîcheur — le sel seul ne suffit pas.”,
+          “fix”: “Teste quelques gouttes de jus de citron. Ou une micro-dose d’anchois/sauce soja/concentré de tomate. Ou des herbes fraîches.”
         },
         {
-          "problem": "Plat trop acide",
-          "cause": "Acide ajouté trop brutalement ou sauce trop réduite.",
-          "fix": "Arrondis avec gras, sucre léger, crème, beurre ou dilution selon le plat."
+          “problem”: “Plat lourd, écœurant”,
+          “cause”: “Trop de gras sans contrepoint acide.”,
+          “fix”: “Acidité (citron, vinaigre) ou fraîcheur (herbes, légumes crus). Pas de sel supplémentaire.”
+        },
+        {
+          “problem”: “Plat trop acide”,
+          “cause”: “Acide ajouté trop brutalement ou sauce réduite avec citron ou vin.”,
+          “fix”: “Gras (beurre, crème), touche de sucre, dilution légère. Jamais de sel pour corriger l’acide.”
+        },
+        {
+          “problem”: “Plat trop amer”,
+          “cause”: “Légumes brûlés, café sur-extrait, réduction excessive d’alcool.”,
+          “fix”: “Sel en premier (il bloque les récepteurs amers). Puis gras ou douceur (sucre, oignon caramélisé).”
+        },
+        {
+          “problem”: “Plat trop salé — irréparable ?”,
+          “cause”: “Trop de sel ou réduction non anticipée.”,
+          “fix”: “Dilution (ajouter volume : eau, bouillon non salé, crème). Ajouter un ingrédient neutre (pomme de terre, riz qui absorbe). Ou accepter la leçon et recommencer. Il n’existe pas de ‘détecteur de sel’ qui fonctionne à 100%.”
         }
       ],
-      "practiceDrills": [
+      “practiceDrills”: [
         {
-          "title": "Test sel/acide",
-          "duration": "10 min",
-          "instructions": "Prends une soupe ou sauce simple. Goûte nature, puis avec sel, puis avec une micro-dose de vinaigre.",
-          "goal": "Sentir la différence entre intensité et tension."
+          “title”: “Le test des 6 cuillères”,
+          “duration”: “20 min”,
+          “instructions”: “Prépare 200ml de bouillon de légumes simple non salé. Sépare en 6 tasses. Laisse une nature. Ajoute dans chacune : (1) sel seul, (2) citron seul, (3) sel + citron, (4) sel + citron + trait de sauce soja, (5) sel + citron + filet d’huile d’olive, (6) sel + citron + basilic ciselé. Goûte dans l’ordre. Note ta perception de chaque.”,
+          “goal”: “Expérimenter concrètement ce que chaque saveur fait aux autres. C’est le meilleur entraînement du palais qui existe.”
         },
         {
-          "title": "Correction d’un plat volontairement fade",
-          "duration": "15 min",
-          "instructions": "Prépare une base peu assaisonnée et corrige-la par étapes en notant l’effet.",
-          "goal": "Identifier le manque avant de corriger."
+          “title”: “La sauce tomate : 4 niveaux d’assaisonnement”,
+          “duration”: “25 min”,
+          “instructions”: “Fais une sauce tomate simple. Sépare en 4. Goûte la version nature. Corrige la 2e avec sel seul. La 3e avec sel + pointe de sucre. La 4e avec sel + sucre + filet d’huile d’olive + basilic frais. Compare les 4 versions.”,
+          “goal”: “Comprendre la progression : de plat à équilibré à complexe. Le sel seul ne suffit pas pour la tomate (trop acide naturellement) — c’est une leçon pratique d’équilibre sucré/acide.”
+        },
+        {
+          “title”: “Dry brine sur une cuisse de poulet”,
+          “duration”: “5 min actifs + 12-24h attente”,
+          “instructions”: “Sale généreusement une cuisse de poulet (1% du poids en sel, soit ~8g pour 800g), poivre, thym. Laisse au frigo à découvert 12-24h. Compare à une cuisse cuisinée sans dry brine. Cuisson identique : peau en bas, poêle froide montée à feu moyen.”,
+          “goal”: “Sentir la différence de jutosité, de croquant de peau et de profondeur de saveur que le sel a le temps de pénétrer dans la chair.”
         }
       ],
-      "masteryCriteria": [
-        "Tu goûtes toujours avant de saler.",
-        "Tu sais distinguer plat fade, lourd, acide ou plat.",
-        "Tu ajustes en petites touches.",
-        "Tu utilises la finition pour donner du relief."
+      “masteryCriteria”: [
+        “Tu goûtes avant chaque ajout et tu nommes le manque.”,
+        “Tu sais distinguer fade (sel), lourd (acide), plat (umami/fraîcheur), amer (sel/gras), trop acide (gras/sucre).”,
+        “Tu ajustes en micro-doses sans dépasser le seuil.”,
+        “Tu soles en anticipation de la réduction, pas après.”,
+        “Ta finition arrive au dernier moment et donne une note fraîche perceptible.”
       ],
-      "proTip": "Un bon assaisonnement est rarement spectaculaire : il rend simplement le plat évident.",
-      "mentorBrief": "L’assaisonnement n’est pas 'mettre du sel'. C’est construire un relief : sel pour intensifier, acidité pour tendre, gras pour porter, fraîcheur pour alléger, umami pour donner de la profondeur.",
-      "technicalVocabulary": [
+      “proTip”: “Les chefs assaisonnent 15-20 fois par plat, pas une fois à la fin. Chaque étape de cuisson a ses propres besoins. Le sel de l’eau de cuisson des pâtes n’est pas le sel de la sauce. L’assaisonnement est une conversation continue avec le plat, pas une conclusion.”,
+      “mentorBrief”: “Un cuisinier moyen assaisonne à la fin. Un bon cuisinier assaisonne à chaque étape. Un grand cuisinier sait à quel moment chaque correction fait le plus d’effet. Le palais s’éduque par comparaison consciente — pas par intuition innée. Fais les exercices de dégustation comparative régulièrement : c’est ta séance de musculation du goût.”,
+      “technicalVocabulary”: [
         {
-          "term": "Relief",
-          "definition": "Sensation qu’un plat n’est pas plat : tension, longueur et contraste."
+          “term”: “Umami”,
+          “definition”: “5e saveur fondamentale (après sucré, salé, acide, amer). Mot japonais signifiant ‘saveur délicieuse’. Provient du glutamate, naturellement présent dans parmesan, anchois, champignons séchés, sauce soja, concentré de tomate. Donne de la profondeur et de la persistance en bouche.”
         },
         {
-          "term": "Acidité",
-          "definition": "Élément qui réveille et coupe le gras : citron, vinaigre, vin, yaourt."
+          “term”: “Seuil de détection du sel”,
+          “definition”: “Concentration en dessous de laquelle le sel n’est pas perçu mais agit comme amplificateur d’arômes (environ 0,3-0,5% dans un liquide). En dessous : plat flou. Au-dessus de 1,5% : trop salé. La zone idéale est 0,8-1,2% selon le plat.”
         },
         {
-          "term": "Umami",
-          "definition": "Profondeur savoureuse : bouillon, champignon, tomate concentrée, parmesan, soja."
+          “term”: “Dry brine (salage à sec)”,
+          “definition”: “Technique de sel en avance sur une viande ou volaille (12-48h). Le sel extrait d’abord l’humidité de surface, puis est réabsorbé avec les jus dans la chair — améliorant la jutosité, la pénétration de saveur et le brunissage à la cuisson.”
         },
         {
-          "term": "Finition",
-          "definition": "Dernière correction juste avant de servir."
+          “term”: “Relief (en cuisine)”,
+          “definition”: “Sensation qu’un plat a plusieurs dimensions : une attaque, un développement, une persistance. Contraire de ‘plat’ ou ‘monodimensionnel’. Le relief se construit avec les 5 saveurs, les textures et les températures.”
+        },
+        {
+          “term”: “Finition”,
+          “definition”: “Derniers ajustements au moment du dressage ou juste avant service : citron, herbes fraîches, huile de qualité, sel fin, poivre. Ces éléments doivent être ajoutés en dernier car ils perdent leur intérêt à la chaleur.”
+        },
+        {
+          “term”: “Longueur en bouche (persistance)”,
+          “definition”: “Durée pendant laquelle les saveurs restent perceptibles après avoir avalé. Le gras et l’umami augmentent la longueur. L’acidité peut l’accélérer (nette et courte) ou l’enrichir selon le contexte.”
+        },
+        {
+          “term”: “Acidité”,
+          “definition”: “Saveur de pH bas. Citron, vinaigre, vin, yaourt, verjus. Coupe le gras, réveille les notes fraîches, allonge la persistance. Attention : se concentre à la réduction — ajouter en fin de préparation.”
+        },
+        {
+          “term”: “Verjus”,
+          “definition”: “Jus de raisin non fermenté. Plus doux que le vinaigre, plus aromatique que le citron. Source d’acidité subtile pour sauces, vinaigrettes, marinades. Ingrédient classique de la cuisine médiévale remis au goût du jour.”
         }
       ],
-      "guidedLab": [
+      “guidedLab”: [
         {
-          "task": "Correction en 4 cuillères",
-          "duration": "15 min",
-          "instructions": "Prends une soupe ou sauce neutre. Compare version sel, sel+citron, sel+gras, sel+herbes.",
-          "expected": "Tu sais nommer ce que chaque ajout change."
+          “task”: “Autopsie d’un plat raté”,
+          “duration”: “15 min”,
+          “instructions”: “Prends n’importe quel plat simple que tu trouves ‘pas top’. Goûte et identifie le problème en 5 mots maximum. Puis corrige UNE seule chose. Goûte. Note ce qui a changé. Décide si tu continues à corriger ou si c’est bon.”,
+          “expected”: “Tu commences à avoir un dialogue avec le plat plutôt qu’une réaction automatique.”
         },
         {
-          "task": "Plat trop lourd",
-          "duration": "10 min",
-          "instructions": "Sur une bouchée grasse, ajoute progressivement acidité puis herbes.",
-          "expected": "La sensation devient plus nette sans perdre le goût principal."
+          “task”: “L’effet sel sur le café”,
+          “duration”: “5 min”,
+          “instructions”: “Prépare un café légèrement sur-extrait (amer). Prends deux tasses. Dans l’une, ajoute une micro-pincée de sel (vraiment minuscule, 0,1g). Compare les deux.”,
+          “expected”: “Le sel bloque perceptiblement l’amertume. C’est la démonstration la plus rapide et mémorable du rôle du sel — pas comme exhausteur de goût mais comme bloqueur d’amertume.”
+        },
+        {
+          “task”: “La vinaigrette équilibrée”,
+          “duration”: “20 min”,
+          “instructions”: “Fais une vinaigrette : 3 volumes huile + 1 volume vinaigre de vin + sel + moutarde. Goûte. Puis ajuste : trop acide → plus d’huile. Trop fade → sel ou moutarde. Trop plat → vinaigre de qualité supérieure ou trait de miel. L’objectif : une vinaigrette que tu trouves parfaite, pas celle de la recette.”,
+          “expected”: “Tu comprends que les ratios sont des points de départ, pas des absolus. Ton palais, ton vinaigre, ton huile — tous différents. La recette ne peut pas décider à ta place.”
         }
       ],
-      "progressionStages": [
+      “progressionStages”: [
         {
-          "level": "Débutant",
-          "standard": "Tu sales progressivement."
+          “level”: “Débutant”,
+          “standard”: “Tu goûtes avant de saler et tu sales progressivement.”
         },
         {
-          "level": "Intermédiaire",
-          "standard": "Tu sais distinguer manque de sel et manque d’acidité."
+          “level”: “Intermédiaire”,
+          “standard”: “Tu distingues manque de sel, manque d’acidité et manque d’umami. Tu corriges une variable à la fois.”
         },
         {
-          "level": "Excellent amateur",
-          "standard": "Tu corriges un plat en goûtant méthodiquement, sans empiler les ingrédients."
+          “level”: “Avancé”,
+          “standard”: “Tu sais à quel moment dans la cuisson saler, acidifier et finir pour maximiser l’effet de chaque correction.”
+        },
+        {
+          “level”: “Expert”,
+          “standard”: “Tu goûtes et corriges en temps réel pendant la cuisson, pas à la fin. Tu utilises l’umami, le sucré et l’amer comme outils conscients. Ton palais détecte rapidement le correctif manquant.”
         }
       ],
-      "assessmentRubric": [
+      “assessmentRubric”: [
         {
-          "criterion": "Organisation",
-          "standard": "La mise en place est complète, les gestes s’enchaînent sans chercher un outil ou un ingrédient."
+          “criterion”: “Diagnostic”,
+          “standard”: “Tu peux nommer précisément ce qui manque avant d’ajouter quoi que ce soit.”
         },
         {
-          "criterion": "Observation",
-          "standard": "Tu prends tes décisions sur des signes visibles, sonores, olfactifs ou tactiles, pas seulement sur le minuteur."
+          “criterion”: “Méthode”,
+          “standard”: “Tu corriges une variable à la fois en micro-doses, avec pause et réévaluation entre chaque ajout.”
         },
         {
-          "criterion": "Correction",
-          "standard": "Tu sais identifier une erreur probable et proposer une correction réaliste avant la fin de la recette."
+          “criterion”: “Timing”,
+          “standard”: “Tu sais quand saler (début, milieu, fin selon le plat) et quand ajouter les éléments fragiles (fin ou hors feu).”
         },
         {
-          "criterion": "Répétabilité",
-          "standard": "Tu peux refaire la technique avec un résultat similaire au moins deux fois."
+          “criterion”: “Vocabulaire”,
+          “standard”: “Tu utilises sel, acide, gras, umami, sucré, amer comme vocabulaire de diagnostic, pas seulement ‘c’est pas bon’.”
         }
       ],
-      "antiBacle": [
-        "Ne valide pas mentalement une technique si tu ne peux pas expliquer pourquoi elle fonctionne.",
-        "Ne te fie pas uniquement au temps : vérifie au moins deux repères sensoriels.",
-        "Note l’erreur principale après pratique, même si le plat est bon."
+      “antiBacle”: [
+        “Ne goûte pas juste la sauce en isolation — goûte l’ensemble du plat comme le fera le convive.”,
+        “Ne corrige jamais plusieurs choses en même temps : tu n’apprendras rien.”,
+        “Ne sale pas une sauce qui n’a pas fini de réduire — tu seras à 3x la concentration cible à la fin.”
       ],
-      "commonMisconceptions": [
-        "Assaisonner ne veut pas dire saler plus : il faut parfois ajouter acide, gras, amertume, sucre ou fraîcheur."
+      “commonMisconceptions”: [
+        “Assaisonner ≠ saler. Un plat peut être trop salé et manquer quand même de ‘goût’ (manque d’umami, d’acidité ou de fraîcheur).”,
+        “Le poivre noir n’est pas un assaisonnement de base comme le sel : c’est une épice. Il ajoute du piquant et de l’arôme, pas de l’amplification. Poivrer en fin de cuisson, pas au début (le poivre brûle à haute température et devient amer).”,
+        “L’huile d’olive ne supporte pas les hautes températures : son point de fumée est plus bas que l’huile de tournesol. Pour saisir, utilise huile neutre ou beurre clarifié. Réserve l’huile d’olive de qualité pour les finitions et vinaigrettes.”,
+        “Le sucre dans une sauce salée n’est pas une erreur ou un ‘truc de paresseux’ — c’est une technique de rééquilibrage acide/sucré parfaitement légitime utilisée en cuisine professionnelle.”
       ],
-      "realKitchenTransfer": "Un plat quelconque devient souvent bon grâce à une correction finale précise.",
-      "capstonePractice": {
-        "title": "Exercice de transfert",
-        "instructions": "Choisis une recette déjà faite, applique volontairement cette technique, puis note ce qui a changé dans le résultat.",
-        "expected": "Tu dois pouvoir expliquer une décision concrète : taille, feu, couvercle, ordre ou correction."
+      “realKitchenTransfer”: “Chaque fois que tu goûtes un plat avant de le servir, tu as une occasion d’apprendre. Est-ce que ça manque de sel (flou), d’acide (lourd), de fraîcheur (plat), de profondeur (vide), de sucré (trop acide ou trop amer) ? Si tu peux répondre à cette question, tu progresses. Si tu réagis juste par ‘c’est bon ou c’est pas bon’, tu stagues.”,
+      “capstonePractice”: {
+        “title”: “Le plat en 3 états”,
+        “instructions”: “Prépare n’importe quel plat simple (soupe, sauce, sauté de légumes). Mets-en une portion de côté à l’état ‘naturel’ (peu ou pas assaisonné). Assaisonne le reste normalement et prélève une 2e portion. Pousse jusqu’à un assaisonnement très généreux pour la 3e portion. Compare les 3 côte à côte. Prends des notes sur la texture en bouche, la longueur, la clarté des arômes.”,
+        “expected”: “Tu percevras clairement la zone ‘sous la révélation’, la zone ‘équilibrée’ et la zone ‘agressive’. C’est la carte de ton palais pour ce plat spécifique.”
       },
-      "advancedCases": [
-        "Plat lourd : acidité ou herbes, pas forcément plus de sel.",
-        "Sauce trop acide : gras, douceur ou dilution contrôlée.",
-        "Plat fade mais déjà salé : umami, texture ou fraîcheur."
+      “advancedCases”: [
+        “Sauce réduite trop salée : diluer avec fond non salé ou crème. Ou monter en température avec une pomme de terre coupée qui absorbe.”,
+        “Plat trop acide (sauce tomate, ratatouille) : une pincée de sucre, ou oignons caramélisés, ou crème. Jamais de bicarbonate qui détruit la texture.”,
+        “Fond de braisé trop concentré et amer : dilution + gras (beurre monté) + éventuellement une touche de sucre.”,
+        “Vinaigrette plate : sel + moutarde (émulsifiant et exhausteur) + un vrai vinaigre de qualité (pas de vinaigre bas de gamme).”,
+        “Plat de légumes de printemps (asperges, petits pois) : l’acidité du citron juste avant service les rend deux fois plus frais et vifs — c’est la finition standard en cuisine moderne.”
       ],
-      "expertMistakes": [
-        "Saler avant réduction finale.",
-        "Ajouter citron sans goûter l’effet du sel.",
-        "Confondre piquant et relief."
+      “expertMistakes”: [
+        “Saler une sauce au début sans anticiper la réduction → sur-salage garanti.”,
+        “Ajouter le citron 10 minutes avant la fin et couvrir → il cuit, l’acidité s’émousse, les arômes volatils s’évaporent.”,
+        “Confondre piquant (poivre, piment) et relief (sel+acide+umami) — le piquant peut masquer un manque d’assaisonnement mais ne le corrige pas.”,
+        “Sur-corriger l’amertume avec du sucre : la cause (brûlé) reste, le résultat est un plat à la fois sucré et amer.”
       ],
-      "transferRule": "Corrige un seul axe à la fois, goûte, puis décide le suivant.",
+      “transferRule”: “Avant chaque bouchée de contrôle, pose-toi la question : qu’est-ce que je cherche précisément ? Puis : est-ce que je le trouve ? Puis : si non, quelle est la cause la plus probable ?”,
       "quizIds": [
         "q-v19-l-assaisonnement-1-0",
         "q-v19-l-assaisonnement-1-1",
@@ -1188,17 +1434,22 @@ window.CUISINE_DATA = {
     {
       "id": "l-saisir-1",
       "module": "Cuisson",
-      "title": "Saisir : créer de la coloration",
+      "title": "Saisir : la réaction de Maillard et le contrôle de la chaleur",
       "level": 2,
-      "xp": 45,
+      "xp": 60,
       "skillIds": [
         "saisir"
       ],
-      "summary": "Comprendre chaleur, humidité et coloration.",
+      "summary": "Comprendre la chimie de la coloration (réaction de Maillard vs caramélisation), maîtriser chaleur, humidité et contact pour obtenir une croûte parfaite sur viandes, poissons et légumes.",
       "content": [
-        "Saisir, ce n'est pas juste cuire vite. C'est créer une coloration en surface grâce à une chaleur forte.",
-        "L'ennemi de la coloration est l'eau. Il faut sécher l'aliment, bien chauffer la poêle et éviter de surcharger.",
-        "Quand l'aliment accroche trop, attends quelques secondes : il se détache souvent quand la croûte se forme."
+        "Saisir, c'est provoquer la réaction de Maillard : une réaction chimique entre les acides aminés (protéines) et les sucres réducteurs d'un aliment, à partir de 140-150°C en surface sèche. Elle crée des centaines de composés aromatiques nouveaux — responsables du goût de 'grillé', de 'rôti', de 'croûte'. Ce n'est pas la même chose que la caramélisation (réaction des sucres seuls, à partir de 160-180°C), même si les deux peuvent coexister.",
+        "La réaction de Maillard ne démarre pas tant que la surface de l'aliment est humide. L'eau s'évapore à 100°C — tant qu'il reste de l'eau, la température de surface ne peut pas dépasser 100°C, donc pas de Maillard. C'est pour ça que sécher l'aliment avec du papier absorbant avant cuisson est une étape non négociable, pas optionnelle.",
+        "La poêle doit être préchauffée à vide, puis la matière grasse ajoutée. Pour les protéines (viande, volaille), utilise une matière grasse à point de fumée élevé : huile d'arachide (230°C), huile de tournesol (225°C), ghee (250°C). Le beurre non clarifié brûle à 150-160°C — trop bas pour une saisie forte. Astuce : beurre + huile neutre, l'huile remonte le point de fumée.",
+        "Le test de la poêle chaude : fais glisser une goutte d'eau sur la surface. Si elle s'évapore mollement → trop froide. Si elle danse et fait une boule brillante avant de s'évaporer (effet Leidenfrost) → parfaite pour saisir. Si elle saute et crache → légèrement trop chaude mais utilisable.",
+        "La surcharge de poêle est l'erreur la plus fréquente. Chaque aliment libère de la vapeur en chauffant. Une poêle avec trop d'aliments voit sa température chuter de 160°C à 100°C en quelques secondes — tu te retrouves à étuvler au lieu de saisir. Règle simple : jamais plus de 60-70% de la surface de la poêle occupée.",
+        "Ne pas bouger l'aliment est contre-intuitif mais essentiel. Quand tu poses un steak, les protéines collent d'abord à la poêle. Quand la croûte de Maillard se forme, les protéines de surface se contractent et se rétractent — la pièce se libère d'elle-même. Si tu tires avant, tu arraches la croûte. Si tu attends, elle se détache. C'est le signal qu'il faut retourner.",
+        "Après la saisie, le repos est fondamental. Pendant la cuisson, les protéines se contractent et chassent les jus vers le centre. Le repos hors feu (5-10 min selon l'épaisseur, sous une feuille d'aluminium posée sans serrer) permet aux protéines de se détendre et aux jus de se redistribuer. Couper une viande sans repos = jus sur la planche au lieu d'être dans la bouche.",
+        "Pour les pièces épaisses (pavé de bœuf de 4 cm+, rôti), la technique 'saisir + four' est la bonne méthode : saisir fort 2 min par face en poêle pour la croûte, puis finir au four à 180°C pour atteindre la température à cœur souhaitée sans brûler l'extérieur. C'est le principe du roast anglais et de la plupart des cuissons de restaurant."
       ],
       "quiz": [
         {
@@ -1325,185 +1576,248 @@ window.CUISINE_DATA = {
           "explanation": "On sépare coloration et cuisson à cœur."
         }
       ],
-      "objective": "Créer une coloration nette sans faire bouillir l’aliment, en contrôlant humidité, chaleur, contact et timing.",
+      "objective": "Comprendre et maîtriser la réaction de Maillard : sécher, préchauffer, contrôler la surcharge, respecter le contact, laisser reposer.",
       "principles": [
         {
-          "title": "La coloration demande de la chaleur sèche",
-          "body": "Tant qu’il y a trop d’eau en surface, l’énergie sert à évaporer au lieu de colorer."
+          "title": "La réaction de Maillard, pas la caramélisation",
+          "body": "Maillard = acides aminés + sucres réducteurs, à partir de 140°C en surface sèche. Caramélisation = sucres seuls, à partir de 160-180°C. Les deux donnent une coloration brune mais avec des arômes différents. La viande colore par Maillard ; l’oignon qui caramélise fait les deux simultanément. Comprendre la différence t’aide à cibler le bon traitement."
         },
         {
-          "title": "Le contact est essentiel",
-          "body": "Une surface stable contre la poêle crée une croûte. Bouger trop tôt empêche la coloration."
+          "title": "L’eau bloque à 100°C",
+          "body": "Tant que la surface est humide, toute l’énergie sert à évaporer l’eau et la température ne peut pas dépasser 100°C. Pas de Maillard en dessous de 140°C. Sécher l’aliment n’est pas une question d’hygiène — c’est une condition physique de la coloration."
         },
         {
-          "title": "La surcharge fait chuter la température",
-          "body": "Trop d’aliments libèrent de l’eau et refroidissent la poêle : on étuve au lieu de saisir."
+          "title": "La poêle préchauffée est non-négociable",
+          "body": "Une poêle froide crée un contact trop long avant que la chaleur monte — l’aliment perd ses jus et commence à cuire en vapeur. Une poêle préchauffée crée le choc thermique nécessaire pour que Maillard démarre en surface immédiatement, sans laisser le temps aux jus de s’écouler."
+        },
+        {
+          "title": "La surcharge crée une cuisson vapeur",
+          "body": "Chaque aliment libère de la vapeur en chauffant. Trop d’aliments = trop de vapeur = température chute de 160°C à 100°C = cuisson vapeur, pas saisie. Jamais plus de 60-70% de la surface occupée."
+        },
+        {
+          "title": "La croûte se libère d’elle-même",
+          "body": "Les protéines en surface coagulent et se rétractent quand la croûte de Maillard est formée. L’aliment se libère alors naturellement. Si tu tires et que ça résiste, la croûte n’est pas encore formée — attend 30 secondes. C’est la règle la plus contre-intuitive et la plus fiable en cuisine."
+        },
+        {
+          "title": "Le repos redistribue les jus",
+          "body": "La chaleur contracte les protéines et chasse les jus vers le centre. Le repos hors feu (5-10 min) permet la détente et la redistribution. Couper une côte de bœuf sans repos perd 30-40% des jus sur la planche. Avec repos : les jus restent dans la viande."
         }
       ],
       "techniqueSteps": [
         {
-          "title": "Sécher",
-          "action": "Éponge soigneusement viande, poisson, tofu ou légumes avant cuisson.",
-          "cue": "La surface ne brille plus d’humidité.",
-          "mistake": "Mettre un aliment humide en poêle.",
-          "correction": "Sors-le, sèche-le, puis repars sur poêle chaude."
+          "title": "Sécher soigneusement",
+          "action": "Tamponne l’aliment avec du papier absorbant sur toutes les faces. Pour la viande marinée ou sortie du réfrigérateur, sèche particulièrement bien — la condensation et la marinade humide sont les pires ennemis.",
+          "cue": "La surface est mate, sans brillance d’humidité. Si tu touches avec le dos de la main, rien ne colle.",
+          "mistake": "Mettre une viande sortie directement de la marinade ou du frigo humide en poêle.",
+          "correction": "Sors l’aliment 20-30 min avant cuisson, sèche-le, et laisse-le à température ambiante pour réduire le choc thermique."
         },
         {
-          "title": "Chauffer vraiment",
-          "action": "Préchauffe la poêle avant d’ajouter la matière grasse, puis attends que l’huile soit fluide et brillante.",
-          "cue": "Un aliment posé doit crépiter immédiatement.",
-          "mistake": "Ajouter l’aliment dans une poêle tiède.",
-          "correction": "Retire, chauffe plus fort, recommence en petite quantité."
+          "title": "Préchauffer la poêle puis ajouter la matière grasse",
+          "action": "Chauffe la poêle à vide à feu moyen-vif pendant 2-3 min. Puis ajoute la matière grasse (huile neutre ou ghee pour haute température). Attends que l’huile soit fluide et commence à frétiller légèrement. Test : une goutte d’eau doit danser (effet Leidenfrost) ou s’évaporer instantanément.",
+          "cue": "L’aliment posé crépite immédiatement et fortement.",
+          "mistake": "Ajouter l’aliment dès que l’huile est versée, sans attendre.",
+          "correction": "Si ça ne crépite pas, la poêle est encore trop froide. Retire l’aliment, chauffe encore 60 secondes, recommence."
         },
         {
-          "title": "Ne pas bouger",
-          "action": "Pose l’aliment et laisse-le en contact stable jusqu’à coloration.",
-          "cue": "Il se détache plus facilement quand la croûte est formée.",
-          "mistake": "Remuer toutes les 10 secondes.",
-          "correction": "Attends, observe les bords, retourne une seule fois si possible."
+          "title": "Travailler en petites quantités",
+          "action": "Ne jamais occuper plus de 60-70% de la surface de la poêle. Pour une grande quantité, travaille en 2-3 fournées en réchauffant la poêle entre chaque.",
+          "cue": "Crépitement constant sans bouillonnement aqueux. Pas de ‘pschitt’ humide.",
+          "mistake": "Tout mettre d’un coup pour gagner du temps.",
+          "correction": "Retire la première fournée, remonte la température, fais la deuxième."
         },
         {
-          "title": "Finir à la bonne intensité",
-          "action": "Baisse légèrement le feu si l’extérieur colore plus vite que l’intérieur ne cuit.",
-          "cue": "Coloration dorée/brune, pas noire.",
-          "mistake": "Tout faire à feu maximum.",
-          "correction": "Saisir fort puis finir plus doux."
+          "title": "Laisser le contact sans toucher",
+          "action": "Pose et n’interviens pas pendant la durée de coloration (1-3 min selon l’épaisseur). Observe les bords : quand la coloration remonte à mi-hauteur sur la tranche, c’est souvent le signal de retourner.",
+          "cue": "L’aliment se libère de lui-même sans résistance quand tu essaies de le soulever.",
+          "mistake": "Tirer dès la première résistance ou remuer toutes les 30 secondes.",
+          "correction": "Attends. Si ça résiste, laisse encore 30-60 secondes. La croûte se forme."
+        },
+        {
+          "title": "Gérer l’intensité : saisir + finir",
+          "action": "Pour les pièces épaisses : saisir fort (feu vif) 2 min par face pour la croûte. Puis baisser le feu ou finir au four à 180°C pour atteindre la cuisson à cœur souhaitée. Pour les pièces fines (escalope, filet de sole) : feu vif, 1-2 min par face, c’est tout.",
+          "cue": "Coloration dorée à brune, pas noire. Pas d’odeur âcre de brûlé.",
+          "mistake": "Garder le feu maximal jusqu’à la fin sur une pièce épaisse.",
+          "correction": "Sépare mentalement la coloration (feu fort) de la cuisson à cœur (chaleur douce ou four)."
+        },
+        {
+          "title": "Faire reposer — sans exception",
+          "action": "Retire de la chaleur. Pose sur une grille ou une planche. Recouvre d’une feuille d’aluminium posée (pas serrée) pour conserver la chaleur sans générer de vapeur. Temps de repos : 5 min pour une escalope fine, 10-15 min pour un steak épais, 20-30 min pour un rôti.",
+          "cue": "En coupant après repos, très peu de jus s’écoule sur la planche.",
+          "mistake": "Couper immédiatement ‘pour voir la cuisson’.",
+          "correction": "Si tu as coupé trop tôt et que les jus s’écoulent, mets les morceaux dans le jus perdu pour les imbiber en les retournant."
         }
       ],
       "sensoryCues": {
-        "see": "Surface dorée ou brunie, pas grise. Peu d’eau visible dans la poêle.",
-        "hear": "Crépitement vif et régulier, pas silence ni bouillonnement aqueux.",
-        "smell": "Odeur grillée agréable, jamais acre.",
-        "touch": "Résistance légère en surface, croûte formée."
+        "see": "Surface dorée à acajou, uniforme. Pas de zones grises. Le fond de la poêle a des sucs bruns (pas noirs) — c’est de l’or pour une sauce. La viande a changé de couleur à mi-hauteur sur les bords avant le retournement.",
+        "hear": "Crépitement vif et continu dès le contact. Un ‘tsssss’ franc, pas un ‘bloup bloup’ de cuisson vapeur. Si le son faiblit et devient aqueux, la poêle a refroidi — signe de surcharge.",
+        "smell": "Odeur de rôti, de grillé, de caramel savoureux. Si tu sens l’âcre de brûlé, baisse immédiatement le feu.",
+        "touch": "Avec le doigt (test de cuisson à cœur) : rare = spongieux comme le muscle à la base du pouce détendu. À point = résistance ferme mais pas dure. Bien cuit = ferme et presque rigide."
       },
       "troubleshooting": [
         {
-          "problem": "La viande devient grise",
-          "cause": "Humidité, poêle trop froide ou surcharge.",
-          "fix": "Sécher, augmenter la chaleur, cuire en plusieurs lots."
+          "problem": "La viande devient grise, pas colorée",
+          "cause": "Humidité en surface, poêle trop froide, ou surcharge.",
+          "fix": "Sèche mieux l’aliment. Remonte la température à vide avant d’ajouter. Réduis la quantité par fournée."
         },
         {
-          "problem": "Ça brûle avant de cuire",
-          "cause": "Feu trop fort trop longtemps ou aliment trop épais.",
-          "fix": "Saisis puis finis à feu plus doux ou au four."
+          "problem": "L’aliment brûle à l’extérieur mais reste cru dedans",
+          "cause": "Feu trop fort trop longtemps, pièce trop épaisse.",
+          "fix": "Colore à feu vif 2 min par face, puis baisse à feu doux ou transfère au four à 180°C pour finir la cuisson à cœur."
         },
         {
-          "problem": "L’aliment accroche",
-          "cause": "Tu essaies de retourner trop tôt ou la poêle n’est pas adaptée.",
-          "fix": "Attends la formation de croûte, utilise assez de matière grasse."
+          "problem": "L’aliment accroche et ne se détache pas",
+          "cause": "Soit croûte pas encore formée (trop tôt), soit poêle inadaptée (inox sans assez de matière grasse), soit protéines trop fragiles.",
+          "fix": "Attends encore 30-60 secondes. Si ça accroche toujours, ajoute un filet d’huile sur les bords. Pour les poissons fragiles, utilise une poêle antiadhésive ou un filet de peau retourné sur une spatule."
+        },
+        {
+          "problem": "Beaucoup de jus s’écoule à la coupe",
+          "cause": "Pas de repos ou repos insuffisant.",
+          "fix": "C’est irréparable une fois fait. Pour la prochaine fois : 5-10 min minimum de repos sous alu posé."
+        },
+        {
+          "problem": "Les champignons rendent beaucoup d’eau",
+          "cause": "Surcharge, ou champignons pas assez séchés, ou sel trop tôt.",
+          "fix": "Champignons en une seule couche maximum, poêle très chaude, sel seulement après coloration (le sel extrait l’eau)."
         }
       ],
       "practiceDrills": [
         {
-          "title": "Test de coloration",
-          "duration": "15 min",
-          "instructions": "Saisis deux morceaux de poulet : un humide, un bien séché. Compare la couleur.",
-          "goal": "Voir l’effet direct de l’humidité."
+          "title": "Le test Maillard : humide vs sec",
+          "duration": "20 min",
+          "instructions": "Prends deux tranches de pain de mie identiques. Sèche-en une 10 min au four à 60°C (sans colorer). Pose les deux dans une poêle chaude avec un filet d’huile, côte à côte. Observe la coloration à 1 min, 2 min, 3 min. Compare vitesse et couleur.",
+          "goal": "Voir la différence de vitesse de Maillard entre surface sèche et humide. La tranche sèche colore 2x plus vite."
         },
         {
-          "title": "Poêle non surchargée",
-          "duration": "15 min",
-          "instructions": "Saisis des champignons en une couche puis en poêle pleine. Compare l’eau rendue.",
-          "goal": "Comprendre surcharge et évaporation."
+          "title": "Saisie de filet de poulet : 3 erreurs intentionnelles",
+          "duration": "30 min",
+          "instructions": "Prends 3 filets identiques. Fais-en un humide, poêle froide. Le second sec, poêle chaude mais surchargée avec les 3 filets. Le troisième sec, poêle bien chaude, un seul filet, sans y toucher jusqu’à libération naturelle. Compare les 3.",
+          "goal": "Voir physiquement l’effet de chaque erreur courante."
+        },
+        {
+          "title": "Steak avec et sans repos",
+          "duration": "25 min + 10 min repos",
+          "instructions": "Saisis deux steaks identiques. Coupe le premier immédiatement. Laisse reposer le second 8 min sous alu. Compare les jus sur la planche et la jutosité en bouche.",
+          "goal": "Ressentir concrètement l’effet du repos sur la rétention des jus."
         }
       ],
       "masteryCriteria": [
-        "Tu sais obtenir une coloration sans brûler.",
-        "Tu reconnais un crépitement correct.",
-        "Tu ne remues pas trop tôt.",
-        "Tu adaptes la quantité à la taille de la poêle."
+        "Tu sèches systématiquement l’aliment avant cuisson.",
+        "Tu préchauffes la poêle à vide et tu vérifies la température avant d’ajouter.",
+        "Tu travailles en petites quantités et tu ne surcharges jamais.",
+        "Tu attends la libération naturelle avant de retourner.",
+        "Tu fais reposer la viande avant de couper."
       ],
-      "proTip": "La saisie se juge plus au son et à la couleur qu’au temps indiqué.",
-      "mentorBrief": "Saisir, c’est gérer l’eau et la chaleur. La coloration commence quand l’humidité de surface ne domine plus. La poêle doit chanter, pas bouillir.",
+      "proTip": "Le meilleur indicateur d’une saisie réussie n’est pas la couleur — c’est le son. Un crépitement vif et constant depuis le premier contact jusqu’au retournement signifie que Maillard travaille. Un son aqueux ou faiblissant signifie cuisson vapeur.",
+      "mentorBrief": "La réaction de Maillard est la base aromatique de la cuisine carnivore mondiale — steak, poulet rôti, croûte de pain, bière brune, chocolat, café torréfié. Tous doivent leur arôme complexe à cette même réaction. Comprendre qu’elle ne démarre qu’à 140°C en surface sèche te donne un modèle mental pour tous les problèmes de coloration : manque de chaleur, trop d’humidité, ou surcharge. Trois causes, une même solution.",
       "technicalVocabulary": [
         {
-          "term": "Coloration",
-          "definition": "Brunissement de surface qui développe des arômes."
+          "term": "Réaction de Maillard",
+          "definition": "Réaction chimique entre acides aminés et sucres réducteurs à partir de 140-150°C en surface sèche. Produit des centaines de composés aromatiques responsables du goût de rôti, grillé, croûte. Différente de la caramélisation (sucres seuls, >160°C)."
         },
         {
-          "term": "Sucs",
-          "definition": "Dépôts savoureux au fond de la poêle."
+          "term": "Effet Leidenfrost",
+          "definition": "Phénomène physique où une goutte d’eau sur une surface très chaude forme une couche de vapeur isolante et ‘danse’ sur la surface au lieu de s’évaporer immédiatement. Indicateur visuel qu’une poêle est à bonne température pour saisir."
+        },
+        {
+          "term": "Point de fumée",
+          "definition": "Température à partir de laquelle une matière grasse se décompose et fume. Huile d’arachide : 230°C. Ghee : 250°C. Beurre non clarifié : 150-160°C. Huile d’olive vierge extra : 160-190°C. Pour saisir fort, utiliser une matière grasse à point de fumée >200°C."
+        },
+        {
+          "term": "Sucs de cuisson",
+          "definition": "Dépôts bruns au fond de la poêle après saisie. Concentré de réaction de Maillard et de protéines caramélisées. Base aromatique de toute sauce déglacée. Attention : sucs noirs = brûlé = amer = à jeter."
         },
         {
           "term": "Surcharge",
-          "definition": "Trop d’aliments à la fois, ce qui fait chuter la température."
+          "definition": "Excès d’aliments dans la poêle par rapport à sa capacité thermique. Cause une chute de température sous le seuil de Maillard → cuisson vapeur au lieu de saisie. Règle : maximum 60-70% de la surface occupée."
         },
         {
-          "term": "Repos",
-          "definition": "Temps hors feu qui stabilise les jus d’une viande."
+          "term": "Repos de la viande",
+          "definition": "Période hors feu après cuisson permettant aux protéines contractées de se détendre et aux jus de se redistribuer dans toute la chair. Durée : 5 min (pièce fine) à 30 min (rôti). Essentiel pour une viande juteuse."
+        },
+        {
+          "term": "Ghee (beurre clarifié indien)",
+          "definition": "Beurre dont l’eau et les protéines du lait ont été éliminées par chauffage et filtration. Point de fumée ~250°C. Idéal pour les saisies à très haute température. Goût légèrement noisette."
         }
       ],
       "guidedLab": [
         {
-          "task": "Test poêle vide",
-          "duration": "5 min",
-          "instructions": "Chauffe une poêle, ajoute une goutte d’eau : elle doit perler ou s’évaporer vivement selon le matériau.",
-          "expected": "Tu sais repérer une poêle trop froide."
+          "task": "La poêle en 3 températures",
+          "duration": "15 min",
+          "instructions": "Prends une poêle et une petite cuillère d’eau. Chauffe progressivement. À chaque palier, dépose une goutte : froide (rien), tiède (s’évapore lentement), chaude (grésille), très chaude (effet Leidenfrost : danse en boule). Note à quel moment visuellement tu saurais que c’est prêt pour saisir.",
+          "expected": "Tu intègres le repère visuel du test de l’eau comme substitut au thermomètre."
         },
         {
-          "task": "Deux fournées",
+          "task": "Escalope en 2 fournées",
           "duration": "20 min",
-          "instructions": "Saisis la même quantité en une fournée surchargée puis en deux fournées espacées.",
-          "expected": "Tu vois la différence entre bouillir et colorer."
+          "instructions": "Prends 4 escalopes de poulet. Mets les 4 en même temps dans une poêle 24cm. Observe l’eau rendue, la couleur grise. Laisse une face colorer, retourne, note le résultat. Nettoie la poêle. Refais avec 2 escalopes seulement. Compare côte à côte.",
+          "expected": "La version en 2 fournées a une coloration uniforme et plus intense. La version surchargée a des zones grises et une texture plus molle."
         }
       ],
       "progressionStages": [
         {
           "level": "Débutant",
-          "standard": "Tu sèches l’aliment et attends avant de remuer."
+          "standard": "Tu sèches l’aliment et tu attends avant de retourner. Tu fais le repos systématiquement."
         },
         {
           "level": "Intermédiaire",
-          "standard": "Tu contrôles quantité, chaleur et matière grasse."
+          "standard": "Tu contrôles la quantité par fournée, tu préchauffes correctement. La coloration est uniforme."
         },
         {
-          "level": "Excellent amateur",
-          "standard": "Tu obtiens une coloration régulière sans surcuire l’intérieur."
+          "level": "Avancé",
+          "standard": "Tu adaptes la technique selon l’aliment (viande épaisse, poisson fragile, légumes). Tu utilises la technique saisir + four pour les pièces épaisses."
+        },
+        {
+          "level": "Expert",
+          "standard": "Tu entends si la saisie se déroule correctement. Tu anticipes l’épaisseur, la teneur en eau et le temps de repos selon la pièce. Tes sucs sont bruns, jamais noirs."
         }
       ],
       "assessmentRubric": [
         {
-          "criterion": "Organisation",
-          "standard": "La mise en place est complète, les gestes s’enchaînent sans chercher un outil ou un ingrédient."
+          "criterion": "Préparation",
+          "standard": "Aliment sec, poêle préchauffée, matière grasse adaptée au niveau de chaleur visé."
         },
         {
-          "criterion": "Observation",
-          "standard": "Tu prends tes décisions sur des signes visibles, sonores, olfactifs ou tactiles, pas seulement sur le minuteur."
+          "criterion": "Contrôle de la chaleur",
+          "standard": "Crépitement fort au contact, maintenu pendant toute la cuisson sans bouillonnement aqueux."
         },
         {
-          "criterion": "Correction",
-          "standard": "Tu sais identifier une erreur probable et proposer une correction réaliste avant la fin de la recette."
+          "criterion": "Coloration",
+          "standard": "Surface uniformément dorée à brune. Sucs bruns (pas noirs) au fond de la poêle."
         },
         {
-          "criterion": "Répétabilité",
-          "standard": "Tu peux refaire la technique avec un résultat similaire au moins deux fois."
+          "criterion": "Repos",
+          "standard": "Systématique. Coupe réalisée seulement après repos, peu de jus sur la planche."
         }
       ],
       "antiBacle": [
-        "Ne valide pas mentalement une technique si tu ne peux pas expliquer pourquoi elle fonctionne.",
-        "Ne te fie pas uniquement au temps : vérifie au moins deux repères sensoriels.",
-        "Note l’erreur principale après pratique, même si le plat est bon."
+        "Ne saute pas le séchage — c’est la cause n°1 d’une viande grise.",
+        "Ne retourne pas avant que la pièce se libère d’elle-même.",
+        "Ne coupe jamais une viande sans repos, même si tu es pressé."
       ],
       "commonMisconceptions": [
-        "Bouger souvent ne contrôle pas mieux : parfois il faut laisser le contact créer la croûte."
+        "Saisir ‘scelle les jus’ est un mythe populaire mais faux scientifiquement. La saisie ne scelle rien — les jus continuent de s’écouler pendant toute la cuisson. Ce qui donne une viande juteuse, c’est la cuisson à la bonne température à cœur + le repos.",
+        "Un feu plus fort donne toujours une meilleure saisie — faux. Au-delà d’un certain seuil, la matière grasse brûle avant que Maillard ait le temps de s’installer uniformément. Chaleur vive mais maîtrisée > chaleur extrême incontrôlée.",
+        "Le beurre est la meilleure matière grasse pour saisir — faux. Le beurre brûle à 150-160°C, trop bas pour une vraie saisie. Commence à l’huile neutre, puis ajoute le beurre en fin de cuisson pour l’arôme (beurre noisette sur la pièce)."
       ],
-      "realKitchenTransfer": "Cette compétence sert pour viandes, légumes, champignons, tofu et bases de sauce.",
+      "realKitchenTransfer": "Cette technique s’applique à tout : viandes rouges, volaille, poisson, tofu, légumes racines, champignons, galettes de céréales. La logique est toujours la même : sécher, chaleur sèche, contact stable, repos. Ce qui change, c’est la température cible à cœur et la durée.",
       "capstonePractice": {
-        "title": "Exercice de transfert",
-        "instructions": "Choisis une recette déjà faite, applique volontairement cette technique, puis note ce qui a changé dans le résultat.",
-        "expected": "Tu dois pouvoir expliquer une décision concrète : taille, feu, couvercle, ordre ou correction."
+        "title": "Le poulet rôti à la poêle : saisie + finition four",
+        "instructions": "Prends 2 cuisses de poulet. Dry brine 12h (sel + thym). Sèche. Poêle préchauffée à feu vif, huile d’arachide. Pose peau en bas, sans toucher, 5-6 min jusqu’à peau bien dorée. Retourne 2 min. Transfère au four 180°C pour 15 min. Repos 10 min. Coupe et observe la jutosité.",
+        "expected": "Peau croustillante et colorée, chair juteuse, peu de jus perdu à la coupe. Tu comprends la séparation entre coloration (poêle) et cuisson à cœur (four)."
       },
       "advancedCases": [
-        "Champignons : grande surface, sel plutôt après coloration.",
-        "Viande : sécher, saler, saisir sans bouger.",
-        "Légumes : une seule couche, four ou poêle large."
+        "Champignons : poêle très chaude, une seule couche, sel seulement après coloration, jamais de couvercle.",
+        "Pavé de saumon : côté peau en premier, peau vers le bas, sans toucher 4-5 min jusqu’à coloration remontant à mi-hauteur. Retourne juste 1 min — le centre reste nacré.",
+        "Légumes racines (panais, carotte) : julienne ou tranches fines pour surface maximale, feu vif, miel ou sucre en fin pour accélérer la caramélisation.",
+        "Tofu ferme : sécher 30 min sur papier absorbant, huile d’arachide, feu vif. Résiste à la tentation de toucher — le tofu se libère quand la croûte est formée, comme la viande."
       ],
       "expertMistakes": [
-        "Confondre feu fort et poêle chaude : une poêle fine peut brûler localement sans bien saisir.",
-        "Couvrir pour aller plus vite pendant une saisie.",
-        "Retourner dès que ça accroche."
+        "Confondre feu fort et poêle préchauffée : une poêle fine chauffée rapidement à feu maximal brûle localement sans être uniformément chaude.",
+        "Couvrir pendant la saisie pour ‘accélérer’ : le couvercle piège la vapeur → cuisson vapeur, pas Maillard.",
+        "Retourner dès que ça accroche : la résistance au retournement = croûte pas encore formée, pas un problème.",
+        "Saler les champignons avant cuisson : le sel extrait immédiatement l’eau → impossible d’obtenir une coloration."
       ],
-      "transferRule": "La question n’est pas ‘combien de minutes ?’ mais ‘est-ce que l’eau est partie et la coloration a commencé ?’",
+      "transferRule": "La question à poser avant et pendant : ‘est-ce que j’entends la saisie ou la vapeur ?’ Si c’est de la vapeur (son aqueux, humidité visible), une des trois causes : aliment humide, poêle froide, surcharge.",
       "quizIds": [
         "q-v19-l-saisir-1-0",
         "q-v19-l-saisir-1-1",
@@ -1654,167 +1968,221 @@ window.CUISINE_DATA = {
           "explanation": "On progresse en observant, en isolant une variable, puis en répétant."
         }
       ],
-      "objective": "Transformer les sucs de cuisson en base de sauce courte, en contrôlant liquide, grattage, réduction et finition.",
+      "objective": "Maîtriser la chaîne complète sauce courte : identifier les bons sucs, choisir le bon liquide de déglaçage, contrôler la réduction, monter au beurre et corriger l’assaisonnement après réduction.",
       "principles": [
         {
-          "title": "Les sucs sont du goût concentré",
-          "body": "Les traces brunes au fond d’une poêle ne sont pas des déchets si elles ne sont pas brûlées : ce sont les bases d’une sauce."
+          "title": "Les sucs sont de la réaction de Maillard concentrée",
+          "body": "Les dépôts bruns au fond d’une poêle après cuisson sont des composés de la réaction de Maillard et du collagène caramélisé. Dissous dans un liquide, ils libèrent une intensité aromatique impossible à recréer autrement. Sucs brun doré = or. Sucs noirs = brûlé = amer = jeter."
         },
         {
-          "title": "Le liquide dissout, la réduction concentre",
-          "body": "Déglacer récupère le goût ; réduire donne l’intensité et la texture."
+          "title": "Le choix du liquide de déglaçage détermine le profil de la sauce",
+          "body": "Vin blanc : tension et acidité, idéal pour les poissons et volailles. Vin rouge : structure tannique et profondeur, pour les viandes rouges. Vinaigre : acidité vive, utilise peu et réduis bien. Bouillon (fond brun ou blanc) : corps et profondeur, base la plus polyvalente. Eau : neutre, pour ne pas masquer les sucs. Cidre : fruit et légère acidité pour le porc. Le liquide doit renforcer le plat, pas simplement mouiller la poêle."
         },
         {
-          "title": "La finition équilibre",
-          "body": "Beurre, crème, huile ou acidité ajustent la texture et le relief."
+          "title": "La réduction concentre tout — y compris le sel",
+          "body": "Une réduction par 2 double la concentration en sel, en sucre, en acide. Ne sale jamais avant de réduire. Goûte systématiquement après réduction et avant toute finition."
+        },
+        {
+          "title": "Monter au beurre : une émulsion, pas un ajout",
+          "body": "Monter une sauce au beurre (finition classique française) crée une émulsion temporaire : le beurre froid incorporé hors feu lie le liquide et le gras en une sauce brillante, soyeuse, enrobante. La température est la clé : trop chaude → le beurre se sépare (tranche). Idéal : 70-80°C, hors feu direct, incorporation par petits morceaux en remuant."
+        },
+        {
+          "title": "La sauce courte se construit en 4 temps",
+          "body": "1/ Sucs bruns dans la poêle chaude. 2/ Déglaçage : verser le liquide et gratter. 3/ Réduction : concentration de goût et de texture. 4/ Finition : beurre froid, crème, herbes, acidité selon le plat. Dans cet ordre, pas d’improvisation."
         }
       ],
       "techniqueSteps": [
         {
-          "title": "Identifier les bons sucs",
-          "action": "Observe le fond de poêle : brun doré = utile, noir acre = brûlé.",
-          "cue": "Odeur grillée, pas amère.",
-          "mistake": "Déglacer des sucs brûlés.",
-          "correction": "Jeter, essuyer et recommencer une base propre."
+          "title": "Évaluer les sucs",
+          "action": "Après avoir retiré l’aliment saisi, regarde et hume le fond de poêle. Brun doré ou acajou → parfait. Brun foncé avec quelques zones sombres → utilisable avec précaution. Noir et odeur âcre → jeter, essuyer, recommencer avec beurre propre.",
+          "cue": "Odeur de rôti agréable, pas d’amertume au nez.",
+          "mistake": "Déglacer des sucs noirs en espérant masquer l’amertume.",
+          "correction": "Il n’existe aucune façon de corriger une sauce construite sur des sucs brûlés. Jette et repars propre."
         },
         {
-          "title": "Ajouter le liquide",
-          "action": "Verse bouillon, vin, eau, jus ou crème selon la recette, puis gratte immédiatement.",
-          "cue": "Les traces se dissolvent et colorent le liquide.",
-          "mistake": "Verser trop de liquide.",
-          "correction": "Réduire plus longtemps ou n’en ajouter qu’une partie."
+          "title": "Déglacer : choc liquide + grattage immédiat",
+          "action": "Verse le liquide (vin, bouillon, eau) dans la poêle encore chaude. Le choc thermique décolle les sucs immédiatement. Gratte le fond avec une spatule en bois ou silicone sans attendre — les sucs se dissolvent en 15-30 secondes.",
+          "cue": "Le liquide prend une couleur brune dorée immédiatement. Le fond est propre.",
+          "mistake": "Attendre que le liquide réchauffe avant de gratter.",
+          "correction": "Le grattage doit être immédiat et vigoureux — c’est le mouvement qui dissout les sucs."
         },
         {
-          "title": "Réduire",
-          "action": "Laisse bouillir doucement jusqu’à concentration.",
-          "cue": "La sauce nappe légèrement la cuillère.",
-          "mistake": "Servir une sauce aqueuse.",
-          "correction": "Prolonge la réduction avant d’ajouter le beurre."
+          "title": "Réduire à la texture souhaitée",
+          "action": "Maintiens un frémissement actif (pas une ébullition violente). Réduis selon l’usage : légèrement nappante pour une sauce servie en filet, nappante (enrobe le dos d’une cuillère) pour une sauce servie autour d’une pièce.",
+          "cue": "Test de la cuillère : plonge le dos, passe le doigt → le trait reste net = nappant.",
+          "mistake": "Réduire trop vite à feu vif → la sauce réduit par ébullition trop brutale et concentre l’amertume.",
+          "correction": "Frémissement doux, patient. Temps de réduction ≈ 3-8 min selon le volume initial."
         },
         {
-          "title": "Monter ou équilibrer",
-          "action": "Hors feu, ajoute beurre froid, citron ou herbes selon le besoin.",
-          "cue": "Sauce brillante et plus ronde.",
-          "mistake": "Faire bouillir fortement après le beurre.",
-          "correction": "Coupe le feu et incorpore doucement."
+          "title": "Monter au beurre (finition classique)",
+          "action": "Baisse le feu au minimum ou coupe-le. Attends que la sauce redescende à 70-80°C (frémissement stoppé). Ajoute des morceaux de beurre froid (pas tempéré — le froid crée l’émulsion) un par un en remuant au fouet ou en faisant tournoyer la casserole (technique ‘sauter’). Incorpore jusqu’à consistance brillante.",
+          "cue": "Sauce brillante, lisse, enrobante. Elle nape uniformément une cuillère.",
+          "mistake": "Ajouter le beurre dans une sauce encore à ébullition.",
+          "correction": "Si la sauce tranche (gras visible en surface) : retire du feu, ajoute 1 cuillère à soupe d’eau froide et fouette vigoureusement — l’émulsion peut se récupérer si la température n’est pas trop haute."
+        },
+        {
+          "title": "Assaisonnement final — après réduction",
+          "action": "Goûte seulement maintenant. La réduction a concentré tout : sel, acide, amertume. Corrige sel, puis acidité (quelques gouttes de citron ou vinaigre), puis fraîcheur (herbes ciselées juste avant service).",
+          "cue": "La sauce a du relief et de la longueur. Elle ne goûte pas que le vin ou que le bouillon.",
+          "mistake": "Saler avant réduction ou ajouter le jus de citron trop tôt (il cuit et s’évapore).",
+          "correction": "Citron et herbes fraîches sont les dernières choses dans la sauce, juste avant de verser dans l’assiette."
         }
       ],
       "sensoryCues": {
-        "see": "Sucs dissous, sauce brillante, bulles plus épaisses en fin de réduction.",
-        "smell": "Odeur grillée puis aromatique. Si ça sent le brûlé, ne continue pas.",
-        "taste": "Goût concentré mais pas salé à l’excès.",
-        "hear": "Le son doit rester cohérent avec la technique : frémissement doux, crépitement vif ou silence de repos."
+        "see": "Sauce brillante avec reflets. Couleur caramel à acajou selon la base. Bulles plus grosses et moins fréquentes en fin de réduction. Sauce qui nappe le dos d’une cuillère sans couler immédiatement.",
+        "smell": "Odeur de rôti concentrée, aromatique. Selon le liquide : fruité et acidulé pour le vin, profond et umami pour le fond brun.",
+        "taste": "Goût intense et court — la sauce doit impacter immédiatement. Pas aqueuse, pas agressive. Si tu dois en mettre 5 cuillères pour sentir quelque chose, elle n’est pas assez réduite.",
+        "hear": "Frémissement régulier et doux pendant la réduction. Pas d’ébullition violente."
       },
       "troubleshooting": [
         {
-          "problem": "Sauce trop liquide",
-          "cause": "Réduction insuffisante.",
-          "fix": "Fais réduire avant d’ajouter la finition grasse."
+          "problem": "Sauce trop liquide, aqueuse",
+          "cause": "Réduction insuffisante ou trop de liquide initial.",
+          "fix": "Continue à réduire avant d’ajouter le beurre. Il n’y a pas de raccourci — la réduction prend le temps qu’elle prend."
         },
         {
           "problem": "Sauce trop salée",
-          "cause": "Bouillon salé + réduction excessive.",
-          "fix": "Dilue avec eau ou crème, ajoute un élément non salé."
+          "cause": "Bouillon salé + réduction non anticipée, ou sel ajouté avant réduction.",
+          "fix": "Dilue avec eau ou fond non salé. Ajoute crème fraîche qui adoucit et dilue. La pomme de terre pochée dans la sauce absorbe un peu de sel (efficacité limitée)."
         },
         {
           "problem": "Sauce amère",
-          "cause": "Sucs brûlés.",
-          "fix": "Ne cherche pas à sauver : repars sur une base propre."
+          "cause": "Sucs brûlés déglaçés, ou vin de piètre qualité très réduit.",
+          "fix": "Si légèrement amer : gras (beurre, crème) et touche de sucre. Si franchement amer : la sauce est perdue, recommencer."
+        },
+        {
+          "problem": "Sauce tranchée (gras séparé)",
+          "cause": "Beurre ajouté à température trop haute ou sauce repoussée sur feu fort après montage.",
+          "fix": "Retire du feu. Laisse refroidir légèrement à 60-70°C. Ajoute 1 cuillère d’eau froide et fouette rapidement. Si ça ne reprend pas, la sauce est perdue pour ce service."
+        },
+        {
+          "problem": "Sauce sans profondeur, plate",
+          "cause": "Sucs insuffisants (pièce pas assez saisie), liquide trop neutre, pas assez réduit.",
+          "fix": "Ajoute une cuillère à café de concentré de tomate ou une larme de sauce soja pour l’umami. Ou réduis encore 2-3 min."
         }
       ],
       "practiceDrills": [
         {
-          "title": "Sauce poêle minute",
+          "title": "La sauce poêle minute en 10 min chrono",
+          "duration": "25 min",
+          "instructions": "Saisis une escalope de veau (ou poulet). Réserve. Déglace avec 100ml de vin blanc. Gratte vigoureusement. Ajoute 50ml de fond de veau ou bouillon. Réduis à 3-4 cuillères à soupe. Monte avec 20g de beurre froid hors feu. Goûte, ajuste sel + citron. Verse sur l’escalope.",
+          "goal": "Obtenir 3-4 cuillères de sauce brillante, nappante et goûteuse. Comprendre la chaîne complète en temps réel."
+        },
+        {
+          "title": "Réduction comparative : eau vs vin vs fond",
           "duration": "20 min",
-          "instructions": "Saisis une escalope, réserve-la, déglace au bouillon, réduis, monte au beurre.",
-          "goal": "Obtenir 3 cuillères de sauce brillante."
+          "instructions": "Prends 3 petites poêles avec 100ml de sucs similaires (ou utilise de la même poêle après saisie divisée). Déglace chacune avec : eau, vin blanc, fond brun. Réduis chacune à 2 cuillères. Goûte les 3 côte à côte.",
+          "goal": "Comprendre concrètement ce que chaque liquide apporte comme profil aromatique."
         }
       ],
       "masteryCriteria": [
-        "Tu distingues sucs utiles et brûlé.",
-        "Tu sais réduire jusqu’à texture nappante.",
-        "Tu finis une sauce hors feu sans la casser.",
-        "Tu ajustes sel et acidité après réduction."
+        "Tu distingues sucs bruns utilisables et sucs noirs à jeter.",
+        "Tu choisis le bon liquide de déglaçage selon le plat.",
+        "Tu sais réduire jusqu’à la texture nappante sans brûler.",
+        "Tu montes au beurre hors feu sans trancher.",
+        "Tu assaisonnes uniquement après réduction."
       ],
-      "proTip": "Une bonne sauce courte est petite en volume mais forte en intention.",
-      "mentorBrief": "Une sauce se pense en trois questions : d’où vient le goût, quelle texture je vise, quelle correction finale manque ? Les sauces ratées viennent souvent d’un excès de chaleur, de sel concentré ou d’un gras mal incorporé.",
+      "proTip": "Une sauce courte professionnelle est petite en volume (3-5 cuillères par portion) mais intense en goût. Si tu dois en verser 10 cuillères pour que ça goûte quelque chose, elle n’est pas assez réduite ou la base de sucs était insuffisante.",
+      "mentorBrief": "La sauce courte est la technique de restaurant la plus reproductible à la maison car elle se construit sur ce que tu as déjà dans la poêle. Chaque fois que tu saisis quelque chose, tu as le choix : laver la poêle ou faire une sauce. Apprendre à ne jamais gâcher une poêle marquée — c’est la différence entre cuisiner et cuisiner bien.",
       "technicalVocabulary": [
         {
+          "term": "Sucs de cuisson",
+          "definition": "Dépôts bruns au fond de la poêle après saisie. Concentré de réaction de Maillard et de protéines caramélisées. Base aromatique d’une sauce déglacée."
+        },
+        {
+          "term": "Déglaçage",
+          "definition": "Action de verser un liquide dans une poêle chaude contenant des sucs de cuisson, puis de gratter le fond pour dissoudre ces sucs dans le liquide. Point de départ d’une sauce courte."
+        },
+        {
           "term": "Réduction",
-          "definition": "Évaporation contrôlée pour concentrer goût et texture."
+          "definition": "Évaporation contrôlée d’un liquide par chauffage pour concentrer goût, arômes et texture. Une réduction par 2 double la concentration de tous les composés, y compris le sel."
         },
         {
           "term": "Nappant",
-          "definition": "Texture qui couvre légèrement le dos d’une cuillère."
+          "definition": "Consistance d’une sauce qui enrobe uniformément le dos d’une cuillère et ne coule pas immédiatement quand on trace un trait avec le doigt. Standard minimum pour servir une sauce au restaurant."
         },
         {
-          "term": "Monter",
-          "definition": "Incorporer beurre ou gras pour arrondir et lier."
+          "term": "Monter au beurre",
+          "definition": "Technique de finition : incorporation de morceaux de beurre froid hors feu dans une sauce réduite pour créer une émulsion temporaire. Donne brillance, rondeur et texture enrobante. Température idéale : 70-80°C."
         },
         {
-          "term": "Trancher",
-          "definition": "Séparation visible du gras et du liquide."
+          "term": "Trancher (une sauce)",
+          "definition": "Séparation visible du gras (beurre) et du liquide dans une sauce montée au beurre. Causée par une température trop haute. Sauce récupérable si la température n’est pas trop excessive."
+        },
+        {
+          "term": "Fond brun",
+          "definition": "Bouillon préparé à partir d’os et de légumes torréfiés (colorés au four avant cuisson), donnant une couleur sombre et une profondeur umami intense. Base classique des sauces brunes françaises."
+        },
+        {
+          "term": "Fond blanc",
+          "definition": "Bouillon préparé à partir d’os et légumes sans coloration préalable. Goût délicat et clair. Base des sauces blanches (velouté, sauce suprême)."
         }
       ],
       "guidedLab": [
         {
-          "task": "Réduction mesurée",
-          "duration": "15 min",
-          "instructions": "Réduis 200 ml de bouillon à 100 ml puis goûte avant de saler.",
-          "expected": "Tu constates que la réduction concentre aussi le sel."
+          "task": "Anatomie d’une sauce : les 4 temps observés",
+          "duration": "30 min",
+          "instructions": "Saisis 2 cuisses de poulet. Réserve. Prélève une cuillère de sucs et goûte. Déglace au vin blanc (100ml). Prélève une cuillère du liquide déglaçé et goûte. Réduis à 4 cuillères. Goûte. Monte avec 25g de beurre froid. Goûte la sauce finale. Note tes observations à chaque étape.",
+          "expected": "Tu perçois l’évolution du goût à chaque étape : les sucs bruts sont intenses mais bruts, le déglaçage dilue, la réduction concentre et enrichit, le beurre arrondit et lie."
         },
         {
-          "task": "Sauce récupérée",
-          "duration": "10 min",
-          "instructions": "Fais volontairement trancher une mini sauce beurre puis récupère avec eau froide et fouet.",
-          "expected": "Tu comprends l’effet température + agitation."
+          "task": "Sauver une sauce tranchée",
+          "duration": "15 min",
+          "instructions": "Fais intentionnellement trancher une sauce beurre en gardant le feu allumé après le montage. Observe la séparation. Puis retire du feu, laisse refroidir 1 min, ajoute 1 cuillère d’eau froide et fouette. Compare avant/après.",
+          "expected": "Tu comprends le mécanisme de tranchage (température trop haute) et la méthode de récupération."
         }
       ],
       "progressionStages": [
         {
           "level": "Débutant",
-          "standard": "Tu réduis sans brûler et goûtes avant de saler."
+          "standard": "Tu sais distinguer sucs utilisables et brûlé. Tu déglaces, réduis et assaisonnes après réduction."
         },
         {
           "level": "Intermédiaire",
-          "standard": "Tu ajustes texture et assaisonnement séparément."
+          "standard": "Tu choisis le liquide de déglaçage selon le plat. Tu montes au beurre sans trancher."
         },
         {
-          "level": "Excellent amateur",
-          "standard": "Tu sais sauver une sauce trop liquide, trop acide, trop salée ou tranchée."
+          "level": "Avancé",
+          "standard": "Tu construis une sauce courte en 8-10 min en parallèle du repos de la viande. Tu sauves une sauce tranchée ou trop salée."
+        },
+        {
+          "level": "Expert",
+          "standard": "Tu adaptes la sauce à chaque plat (acide pour le poisson, tanins pour le bœuf, douceur pour le canard). Tu construis des sauces plus complexes en ajoutant fond brun ou aromates à l’étape de déglaçage."
         }
       ],
       "assessmentRubric": [
         {
-          "criterion": "Organisation",
-          "standard": "La mise en place est complète, les gestes s’enchaînent sans chercher un outil ou un ingrédient."
+          "criterion": "Diagnostic des sucs",
+          "standard": "Tu identifies visuellement et olfactivement si les sucs sont utilisables avant de déglacer."
         },
         {
-          "criterion": "Observation",
-          "standard": "Tu prends tes décisions sur des signes visibles, sonores, olfactifs ou tactiles, pas seulement sur le minuteur."
+          "criterion": "Technique de réduction",
+          "standard": "Frémissement doux et régulier. Sauce nappante en fin de réduction. Assaisonnement uniquement après réduction."
         },
         {
-          "criterion": "Correction",
-          "standard": "Tu sais identifier une erreur probable et proposer une correction réaliste avant la fin de la recette."
+          "criterion": "Montage au beurre",
+          "standard": "Sauce brillante sans séparation visible. Beurre ajouté hors feu direct, en petits morceaux."
         },
         {
-          "criterion": "Répétabilité",
-          "standard": "Tu peux refaire la technique avec un résultat similaire au moins deux fois."
+          "criterion": "Adaptation",
+          "standard": "Tu justifies ton choix de liquide de déglaçage en fonction du plat principal."
         }
       ],
       "antiBacle": [
-        "Ne valide pas mentalement une technique si tu ne peux pas expliquer pourquoi elle fonctionne.",
-        "Ne te fie pas uniquement au temps : vérifie au moins deux repères sensoriels.",
-        "Note l’erreur principale après pratique, même si le plat est bon."
+        "Ne déglace jamais des sucs noirs — l’amertume ne part pas à la réduction, elle s’intensifie.",
+        "Ne sale pas avant la réduction — tu ne sais pas encore à quelle concentration tu vas arriver.",
+        "Ne fais pas bouillir une sauce après avoir ajouté le beurre — tu vas la trancher."
       ],
       "commonMisconceptions": [
-        "La technique ne s’acquiert pas en lisant : elle devient utile quand tu sais reconnaître et corriger l’erreur."
+        "Déglacer = mettre n’importe quel liquide dans la poêle. Faux : l’eau est neutre, le vin apporte de l’acidité et des tanins, le fond brun de l’umami. Le choix du liquide construit le profil de la sauce.",
+        "Le beurre dans la sauce est optionnel ou remplaçable par de la margarine. Non : le montage au beurre crée une émulsion spécifique grâce à la lécithine naturelle du beurre. La margarine ne crée pas le même résultat.",
+        "Une sauce tranchée est ratée définitivement. Pas toujours : si la température n’est pas trop haute, eau froide + fouet peut récupérer l’émulsion."
       ],
-      "realKitchenTransfer": "Cherche à réutiliser cette notion dans au moins deux recettes différentes.",
+      "realKitchenTransfer": "Cette technique s’applique après chaque saisie : volaille, veau, bœuf, porc, même légumes rôtis. Chaque fois que tu vois des sucs bruns au fond d’une poêle après cuisson, c’est une invitation à faire une sauce. En 10-12 minutes, tu transformes un fond de poêle en quelque chose que tes convives croiront avoir demandé des heures.",
       "capstonePractice": {
-        "title": "Exercice de transfert",
-        "instructions": "Choisis une recette déjà faite, applique volontairement cette technique, puis note ce qui a changé dans le résultat.",
-        "expected": "Tu dois pouvoir expliquer une décision concrète : taille, feu, couvercle, ordre ou correction."
+        "title": "Le duo saisie-sauce en temps réel",
+        "instructions": "Prends 2 tranches épaisses de veau ou de porc. Saisis 2 min par face (ou plus selon épaisseur). Réserve sous alu pour le repos. Immédiatement dans la même poêle : 1 échalote ciselée suer 1 min. Déglace avec 80ml de vin blanc. Gratte. Réduis 3 min. Ajoute 50ml de crème. Réduis encore 2 min. Goûte, ajuste, herbes fraîches. Verse sur la viande quand les 10 min de repos sont finies.",
+        "expected": "La viande est juteuse (repos), la sauce est prête en même temps (parallélisme). Tu comprends que sauce et repos se font simultanément — pas séquentiellement."
       },
       "quizIds": [
         "q-v19-l-deglacer-1-0",
@@ -1978,161 +2346,220 @@ window.CUISINE_DATA = {
           "explanation": "Une émulsion se répare souvent avec liquide + énergie + chaleur modérée."
         }
       ],
-      "objective": "Comprendre et réussir les émulsions froides et chaudes : vinaigrette, mayonnaise, beurre monté, sauce qui nappe.",
+      "objective": "Comprendre la physico-chimie des émulsions (lécithine, dispersion, stabilité thermique) et maîtriser 4 types d’émulsions : vinaigrette, mayonnaise, beurre blanc, sauce hollandaise/béarnaise.",
       "principles": [
         {
-          "title": "Une émulsion force deux mondes à cohabiter",
-          "body": "Le gras et l’eau ne se mélangent pas naturellement. Il faut dispersion, agitation et parfois un liant."
+          "title": "Une émulsion : gouttelettes d’un liquide dans un autre",
+          "body": "L’eau et le gras ne se mélangent pas naturellement car leurs molécules sont incompatibles (hydrophiles vs hydrophobes). Une émulsion force des gouttelettes de gras à se disperser dans de l’eau (ou l’inverse) grâce à l’agitation et à un émulsifiant. Sans émulsifiant, l’émulsion est instable et se sépare rapidement (vinaigrette sans moutarde)."
         },
         {
-          "title": "L’ajout progressif stabilise",
-          "body": "Ajouter le gras lentement donne le temps aux gouttelettes de se disperser."
+          "title": "La lécithine est l’émulsifiant naturel",
+          "body": "La lécithine est une molécule amphiphile — une extrémité attire l’eau, l’autre attire le gras. Elle s’intercale entre les gouttelettes de gras et le milieu aqueux, stabilisant l’émulsion. Sources naturelles de lécithine : jaune d’œuf (mayonnaise, hollandaise), moutarde (vinaigrette, sauces), beurre (qui en contient naturellement via ses protéines du lait), soja (lécithine industrielle)."
         },
         {
-          "title": "La température peut casser la sauce",
-          "body": "Trop chaud, une sauce au beurre ou aux œufs peut trancher ou coaguler."
+          "title": "Émulsion temporaire vs émulsion permanente",
+          "body": "Émulsion temporaire : vinaigrette sans moutarde. Se sépare en quelques minutes. Émulsion semi-permanente : vinaigrette avec moutarde, beurre blanc. Stable quelques heures. Émulsion permanente : mayonnaise. La lécithine du jaune crée des liaisons stables qui durent des jours."
+        },
+        {
+          "title": "L’ajout progressif du gras est la clé",
+          "body": "Pour créer une émulsion stable, le gras doit être dispersé en gouttelettes infiniment petites dans la phase aqueuse. Si tu verses trop d’huile trop vite, les gouttelettes se regroupent et la phase aqueuse ne peut plus les enrober — l’émulsion casse. Ajouter le gras en filet fin permet à chaque gouttelette d’être immédiatement entourée d’émulsifiant."
+        },
+        {
+          "title": "La température contrôle la stabilité",
+          "body": "Pour les émulsions chaudes (beurre blanc, hollandaise) : au-dessus de 70-80°C, les protéines du jaune d’œuf coagulent, l’émulsion devient granuleuse. En dessous de 60°C, l’émulsion est trop froide pour rester stable. La zone de travail est 60-75°C — c’est étroite et demande de l’attention."
         }
       ],
       "techniqueSteps": [
         {
-          "title": "Créer une base",
-          "action": "Commence par liquide + moutarde, jaune, réduction ou autre élément liant selon la sauce.",
-          "cue": "La base est homogène avant d’ajouter le gras.",
-          "mistake": "Commencer par trop d’huile.",
-          "correction": "Repars avec une petite base propre et incorpore l’échec progressivement."
+          "title": "Vinaigrette émulsifiée (émulsion temporaire à semi-permanente)",
+          "action": "Dans un bol : moutarde + sel + vinaigre, mélange. Verse l’huile en filet très fin en fouettant constamment. Ratio classique : 3 volumes huile pour 1 volume vinaigre. Avec moutarde : tient plusieurs heures. Sans moutarde : à consommer immédiatement.",
+          "cue": "Sauce homogène, opaque, qui enrobe les feuilles de salade sans couler.",
+          "mistake": "Verser toute l’huile en une fois.",
+          "correction": "Vide le bol, repars avec 1 cuillère de moutarde + 1 cuillère de vinaigre, puis incorpore l’échec en filet très progressif."
         },
         {
-          "title": "Ajouter le gras en filet",
-          "action": "Verse lentement tout en fouettant régulièrement.",
-          "cue": "La texture épaissit progressivement.",
-          "mistake": "Verser tout d’un coup.",
-          "correction": "Stoppe l’ajout, fouette, puis reprends très lentement."
+          "title": "Mayonnaise (émulsion permanente)",
+          "action": "1 jaune d’œuf à température ambiante (pas froid — la lécithine est inactive sous 18°C) + 1 cuillère de moutarde + sel + quelques gouttes de citron dans un bol. Fouette. Puis verse l’huile neutre en filet infime au début (quelques gouttes), puis progressivement plus vite une fois l’émulsion amorcée. Environ 150-200ml d’huile pour 1 jaune.",
+          "cue": "La texture devient nettement plus épaisse et blanche après les 30 premières secondes — l’émulsion est amorcée.",
+          "mistake": "Jaune froid, ou huile versée trop vite au début.",
+          "correction": "Si la mayo ne prend pas : prends un nouveau bol propre, 1 cuillère de moutarde, quelques gouttes d’eau. Incorpore ta préparation ratée en filet très progressif — ça prend souvent."
         },
         {
-          "title": "Contrôler la température",
-          "action": "Pour les sauces chaudes, travaille tiède et hors feu quand nécessaire.",
-          "cue": "Sauce brillante, non huileuse.",
-          "mistake": "Faire bouillir après ajout du beurre.",
-          "correction": "Baisse la température, ajoute une cuillère d’eau froide et fouette."
+          "title": "Beurre blanc (émulsion chaude instable)",
+          "action": "Réduction de vinaigre blanc + échalote ciselée jusqu’à presque sec (2 cuillères de liquide restant). Hors feu, laisse refroidir à 60°C. Incorpore beurre froid en petits cubes un à un en fouettant. Maintiens à 60-70°C sur bain-marie tiède ou feux doux intermittent. Passe au chinois. Goûte, ajuste.",
+          "cue": "Sauce crémeuse, opaque, blanc cassé. Nappe uniformément une cuillère. Pas de gras visible séparé.",
+          "mistake": "Ajouter le beurre dans la réduction encore à ébullition.",
+          "correction": "Attends que la sauce refroidisse à 60°C avant d’incorporer le beurre. Si elle tranche : retire du feu, cuillère d’eau froide, fouet vigoureux."
+        },
+        {
+          "title": "Hollandaise (émulsion chaude aux jaunes)",
+          "action": "Réduction de vinaigre blanc + eau par 2. Bain-marie à 60-65°C. Fouette jaunes + réduction jusqu’à ruban (le mélange laisse un ruban en tombant du fouet). Puis incorpore beurre clarifié tiède en filet très progressif en fouettant. Assaisonne sel + citron. Maintiens à 60°C.",
+          "cue": "Sauce épaisse, jaune dorée, crémeuse. Nappe une cuillère et coule lentement.",
+          "mistake": "Bain-marie trop chaud : les jaunes cuisent et la sauce devient granuleuse.",
+          "correction": "Si les jaunes coagulent (grains visibles) : la sauce est perdue. Recommence."
         }
       ],
       "sensoryCues": {
-        "see": "Sauce homogène, brillante, sans flaques grasses.",
-        "touch": "Texture nappante, plus dense qu’un liquide simple.",
-        "taste": "Le gras est intégré, pas lourd ni séparé.",
-        "hear": "Le son doit rester cohérent avec la technique : frémissement doux, crépitement vif ou silence de repos."
+        "see": "Sauce homogène et opaque (émulsion réussie = lumière diffusée par les microgouttelettes). Brillante. Aucune flaque d’huile visible en surface.",
+        "touch": "Texture nappante, plus dense qu’un liquide simple. La mayonnaise doit tenir sur une cuillère renversée sans couler.",
+        "taste": "Le gras est intégré et arrondit — on ne perçoit pas ‘de l’huile’ mais ‘de la richesse’. L’acidité (vinaigre, citron) est en contrepoint et donne du peps.",
+        "smell": "Les notes de l’huile ou du beurre doivent être présentes mais fondues. Pas de sensation de gras cru."
       },
       "troubleshooting": [
         {
           "problem": "Mayonnaise qui ne prend pas",
-          "cause": "Huile ajoutée trop vite ou base trop froide/instable.",
-          "fix": "Repars avec un jaune ou une cuillère d’eau/moutarde, incorpore petit à petit."
+          "cause": "Huile ajoutée trop vite au début, jaune froid (lécithine inactive), ou rapport huile/jaune trop élevé.",
+          "fix": "Nouveau bol, 1 cuillère de moutarde + quelques gouttes d’eau tiède. Incorpore l’échec en filet très lent en fouettant. Si le ratio huile/jaune est respecté, ça reprend presque toujours."
         },
         {
-          "problem": "Sauce au beurre qui tranche",
-          "cause": "Température trop élevée ou réduction trop faible.",
-          "fix": "Hors feu, fouette avec une cuillère d’eau froide."
+          "problem": "Vinaigrette qui se sépare immédiatement",
+          "cause": "Pas assez de moutarde (émulsifiant) ou ajout d’huile trop rapide.",
+          "fix": "Ajoute une cuillère de moutarde et fouette vigoureusement. Ou accepte l’émulsion temporaire et remue juste avant de servir."
+        },
+        {
+          "problem": "Beurre blanc qui tranche",
+          "cause": "Température trop haute (>80°C) ou beurre trop froid ajouté trop vite.",
+          "fix": "Retire du feu immédiatement. Cuillère d’eau froide. Fouet vigoureux. Si la sauce est à <75°C, l’émulsion peut reprendre."
+        },
+        {
+          "problem": "Hollandaise granuleuse",
+          "cause": "Jaunes trop cuits (bain-marie trop chaud, >70°C) → protéines coagulées.",
+          "fix": "Irréparable. Recommence avec bain-marie plus contrôlé. Le bain-marie ne doit jamais bouillonner."
+        },
+        {
+          "problem": "Mayonnaise trop compacte, difficile à étaler",
+          "cause": "Trop d’huile pour trop peu de jaune, ou trop de moutarde.",
+          "fix": "Incorpore 1 cuillère d’eau tiède en fouettant doucement pour détendre la texture."
         }
       ],
       "practiceDrills": [
         {
-          "title": "Vinaigrette stable",
-          "duration": "8 min",
-          "instructions": "Fouette moutarde + vinaigre, puis ajoute l’huile en filet. Compare avec une version huile ajoutée d’un coup.",
-          "goal": "Voir la différence de stabilité."
+          "title": "Vinaigrette : avec et sans moutarde",
+          "duration": "10 min",
+          "instructions": "Prépare deux vinaigrettes identiques (même ratio huile/vinaigre/sel) : une avec moutarde, une sans. Laisse reposer 10 min. Observe la séparation. Fouette et verse sur deux assiettes de salade. Compare le nappé.",
+          "goal": "Comprendre concrètement le rôle émulsifiant de la moutarde."
         },
         {
-          "title": "Sauce récupérée",
+          "title": "Mayo maison : amorçage lent + accélération",
+          "duration": "15 min",
+          "instructions": "Fais une mayo en trois phases : (1) les 30 premières secondes avec l’huile au compte-gouttes, (2) quand l’émulsion est amorcée, passe à un filet fin, (3) quand elle est bien prise, tu peux verser un peu plus vite. Note à quel moment tu sens la texture changer.",
+          "goal": "Maîtriser les phases d’une émulsion et sentir quand l’amorçage est réussi."
+        },
+        {
+          "title": "Sauver une mayo ratée",
           "duration": "10 min",
-          "instructions": "Fais volontairement trancher une petite sauce beurre/eau, puis récupère avec eau froide et fouet.",
-          "goal": "Apprendre la correction."
+          "instructions": "Prépare intentionnellement une mayo ratée (verse toute l’huile d’un coup). Observe la séparation. Prends un nouveau bol, 1 cuillère de moutarde + 1 cuillère d’eau, puis incorpore la mayo ratée en filet. Observe la reprise.",
+          "goal": "Acquérir le réflexe de récupération et comprendre le mécanisme de l’émulsion."
         }
       ],
       "masteryCriteria": [
-        "Tu sais expliquer pourquoi une sauce tranche.",
-        "Tu ajoutes le gras progressivement.",
-        "Tu sais récupérer une émulsion simple.",
-        "Tu adaptes chaleur et fouettage."
+        "Tu sais expliquer le rôle de la lécithine dans une émulsion.",
+        "Tu réussis une mayonnaise maison avec jaune à température ambiante.",
+        "Tu ajoutes systématiquement le gras en filet progressif.",
+        "Tu sais récupérer une émulsion cassée.",
+        "Tu contrôles la température pour les émulsions chaudes."
       ],
-      "proTip": "Une émulsion réussie est autant une question de rythme que de recette.",
-      "mentorBrief": "Une sauce se pense en trois questions : d’où vient le goût, quelle texture je vise, quelle correction finale manque ? Les sauces ratées viennent souvent d’un excès de chaleur, de sel concentré ou d’un gras mal incorporé.",
+      "proTip": "La lécithine du jaune d’œuf peut théoriquement émulsionner jusqu’à 7 litres d’huile pour 1 jaune — bien au-delà de ce dont une mayonnaise a besoin. Si ta mayo ne prend pas, ce n’est presque jamais un problème de quantité d’huile mais de vitesse d’ajout ou de température du jaune.",
+      "mentorBrief": "Les émulsions sont la signature du savoir-faire en saucier. Un plat peut être excellent sans vinaigrette émulsifiée, mais une hollandaise ratée lors d’un brunch de 10 personnes, c’est visible. La maîtrise des émulsions te permet de proposer des finitions lisses, brillantes et enrobantes que les convives perçoivent comme ‘du restaurant’ sans savoir pourquoi.",
       "technicalVocabulary": [
         {
-          "term": "Réduction",
-          "definition": "Évaporation contrôlée pour concentrer goût et texture."
+          "term": "Émulsion",
+          "definition": "Mélange stable de deux liquides non miscibles (eau et gras) obtenu par agitation et présence d’un émulsifiant. Les gouttelettes d’un liquide se dispersent dans l’autre."
         },
         {
-          "term": "Nappant",
-          "definition": "Texture qui couvre légèrement le dos d’une cuillère."
+          "term": "Lécithine",
+          "definition": "Molécule amphiphile (une extrémité hydrophile, une extrémité hydrophobe) qui stabilise les émulsions en s’intercalant à l’interface eau-gras. Présente naturellement dans le jaune d’œuf (phosphatidylcholine), la moutarde et le soja."
         },
         {
-          "term": "Monter",
-          "definition": "Incorporer beurre ou gras pour arrondir et lier."
+          "term": "Émulsion huile-dans-eau",
+          "definition": "Type d’émulsion où des gouttelettes de gras sont dispersées dans une phase aqueuse. Exemples : mayonnaise, vinaigrette émulsifiée, hollandaise."
         },
         {
-          "term": "Trancher",
-          "definition": "Séparation visible du gras et du liquide."
+          "term": "Émulsion eau-dans-huile",
+          "definition": "Type d’émulsion où des gouttelettes d’eau sont dispersées dans une phase grasse. Exemple : beurre (eau dispersée dans la matière grasse du lait)."
+        },
+        {
+          "term": "Trancher (émulsion)",
+          "definition": "Rupture de l’émulsion : le gras et le liquide aqueux se séparent à nouveau. Causée par excès de chaleur (>80°C pour les émulsions chaudes) ou ajout trop rapide du gras."
+        },
+        {
+          "term": "Beurre blanc",
+          "definition": "Sauce émulsionnée chaude classique de la cuisine française. Réduction de vinaigre + échalote, montée au beurre froid. Émulsion semi-permanente à maintenir entre 60-75°C."
+        },
+        {
+          "term": "Hollandaise",
+          "definition": "Sauce émulsionnée chaude aux jaunes d’œufs et beurre clarifié. Base de la sauce béarnaise (+ estragon + cerfeuil). Exige un bain-marie entre 60-65°C pour cuire les jaunes sans les coaguler."
+        },
+        {
+          "term": "Ruban (technique)",
+          "definition": "Consistance obtenue lors du fouettage des jaunes d’œufs : le mélange laisse un ruban visqueux en tombant du fouet. Signal que les jaunes sont assez fouettés pour amorcer une émulsion chaude."
         }
       ],
       "guidedLab": [
         {
-          "task": "Réduction mesurée",
-          "duration": "15 min",
-          "instructions": "Réduis 200 ml de bouillon à 100 ml puis goûte avant de saler.",
-          "expected": "Tu constates que la réduction concentre aussi le sel."
+          "task": "La mayonnaise en 3 huiles différentes",
+          "duration": "30 min",
+          "instructions": "Fais 3 petites mayonnaises (1/3 jaune chacune, soit ~50ml d’huile). Huile 1 : arachide (neutre). Huile 2 : olive légère. Huile 3 : sésame. Compare les 3 couleurs, textures et goûts. La technique est identique — seul le profil aromatique change.",
+          "expected": "Tu comprends que la technique est universelle mais que le choix de l’huile détermine le caractère de la mayonnaise."
         },
         {
-          "task": "Sauce récupérée",
-          "duration": "10 min",
-          "instructions": "Fais volontairement trancher une mini sauce beurre puis récupère avec eau froide et fouet.",
-          "expected": "Tu comprends l’effet température + agitation."
+          "task": "Beurre blanc : zone de confort thermique",
+          "duration": "25 min",
+          "instructions": "Fais une réduction classique (vinaigre blanc + échalote). Puis monte au beurre en 3 phases : (1) à 75°C (beurre incorporé rapidement), (2) refroidie à 60°C (beurre incorporé idéalement), (3) réchauffée à 85°C puis tentative de montage (sauce tranche). Note l’effet de chaque température.",
+          "expected": "Tu ressens où se situe la zone de stabilité (60-75°C) et pourquoi l’excès de chaleur détruit l’émulsion."
         }
       ],
       "progressionStages": [
         {
           "level": "Débutant",
-          "standard": "Tu réduis sans brûler et goûtes avant de saler."
+          "standard": "Tu sais faire une vinaigrette émulsifiée et une mayonnaise maison de base."
         },
         {
           "level": "Intermédiaire",
-          "standard": "Tu ajustes texture et assaisonnement séparément."
+          "standard": "Tu récupères une émulsion cassée. Tu comprends le rôle de la lécithine et de la température."
         },
         {
-          "level": "Excellent amateur",
-          "standard": "Tu sais sauver une sauce trop liquide, trop acide, trop salée ou tranchée."
+          "level": "Avancé",
+          "standard": "Tu maîtrises beurre blanc et hollandaise. Tu choisis ton émulsifiant selon le plat."
+        },
+        {
+          "level": "Expert",
+          "standard": "Tu réalises des émulsions modernes (écume de soja, émulsion froide à la lécithine de soja) et tu identifies rapidement l’erreur sur une émulsion ratée."
         }
       ],
       "assessmentRubric": [
         {
-          "criterion": "Organisation",
-          "standard": "La mise en place est complète, les gestes s’enchaînent sans chercher un outil ou un ingrédient."
+          "criterion": "Compréhension",
+          "standard": "Tu expliques le rôle de la lécithine et la différence entre émulsion temporaire et permanente."
         },
         {
-          "criterion": "Observation",
-          "standard": "Tu prends tes décisions sur des signes visibles, sonores, olfactifs ou tactiles, pas seulement sur le minuteur."
+          "criterion": "Technique d’ajout",
+          "standard": "Tu verses le gras en filet progressif, plus lent au début, sans jamais forcer."
         },
         {
-          "criterion": "Correction",
-          "standard": "Tu sais identifier une erreur probable et proposer une correction réaliste avant la fin de la recette."
+          "criterion": "Contrôle thermique",
+          "standard": "Tu maintiens les émulsions chaudes dans la zone 60-75°C sans thermomètre (tu as intégré les repères visuels)."
         },
         {
-          "criterion": "Répétabilité",
-          "standard": "Tu peux refaire la technique avec un résultat similaire au moins deux fois."
+          "criterion": "Récupération",
+          "standard": "Tu sais récupérer une mayonnaise ratée ou un beurre blanc tranché."
         }
       ],
       "antiBacle": [
-        "Ne valide pas mentalement une technique si tu ne peux pas expliquer pourquoi elle fonctionne.",
-        "Ne te fie pas uniquement au temps : vérifie au moins deux repères sensoriels.",
-        "Note l’erreur principale après pratique, même si le plat est bon."
+        "Ne commence jamais une mayo avec un jaune froid — la lécithine inactive sous 18°C ne peut pas émulsionner.",
+        "Ne verse jamais toute l’huile en une fois, même si tu es pressé.",
+        "Ne maintiens jamais une hollandaise au chaud à >75°C — les jaunes coaguleront."
       ],
       "commonMisconceptions": [
-        "Une émulsion cassée n’est pas toujours perdue : température et eau peuvent souvent la récupérer."
+        "La mayonnaise est difficile à rater — c’est faux si on respecte deux règles : jaune à température ambiante + ajout d’huile progressif. Si on les respecte, la mayo réussit quasiment à coup sûr.",
+        "Le beurre blanc est une sauce très grasse. En réalité, c’est une émulsion : le gras est dispersé en microgouttelettes — la sensation en bouche est crémeuse et légère, pas huileuse comme du beurre fondu.",
+        "Une hollandaise et une béarnaise sont deux sauces différentes. Faux : la béarnaise est une hollandaise aromatisée à la réduction d’estragon + cerfeuil au lieu de vinaigre neutre. La technique est identique."
       ],
-      "realKitchenTransfer": "Mayonnaise, vinaigrette, beurre blanc, hollandaise et carbonara reposent sur la même logique.",
+      "realKitchenTransfer": "La logique émulsion s’applique à : vinaigrette (froid), mayonnaise et dérivés (aioli, rémoulade, sauce tartare), beurre blanc et beurre rouge, hollandaise et béarnaise, sauce carbonara (jaunes + pecorino + eau des pâtes), certaines vinaigrettes chaudes. Dès qu’une recette dit ‘incorpore progressivement’, il s’agit d’une émulsion.",
       "capstonePractice": {
-        "title": "Exercice de transfert",
-        "instructions": "Choisis une recette déjà faite, applique volontairement cette technique, puis note ce qui a changé dans le résultat.",
-        "expected": "Tu dois pouvoir expliquer une décision concrète : taille, feu, couvercle, ordre ou correction."
+        "title": "Le brunch hollandaise : œufs bénédicte",
+        "instructions": "Prépare une hollandaise complète : réduction, fouettage des jaunes au ruban, incorporation du beurre clarifié. En parallèle : poche des œufs (eau frémissante + trait de vinaigre). Dresse sur muffins toastés + jambon + sauce hollandaise. Décoration : ciboulette ciselée + piment d’Espelette.",
+        "expected": "La hollandaise est lisse, dorée, nappante. Les œufs pochés ont un blanc ferme et un jaune coulant. Tu as géré deux préparations délicates en parallèle."
       },
       "quizIds": [
         "q-v19-l-emulsion-1-0",
@@ -2169,14 +2596,18 @@ window.CUISINE_DATA = {
         "oeufs",
         "assaisonnement"
       ],
-      "summary": "Comprendre pourquoi les œufs deviennent secs quand la chaleur est trop forte.",
-      "objective": "Maîtriser la coagulation douce des œufs pour obtenir textures baveuses, crémeuses ou prises sans sécheresse.",
+      "summary": "Maîtriser la coagulation protéique des œufs pour contrôler chaque texture : coulants, brouillés crémeux, omelette baveuse, poché parfait, mollet, œuf au plat nacré.",
+      "objective": "Comprendre les températures de coagulation des protéines du blanc et du jaune, et appliquer ce savoir aux 6 grandes préparations aux œufs.",
       "content": [
-        "L'œuf coagule avec la chaleur : plus la chaleur est forte et longue, plus la texture devient ferme puis sèche.",
-        "Pour une omelette ou des œufs brouillés, la priorité est de retirer la préparation avant qu'elle semble totalement cuite.",
-        "La chaleur résiduelle continue la cuisson pendant quelques secondes. C'est souvent là que tout se joue."
+        "L'œuf est un système protéique binaire : le blanc coagule entre 60 et 65°C (ovotransferrine à 60°C, ovalbumine à 80°C), le jaune coagule à 65-70°C. Cette différence de température est la clé de toutes les préparations aux œufs. Un œuf mollet parfait exploite exactement cet écart : blanc pris, jaune encore coulant.",
+        "La coagulation est un phénomène irréversible. Quand la chaleur dépasse 80°C, les protéines se contractent fortement, chassent l'eau et donnent une texture caoutchouteuse sèche. Il n'y a pas de retour en arrière possible. La prévention est l'unique solution : contrôle de température, feu doux, et arrêt avant la cuisson complète apparente.",
+        "La chaleur résiduelle (inertie thermique) est un phénomène crucial : une poêle chaude continue de cuire l'œuf hors du feu pendant 15-30 secondes. Tous les pros intègrent cette inertie dans leur décision d'arrêt. Règle pratique : retirer 10 secondes avant l'état souhaité — la cuisson finit toute seule.",
+        "Les œufs brouillés crémeux à la française demandent un feu très doux (ou bain-marie) et une agitation constante. La technique consiste à alterner entre le feu et hors du feu : on chauffe, on agite, on retire, on agite, on remet. Ce va-et-vient maintient la température dans la fenêtre de coagulation douce (65-68°C). Finir hors du feu avec une noix de beurre froid et une touche de crème qui arrêtent la cuisson instantanément.",
+        "L'omelette baveuse (technique classique française) se fait sur feu vif avec de l'agitation constante par mouvements circulaires de la poêle. On verse les œufs battus dans le beurre moussant, on agite en secouant la poêle, et on plie avant que le dessus soit pris — il doit rester légèrement tremblant. La texture finale est moelleuse, soyeuse, sans coloration extérieure. L'omelette 'roulée' est la forme classique des brigades professionnelles.",
+        "L'œuf poché exige de l'eau frémissante acidulée (vinaigre blanc : l'acidité accélère la coagulation du blanc), un tourbillon créé à la louche, et un œuf frais cassé au ras de l'eau. Un blanc très frais contient plus d'ovalbumine dense et 'se tient' mieux autour du jaune. La technique du film alimentaire (ramequin huilé, œuf dedans, fermeture en aumônière, pochage dans l'eau) permet de préparer 50 œufs pochés à l'avance en restauration.",
+        "L'œuf à la coque / mollet / dur suit une progression de température à cœur liée au temps. Œufs sortis du réfrigérateur : coque 4 min (blanc encore tremblant), mollet 6-7 min (blanc pris, jaune coulant), dur 10-11 min (tout pris). Arrêter la cuisson dans l'eau glacée immédiatement — la coquille conduit la chaleur et la cuisson continue dans l'œuf chaud posé sur le plan de travail. Le verdissement de l'interface blanc/jaune dans les œufs trop cuits est une réaction chimique entre soufre (blanc) et fer (jaune) formant du sulfure de fer vert-gris, inoffensif mais signe d'une cuisson excessive."
       ],
-      "practice": "Application recommandée : omelette baveuse ou œufs brouillés doux.",
+      "practice": "Application recommandée : série comparative — œufs brouillés à 3 températures différentes, puis omelette baveuse.",
       "quiz": [
         {
           "question": "Pourquoi une omelette devient-elle sèche ?",
@@ -2305,164 +2736,206 @@ window.CUISINE_DATA = {
       ],
       "principles": [
         {
-          "title": "Comprendre avant d’exécuter",
-          "body": "Les œufs cuisent par coagulation progressive : la chaleur forte durcit vite, la chaleur douce donne le contrôle."
+          "title": "Blanc à 60-65°C, jaune à 65-70°C : exploiter l’écart",
+          "body": "Toute la subtilité des préparations aux œufs repose sur ce différentiel de 5-10°C entre la coagulation du blanc et celle du jaune. L’œuf mollet parfait, l’œuf poché, et la crème anglaise exploitent exactement cette fenêtre. Connaître ces températures, c’est comprendre pourquoi chaque préparation exige une approche différente."
         },
         {
-          "title": "Observer le résultat",
-          "body": "Le temps indiqué est une aide. La vraie décision se prend avec la couleur, la texture, l’odeur, le son et le goût."
+          "title": "La coagulation est irréversible : prévenire, pas corriger",
+          "body": "Un œuf trop cuit ne peut pas être rattrapé. Les protéines sur-coagulées ont expulsé leur eau définitivement — la texture caoutchouteuse est permanente. La seule stratégie est préventive : feu doux, vigilance, et arrêt avant l’état souhaité."
         },
         {
-          "title": "Corriger tôt",
-          "body": "Un petit ajustement au bon moment évite souvent une grosse correction impossible à la fin."
+          "title": "Intégrer l’inertie thermique dans chaque décision",
+          "body": "Une poêle chaude, un bain-marie ou un four continuent de cuire l’œuf après l’arrêt du feu. Ce phénomène peut représenter 10-30 secondes de cuisson supplémentaire selon la masse thermique de l’ustensile. Les pros retirent systématiquement ‘en avance’ et laissent la chaleur résiduelle finir."
+        },
+        {
+          "title": "Chaque préparation a ses paramètres : blanc en neige, œuf battu, omelette",
+          "body": "Battre trop fort les œufs incorpore trop d’air et donne une omelette mousseuse et sèche. Battre juste assez (fouet, 20-30 secondes) homogénéise blanc et jaune sans excès d’air. Battre en neige, au contraire, recherche la dénaturation maximale des protéines pour emprisonner l’air — c’est une technique distincte qui requiert un matériel parfaitement propre et sec."
+        },
+        {
+          "title": "L’assaisonnement au bon moment",
+          "body": "Saler les œufs battus trop tôt (plus de 10 min avant la cuisson) commence à dénaturer les protéines et donne une texture plus liquide et moins structurée. Pour les brouillés et omelettes, saler au moment de cuire ou juste après. Poivrer en fin de cuisson (le poivre brûle sur le feu et devient amer)."
         }
       ],
       "techniqueSteps": [
         {
-          "title": "Préparer le contexte",
-          "action": "Lis l’objectif technique, prépare le matériel et identifie le point critique de la recette.",
-          "cue": "Tu sais ce que tu dois observer avant de commencer.",
-          "mistake": "Suivre les étapes sans savoir quel résultat chercher.",
-          "correction": "Reformule l’objectif en une phrase avant de cuisiner."
+          "title": "Battre les œufs correctement selon la préparation",
+          "action": "Pour omelette et brouillés : fouetter 20-30 secondes jusqu’à homogénéisation complète blanc+jaune, sans excès de mousse. L’objectif est un appareil homogène, pas aéré.",
+          "cue": "Appareil uniforme, légèrement mousseux en surface, aucune traînée de blanc visible.",
+          "mistake": "Fouetter 3 minutes jusqu’à mousse importante — texture future sèche et spongieuse.",
+          "correction": "Arrêter quand blanc et jaune sont juste mélangés, pas avant et pas après."
         },
         {
-          "title": "Contrôler l’intensité",
-          "action": "Adapte chaleur, temps, humidité ou agitation selon la réaction observée.",
-          "cue": "Texture brillante et souple, absence d’eau rejetée, couleur uniforme.",
-          "mistake": "Appliquer le temps indiqué même si le résultat visuel dit l’inverse.",
-          "correction": "Ralentis, goûte, touche ou observe avant de continuer."
+          "title": "Chauffer la poêle et le beurre correctement",
+          "action": "Poêle antiadhésive sur feu moyen-fort. Beurre : attendre qu’il mousse et que la mousse commence à retomber (130-140°C). C’est le moment d’ajouter les œufs — assez chaud pour une prise rapide, pas assez pour brûler.",
+          "cue": "Beurre doré avec mousse retombante, léger parfum noisette.",
+          "mistake": "Beurre noir brûlé (amer) ou beurre pas assez chaud (œufs collent et cuisent trop lentement).",
+          "correction": "Si beurre noircit, jeter et recommencer — le beurre brûlé ne se récupère pas."
         },
         {
-          "title": "Finir proprement",
-          "action": "Goûte, ajuste, puis sers avec une finition cohérente : acidité, gras, herbes, sauce ou repos.",
-          "cue": "Le résultat est net, équilibré et volontaire.",
-          "mistake": "Servir sans dernier contrôle.",
-          "correction": "Goûte une bouchée complète avant dressage."
+          "title": "Œufs brouillés crémeux : alternance feu/hors feu",
+          "action": "Feu très doux ou bain-marie. Agitation constante avec spatule en silicone. Alterner 20 sec sur feu / 10 sec hors feu. Retirer définitivement quand les œufs forment de petits grumeaux mous mais restent brillants et coulants. Finir avec 1 noix de beurre froid et 1 cuillère de crème.",
+          "cue": "Petits grumeaux brillants et crémeux, aucune eau rejetée, texture de crème épaisse.",
+          "mistake": "Feu fort et pas d’agitation : les œufs coagulent en bloc, texture granuleuse.",
+          "correction": "Impossible à rattraper. Prévention : feu très doux et agitation ininterrompue."
+        },
+        {
+          "title": "Omelette baveuse : technique des 30 secondes",
+          "action": "Feu vif, beurre moussant. Verser les œufs battus, agiter immédiatement avec une fourchette par mouvements circulaires rapides tout en secouant la poêle. Quand le dessus reste légèrement tremblant (30-45 secondes), plier en deux et glisser dans l’assiette.",
+          "cue": "Surface encore tremblante au pliage, extérieur jaune pâle sans coloration brune, intérieur soyeux.",
+          "mistake": "Attendre que le dessus soit sec avant de plier : omelette sèche et caoutchouteuse.",
+          "correction": "Plier ‘en avance’ — la chaleur résiduelle termine la prise à l’intérieur."
+        },
+        {
+          "title": "Œuf mollet : précision de la minuterie et eau glacée",
+          "action": "Eau bouillante (non salée). Plonger délicatement l’œuf avec une louche. Exactement 6 min 30 pour un œuf de calibre moyen sorti du réfrigérateur. Transférer immédiatement dans un bain d’eau glacée 2 min (arrêt de cuisson). Écaler sous l’eau froide.",
+          "cue": "Blanc entièrement pris, ferme mais non caoutchouteux. Jaune coulant à la découpe.",
+          "mistake": "Poser l’œuf sur le comptoir après sortie de l’eau — la cuisson continue dans la coquille chaude.",
+          "correction": "Eau glacée immédiate et systématique, sans exception."
         }
       ],
       "sensoryCues": {
-        "see": "Texture brillante et souple, absence d’eau rejetée, couleur uniforme.",
-        "smell": "Odeur nette correspondant à la technique, jamais brûlée ni fade.",
-        "taste": "Goût équilibré et lisible, sans correction excessive.",
-        "touch": "Texture conforme à l’objectif : souple, croquante, nappante, friable ou fondante.",
-        "hear": "Le son doit rester cohérent avec la technique : frémissement doux, crépitement vif ou silence de repos."
+        "see": "Brouillés : petits grumeaux brillants, aucune eau rendue. Omelette : jaune pâle, surface légèrement tremblante au pliage. Mollet : blanc nacré entier, jaune brillant et coulant à la coupe.",
+        "smell": "Beurre noisette au moment du versage. Aucune odeur de brûlé (beurre carbonisé ou blanc caramélisé = trop chaud). Parfum lacté et délicat des œufs bien cuits.",
+        "taste": "Texture crémeuse et soyeuse pour brouillés. Légèreté moelleuse pour omelette. Aucun goût soufré ni ferreux (œuf trop cuit).",
+        "touch": "Brouillés : texture crémeuse entre les doigts (ou sur la langue), pas granuleuse. Omelette : moelleuse, légèrement tremblante au toucher avant service.",
+        "hear": "Léger chuchotement en versant l’œuf dans le beurre chaud. Pas de crépitement violent (trop chaud) ni de silence (trop froid)."
       },
       "troubleshooting": [
         {
-          "problem": "Résultat irrégulier",
-          "cause": "Taille, chaleur ou timing non maîtrisés.",
-          "fix": "Standardise la préparation et ajuste l’intensité plus tôt."
+          "problem": "Œufs brouillés granuleux et avec eau rendue",
+          "cause": "Feu trop fort ou cuisson trop longue — protéines sur-coagulées qui expulsent l’eau.",
+          "fix": "Irréparable. Prévention : feu très doux, agitation constante, retirer en avance. Finir toujours avec beurre froid + crème."
         },
         {
-          "problem": "Goût plat",
-          "cause": "Assaisonnement ou finition insuffisants.",
-          "fix": "Corrige sel, acidité, gras ou fraîcheur par petites touches."
+          "problem": "Omelette sèche et brune en dessous",
+          "cause": "Feu trop fort ou attente trop longue avant pliage.",
+          "fix": "Réduire le feu et plier quand la surface est encore tremblante. Le pliage capture la chaleur résiduelle pour finir la prise."
         },
         {
-          "problem": "Texture ratée",
-          "cause": "Cuisson prolongée, chaleur mal adaptée ou manque de repos.",
-          "fix": "Identifie le point de bascule et arrête plus tôt la prochaine fois."
+          "problem": "Œuf mollet au jaune cuit (dur)",
+          "cause": "Trop de minutes ou œuf pas sorti du réfrigérateur (calibre + température comptent).",
+          "fix": "Minuter précisément. Eau glacée immédiate. Tester avec 1 œuf avant la série."
+        },
+        {
+          "problem": "Blanc de l’œuf poché qui se disperse",
+          "cause": "Œuf pas assez frais ou eau trop agitée ou vinaigre insuffisant.",
+          "fix": "Utiliser les œufs les plus frais possible, eau frémissante (pas bouillante), créer un tourbillon, verser au ras de l’eau."
         }
       ],
       "practiceDrills": [
         {
-          "title": "Répétition courte",
-          "duration": "15 min",
-          "instructions": "Réalise une version miniature de la technique en te concentrant sur un seul critère : couleur, texture ou goût.",
-          "goal": "Isoler la compétence sans te perdre dans une recette complète."
+          "title": "Série comparative à 3 feux",
+          "duration": "20 min",
+          "instructions": "Faire 3 séries d’œufs brouillés avec les mêmes œufs, beurre et quantité — mais feu très doux / moyen / fort. Observer et goûter côte à côte.",
+          "goal": "Mémoriser dans les sens l’impact direct de la température sur la texture des œufs."
         },
         {
-          "title": "Comparaison volontaire",
-          "duration": "20 min",
-          "instructions": "Fais deux versions : une correcte, une avec une erreur contrôlée. Compare le résultat.",
-          "goal": "Reconnaître l’erreur par les sens."
+          "title": "Œufs mollets en série : calibrage du temps",
+          "duration": "15 min",
+          "instructions": "Cuire 3 œufs identiques : 5 min 30, 6 min 30, 7 min 30. Eau glacée immédiate. Couper les 3 en deux simultanément. Comparer.",
+          "goal": "Identifier précisément le temps parfait pour son four et son calibre d’œufs — le noter pour les fois suivantes."
         }
       ],
       "masteryCriteria": [
-        "Tu peux expliquer le mécanisme de la technique.",
-        "Tu reconnais les signes de réussite.",
-        "Tu sais nommer l’erreur la plus probable.",
-        "Tu sais proposer une correction réaliste."
+        "Tu peux expliquer les températures de coagulation du blanc (60-65°C) et du jaune (65-70°C).",
+        "Tu reconnais visuellement un œuf brouillé trop cuit avant même de le goûter.",
+        "Tu sais plier une omelette avec le dessus encore tremblant sans hésitation.",
+        "Tu intègres systématiquement l’inertie thermique dans ta décision d’arrêt.",
+        "Tu peux réaliser un œuf mollet avec un jaune coulant par 3 fois consécutives."
       ],
-      "proTip": "Un bon cuisinier ne suit pas seulement le temps : il observe et ajuste.",
-      "mentorBrief": "L’assaisonnement n’est pas 'mettre du sel'. C’est construire un relief : sel pour intensifier, acidité pour tendre, gras pour porter, fraîcheur pour alléger, umami pour donner de la profondeur.",
+      "proTip": "Pour des œufs brouillés de niveau restaurant, cuire au bain-marie à 65-70°C et ne jamais dépasser — la patience remplace la technique. Les meilleurs œufs brouillés du monde (Gordon Ramsay, Heston Blumenthal) cuisent 10-12 minutes avec agitation constante hors du feu.",
+      "mentorBrief": "L’œuf est le seul aliment qui enseigne toute la chimie de la coagulation protéique en 5 minutes. Chaque cuisson d’œuf est une leçon sur la relation chaleur/protéine. Maîtriser l’œuf, c’est maîtriser la logique qui gouverne aussi les viandes, les poissons, les crèmes et les sauces émulsionnées.",
       "technicalVocabulary": [
         {
-          "term": "Relief",
-          "definition": "Sensation qu’un plat n’est pas plat : tension, longueur et contraste."
+          "term": "Coagulation",
+          "definition": "Transformation irréversible des protéines d’état soluble à état solide sous l’effet de la chaleur (ou d’un acide)."
         },
         {
-          "term": "Acidité",
-          "definition": "Élément qui réveille et coupe le gras : citron, vinaigre, vin, yaourt."
+          "term": "Inertie thermique",
+          "definition": "Capacité d’un ustensile ou aliment à continuer de cuire après l’arrêt de la source de chaleur."
         },
         {
-          "term": "Umami",
-          "definition": "Profondeur savoureuse : bouillon, champignon, tomate concentrée, parmesan, soja."
+          "term": "Appareil aux œufs",
+          "definition": "Mélange battu d’œufs entiers (ou parties), utilisé comme base de quiche, omelette, flan, crème."
         },
         {
-          "term": "Finition",
-          "definition": "Dernière correction juste avant de servir."
+          "term": "Œuf baveuse / baveux",
+          "definition": "Qualificatif d’une omelette dont le centre reste légèrement coulant et brillant."
+        },
+        {
+          "term": "Tempérage (œuf)",
+          "definition": "Ajouter progressivement un liquide chaud dans des jaunes froids pour éviter la coagulation brutale (crème anglaise, liaison à l’œuf)."
+        },
+        {
+          "term": "Sulfure de fer",
+          "definition": "Composé vert-gris formé à l’interface jaune/blanc des œufs trop cuits. Inoffensif mais signe de surcuisson."
         }
       ],
       "guidedLab": [
         {
-          "task": "Correction en 4 cuillères",
+          "task": "Œufs brouillés crémeux au bain-marie",
           "duration": "15 min",
-          "instructions": "Prends une soupe ou sauce neutre. Compare version sel, sel+citron, sel+gras, sel+herbes.",
-          "expected": "Tu sais nommer ce que chaque ajout change."
+          "instructions": "4 œufs battus dans un bol au-dessus d’une casserole d’eau frémissante (bain-marie). Agiter en continu avec spatule. Ne jamais laisser sans agitation. Retirer quand texture crémeuse avec petits grumeaux brillants. Finir avec 20g beurre froid + 1 cuillère de crème épaisse. Sel, poivre, ciboulette. Servir sur toast chaud.",
+          "expected": "Texture crémeuse, soyeuse, sans eau rendue, sans granulés fermes. Goût beurré et riche."
         },
         {
-          "task": "Plat trop lourd",
-          "duration": "10 min",
-          "instructions": "Sur une bouchée grasse, ajoute progressivement acidité puis herbes.",
-          "expected": "La sensation devient plus nette sans perdre le goût principal."
+          "task": "Omelette baveuse aux herbes",
+          "duration": "5 min",
+          "instructions": "3 œufs battus 20 secondes, sel. Poêle antiadhésive sur feu vif, 15g beurre. Quand beurre mousse, verser œufs. Agiter avec fourchette en cercles rapides + secouer la poêle. Quand surface encore tremblante : plier en deux et glisser dans l’assiette. Herbes fraîches dessus.",
+          "expected": "Surface jaune pâle sans brunissement, intérieur légèrement coulant. Texture moelleuse et soyeuse."
         }
       ],
       "progressionStages": [
         {
           "level": "Débutant",
-          "standard": "Tu sales progressivement."
+          "standard": "Tu peux réaliser des œufs brouillés non caoutchouteux en cuisant à feu doux avec agitation."
         },
         {
           "level": "Intermédiaire",
-          "standard": "Tu sais distinguer manque de sel et manque d’acidité."
+          "standard": "Tu maîtrises l’inertie thermique : tu retires en avance et obtiens la texture voulue de manière répétable. Œuf mollet fiable."
         },
         {
           "level": "Excellent amateur",
-          "standard": "Tu corriges un plat en goûtant méthodiquement, sans empiler les ingrédients."
+          "standard": "Omelette baveuse en moins d’une minute, œufs brouillés crémeux au bain-marie, œuf poché dans une casserole d’eau vinagrée."
+        },
+        {
+          "level": "Expert",
+          "standard": "Tu maîtrises la crème anglaise (liaison à l’œuf à 82°C), la sabayon (jaunes + sucre au bain-marie), et le tempérage des jaunes pour les sauces."
         }
       ],
       "assessmentRubric": [
         {
-          "criterion": "Organisation",
-          "standard": "La mise en place est complète, les gestes s’enchaînent sans chercher un outil ou un ingrédient."
+          "criterion": "Contrôle de la texture",
+          "standard": "Les œufs brouillés sont crémeux et brillants, pas granuleux ni avec eau rendue."
         },
         {
-          "criterion": "Observation",
-          "standard": "Tu prends tes décisions sur des signes visibles, sonores, olfactifs ou tactiles, pas seulement sur le minuteur."
+          "criterion": "Maîtrise de l’inertie",
+          "standard": "L’omelette est pliée avec le dessus encore tremblant — la cuisson résiduelle finit le travail."
         },
         {
-          "criterion": "Correction",
-          "standard": "Tu sais identifier une erreur probable et proposer une correction réaliste avant la fin de la recette."
+          "criterion": "Précision temporelle",
+          "standard": "L’œuf mollet a le blanc entièrement pris et le jaune coulant — réussir 2 fois consécutives."
         },
         {
-          "criterion": "Répétabilité",
-          "standard": "Tu peux refaire la technique avec un résultat similaire au moins deux fois."
+          "criterion": "Assaisonnement",
+          "standard": "Sel ajouté au bon moment (pas en avance sur les brouillés). Poivre en fin de cuisson."
         }
       ],
       "antiBacle": [
-        "Ne valide pas mentalement une technique si tu ne peux pas expliquer pourquoi elle fonctionne.",
-        "Ne te fie pas uniquement au temps : vérifie au moins deux repères sensoriels.",
-        "Note l’erreur principale après pratique, même si le plat est bon."
+        "Ne bats jamais les œufs plus de 30 secondes pour une omelette — l’excès de mousse donne une texture spongieuse.",
+        "Ne sels jamais les œufs battés plus de 10 minutes avant la cuisson.",
+        "Ne laisse jamais des œufs brouillés sur le feu sans agitation, même 15 secondes.",
+        "Ne pose jamais un œuf mollet chaud sur le comptoir — plonge-le immédiatement dans l’eau glacée."
       ],
       "commonMisconceptions": [
-        "Assaisonner ne veut pas dire saler plus : il faut parfois ajouter acide, gras, amertume, sucre ou fraîcheur."
+        "Mettre du lait dans les œufs brouillés ne les rend pas plus crémeux — il dilue le goût et rend la texture aqueuse. La crème (en petite quantité, en fin) arrête la cuisson ET enrichit la texture.",
+        "L’omelette française n’est pas censée être colorée. Une omelette brune est une erreur de technique, pas un style."
       ],
-      "realKitchenTransfer": "Un plat quelconque devient souvent bon grâce à une correction finale précise.",
+      "realKitchenTransfer": "La logique ‘coagulation + inertie thermique’ s’applique partout : saumon pas trop cuit, crème anglaise à 82°C, viande à cœur. Maîtriser les œufs, c’est comprendre ce mécanisme une fois pour toutes.",
       "capstonePractice": {
-        "title": "Exercice de transfert",
-        "instructions": "Choisis une recette déjà faite, applique volontairement cette technique, puis note ce qui a changé dans le résultat.",
-        "expected": "Tu dois pouvoir expliquer une décision concrète : taille, feu, couvercle, ordre ou correction."
+        "title": "Le petit-déjeuner de maîtrise : 3 préparations aux œufs simultanées",
+        "instructions": "En 20 minutes : œufs brouillés crémeux au bain-marie + omelette baveuse aux herbes + 1 œuf mollet avec eau glacée. Synchroniser les 3 préparations pour servir en même temps. Évaluer les 3 textures côte à côte.",
+        "expected": "Tu dois obtenir les 3 textures caractéristiques distinctes, sans aucune sur-cuisson. Ce défi teste la gestion simultanée de 3 températures et 3 inerties différentes."
       },
       "quizIds": [
         "q-v19-l-oeufs-1-0",
@@ -2500,14 +2973,18 @@ window.CUISINE_DATA = {
         "couteau",
         "assaisonnement"
       ],
-      "summary": "Adapter découpe, feu et timing pour éviter les légumes mous et fades.",
-      "objective": "Cuire les légumes selon l’objectif : croquant, fondant, rôti, glacé ou juste blanchi.",
+      "summary": "Maîtriser les 6 méthodes de cuisson des légumes (rôti, sauté, blanchi, glacé, étuver, confit), comprendre le rôle de l’eau dans les légumes et obtenir la texture et la couleur voulues.",
+      "objective": "Choisir et exécuter la bonne méthode de cuisson pour chaque légume selon la texture voulue, avec les repères sensoriels précis pour chaque résultat.",
       "content": [
-        "Un légume n'a pas une seule bonne cuisson. Il peut être croquant, fondant, rôti, confit ou juste blanchi.",
-        "La taille de découpe détermine la vitesse de cuisson : plus c'est petit, plus ça cuit vite.",
-        "L'assaisonnement final compte autant que la cuisson : sel, herbes, acide et gras réveillent le légume."
+        "Les légumes sont composés de 70 à 95% d’eau selon l’espèce (courgette ~95%, carotte ~88%, pomme de terre ~80%). Cette eau est le levier de toutes les techniques de cuisson : l’évaporer donne coloration et concentration (rôti, sauté), la maintenir donne moelleux et tendreté (étuver, confit), la chasser trop vite donne mollesse et goût dilué.",
+        "La cuisson à la poêle (sauté) repose sur la même logique que pour les viandes : surface sèche, poêle chaude, pas de surcharge. Si la poêle est trop chargée, les légumes libèrent leur eau qui ne peut pas s’évaporer, la température de la poêle chute en dessous de 100°C, et la cuisson devient un braisage non voulu. Résultat : légumes mous, sans coloration, avec goût dilué. Règle : cuire en petites quantités, en plusieurs fois si nécessaire.",
+        "Le blanchiment est la technique de pré-cuisson professionnelle : eau bouillante très salée (10-15g/L, aussi salée que la mer selon le chef Joël Robuchon), plonger les légumes, puis arrêt brutal dans un bain de glace (ou eau très froide). Deux objectifs : fixer la chlorophylle (vert brillant par inactivation des enzymes qui la dégradent) et pré-cuire les légumes pour finir rapidement à la poêle au service. C’est pourquoi les légumes de restaurant gardent ce vert lumineux impossible à obtenir autrement.",
+        "La caramélisation et la réaction de Maillard se produisent dans les légumes comme dans les viandes. Les légumes sucrés (carottes, betteraves, oignons, poivrons) contiennent assez de sucres pour caraméliser à la chaleur sèche — c’est ce qui donne leur saveur douce et concentrée aux légumes rôtis. L’oignon roussi en mirepoix, les carottes glacées, les poivrons confits : tous exploitent ce mécanisme. Condition : surface sèche et chaleur suffisante (four 200°C minimum, poêle bien chaude).",
+        "Le glaçage est une technique élégante : légumes cuits dans un fond d’eau, beurre et sucre. L’eau cuit et attendrit, puis en s’évaporant complètement, le beurre et le sucre forment une laque brillante et sucrée-salée autour du légume. Technique : 200g de carottes tournées ou entières, 20g beurre, 1 cuillère de sucre, eau à mi-hauteur, sel. Couvercle au début pour attendrir, puis découvert pour que l’eau s’évapore et que la laque se forme. C’est le ‘navet glacé à brun’ ou ‘carottes Vichy’ de la cuisine classique.",
+        "La ratatouille niçoise authentique ne se fait pas en mélangeant tout ensemble dans une cocotte. Chaque légume a une teneur en eau, une densité et un temps de cuisson distincts : la courgette est gorgée d’eau et cuit en 8 min, l’aubergine absorbe le gras et doit se vider de son eau avant de colorer, le poivron doit être pelé pour ne pas donner une amertume de peau. Méthode professionnelle : cuire chaque légume séparément à la poêle, les réunir uniquement en fin avec la sauce tomate. Résultat : chaque légume garde sa texture et son goût propre.",
+        "L’assaisonnement final des légumes suit une logique : sel en fin (le sel en début de cuisson des légumes aqueux accélère la libération d’eau), herbes fraîches hors du feu (la chaleur oxyde les huiles essentielles et rend les herbes ternes et amères), acidité en finition (citron, vinaigre — réveille les saveurs), gras de qualité (huile d’olive, beurre, huile de noix) au moment du service pour apporter richesse et arôme sans cuire le gras."
       ],
-      "practice": "Application recommandée : légumes rôtis ou ratatouille.",
+      "practice": "Application recommandée : carottes glacées + haricots verts blanchis et sautés + oignons confits.",
       "quiz": [
         {
           "question": "Pourquoi des morceaux réguliers sont-ils importants ?",
@@ -2635,164 +3112,206 @@ window.CUISINE_DATA = {
       ],
       "principles": [
         {
-          "title": "Comprendre avant d’exécuter",
-          "body": "Chaque légume contient eau, fibres et sucres : la taille, le sel et la chaleur changent radicalement le résultat."
+          "title": "L’eau des légumes est ton ennemie ou ton alliée selon la technique",
+          "body": "Si tu veux de la coloration et de la concentration : chasse l’eau (poêle chaude, pas de couvercle, pas de surcharge, surface sèche). Si tu veux de la tendreté sans coloration : garde l’eau (étuver couvert, braiser). Si tu veux les deux : commence par chasser l’eau, puis ajoute un peu de liquide pour finir à couvert."
         },
         {
-          "title": "Observer le résultat",
-          "body": "Le temps indiqué est une aide. La vraie décision se prend avec la couleur, la texture, l’odeur, le son et le goût."
+          "title": "Pas de surcharge — toujours",
+          "body": "Une poêle surchargée fait chuter la température sous 100°C : les légumes cuisent à la vapeur dans leur propre eau au lieu de colorer. C’est la cause n°1 des légumes mous sans saveur. Règle incontournable : cuire en petites quantités, en plusieurs fois. Espace entre les morceaux = coloration possible."
         },
         {
-          "title": "Corriger tôt",
-          "body": "Un petit ajustement au bon moment évite souvent une grosse correction impossible à la fin."
+          "title": "Blanchi = vert lumineux + pré-cuisson contrôlée",
+          "body": "Le blanchiment en eau très salée suivi d’un bain glacé est la technique professionnelle pour les légumes verts. L’eau bouillante salée cuit rapidement, le bain glacé arrête la cuisson et fixe la chlorophylle à son état le plus brillant en inactivant les enzymes qui la dégradent. Ce vert lumineux ne s’obtient que par cette méthode."
+        },
+        {
+          "title": "Sucres = caramélisation possible",
+          "body": "Les légumes sucrés (carotte, betterave, oignon, poivron, potimarron) contiennent assez de sucres pour caraméliser à la chaleur sèche. Chaleur sèche + surface sèche + temps = légume doré, concentré, avec des arômes complexes. Condition obligatoire : pas d’eau dans la poêle ou le four, sinon la caramélisation ne peut pas démarrer."
+        },
+        {
+          "title": "Assaisonner juste avant de servir",
+          "body": "Le sel en début de cuisson des légumes aqueux (courgette, aubergine, concombre) fait sortir l’eau par osmose et affaisse la texture. Saler en fin de cuisson. Les herbes fraîches doivent être ajoutées hors du feu — la chaleur oxyde leurs huiles essentielles en quelques secondes. L’acidité (citron, vinaigre) en toute fin : elle réveille les saveurs et contraste avec le gras."
         }
       ],
       "techniqueSteps": [
         {
-          "title": "Préparer le contexte",
-          "action": "Lis l’objectif technique, prépare le matériel et identifie le point critique de la recette.",
-          "cue": "Tu sais ce que tu dois observer avant de commencer.",
-          "mistake": "Suivre les étapes sans savoir quel résultat chercher.",
-          "correction": "Reformule l’objectif en une phrase avant de cuisiner."
+          "title": "Choisir la méthode selon l’objectif",
+          "action": "Avant de commencer : décider clairement la texture voulue. Croquant → blanchiment + sauté rapide. Fondant → étuver couvert ou confit. Coloré et concentré → rôti four 200°C ou sauté poêle chaude sans surcharge. Glacé → eau + beurre + sucre, réduction laque.",
+          "cue": "Tu peux formuler en une phrase : ‘je veux X texture avec Y méthode’.",
+          "mistake": "Mélanger les méthodes sans logique : mettre de l’eau dans une poêle pour ‘aider’ alors qu’on voulait colorer.",
+          "correction": "Choisir UNE méthode par légume et l’exécuter jusqu’au bout."
         },
         {
-          "title": "Contrôler l’intensité",
-          "action": "Adapte chaleur, temps, humidité ou agitation selon la réaction observée.",
-          "cue": "Couleur nette, texture volontaire, goût concentré sans mollesse.",
-          "mistake": "Appliquer le temps indiqué même si le résultat visuel dit l’inverse.",
-          "correction": "Ralentis, goûte, touche ou observe avant de continuer."
+          "title": "Blanchiment et choc thermique (légumes verts)",
+          "action": "Grande casserole, eau bouillante à grosse ébullition, saler très généreusement (10-15g/L). Plonger les légumes, ne pas couvrir. Goûter régulièrement. Retirer 30 sec avant la texture voulue (cuisson continue hors eau). Plonger immédiatement dans le bain glacé. Égoutter et sécher.",
+          "cue": "Légumes vert vif et brillant, texture al dente (légèrement résistant sous la dent).",
+          "mistake": "Eau peu salée, pas de bain glacé, légumes restent dans l’eau chaude à refroidir — vert terne et sur-cuit.",
+          "correction": "Bain glacé immédiat et obligatoire. Le vert brillant ne dure que 30-60 secondes sans refroidissement."
         },
         {
-          "title": "Finir proprement",
-          "action": "Goûte, ajuste, puis sers avec une finition cohérente : acidité, gras, herbes, sauce ou repos.",
-          "cue": "Le résultat est net, équilibré et volontaire.",
-          "mistake": "Servir sans dernier contrôle.",
-          "correction": "Goûte une bouchée complète avant dressage."
+          "title": "Légumes sautés à la poêle : technique de la coloration",
+          "action": "Poêle très chaude (sèche, sans gras jusqu’à température). Ajouter huile (pas beurre : point de fumée trop bas). Légumes en une seule couche, sans bouger pendant 2-3 min pour former la croûte. Retourner une fois pour colorer l’autre face. Sel en fin.",
+          "cue": "Léger crépitement continu (pas de chuchotement = poêle trop froide), croûte dorée visible sur au moins une face.",
+          "mistake": "Bouger constamment les légumes → empêche la croûte de se former → légumes mous.",
+          "correction": "Laisser en place sans toucher pendant les premières minutes."
+        },
+        {
+          "title": "Légumes rôtis au four",
+          "action": "Four 200-220°C (chaleur tournante). Légumes découpés en morceaux réguliers. Huile (pas beurre), sel, en une seule couche avec espace entre les morceaux. Retourner à mi-cuisson. Surface légèrement caramélisée en fin.",
+          "cue": "Bords dorés et légèrement croustillants, intérieur fondant, aucun liquide dans la plaque.",
+          "mistake": "Morceaux trop serrés, four pas assez chaud, légumes humides → légumes cuits à la vapeur, mous et pâles.",
+          "correction": "Sécher les légumes avant, espacer, four assez chaud."
+        },
+        {
+          "title": "Glaçage à brun : carotte ou navet",
+          "action": "Légumes dans une sauteuse large. Eau à mi-hauteur, 20g beurre, 1 cuillère café de sucre, sel. Porter à ébullition, couvrir 5 min (attendrir). Découvrir, laisser l’eau s’évaporer complètement. Le beurre et sucre forment alors une laque brillante. Retourner les légumes pour enrober.",
+          "cue": "Laque brillante et dorée, légumes brillants et nappés, aucun liquide restant dans la sauteuse.",
+          "mistake": "Ajouter de l’eau quand la laque commence à se former — tout recommencer depuis le début.",
+          "correction": "La phase de laquage est les 2 dernières minutes quand toute l’eau est partie — surveiller en continu."
         }
       ],
       "sensoryCues": {
-        "see": "Couleur nette, texture volontaire, goût concentré sans mollesse.",
-        "smell": "Odeur nette correspondant à la technique, jamais brûlée ni fade.",
-        "taste": "Goût équilibré et lisible, sans correction excessive.",
-        "touch": "Texture conforme à l’objectif : souple, croquante, nappante, friable ou fondante.",
-        "hear": "Le son doit rester cohérent avec la technique : frémissement doux, crépitement vif ou silence de repos."
+        "see": "Légumes verts : vert lumineux et brillant après blanchiment-choc. Légumes rôtis : bords dorés, croûte colorée. Glacés : laque brillante. Sautés : face colorée uniforme sans traces de mollesse.",
+        "smell": "Caramelisation = arôme sucré, noisette. Légumes verts = arôme végétal frais et vif. Légumes brûlés = odeur âcre et amère (irratrapable).",
+        "taste": "Texture al dente (légumes verts) ou fondante (confits, glacés). Aucun goût aqueux ni dilué. Goût concentré et net du légume avec finition sel + acidité + gras.",
+        "touch": "Légume croquant : résiste légèrement sous la dent. Fondant : cède sans effort. Rôti : croustillant en surface, fondant à l’intérieur.",
+        "hear": "Poêle sautée : crépitement vif et régulier. Chuchotement = poêle trop froide ou trop chargée (température de l’eau). Four rôti : aucun bruit violent mais légère odeur de caramelisation."
       },
       "troubleshooting": [
         {
-          "problem": "Résultat irrégulier",
-          "cause": "Taille, chaleur ou timing non maîtrisés.",
-          "fix": "Standardise la préparation et ajuste l’intensité plus tôt."
+          "problem": "Légumes mous et détrempés après sauté",
+          "cause": "Poêle trop froide, trop chargée, ou couvercle mis = cuisson vapeur involontaire.",
+          "fix": "Vider la poêle, augmenter le feu, recommencer par petites quantités. Légumes déjà mous : impossible à recroustiller, servir comme garniture de sauce."
         },
         {
-          "problem": "Goût plat",
-          "cause": "Assaisonnement ou finition insuffisants.",
-          "fix": "Corrige sel, acidité, gras ou fraîcheur par petites touches."
+          "problem": "Légumes verts qui virent au vert terne ou kaki",
+          "cause": "Pas de bain glacé, ou légumes laissés trop longtemps dans l’eau chaude — les enzymes dégradent la chlorophylle.",
+          "fix": "Irréversible. Prévention : bain glacé immédiat, systématique, pendant 2-3 min minimum."
         },
         {
-          "problem": "Texture ratée",
-          "cause": "Cuisson prolongée, chaleur mal adaptée ou manque de repos.",
-          "fix": "Identifie le point de bascule et arrête plus tôt la prochaine fois."
+          "problem": "Légumes rôtis pâles et sans saveur",
+          "cause": "Four pas assez chaud, morceaux trop serrés ou légumes humides qui ont libéré trop de vapeur.",
+          "fix": "Monter le four à 220°C, espacer les morceaux, sécher les légumes avec du papier absorbant avant d’huiler."
+        },
+        {
+          "problem": "Laque qui brûle dans le glaçage",
+          "cause": "Trop peu de liquide initial ou feu trop fort pendant la phase de laquage.",
+          "fix": "Surveiller en continu les 2 dernières minutes. Dès coloration trop sombre : ajouter 1-2 cuillères d’eau et retourner."
         }
       ],
       "practiceDrills": [
         {
-          "title": "Répétition courte",
+          "title": "Haricots verts : blanchiment et choc thermique",
           "duration": "15 min",
-          "instructions": "Réalise une version miniature de la technique en te concentrant sur un seul critère : couleur, texture ou goût.",
-          "goal": "Isoler la compétence sans te perdre dans une recette complète."
+          "instructions": "200g de haricots verts. Eau bouillante très salée (1 cuillère de sel). Cuire 3 min. Bain glacé immédiat 2 min. Observer la couleur. Ensuite, sauté 2 min à la poêle avec beurre, ail, sel en fin. Comparer la couleur avant et après choc, et la texture finale.",
+          "goal": "Comprendre physiquement l’effet du bain glacé sur la couleur et comment le sauté rapide termine sans altérer."
         },
         {
-          "title": "Comparaison volontaire",
+          "title": "Carottes glacées à brun",
           "duration": "20 min",
-          "instructions": "Fais deux versions : une correcte, une avec une erreur contrôlée. Compare le résultat.",
-          "goal": "Reconnaître l’erreur par les sens."
+          "instructions": "4 carottes entières ou taillées en bâtonnets. Dans une sauteuse : eau à mi-hauteur, 20g beurre, 1 cuillère café de sucre, sel. Couvrir, cuire 8 min. Découvrir, laisser l’eau s’évaporer. Observer la transformation en laque. Retourner pour enrober.",
+          "goal": "Observer la transition eau/laque et comprendre le glaçage comme technique de concentration et finition."
         }
       ],
       "masteryCriteria": [
-        "Tu peux expliquer le mécanisme de la technique.",
-        "Tu reconnais les signes de réussite.",
-        "Tu sais nommer l’erreur la plus probable.",
-        "Tu sais proposer une correction réaliste."
+        "Tu peux citer 5 méthodes de cuisson des légumes avec leur objectif respectif.",
+        "Tu sais pourquoi ne jamais surcharger une poêle quand on veut colorer.",
+        "Tu obtiens systématiquement des légumes verts brillants après blanchiment-choc.",
+        "Tu sais réaliser un glaçage à brun et identifier le moment précis de formation de la laque.",
+        "Tu assaisonnes en fin de cuisson avec sel, acidité et gras de qualité."
       ],
-      "proTip": "Un bon cuisinier ne suit pas seulement le temps : il observe et ajuste.",
-      "mentorBrief": "Le couteau n’est pas un geste décoratif : il conditionne sécurité, régularité, cuisson et présentation. Une découpe irrégulière crée des légumes à moitié crus et à moitié mous.",
+      "proTip": "Le secret des légumes de restaurant : beurre, sel et acidité en finition, toujours. Même des légumes ordinaires deviennent élégants avec une noix de beurre de qualité fondue dessus, une pincée de fleur de sel et quelques gouttes de citron juste avant le service.",
+      "mentorBrief": "La cuisson des légumes enseigne la gestion de l’eau, de la chaleur et du timing — les trois compétences fondamentales de la cuisine. Un cuisinier qui maîtrise les légumes comprend pourquoi les protéines collent, pourquoi les sauces tranchent et pourquoi les cakes ratent. C’est la même physique.",
       "technicalVocabulary": [
         {
-          "term": "Prise pincée",
-          "definition": "Pouce et index pincent la lame près du manche pour contrôler la trajectoire."
+          "term": "Blanchiment",
+          "definition": "Pré-cuisson en eau bouillante très salée, suivie d’un arrêt brutal en bain glacé. Fixe la couleur et la texture."
         },
         {
-          "term": "Main guide",
-          "definition": "Main qui tient l’aliment en griffe et règle l’épaisseur."
+          "term": "Choc thermique",
+          "definition": "Plonger un aliment blanchi dans l’eau glacée pour arrêter instantanément la cuisson."
         },
         {
-          "term": "Point d’appui",
-          "definition": "Zone stable de l’aliment contre la planche."
+          "term": "Glaçage à brun",
+          "definition": "Cuisson d’un légume dans eau + beurre + sucre jusqu’à évaporation totale, formant une laque brillante."
         },
         {
-          "term": "Régularité",
-          "definition": "Morceaux de taille similaire pour une cuisson homogène."
+          "term": "Étuver",
+          "definition": "Cuire à couvert avec très peu de liquide pour attendrir sans coloration (légumes à la vapeur douce)."
+        },
+        {
+          "term": "Surcharge",
+          "definition": "Mettre trop d’aliments dans une poêle, abaissant la température sous 100°C et provoquant une cuisson vapeur."
+        },
+        {
+          "term": "Chlorophylle",
+          "definition": "Pigment vert des végétaux. Dégradée par les enzymes en quelques minutes si non inactivées par le choc thermique glacé."
         }
       ],
       "guidedLab": [
         {
-          "task": "Oignon en trois tailles",
-          "duration": "20 min",
-          "instructions": "Émince un oignon fin, moyen puis grossier. Fais revenir séparément et compare la vitesse de cuisson.",
-          "expected": "Tu comprends visuellement l’effet de la taille sur la cuisson."
+          "task": "Blanchiment comparatif avec et sans bain glacé",
+          "duration": "15 min",
+          "instructions": "Couper des brocolis en fleurettes, même taille. Blanchir 2 minutes en eau salée. Partager en deux : moitié dans bain glacé, moitié sur assiette à refroidir à l’air. Observer la couleur après 3 minutes.",
+          "expected": "Bain glacé = vert vif lumineux. Refroidissement à l’air = vert terne, olives. La différence est spectaculaire et immédiate."
         },
         {
-          "task": "Herbes sans écraser",
+          "task": "Sauté en surcharge vs sans surcharge",
           "duration": "10 min",
-          "instructions": "Cisèle persil ou ciboulette avec lame affûtée, sans repasser dix fois au même endroit.",
-          "expected": "Les herbes restent vertes, pas noircies ni mouillées."
+          "instructions": "Mêmes dés de courgette. Poêle n°1 : petite quantité, bien espacée, feu vif. Poêle n°2 : double quantité, serrée. Observer et comparer couleur, texture, eau rendue.",
+          "expected": "Poêle espacée = légumes colorés, fermes, concentrés. Poêle surchargée = légumes bouillis dans leur propre eau, mous et fades."
         }
       ],
       "progressionStages": [
         {
           "level": "Débutant",
-          "standard": "Tu coupes lentement mais sans danger."
+          "standard": "Tu fais cuire des légumes sans les brûler, tu assaisonnes en fin de cuisson."
         },
         {
           "level": "Intermédiaire",
-          "standard": "Tes morceaux sont réguliers et adaptés à la cuisson."
+          "standard": "Tu choisis entre sauter, rôtir et étuver selon l’objectif. Tu réalises un blanchiment avec bain glacé et obtiens un vert lumineux."
         },
         {
           "level": "Excellent amateur",
-          "standard": "Tu choisis la découpe selon texture, cuisson et dressage."
+          "standard": "Tu maîtrises le glaçage à brun, la ratatouille par légumes séparés, et les légumes rôtis avec caramélisation nette. Tu assaisonnes avec sel, acidité, gras en finition."
+        },
+        {
+          "level": "Expert",
+          "standard": "Tu adaptes chaque légume à sa méthode optimale selon la saison et le plat. Tu réalises des garnitures complexes synchronisées avec différents légumes à des stades de cuisson différents."
         }
       ],
       "assessmentRubric": [
         {
-          "criterion": "Organisation",
-          "standard": "La mise en place est complète, les gestes s’enchaînent sans chercher un outil ou un ingrédient."
+          "criterion": "Couleur",
+          "standard": "Légumes verts : vert lumineux après blanchiment-choc, pas vert terne. Légumes rôtis : dorés, pas brûlés ni pâles."
         },
         {
-          "criterion": "Observation",
-          "standard": "Tu prends tes décisions sur des signes visibles, sonores, olfactifs ou tactiles, pas seulement sur le minuteur."
+          "criterion": "Texture",
+          "standard": "Texture délibérée et maîtrisée : al dente pour verts sautés, fondant pour confits, croustillant pour rôtis."
         },
         {
-          "criterion": "Correction",
-          "standard": "Tu sais identifier une erreur probable et proposer une correction réaliste avant la fin de la recette."
+          "criterion": "Goût",
+          "standard": "Goût concentré et net du légume, sans goût dilué. Assaisonnement en fin avec sel, acidité, gras."
         },
         {
-          "criterion": "Répétabilité",
-          "standard": "Tu peux refaire la technique avec un résultat similaire au moins deux fois."
+          "criterion": "Maîtrise de la méthode",
+          "standard": "La méthode choisie est adaptée à l’objectif texture et parfaitement exécutée (pas de surcharge, chaleur appropriée, pas de couvercle quand non voulu)."
         }
       ],
       "antiBacle": [
-        "Ne valide pas mentalement une technique si tu ne peux pas expliquer pourquoi elle fonctionne.",
-        "Ne te fie pas uniquement au temps : vérifie au moins deux repères sensoriels.",
-        "Note l’erreur principale après pratique, même si le plat est bon."
+        "Ne mets jamais de couvercle si tu veux de la coloration — la vapeur condense et empêche la réaction de Maillard.",
+        "Ne surcharge jamais une poêle — deux fournées rapides valent mieux qu’une seule bouillie.",
+        "Ne sale jamais les légumes aqueux au début de la cuisson si tu veux les colorer.",
+        "Ne laisse jamais des légumes verts blanchis refroidir à l’air — bain glacé immédiat."
       ],
       "commonMisconceptions": [
-        "Régulier ne veut pas toujours dire minuscule : la bonne taille dépend de la cuisson recherchée."
+        "Cuire les légumes longtemps ne les rend pas plus savoureux — la cuisson prolongée dégrade les arômes volatils, la couleur et la texture. Cuit = dégradé.",
+        "Ajouter de l’eau pour ‘aider’ des légumes à cuire à la poêle est l’erreur la plus fréquente : elle stoppe la caramélisation et donne des légumes bouillis, pas sautés."
       ],
-      "realKitchenTransfer": "Une découpe régulière rend les temps fiables et donne une texture plus professionnelle.",
+      "realKitchenTransfer": "Dans chaque recette avec des légumes : d’abord décider la texture voulue, puis choisir la méthode. Ce réflexe transforme immédiatement la qualité de toutes tes garnitures.",
       "capstonePractice": {
-        "title": "Exercice de transfert",
-        "instructions": "Choisis une recette déjà faite, applique volontairement cette technique, puis note ce qui a changé dans le résultat.",
-        "expected": "Tu dois pouvoir expliquer une décision concrète : taille, feu, couvercle, ordre ou correction."
+        "title": "Trio de légumes de saison : 3 méthodes simultanées",
+        "instructions": "Choisir 3 légumes différents (ex : haricots verts + carottes + champignons). Haricots : blanchiment + choc glacé + sauté minute. Carottes : glaçage à brun. Champignons : sauté poêle très chaude en petite quantité. Servir les 3 ensemble avec assaisonnement de finition (sel, citron, persil, beurre).",
+        "expected": "Chaque légume doit avoir une texture et une couleur distincte et optimale. Ce trio teste la gestion simultanée de 3 méthodes différentes et la synchronisation des finitions."
       },
       "quizIds": [
         "q-v19-l-legumes-1-0",
@@ -2965,164 +3484,197 @@ window.CUISINE_DATA = {
       ],
       "principles": [
         {
-          "title": "Comprendre avant d’exécuter",
-          "body": "Les épices libèrent leurs arômes dans le gras et sous chaleur modérée ; brûlées, elles deviennent amères."
+          "title": "Les arômes des épices sont majoritairement liposolubles",
+          "body": "La plupart des composés aromatiques des épices (terpènes, alcaloïdes, phénols) se dissolvent dans les corps gras, pas dans l’eau. C’est pourquoi les cuisines indiennes et moyen-orientales font systématiquement ‘bloomer’ les épices dans l’huile chaude avant d’ajouter les liquides (tadka, tarka). Dans l’eau ou le bouillon seuls, les arômes se dispersent sans se fixer."
         },
         {
-          "title": "Observer le résultat",
-          "body": "Le temps indiqué est une aide. La vraie décision se prend avec la couleur, la texture, l’odeur, le son et le goût."
+          "title": "Entière vs moulue : arômes et volatilité",
+          "body": "Une épice entière conserve ses arômes dans ses cellules huileuses jusqu’à la fragmentation. Une fois moulue, la surface d’échange avec l’air est multipliée par 100 : les arômes volatils s’échappent rapidement. La cumin en poudre acheté il y a 6 mois a perdu l’essentiel de son parfum. Règle : moudre soi-même les épices entières juste avant usage. Test : si une épice moulue ne sent presque rien à froid dans la main, elle est périmée."
         },
         {
-          "title": "Corriger tôt",
-          "body": "Un petit ajustement au bon moment évite souvent une grosse correction impossible à la fin."
+          "title": "Torréfaction à sec : ouvrir les cellules aromatiques",
+          "body": "Chauffer brièvement des épices entières à sec dans une poêle (sans gras) à feu moyen pendant 1-2 minutes libère leurs huiles essentielles par rupture des cellules internes. Le résultat : parfum plus intense, notes torréfiées et fumées complexes. La fenêtre est étroite : couleur légèrement foncée et arôme intense = parfait. Fumée acre = brûlé, irrécupérable. Ne jamais torréfier des épices déjà moulues — elles brûlent en quelques secondes."
+        },
+        {
+          "title": "Bloom dans le gras : extraction optimale",
+          "body": "Le ‘bloom’ (ou tadka) consiste à chauffer des épices dans de l’huile ou du ghee à 150-180°C pendant 30-60 secondes avant d’ajouter les autres ingrédients. Les composés liposolubles migrent dans le gras qui devient alors un vecteur aromatique pour tout le plat. C’est l’explication technique de pourquoi un curry correct + un tadka express en finition devient immédiatement plus parfumé et profond."
+        },
+        {
+          "title": "Herbes fraîches vs séchées : deux logiques opposées",
+          "body": "Les herbes séchées (thym, origan, romarin, laurier) libèrent leurs arômes par réhydratation et chaleur prolongée — les ajouter en début de cuisson dans les sauces et braisés. Les herbes fraîches et délicates (basilic, cerfeuil, ciboulette, persil plat, aneth) contiennent des arômes hautement volatils dégradés par la chaleur en quelques secondes — les ajouter hors du feu en toute fin. Exception : la coriandre fraîche se tient mieux à la chaleur."
         }
       ],
       "techniqueSteps": [
         {
-          "title": "Préparer le contexte",
-          "action": "Lis l’objectif technique, prépare le matériel et identifie le point critique de la recette.",
-          "cue": "Tu sais ce que tu dois observer avant de commencer.",
-          "mistake": "Suivre les étapes sans savoir quel résultat chercher.",
-          "correction": "Reformule l’objectif en une phrase avant de cuisiner."
+          "title": "Torréfaction à sec des épices entières",
+          "action": "Poêle sèche sur feu moyen. Ajouter les épices entières (cumin, coriandre, curcuma, cardamome). Agiter doucement en continu. Retirer après 60-90 secondes quand l’arôme est intense et la couleur légèrement foncée.",
+          "cue": "Parfum intense et chaud, légère fumée blanche, couleur un ton plus foncée.",
+          "mistake": "Partir à feu trop fort ou laisser sans surveillance : épices brûlées en 30 secondes.",
+          "correction": "Sortir immédiatement sur une assiette froide pour arrêter la cuisson — la poêle chaude continue de torréfier."
         },
         {
-          "title": "Contrôler l’intensité",
-          "action": "Adapte chaleur, temps, humidité ou agitation selon la réaction observée.",
-          "cue": "Odeur chaude et nette, couleur renforcée, aucune note acre.",
-          "mistake": "Appliquer le temps indiqué même si le résultat visuel dit l’inverse.",
-          "correction": "Ralentis, goûte, touche ou observe avant de continuer."
+          "title": "Bloom dans l’huile (tadka)",
+          "action": "Huile ou ghee dans une poêle à feu moyen-fort. Quand l’huile est chaude (150-180°C), ajouter les épices entières ou semi-moulues. Agiter 30-60 secondes jusqu’à crépitement et odeur intense. Verser immédiatement sur le plat ou ajouter les aromates.",
+          "cue": "Les épices crépitent dans l’huile, l’arôme explose, léger changement de couleur.",
+          "mistake": "Huile trop froide : pas de bloom et extraction insuffisante. Huile trop chaude : brûlé instantané.",
+          "correction": "Tester avec 1 graine de moutarde : elle doit éclater dans les 10 secondes (huile à bonne température)."
         },
         {
-          "title": "Finir proprement",
-          "action": "Goûte, ajuste, puis sers avec une finition cohérente : acidité, gras, herbes, sauce ou repos.",
-          "cue": "Le résultat est net, équilibré et volontaire.",
-          "mistake": "Servir sans dernier contrôle.",
-          "correction": "Goûte une bouchée complète avant dressage."
+          "title": "Timing des épices selon la méthode",
+          "action": "Épices entières dures (cannelle, clous de girofle, poivre long) : en début avec le gras. Épices moulues (curry, paprika, cumin moulu) : avec les oignons translucides, 1-2 min avant d’ajouter les liquides. Herbes séchées : en milieu de cuisson. Herbes fraîches délicates : hors du feu, au moment de servir.",
+          "cue": "Chaque épice libère son parfum au bon moment, sans brûler ni rester cru.",
+          "mistake": "Ajouter toutes les épices en même temps au début avec les liquides — extraction très insuffisante.",
+          "correction": "Respecter l’ordre : gras → épices entières → aromates → épices moulues → liquides."
+        },
+        {
+          "title": "Moudre fraîchement",
+          "action": "Moulin à café ou mortier. Torréfier d’abord à sec, puis moudre. Utiliser immédiatement. Tester l’arôme à froid avant tout : si une épice en poudre ne sent presque rien entre les doigts, la jeter.",
+          "cue": "L’épice fraîchement moulue dégage un parfum vif et puissant à température ambiante.",
+          "mistake": "Utiliser des épices moulues stockées depuis des mois — goût poussiéreux, zéro arôme.",
+          "correction": "Renouveler les épices moulues tous les 6 mois. Préférer les épices entières stockées à l’abri de la lumière et de l’humidité."
+        },
+        {
+          "title": "Corriger un plat trop épicé",
+          "action": "Piment trop fort : diluer avec gras (lait de coco, yaourt, crème, beurre) — le gras capte les capsaïcinoïdes. Trop de cumin ou coriandre : acidité (citron, tomate) ou douceur (miel, sucre de coco) pour rééquilibrer. Épices trop amères (brûlées) : irréparable — recommencer.",
+          "cue": "Le plat retrouve un équilibre entre épices, acidité, gras et douceur.",
+          "mistake": "Ajouter de l’eau pour diluer le piment — l’eau ne capte pas les capsaïcinoïdes liposolubles.",
+          "correction": "Toujours utiliser un corps gras pour atténuer le piquant, jamais l’eau."
         }
       ],
       "sensoryCues": {
-        "see": "Odeur chaude et nette, couleur renforcée, aucune note acre.",
-        "smell": "Odeur nette correspondant à la technique, jamais brûlée ni fade.",
-        "taste": "Goût équilibré et lisible, sans correction excessive.",
-        "touch": "Texture conforme à l’objectif : souple, croquante, nappante, friable ou fondante.",
-        "hear": "Le son doit rester cohérent avec la technique : frémissement doux, crépitement vif ou silence de repos."
+        "see": "Épices torréfiées : couleur un ton plus foncée, légère fumée blanche. Bloom : petites bulles autour des épices dans l’huile, crépitement. Épices brûlées : couleur noire, fumée acre — à jeter immédiatement.",
+        "smell": "Torréfaction réussie : arôme chaud, intense, avec notes nouvelles. Bloom réussi : explosion d’arôme dans les 60 premières secondes. Brûlé : odeur âcre, amère, pénétrante.",
+        "taste": "Épice bien utilisée : arôme intégré au plat, pas en surface. Épice crue en poudre : goût poussiéreux et âcre. Épice brûlée : amertume persistante irratrapable.",
+        "touch": "Après torréfaction : les épices entières sont légèrement plus sèches au toucher.",
+        "hear": "Bloom dans l’huile : crépitement vif dès l’ajout des épices. Silence = huile trop froide."
       },
       "troubleshooting": [
         {
-          "problem": "Résultat irrégulier",
-          "cause": "Taille, chaleur ou timing non maîtrisés.",
-          "fix": "Standardise la préparation et ajuste l’intensité plus tôt."
+          "problem": "Plat sans arôme malgré les épices",
+          "cause": "Épices ajoutées dans un liquide aqueux (pas dans le gras), ou épices périmées, ou pas de torréfaction.",
+          "fix": "Faire un tadka express en finition : huile chaude + épices fraîches moulues, verser sur le plat. Résultat immédiat."
         },
         {
-          "problem": "Goût plat",
-          "cause": "Assaisonnement ou finition insuffisants.",
-          "fix": "Corrige sel, acidité, gras ou fraîcheur par petites touches."
+          "problem": "Plat amer après les épices",
+          "cause": "Épices brûlées — chaleur trop forte lors du bloom ou de la torréfaction.",
+          "fix": "Irréparable. Recommencer en contrôlant mieux la chaleur. Règle : feu moyen, pas fort."
         },
         {
-          "problem": "Texture ratée",
-          "cause": "Cuisson prolongée, chaleur mal adaptée ou manque de repos.",
-          "fix": "Identifie le point de bascule et arrête plus tôt la prochaine fois."
+          "problem": "Goût ‘poussiéreux’ des épices",
+          "cause": "Épices moulues périmées ou ajoutées sans bloom dans le gras.",
+          "fix": "Renouveler les épices. Toujours faire le bloom avant d’ajouter les liquides."
         }
       ],
       "practiceDrills": [
         {
-          "title": "Répétition courte",
+          "title": "Torréfaction comparative : entière vs moulue vs brûlée",
           "duration": "15 min",
-          "instructions": "Réalise une version miniature de la technique en te concentrant sur un seul critère : couleur, texture ou goût.",
-          "goal": "Isoler la compétence sans te perdre dans une recette complète."
+          "instructions": "Torréfier 3 fois du cumin : entier (1 min 30, bon), moulu (30 sec max), entier brûlé (3 min). Sentir et goûter les 3 côte à côte.",
+          "goal": "Mémoriser dans les sens la différence entre parfait, brûlé, et la rapidité du brûlage du moulu."
         },
         {
-          "title": "Comparaison volontaire",
-          "duration": "20 min",
-          "instructions": "Fais deux versions : une correcte, une avec une erreur contrôlée. Compare le résultat.",
-          "goal": "Reconnaître l’erreur par les sens."
+          "title": "Tadka express sur soupe ou sauce neutre",
+          "duration": "10 min",
+          "instructions": "Faire une soupe de lentilles ou sauce tomate ordinaire. La séparer en 2 bols. Sur l’un, verser un tadka express (2 cuillères d’huile + cumin + graines de moutarde + ail, 60 secondes). Goûter côte à côte.",
+          "goal": "Mesurer l’impact d’un bloom simple sur la profondeur aromatique d’un plat ordinaire."
         }
       ],
       "masteryCriteria": [
-        "Tu peux expliquer le mécanisme de la technique.",
-        "Tu reconnais les signes de réussite.",
-        "Tu sais nommer l’erreur la plus probable.",
-        "Tu sais proposer une correction réaliste."
+        "Tu sais expliquer pourquoi les épices se dissolvent dans le gras, pas dans l’eau.",
+        "Tu reconnais l’arôme d’une épice bien torréfiée vs brûlée avant même de goûter.",
+        "Tu connais le timing correct pour chaque catégorie d’épice et d’herbe.",
+        "Tu peux réaliser un tadka en moins d’une minute.",
+        "Tu peux corriger un plat trop pimenté avec la bonne méthode (gras, pas eau)."
       ],
-      "proTip": "Un bon cuisinier ne suit pas seulement le temps : il observe et ajuste.",
-      "mentorBrief": "L’assaisonnement n’est pas 'mettre du sel'. C’est construire un relief : sel pour intensifier, acidité pour tendre, gras pour porter, fraîcheur pour alléger, umami pour donner de la profondeur.",
+      "proTip": "Le tadka (bloom final dans le gras) est la technique la plus simple pour transformer un plat ordinaire en plat aromatiquement profond. Garde toujours un peu d’huile et tes épices entières préférées à portée de main pour une finition express de 60 secondes.",
+      "mentorBrief": "Les épices sont le langage aromatique de la cuisine mondiale. Chaque culture a développé ses techniques d’extraction sur des siècles. La cuisine indienne a le tadka, la cuisine marocaine le chermoula et le ras el hanout, la cuisine française les bouquets garnis et l’oignon brûlé. Ces techniques reposent toutes sur le même principe : les arômes dans le gras, pas dans l’eau.",
       "technicalVocabulary": [
         {
-          "term": "Relief",
-          "definition": "Sensation qu’un plat n’est pas plat : tension, longueur et contraste."
+          "term": "Tadka / bloom",
+          "definition": "Technique d’extraction des arômes d’épices dans l’huile chaude (150-180°C), base des cuisines indiennes et moyen-orientales."
         },
         {
-          "term": "Acidité",
-          "definition": "Élément qui réveille et coupe le gras : citron, vinaigre, vin, yaourt."
+          "term": "Torréfaction",
+          "definition": "Chauffe à sec d’épices entières pour libérer les huiles essentielles par rupture des cellules aromatiques."
         },
         {
-          "term": "Umami",
-          "definition": "Profondeur savoureuse : bouillon, champignon, tomate concentrée, parmesan, soja."
+          "term": "Liposoluble",
+          "definition": "Qui se dissout dans les graisses plutôt que dans l’eau. La majorité des arômes d’épices sont liposolubles."
         },
         {
-          "term": "Finition",
-          "definition": "Dernière correction juste avant de servir."
+          "term": "Capsaïcine",
+          "definition": "Composé piquant du piment, liposoluble. Se neutralise avec du gras (lait, yaourt, crème), pas avec l’eau."
+        },
+        {
+          "term": "Terpènes",
+          "definition": "Famille de composés aromatiques volatils présents dans les épices, herbes et agrumes. Se dégradent rapidement à la chaleur et à l’oxygène."
         }
       ],
       "guidedLab": [
         {
-          "task": "Correction en 4 cuillères",
-          "duration": "15 min",
-          "instructions": "Prends une soupe ou sauce neutre. Compare version sel, sel+citron, sel+gras, sel+herbes.",
-          "expected": "Tu sais nommer ce que chaque ajout change."
+          "task": "Curry de légumes avec bloom correct",
+          "duration": "30 min",
+          "instructions": "Couper des légumes en dés. Dans une casserole : ghee ou huile + graines de cumin + oignons → fondre. Ajouter épices moulues (curcuma, cumin, coriandre, garam masala) AVEC les oignons translucides, pas dans les liquides. Faire sauter 1-2 min avant d’ajouter tomate et eau. Finir avec coriandre fraîche et citron hors du feu.",
+          "expected": "Arômes bien intégrés, profondeur aromatique nette, coriandre fraîche vive. Goûter à chaque étape pour mesurer l’évolution du profil aromatique."
         },
         {
-          "task": "Plat trop lourd",
-          "duration": "10 min",
-          "instructions": "Sur une bouchée grasse, ajoute progressivement acidité puis herbes.",
-          "expected": "La sensation devient plus nette sans perdre le goût principal."
+          "task": "Test comparatif épices dans eau vs dans gras",
+          "duration": "15 min",
+          "instructions": "2 mini-sauces tomate identiques. Version 1 : ajouter 1 cuillère de cumin dans la sauce tomate directement. Version 2 : faire un bloom du cumin dans 1 cuillère d’huile, puis incorporer à la sauce. Goûter côte à côte.",
+          "expected": "Version bloom = arôme intégré, intense, homogène. Version directe = arôme superficiel et poussiéreux."
         }
       ],
       "progressionStages": [
         {
           "level": "Débutant",
-          "standard": "Tu sales progressivement."
+          "standard": "Tu fais le bloom des épices dans le gras avant d’ajouter les liquides."
         },
         {
           "level": "Intermédiaire",
-          "standard": "Tu sais distinguer manque de sel et manque d’acidité."
+          "standard": "Tu torréfies tes épices entières avant de les moudre. Tu respectes le timing herbes fraîches/herbes séchées."
         },
         {
           "level": "Excellent amateur",
-          "standard": "Tu corriges un plat en goûtant méthodiquement, sans empiler les ingrédients."
+          "standard": "Tu maîtrises le tadka express pour finir un plat. Tu adaptes les épices à la cuisine (indienne, nord-africaine, mexicaine)."
+        },
+        {
+          "level": "Expert",
+          "standard": "Tu composes tes propres mélanges d’épices maison (masala, ras el hanout, curry). Tu corriges les déséquilibres épicés avec les bons contre-points (gras, acide, douceur)."
         }
       ],
       "assessmentRubric": [
         {
-          "criterion": "Organisation",
-          "standard": "La mise en place est complète, les gestes s’enchaînent sans chercher un outil ou un ingrédient."
+          "criterion": "Technique du bloom",
+          "standard": "Les épices sont ajoutées dans le gras chaud avant les liquides, pas directement dans la sauce."
         },
         {
-          "criterion": "Observation",
-          "standard": "Tu prends tes décisions sur des signes visibles, sonores, olfactifs ou tactiles, pas seulement sur le minuteur."
+          "criterion": "Timing herbes",
+          "standard": "Herbes séchées en cours de cuisson, herbes fraîches délicates hors du feu seulement."
         },
         {
-          "criterion": "Correction",
-          "standard": "Tu sais identifier une erreur probable et proposer une correction réaliste avant la fin de la recette."
+          "criterion": "Pas d’amertume",
+          "standard": "Aucune note brûlée ou âcre dans le plat — contrôle de la chaleur lors du bloom."
         },
         {
-          "criterion": "Répétabilité",
-          "standard": "Tu peux refaire la technique avec un résultat similaire au moins deux fois."
+          "criterion": "Arômes intégrés",
+          "standard": "Les épices sont perçues comme partie intégrante du plat, pas comme une poudre saupoudrée en surface."
         }
       ],
       "antiBacle": [
-        "Ne valide pas mentalement une technique si tu ne peux pas expliquer pourquoi elle fonctionne.",
-        "Ne te fie pas uniquement au temps : vérifie au moins deux repères sensoriels.",
-        "Note l’erreur principale après pratique, même si le plat est bon."
+        "Ne mets jamais des épices moulues directement dans un liquide sans bloom préalable dans le gras.",
+        "Ne torréfie jamais des épices moulues à sec — elles brûlent en quelques secondes.",
+        "Ne dilue jamais un piment trop fort avec de l’eau — utilise un corps gras.",
+        "Ne garde jamais des épices moulues plus de 6-9 mois — les jeter si elles ne sentent plus rien."
       ],
       "commonMisconceptions": [
-        "Assaisonner ne veut pas dire saler plus : il faut parfois ajouter acide, gras, amertume, sucre ou fraîcheur."
+        "Plus d’épices = plus de goût. Faux : sans bloom correct dans le gras, doubler les épices ne donne qu’un goût plus poussiéreux. La technique prime sur la quantité.",
+        "Les herbes fraîches se cuisent comme les épices séchées. Faux : le basilic, la ciboulette et le cerfeuil perdent leur arôme en 30 secondes de chaleur."
       ],
-      "realKitchenTransfer": "Un plat quelconque devient souvent bon grâce à une correction finale précise.",
+      "realKitchenTransfer": "Chaque fois que tu ouvres une boîte d’épices moulues, teste-les entre les doigts : elles doivent sentir vif et fort. Si ce n’est pas le cas, ton plat sera terne même avec la bonne technique. Renouveler ses épices régulièrement est l’un des investissements les plus rentables pour la qualité gustative.",
       "capstonePractice": {
-        "title": "Exercice de transfert",
-        "instructions": "Choisis une recette déjà faite, applique volontairement cette technique, puis note ce qui a changé dans le résultat.",
-        "expected": "Tu dois pouvoir expliquer une décision concrète : taille, feu, couvercle, ordre ou correction."
+        "title": "Curry maison de A à Z : bloom, timing, finition",
+        "instructions": "Réaliser un curry complet (légumes ou poulet). Phase 1 : torréfier les épices entières à sec. Phase 2 : bloom dans l’huile avec oignons. Phase 3 : épices moulues avec oignons translucides, 2 min. Phase 4 : tomate + liquide. Phase 5 : finition coriandre fraîche + citron hors du feu. Goûter à chaque phase pour sentir l’évolution aromatique.",
+        "expected": "Un curry avec des couches aromatiques distinctes, sans amertume de brûlé, avec une fraîcheur finale de la coriandre. L’évolution du goût à chaque phase doit être perceptible."
       },
       "quizIds": [
         "q-v19-l-epices-1-0",
@@ -3282,164 +3834,197 @@ window.CUISINE_DATA = {
       ],
       "principles": [
         {
-          "title": "Comprendre avant d’exécuter",
-          "body": "La réussite dépend de la température réelle, de l’humidité et de l’espace entre les aliments."
+          "title": "Le four : rayonnement + convection, pas seulement chaleur",
+          "body": "Un four cuit par trois mécanismes simultanés : rayonnement infrarouge des parois, convection de l’air chaud, et conduction par la plaque. Le mode ‘chaleur tournante’ (ventilateur) accélère la convection, homogénéise la température dans l’enceinte et accélère la Maillard en surface. Le mode ‘sole + voûte’ (traditionnel) est plus doux et humide — meilleur pour les pains et soufflés. Comprendre son propre four (point chaud, thermomètre interne) est la première étape."
         },
         {
-          "title": "Observer le résultat",
-          "body": "Le temps indiqué est une aide. La vraie décision se prend avec la couleur, la texture, l’odeur, le son et le goût."
+          "title": "Préchauffage obligatoire — 30 min pour les fours lents",
+          "body": "Un four non préchauffé à sa température cible quand on enfourne signifie que l’aliment passe les premières minutes dans un four qui monte encore en température : la croûte ne se forme pas immédiatement, la vapeur s’accumule, et la Maillard est retardée. Minimum 15-20 min de préchauffage. Pour la pizza et le pain (four à 250°C+) : 30-45 min avec la plaque dedans."
         },
         {
-          "title": "Corriger tôt",
-          "body": "Un petit ajustement au bon moment évite souvent une grosse correction impossible à la fin."
+          "title": "Espace = coloration ; surcharge = vapeur",
+          "body": "Exactement comme pour la poêle : une plaque surchargée d’aliments crée une atmosphère vapeur qui empêche la Maillard. Les légumes ou viandes sur-chargés cuisent en se bouillie dans leur propre eau. Règle : espace entre les aliments, une seule couche, surface sèche avant enfournement."
+        },
+        {
+          "title": "Couvert vs découvert : deux effets radicalement différents",
+          "body": "Couvert (papillote, cocotte, alu) : la vapeur reste à l’intérieur, l’aliment cuit dans son humidité (braisé), texture fondante, pas de coloration. Découvert : l’humidité s’évapore, surface sèche, coloration Maillard possible, croûte et texture contrastée. Stratégie classique : couvert pour attendrir (début), découvert pour colorer (fin). Ne jamais couvrir si l’objectif est la croûte croustillante."
+        },
+        {
+          "title": "La position dans le four change le résultat",
+          "body": "Plaque haute = plus proche de la voûte (chaleur rayonnante dessus → gratinage, brunissage de surface). Plaque basse = plus proche de la sole (chaleur par le bas → bonne cuisson des fonds de tarte, pizza). Milieu = cuisson équilibrée. En chaleur tournante, les différences s’atténuent mais ne disparaissent pas. Connaître son four et noter les ajustements est une compétence qui s’acquiert avec la pratique."
         }
       ],
       "techniqueSteps": [
         {
-          "title": "Préparer le contexte",
-          "action": "Lis l’objectif technique, prépare le matériel et identifie le point critique de la recette.",
-          "cue": "Tu sais ce que tu dois observer avant de commencer.",
-          "mistake": "Suivre les étapes sans savoir quel résultat chercher.",
-          "correction": "Reformule l’objectif en une phrase avant de cuisiner."
+          "title": "Préparer l’aliment pour le four",
+          "action": "Surface sèche (tamponner avec papier absorbant si nécessaire). Corps gras homogène (huile en couche fine, pas de flaque). Découpe uniforme pour cuisson homogène. Sel en fin ou juste avant enfournement pour légumes aqueux.",
+          "cue": "Surface sèche et huilée uniformément, morceaux de taille similaire, espacement suffisant.",
+          "mistake": "Légumes humides ou mal espacés sur la plaque.",
+          "correction": "Sécher, espacer, une seule couche — et si trop d’aliments, utiliser deux plaques."
         },
         {
-          "title": "Contrôler l’intensité",
-          "action": "Adapte chaleur, temps, humidité ou agitation selon la réaction observée.",
-          "cue": "Coloration régulière, vapeur maîtrisée, texture contrastée.",
-          "mistake": "Appliquer le temps indiqué même si le résultat visuel dit l’inverse.",
-          "correction": "Ralentis, goûte, touche ou observe avant de continuer."
+          "title": "Enfourner dans un four préchauffé à la bonne température",
+          "action": "Respecter la température de recette (pâtisserie : précision ±5°C critique, rôtissage : moins sensible). Four à chaleur tournante : réduire la température de recette de 15-20°C. Thermomètre de four recommandé (thermostat souvent faux de ±20°C).",
+          "cue": "Le four affiche la bonne température depuis au moins 15 min. La plaque chaude au préalable si applicable.",
+          "mistake": "Enfourner dans un four froid ou trop chaud — cuisson imprévisible.",
+          "correction": "Investir dans un thermomètre de four (5-10€) et noter l’écart du thermostat de son four."
         },
         {
-          "title": "Finir proprement",
-          "action": "Goûte, ajuste, puis sers avec une finition cohérente : acidité, gras, herbes, sauce ou repos.",
-          "cue": "Le résultat est net, équilibré et volontaire.",
-          "mistake": "Servir sans dernier contrôle.",
-          "correction": "Goûte une bouchée complète avant dressage."
+          "title": "Surveiller par les sens, pas le minuteur seul",
+          "action": "Ouvrir le four à mi-cuisson : observer la couleur, sentir les arômes (Maillard = parfum de cuisson). Retourner les légumes ou viandes. Décider : continuer à découvert, couvrir pour protéger, ou sortir.",
+          "cue": "Couleur dorée uniforme, parfum de cuisson chaud et appétissant, résistance au toucher avec une brochette.",
+          "mistake": "Ouvrir le four trop souvent (perd de la chaleur, pertube la cuisson des pâtisseries).",
+          "correction": "Regarder à travers la vitre sans ouvrir pendant les 2/3 du temps de cuisson."
+        },
+        {
+          "title": "Gratinage : chaleur vive en surface seulement",
+          "action": "Position haute dans le four, gril (ou chaleur voûte seule) 200-240°C. 3-8 minutes selon l’épaisseur de la croûte voulue. Surveiller en continu — le brunissement passe de parfait à brûlé en moins d’une minute.",
+          "cue": "Croûte dorée à brun, bouillonnement actif de la surface, parfum de fromage fondu gratiné.",
+          "mistake": "Laisser sans surveillance — le gratin brûle en quelques secondes de trop.",
+          "correction": "Rester devant le four ou ouvrir toutes les 90 secondes pendant le gratinage."
+        },
+        {
+          "title": "Repos après four",
+          "action": "Sortir l’aliment du four et laisser reposer sur une grille (air autour pour éviter la condensation en dessous). Viandes : repos 5-15 min selon l’épaisseur. Gâteaux : refroidissement complet avant démoulage pour les génoises. Tartes : tiédir avant de couper pour que la garniture se fige.",
+          "cue": "L’aliment est sorti du four mais la cuisson continue encore quelques minutes par inertie thermique.",
+          "mistake": "Découper une pièce de bœuf immédiatement à la sortie du four — les jus s’écoulent entièrement.",
+          "correction": "Tente de toucher la viande : si elle est très ferme et résiste, elle a besoin de repos pour s’assouplir."
         }
       ],
       "sensoryCues": {
-        "see": "Coloration régulière, vapeur maîtrisée, texture contrastée.",
-        "smell": "Odeur nette correspondant à la technique, jamais brûlée ni fade.",
-        "taste": "Goût équilibré et lisible, sans correction excessive.",
-        "touch": "Texture conforme à l’objectif : souple, croquante, nappante, friable ou fondante.",
-        "hear": "Le son doit rester cohérent avec la technique : frémissement doux, crépitement vif ou silence de repos."
+        "see": "Couleur dorée à brun selon l’objectif. Croûte nette sur les légumes rôtis. Surface caramélisée des viandes. Jamais de taches noires (brûlé) sur les bords.",
+        "smell": "Arôme de Maillard = odeur de pain grillé, de noisette, de sucre caramélisé. Absence d’odeur âcre de brûlé. Parfum du gras qui cuit (huile d’olive, beurre).",
+        "taste": "Croûte croustillante avec intérieur fondant (légumes rôtis). Surface ferme et dorée, cœur tendre et juteux (viande). Aucun goût de caoutchouc ou de dessèchement excessif.",
+        "touch": "Brochette plantée dans une viande : ressort tiède → pas cuit. Chaude → cuit. Résistance élastique (comme le thénar de la main fermée) → à point pour la plupart des viandes.",
+        "hear": "Crépitement léger dans le four = cuisson active. Silence complet = peut indiquer température insuffisante."
       },
       "troubleshooting": [
         {
-          "problem": "Résultat irrégulier",
-          "cause": "Taille, chaleur ou timing non maîtrisés.",
-          "fix": "Standardise la préparation et ajuste l’intensité plus tôt."
+          "problem": "Légumes ou viande mous et pâles au four",
+          "cause": "Surcharge de la plaque, four pas assez chaud, légumes humides, ou couvercle mis.",
+          "fix": "Espacer, monter la température (220°C minimum pour rôtir), sécher les légumes, retirer le couvercle pour les 15 dernières minutes."
         },
         {
-          "problem": "Goût plat",
-          "cause": "Assaisonnement ou finition insuffisants.",
-          "fix": "Corrige sel, acidité, gras ou fraîcheur par petites touches."
+          "problem": "Croûte brûlée mais intérieur pas cuit",
+          "cause": "Four trop chaud ou position trop haute.",
+          "fix": "Couvrir d’alu pour protéger la surface, baisser la température, déplacer en position basse."
         },
         {
-          "problem": "Texture ratée",
-          "cause": "Cuisson prolongée, chaleur mal adaptée ou manque de repos.",
-          "fix": "Identifie le point de bascule et arrête plus tôt la prochaine fois."
+          "problem": "Pâtisserie cuite en surface mais crue à cœur",
+          "cause": "Four trop chaud avec chaleur inégale, ou moule mal adapté.",
+          "fix": "Baisser de 15-20°C, couvrir d’alu, tester avec cure-dent au centre."
         }
       ],
       "practiceDrills": [
         {
-          "title": "Répétition courte",
-          "duration": "15 min",
-          "instructions": "Réalise une version miniature de la technique en te concentrant sur un seul critère : couleur, texture ou goût.",
-          "goal": "Isoler la compétence sans te perdre dans une recette complète."
+          "title": "Légumes rôtis : test de température et d’espacement",
+          "duration": "40 min",
+          "instructions": "Même légume (ex : pommes de terre en cubes), 3 versions : four 170°C serrés / four 220°C espacés / four 220°C séparés sur 2 plaques. Observer et goûter les 3 versions.",
+          "goal": "Comprendre l’impact direct de la température et de l’espacement sur la coloration et la texture."
         },
         {
-          "title": "Comparaison volontaire",
-          "duration": "20 min",
-          "instructions": "Fais deux versions : une correcte, une avec une erreur contrôlée. Compare le résultat.",
-          "goal": "Reconnaître l’erreur par les sens."
+          "title": "Gratin : observation du brunissement",
+          "duration": "10 min",
+          "instructions": "Préparer un gratin simple (pommes de terre + crème + fromage râpé). Cuire 35 min à 180°C couvert, puis 8-10 min découvert position haute (gril). Surveiller en continu la dernière phase.",
+          "goal": "Mémoriser la fenêtre courte entre parfait et brûlé lors du gratinage final."
         }
       ],
       "masteryCriteria": [
-        "Tu peux expliquer le mécanisme de la technique.",
-        "Tu reconnais les signes de réussite.",
-        "Tu sais nommer l’erreur la plus probable.",
-        "Tu sais proposer une correction réaliste."
+        "Tu peux expliquer la différence entre chaleur tournante et traditionnel.",
+        "Tu sais pourquoi l’espacement est obligatoire pour la coloration.",
+        "Tu maîtrises le mode couvert/découvert selon l’objectif texture.",
+        "Tu surveilles par les sens (couleur, odeur) et pas uniquement le minuteur.",
+        "Tu sais quand et comment grainer une surface pour une croûte dorée."
       ],
-      "proTip": "Un bon cuisinier ne suit pas seulement le temps : il observe et ajuste.",
-      "mentorBrief": "La cuisson n’est pas une durée : c’est une trajectoire. Tu pars d’un produit donné, tu appliques chaleur et humidité, puis tu t’arrêtes au bon état sensoriel.",
+      "proTip": "Achète un thermomètre de four à 5€ et compare-le avec ton thermostat. La plupart des fours sont faux de 10-30°C. Un four qui affiche 180°C peut chauffer à 165°C ou 200°C — cette différence explique à elle seule beaucoup de recettes qui ratent inexplicablement.",
+      "mentorBrief": "Le four est l’instrument le plus imprévisible de la cuisine parce que c’est le seul où tu ne peux pas intervenir facilement en cours de route. La compétence du four se construit sur la connaissance de son propre équipement : ses points chauds, son écart de thermostat, sa vitesse de préchauffage. Notes personnelles sur chaque recette = progression rapide.",
       "technicalVocabulary": [
         {
-          "term": "Inertie",
-          "definition": "La cuisson continue parfois hors du feu."
+          "term": "Chaleur tournante",
+          "definition": "Mode four avec ventilateur qui homogénéise la température. Accélère la cuisson de 10-20%. Réduire la température de recette de 15-20°C."
         },
         {
-          "term": "Humidité",
-          "definition": "Facteur clé de texture et coloration."
+          "term": "Sole",
+          "definition": "Élément chauffant inférieur du four. Position basse = cuisson par dessous = bons fonds de tarte et pizzas."
         },
         {
-          "term": "Appoint",
-          "definition": "Niveau de cuisson recherché."
+          "term": "Voûte / gril",
+          "definition": "Élément chauffant supérieur. Position haute + voûte seule = gratinage, brunissage de surface."
         },
         {
-          "term": "Texture cible",
-          "definition": "Résultat tactile attendu : fondant, ferme, croustillant, nacré."
+          "term": "Cuisson à blanc",
+          "definition": "Cuisson d’un fond de tarte sans garniture, lesté de billes ou haricots secs, pour éviter le gonflement et l’effondrement."
+        },
+        {
+          "term": "Inertie thermique (four)",
+          "definition": "Le four et la plaque chaude continuent de cuire l’aliment après ouverture. Sortir légèrement en avance de l’état voulu."
         }
       ],
       "guidedLab": [
         {
-          "task": "Arrêt anticipé",
-          "duration": "20 min",
-          "instructions": "Sur œuf, poisson ou légume, arrête une portion 1 minute plus tôt que d’habitude et compare.",
-          "expected": "Tu repères l’inertie et évites la surcuisson."
+          "task": "Découverte de son four avec thermomètre",
+          "duration": "30 min",
+          "instructions": "Préchauffer à 180°C, 200°C et 220°C. Mesurer la température réelle avec un thermomètre de four à chaque fois. Noter l’écart. Tester aussi la température à différents endroits de l’enceinte (haut, bas, centre).",
+          "expected": "Tu connais l’écart de thermostat de ton four et ses points chauds — données que tu utiliseras pour toutes les recettes futures."
         },
         {
-          "task": "Même produit, deux feux",
-          "duration": "20 min",
-          "instructions": "Cuisine deux petites portions à feu doux puis feu vif.",
-          "expected": "Tu comprends l’effet de l’intensité sur texture et coloration."
+          "task": "Poulet rôti : couvert puis découvert",
+          "duration": "90 min",
+          "instructions": "Rôtir un poulet : 45 min couvert à 180°C (cuisson douce, vapeur), puis 30 min découvert à 210°C (croûte). Observer et comparer la texture de la peau selon les deux phases.",
+          "expected": "Peau croustillante, chair juteuse. Comprendre la logique couvert (attendrir) + découvert (croûte)."
         }
       ],
       "progressionStages": [
         {
           "level": "Débutant",
-          "standard": "Tu évites brûlé et cru."
+          "standard": "Tu préchauffes correctement, tu espaces les aliments, tu surveilles par les sens."
         },
         {
           "level": "Intermédiaire",
-          "standard": "Tu ajustes le feu pendant la cuisson."
+          "standard": "Tu maîtrises la logique couvert/découvert selon l’objectif. Tu connais l’écart de thermostat de ton four."
         },
         {
           "level": "Excellent amateur",
-          "standard": "Tu choisis la méthode selon produit, épaisseur et résultat voulu."
+          "standard": "Tu adaptes la position dans le four, le mode (tournante/traditionnel) et la température selon la recette et le résultat voulu."
+        },
+        {
+          "level": "Expert",
+          "standard": "Tu maîtrises la cuisson combinée (poêle + four), la cuisson basse température au four (60-80°C), et le soufflé."
         }
       ],
       "assessmentRubric": [
         {
-          "criterion": "Organisation",
-          "standard": "La mise en place est complète, les gestes s’enchaînent sans chercher un outil ou un ingrédient."
+          "criterion": "Préchauffage",
+          "standard": "Le four est à bonne température avant enfournement."
         },
         {
-          "criterion": "Observation",
-          "standard": "Tu prends tes décisions sur des signes visibles, sonores, olfactifs ou tactiles, pas seulement sur le minuteur."
+          "criterion": "Coloration",
+          "standard": "Les aliments ont une couleur dorée uniforme, sans zones brûlées ni pâles."
         },
         {
-          "criterion": "Correction",
-          "standard": "Tu sais identifier une erreur probable et proposer une correction réaliste avant la fin de la recette."
+          "criterion": "Texture",
+          "standard": "Croûte croustillante si voulu, intérieur fondant ou cuit selon l’objectif."
         },
         {
-          "criterion": "Répétabilité",
-          "standard": "Tu peux refaire la technique avec un résultat similaire au moins deux fois."
+          "criterion": "Gestion chaleur",
+          "standard": "Décision couvert/découvert justifiée et adaptée à la recette."
         }
       ],
       "antiBacle": [
-        "Ne valide pas mentalement une technique si tu ne peux pas expliquer pourquoi elle fonctionne.",
-        "Ne te fie pas uniquement au temps : vérifie au moins deux repères sensoriels.",
-        "Note l’erreur principale après pratique, même si le plat est bon."
+        "Ne commence jamais à enfourner sans préchauffage complet.",
+        "Ne surchage jamais une plaque — deux fournées valent mieux qu’une seule vapeur.",
+        "Ne laisse jamais un gratin sans surveillance — la fenêtre parfait/brûlé est de 60 secondes.",
+        "Ne coupe jamais une viande rôtie sans repos — les jus s’écoulent entièrement."
       ],
       "commonMisconceptions": [
-        "La technique ne s’acquiert pas en lisant : elle devient utile quand tu sais reconnaître et corriger l’erreur."
+        "Chaleur tournante = même température que traditionnelle. Faux : en chaleur tournante, il faut réduire la température de 15-20°C pour obtenir le même résultat.",
+        "Un four plus chaud cuit plus vite avec le même résultat. Faux : une température trop élevée brûle la surface avant que l’intérieur soit cuit. La bonne température est celle qui harmonise cuisson de surface et cuisson à cœur."
       ],
-      "realKitchenTransfer": "Cherche à réutiliser cette notion dans au moins deux recettes différentes.",
+      "realKitchenTransfer": "Chaque recette au four indique une température et un temps — traite ces deux informations comme des points de départ à ajuster selon ton four spécifique. Les notes personnelles sur chaque recette (écart de temps, température réelle, résultat) sont l’investissement le plus rentable pour progresser.",
       "capstonePractice": {
-        "title": "Exercice de transfert",
-        "instructions": "Choisis une recette déjà faite, applique volontairement cette technique, puis note ce qui a changé dans le résultat.",
-        "expected": "Tu dois pouvoir expliquer une décision concrète : taille, feu, couvercle, ordre ou correction."
+        "title": "Poulet rôti avec légumes de saison : maîtrise complète du four",
+        "instructions": "Poulet entier rôti + légumes de saison sur la même plaque. Raisonner : température, durée, position, couvert puis découvert pour la peau. Calculer le repos. Arroser à mi-cuisson. Déglacer la plaque avec du fond ou de l’eau pour récupérer les sucs caramélisés.",
+        "expected": "Peau croustillante, chair juteuse (cuisses à 74°C à cœur), légumes dorés et fondants, jus de rôtissage déglacé et aromatique."
       },
       "quizIds": [
         "q-v19-l-four-1-0",
@@ -3613,164 +4198,209 @@ window.CUISINE_DATA = {
       ],
       "principles": [
         {
-          "title": "Comprendre avant d’exécuter",
-          "body": "Une liaison ne sert pas à masquer : elle doit porter le goût et donner une texture adaptée."
+          "title": "6 méthodes de liaison, 6 résultats différents",
+          "body": "Réduction : concentre par évaporation, intensifie tous les goûts. Roux : farine cuite dans le beurre, base des sauces classiques (béchamel, velouté). Beurre manié : farine + beurre crus mélangés, ajouté en fin de cuisson. Amidon (maïzena, arrow-root) : liant neutre en goût, transparent, instantané. Liaison à l’œuf : jaune + crème, émulsifie et épaissit sans ébullition. Crème : adoucit et épaissit par réduction rapide. Chaque méthode a son usage."
         },
         {
-          "title": "Observer le résultat",
-          "body": "Le temps indiqué est une aide. La vraie décision se prend avec la couleur, la texture, l’odeur, le son et le goût."
+          "title": "Le roux : la base de la sauce française classique",
+          "body": "Roux blanc : beurre fondu + farine à parts égales, cuit 1-2 min jusqu’à odeur de biscuit mais sans coloration. Base de la béchamel (roux blanc + lait), sauce mornay, soufflé. Roux blond : cuit 3-5 min, couleur paille. Base du velouté (roux blond + fond blanc). Roux brun : cuit jusqu’à couleur châtaigne. Base des sauces espagnole et demi-glace. Plus le roux colore, moins il lie efficacement — la farine colorée a moins de pouvoir épaississant."
         },
         {
-          "title": "Corriger tôt",
-          "body": "Un petit ajustement au bon moment évite souvent une grosse correction impossible à la fin."
+          "title": "La maïzena et l’arrow-root : liaisons légères et transparentes",
+          "body": "La maïzena (amidon de maïs) gélatinise à 72-80°C et donne une texture brillante, semi-transparente. Ratio approximatif : 1 cuillère à café (7g) pour 250ml de liquide. Toujours délayer dans un peu de liquide froid avant d’incorporer au liquide chaud. L’arrow-root est plus délicat — il ne supporte pas l’ébullition prolongée (il re-fluidifie). Idéal pour les sauces servies immédiatement."
+        },
+        {
+          "title": "La liaison à l’œuf : pour les sauces crémeuses sans farine",
+          "body": "Mélange jaunes d’œufs + crème fraîche (tempéré pour éviter le choc thermique). S’incorpore hors feu ou à feu très doux — ne jamais faire bouillir après, sous peine de coaguler les jaunes (sauce granuleuse). Usage : veloutés enrichis, sauce normande, carbonara, blanquette de veau. Donne une texture soyeuse et un goût riche."
+        },
+        {
+          "title": "Choisir sa liaison selon le plat",
+          "body": "Sauce courte de restaurant : réduction + beurre monté (pas de farine). Béchamel ou lasagnes : roux blanc + lait. Sauce pour ragoût classique : farine saupoudrée pendant la cuisson de la viande ou beurre manié en fin. Sauce asiatique (wok) : maïzena délayée. Blanquette : liaison à l’œuf + crème. Sauce tomate longue : réduction seule — la pectine de la tomate lie naturellement."
         }
       ],
       "techniqueSteps": [
         {
-          "title": "Préparer le contexte",
-          "action": "Lis l’objectif technique, prépare le matériel et identifie le point critique de la recette.",
-          "cue": "Tu sais ce que tu dois observer avant de commencer.",
-          "mistake": "Suivre les étapes sans savoir quel résultat chercher.",
-          "correction": "Reformule l’objectif en une phrase avant de cuisiner."
+          "title": "Faire un roux blanc",
+          "action": "Fonds le beurre à feu moyen dans une casserole à fond épais. Ajoute la même quantité en poids de farine d’un coup. Mélange immédiatement avec une spatule ou fouet. Cuis en remuant constamment 1-2 min jusqu’à odeur légère de biscuit, sans coloration.",
+          "cue": "Mélange homogène, légèrement mousseux. Odeur de biscuit/cookie — jamais de farine crue.",
+          "mistake": "Ajouter le lait (pour une béchamel) sans avoir cuit la farine assez longtemps → goût de farine crue persistant.",
+          "correction": "Minimum 1 min 30 de cuisson du roux avant d’ajouter le liquide, même pour un roux blanc."
         },
         {
-          "title": "Contrôler l’intensité",
-          "action": "Adapte chaleur, temps, humidité ou agitation selon la réaction observée.",
-          "cue": "Sauce nappante, brillante ou veloutée selon l’objectif.",
-          "mistake": "Appliquer le temps indiqué même si le résultat visuel dit l’inverse.",
-          "correction": "Ralentis, goûte, touche ou observe avant de continuer."
+          "title": "Incorporer le liquide dans le roux",
+          "action": "Verse le liquide chaud (lait, fond) en 2-3 fois dans le roux chaud. Fouette vigoureusement à chaque ajout pour dissoudre sans grumeaux. Commence par 1/3 du volume, fouette jusqu’à homogène, puis ajoute le reste.",
+          "cue": "Sauce lisse sans grumeaux. Elle épaissit progressivement à la chaleur.",
+          "mistake": "Verser tout le liquide froid d’un coup dans le roux → choc thermique → grumeaux.",
+          "correction": "Liquide tiède ou chaud, ajout progressif, fouet vigoureux à chaque fois."
         },
         {
-          "title": "Finir proprement",
-          "action": "Goûte, ajuste, puis sers avec une finition cohérente : acidité, gras, herbes, sauce ou repos.",
-          "cue": "Le résultat est net, équilibré et volontaire.",
-          "mistake": "Servir sans dernier contrôle.",
-          "correction": "Goûte une bouchée complète avant dressage."
+          "title": "Liaison à la maïzena",
+          "action": "Délaye 1 cuillère à café de maïzena dans 2 cuillères à soupe de liquide froid (eau, bouillon, crème). Verse en filet dans la sauce frémissante en remuant. Laisse cuire 1-2 min jusqu’à épaississement. Goûte.",
+          "cue": "Sauce brillante et semi-transparente. Plus épaisse mais sans goût de farine.",
+          "mistake": "Ajouter la maïzena directement dans le liquide chaud sans la délayer → grumeaux immédiats.",
+          "correction": "Toujours délayer dans du froid avant. C’est 10 secondes de plus mais indispensable."
+        },
+        {
+          "title": "Liaison à l’œuf (liaison à blanc)",
+          "action": "Mélange 2-3 jaunes + 100ml crème fraîche dans un bol. Prélève une louche de liquide chaud (pas bouillant), verse sur les jaunes en remuant (tempérage). Puis verse ce mélange dans la casserole hors feu. Remue à chaleur très douce — ne jamais faire bouillir.",
+          "cue": "Sauce veloutée, légèrement épaissie, brillante. Pas de grumeaux d’œuf.",
+          "mistake": "Verser les jaunes directement dans le liquide bouillant → coagulation instantanée → morceaux d’œuf cuit.",
+          "correction": "Le tempérage (verser le chaud sur le froid progressivement) est l’étape critique. Ne la saute pas."
+        },
+        {
+          "title": "Beurre manié (correction rapide)",
+          "action": "Malaxe à parts égales beurre pommade + farine jusqu’à obtenir une pâte homogène. Incorpore en petites noix dans la sauce frémissante en fouettant. Ajoute autant de noix que nécessaire jusqu’à la texture souhaitée. Cuis encore 2 min après le dernier ajout.",
+          "cue": "Sauce épaissie progressivement, sans grumeaux. Goûte pour vérifier qu’il n’y a plus de farine crue.",
+          "mistake": "Ajouter trop de beurre manié trop vite → sauce trop épaisse et goût de farine.",
+          "correction": "Petites noix, une à une. Attends 30 secondes entre chaque avant de décider si tu en ajoutes encore."
         }
       ],
       "sensoryCues": {
-        "see": "Sauce nappante, brillante ou veloutée selon l’objectif.",
-        "smell": "Odeur nette correspondant à la technique, jamais brûlée ni fade.",
-        "taste": "Goût équilibré et lisible, sans correction excessive.",
-        "touch": "Texture conforme à l’objectif : souple, croquante, nappante, friable ou fondante.",
-        "hear": "Le son doit rester cohérent avec la technique : frémissement doux, crépitement vif ou silence de repos."
+        "see": "Sauce homogène, sans grumeaux ni particules. Brillante (maïzena, réduction, émulsion). Mate et opaque (roux + lait). Texture : nappante = trait de doigt reste net sur cuillère.",
+        "smell": "Roux blanc : odeur de biscuit, pas de farine crue. Roux brun : odeur de caramel, noisette. Maïzena : neutre. Liaison œuf : odeur lactée et légèrement sucrée.",
+        "taste": "La liaison ne doit pas avoir de goût propre — elle porte les autres saveurs. Si tu goûtes de la farine crue, le roux n’a pas cuit assez. Si c’est trop épais, ça ‘colle’ en bouche.",
+        "touch": "Test de la cuillère : trempe, retourne, trace un trait horizontal avec le doigt. Si le trait reste net, la sauce nappe. Si le liquide coule immédiatement, encore trop liquide."
       },
       "troubleshooting": [
         {
-          "problem": "Résultat irrégulier",
-          "cause": "Taille, chaleur ou timing non maîtrisés.",
-          "fix": "Standardise la préparation et ajuste l’intensité plus tôt."
+          "problem": "Grumeaux dans la sauce",
+          "cause": "Liquide froid dans roux chaud, ou maïzena non délayée, ou roux insuffisant.",
+          "fix": "Passe la sauce au fouet vigoureusement hors feu. Si insuffisant : chinois fin ou mixeur plongeant. Prévention : liquide tiède, ajout progressif."
         },
         {
-          "problem": "Goût plat",
-          "cause": "Assaisonnement ou finition insuffisants.",
-          "fix": "Corrige sel, acidité, gras ou fraîcheur par petites touches."
+          "problem": "Goût de farine crue",
+          "cause": "Roux pas assez cuit ou beurre manié ajouté en trop grande quantité sans cuisson suffisante.",
+          "fix": "Cuis encore 5 min à feu doux en remuant. Si le goût persiste, dilue avec fond/bouillon et repars."
         },
         {
-          "problem": "Texture ratée",
-          "cause": "Cuisson prolongée, chaleur mal adaptée ou manque de repos.",
-          "fix": "Identifie le point de bascule et arrête plus tôt la prochaine fois."
+          "problem": "Sauce trop épaisse",
+          "cause": "Trop de liant ou réduction trop forte.",
+          "fix": "Ajoute du liquide (fond, lait, eau, crème) progressivement en remuant. Ajuste le sel après dilution."
+        },
+        {
+          "problem": "Sauce liaison œuf granuleuse",
+          "cause": "Jaunes ajoutés sans tempérage dans un liquide trop chaud → coagulation.",
+          "fix": "Irréparable — passe au chinois fin pour enlever les morceaux d’œuf. Prévention : toujours tempérer et ne jamais faire bouillir après la liaison œuf."
         }
       ],
       "practiceDrills": [
         {
-          "title": "Répétition courte",
-          "duration": "15 min",
-          "instructions": "Réalise une version miniature de la technique en te concentrant sur un seul critère : couleur, texture ou goût.",
-          "goal": "Isoler la compétence sans te perdre dans une recette complète."
+          "title": "Béchamel en 3 épaisseurs",
+          "duration": "25 min",
+          "instructions": "Fais un roux avec 30g beurre + 30g farine. Divise en 3 casseroles. Ajoute à chacune : 500ml, 350ml, 200ml de lait chaud. Compare les 3 textures (liquide, nappant, épais). Goûte chaque version.",
+          "goal": "Comprendre que le ratio roux/lait contrôle directement l’épaisseur. Pas de magie — juste de la géométrie."
         },
         {
-          "title": "Comparaison volontaire",
+          "title": "Maïzena vs roux : même épaisseur, goût différent",
           "duration": "20 min",
-          "instructions": "Fais deux versions : une correcte, une avec une erreur contrôlée. Compare le résultat.",
-          "goal": "Reconnaître l’erreur par les sens."
+          "instructions": "Prépare 200ml de bouillon de poulet en deux petites casseroles. Épaissit l’une avec maïzena délayée, l’autre avec roux blond. Cuis jusqu’à même texture nappante. Goûte les deux.",
+          "goal": "Sentir que la maïzena est neutre (goût du bouillon pur) et que le roux ajoute une note légèrement lactée/biscuité. Choisir l’un ou l’autre selon l’usage."
         }
       ],
       "masteryCriteria": [
-        "Tu peux expliquer le mécanisme de la technique.",
-        "Tu reconnais les signes de réussite.",
-        "Tu sais nommer l’erreur la plus probable.",
-        "Tu sais proposer une correction réaliste."
+        "Tu sais distinguer les 6 méthodes de liaison et donner un exemple d’usage pour chacune.",
+        "Tu fais un roux sans grumeaux et sans goût de farine crue.",
+        "Tu sais délayer la maïzena correctement.",
+        "Tu maîtrises la liaison à l’œuf avec tempérage.",
+        "Tu choisis la méthode adaptée au plat sans regarder la recette."
       ],
-      "proTip": "Un bon cuisinier ne suit pas seulement le temps : il observe et ajuste.",
-      "mentorBrief": "Une sauce se pense en trois questions : d’où vient le goût, quelle texture je vise, quelle correction finale manque ? Les sauces ratées viennent souvent d’un excès de chaleur, de sel concentré ou d’un gras mal incorporé.",
+      "proTip": "Le roux est la fondation de la cuisine française classique (béchamel, velouté, espagnole). Mais dans la cuisine moderne, la liaison par réduction + beurre monté est préférée pour les sauces courtes car elle ne dilue pas le goût. Apprends les deux systèmes — ils servent des usages complémentaires.",
+      "mentorBrief": "Comprendre les liaisons te libère des recettes. Quand tu sais pourquoi une béchamel est onctueuse (gélatinisation de l’amidon) et pourquoi une sauce courte brille (émulsion du beurre), tu peux diagnostiquer n’importe quelle sauce ratée et la corriger. C’est de la physico-chimie culinaire appliquée — et ça s’apprend en 30 min de pratique comparative.",
       "technicalVocabulary": [
         {
-          "term": "Réduction",
-          "definition": "Évaporation contrôlée pour concentrer goût et texture."
+          "term": "Roux",
+          "definition": "Mélange cuit à parts égales de beurre et farine. Blanc (1-2 min, base de béchamel), blond (3-5 min, base de velouté), brun (>8 min, base de sauce espagnole). Plus coloré = moins de pouvoir épaississant."
         },
         {
-          "term": "Nappant",
-          "definition": "Texture qui couvre légèrement le dos d’une cuillère."
+          "term": "Béchamel",
+          "definition": "Sauce blanche de base : roux blanc + lait chaud. Ratio classique : 50g beurre + 50g farine + 500ml lait pour une béchamel nappante. Base des lasagnes, gratins, croque-monsieur, soufflés."
         },
         {
-          "term": "Monter",
-          "definition": "Incorporer beurre ou gras pour arrondir et lier."
+          "term": "Velouté",
+          "definition": "Sauce de base : roux blond + fond blanc (volaille, poisson, veau). Plus légère et plus aromatique que la béchamel. Peut être enrichi de crème (sauce suprême) ou de liaison œuf."
         },
         {
-          "term": "Trancher",
-          "definition": "Séparation visible du gras et du liquide."
+          "term": "Maïzena (fécule de maïs)",
+          "definition": "Amidon de maïs pur. Gélatinise à 72-80°C. Neutral en goût, donne une texture brillante et semi-transparente. Toujours délayer dans du froid avant d’incorporer au chaud."
+        },
+        {
+          "term": "Liaison à l’œuf",
+          "definition": "Mélange jaunes + crème incorporé hors feu dans une sauce. Donne une texture soyeuse et veloutée. Exige un tempérage pour éviter la coagulation. Ne jamais faire bouillir après liaison."
+        },
+        {
+          "term": "Beurre manié",
+          "definition": "Beurre pommade + farine crus malaxés ensemble. Ajouté en noix dans une sauce frémissante pour corriger une texture trop liquide. Cuire encore 2 min après le dernier ajout pour éliminer le goût de farine."
+        },
+        {
+          "term": "Tempérage",
+          "definition": "Technique consistant à verser progressivement un liquide chaud sur un ingrédient fragile (jaune d’œuf, chocolat) pour l’amener progressivement à la même température sans le cuire brutalement."
         }
       ],
       "guidedLab": [
         {
-          "task": "Réduction mesurée",
-          "duration": "15 min",
-          "instructions": "Réduis 200 ml de bouillon à 100 ml puis goûte avant de saler.",
-          "expected": "Tu constates que la réduction concentre aussi le sel."
+          "task": "La béchamel parfaite en 4 textures",
+          "duration": "30 min",
+          "instructions": "Fais un roux avec 60g beurre + 60g farine. Divise en 4 petites casseroles. Incorpore respectivement 600ml, 450ml, 300ml, 200ml de lait chaud à chacune. Laisse épaissir 5 min. Verse chacune sur une assiette inclinée et observe la vitesse d’écoulement.",
+          "expected": "4 textures nettement différentes avec le même roux : de la sauce (600ml) au gratin (200ml). Tu comprends que la liaison n’est pas binaire — elle s’adapte à l’usage."
         },
         {
-          "task": "Sauce récupérée",
-          "duration": "10 min",
-          "instructions": "Fais volontairement trancher une mini sauce beurre puis récupère avec eau froide et fouet.",
-          "expected": "Tu comprends l’effet température + agitation."
+          "task": "La liaison œuf : tempérage comparatif",
+          "duration": "15 min",
+          "instructions": "Prépare 300ml de bouillon chaud. Prends 2 jaunes + 50ml crème. Version 1 : verse directement les jaunes dans le bouillon bouillant. Version 2 : tempère correctement (verse le bouillon tiédi sur les jaunes progressivement). Compare les résultats.",
+          "expected": "Version 1 : grumeaux d’œuf cuit (sauce ratée). Version 2 : sauce soyeuse et homogène. La différence est frappante et mémorable."
         }
       ],
       "progressionStages": [
         {
           "level": "Débutant",
-          "standard": "Tu réduis sans brûler et goûtes avant de saler."
+          "standard": "Tu fais un roux sans grumeaux. Tu sais délayer la maïzena."
         },
         {
           "level": "Intermédiaire",
-          "standard": "Tu ajustes texture et assaisonnement séparément."
+          "standard": "Tu maîtrises béchamel et velouté. Tu choisis entre réduction, roux et maïzena selon le plat."
         },
         {
-          "level": "Excellent amateur",
-          "standard": "Tu sais sauver une sauce trop liquide, trop acide, trop salée ou tranchée."
+          "level": "Avancé",
+          "standard": "Tu maîtrises la liaison à l’œuf avec tempérage. Tu diagnostiques une sauce trop liquide ou trop épaisse et la corriges."
+        },
+        {
+          "level": "Expert",
+          "standard": "Tu connais tous les agents de liaison classiques et tu choisis spontanément en fonction du goût voulu, de la texture cible et du service prévu."
         }
       ],
       "assessmentRubric": [
         {
-          "criterion": "Organisation",
-          "standard": "La mise en place est complète, les gestes s’enchaînent sans chercher un outil ou un ingrédient."
+          "criterion": "Sélection du liant",
+          "standard": "Tu justifies le choix de ta méthode de liaison en fonction du plat et de l’usage."
         },
         {
-          "criterion": "Observation",
-          "standard": "Tu prends tes décisions sur des signes visibles, sonores, olfactifs ou tactiles, pas seulement sur le minuteur."
+          "criterion": "Technique sans grumeaux",
+          "standard": "Tes sauces sont lisses. Tu appliques le protocole adapté (liquide tiède, maïzena délayée, tempérage œuf)."
         },
         {
-          "criterion": "Correction",
-          "standard": "Tu sais identifier une erreur probable et proposer une correction réaliste avant la fin de la recette."
+          "criterion": "Texture cible",
+          "standard": "Tu atteins la texture nappante souhaitée et tu sais l’ajuster en plus ou moins épais."
         },
         {
-          "criterion": "Répétabilité",
-          "standard": "Tu peux refaire la technique avec un résultat similaire au moins deux fois."
+          "criterion": "Goût neutre du liant",
+          "standard": "La liaison ne masque pas les arômes. Pas de goût de farine crue, pas d’épaisseur excessive en bouche."
         }
       ],
       "antiBacle": [
-        "Ne valide pas mentalement une technique si tu ne peux pas expliquer pourquoi elle fonctionne.",
-        "Ne te fie pas uniquement au temps : vérifie au moins deux repères sensoriels.",
-        "Note l’erreur principale après pratique, même si le plat est bon."
+        "Ne verse jamais le liquide froid dans un roux chaud — le choc thermique crée des grumeaux instantanément.",
+        "Ne saute pas le tempérage pour la liaison à l’œuf — les jaunes coagulent à 70°C.",
+        "Ne goûte pas une sauce avant d’avoir cuit le roux au moins 2 min — le goût de farine crue disparaît à la cuisson."
       ],
       "commonMisconceptions": [
-        "Une émulsion cassée n’est pas toujours perdue : température et eau peuvent souvent la récupérer."
+        "La maïzena ‘dilue’ le goût. Faux : la maïzena est sans goût et n’affecte pas le profil aromatique. C’est l’avantage par rapport au roux (qui ajoute une note lactée/biscuité).",
+        "Un roux plus coloré lie mieux. Faux : un roux brun a perdu une partie de son pouvoir épaississant (la farine se dégrade partiellement). Il donne de l’arôme mais lie moins. Pour une béchamel épaisse, roux blanc uniquement.",
+        "La liaison à l’œuf est réservée aux plats compliqués. Faux : c’est la liaison de la blanquette de veau et de la carbonara — deux plats très courants. Elle demande juste un peu d’attention à la température."
       ],
-      "realKitchenTransfer": "Mayonnaise, vinaigrette, beurre blanc, hollandaise et carbonara reposent sur la même logique.",
+      "realKitchenTransfer": "Tu utiliseras une liaison chaque fois que tu prépares : béchamel (roux), velouté (roux blond), sauce pour pâtes crémeuses (réduction + parmesan/crème), sauce de braisé trop liquide (beurre manié), blanquette (liaison œuf), wok asiatique (maïzena). C’est un outil que tu sors 2-3 fois par semaine si tu cuisines régulièrement.",
       "capstonePractice": {
-        "title": "Exercice de transfert",
-        "instructions": "Choisis une recette déjà faite, applique volontairement cette technique, puis note ce qui a changé dans le résultat.",
-        "expected": "Tu dois pouvoir expliquer une décision concrète : taille, feu, couvercle, ordre ou correction."
+        "title": "Blanquette de veau classique : 3 liaisons en 1 plat",
+        "instructions": "Prépare une blanquette en 3 phases. (1) Pocher le veau dans un fond blanc non salé. (2) Faire un velouté avec le bouillon de cuisson : roux blond + bouillon. (3) Enrichir avec liaison œuf (3 jaunes + 100ml crème, tempérés). Ajouter champignons et petits oignons glacés. Assaisonnement uniquement après la liaison.",
+        "expected": "Sauce ivoire, soyeuse et nappante. Veau tendre et humide. Tu maîtrises roux, velouté et liaison œuf dans un seul plat — c’est le test ultime du saucier."
       },
       "quizIds": [
         "q-v19-l-liaison-1-0",
@@ -3942,169 +4572,207 @@ window.CUISINE_DATA = {
           "explanation": "Le temps dépend du four et de la taille."
         }
       ],
-      "principles": [
+      “principles”: [
         {
-          "title": "Comprendre avant d’exécuter",
-          "body": "La pâtisserie est une cuisine de ratios : un petit écart change texture, volume et friabilité."
+          “title”: “Le gluten : le levier central de toute pâte”,
+          “body”: “Le gluten est un réseau de protéines (gluténine + gliadine) qui se forme quand la farine entre en contact avec l’eau et est travaillée. Ce réseau donne l’élasticité et la ténacité aux pâtes. En pâtisserie, le gluten est parfois voulu (pâte feuilletée, pain) mais souvent évité (sablée, brisée, shortcrust) : il faut alors protéger la farine de l’eau avec le gras (sablage) et limiter le pétrissage.”
         },
         {
-          "title": "Observer le résultat",
-          "body": "Le temps indiqué est une aide. La vraie décision se prend avec la couleur, la texture, l’odeur, le son et le goût."
+          “title”: “Température du beurre = texture finale”,
+          “body”: “Beurre froid (4°C) : reste en morceaux dans la farine, crée des feuillets à la cuisson (pâte feuilletée, croissant). Beurre pommade (20°C) : crème avec le sucre, emprisonne l’air (pâte sucrée, cookies). Beurre fondu (liquid) : s’incorpore partout, fond aucun réseau gras protecteur — pâte plus dense (financiers, moelleux). L’erreur la plus fréquente en pâtisserie est de ne pas respecter la température du beurre prescrite.”
         },
         {
-          "title": "Corriger tôt",
-          "body": "Un petit ajustement au bon moment évite souvent une grosse correction impossible à la fin."
+          “title”: “Le repos au froid : trois fonctions essentielles”,
+          “body”: “Un repos de 30 min au réfrigérateur après la confection d’une pâte sert à : (1) Refroidir le beurre qui s’est réchauffé au contact des mains → moins de développement de gluten, (2) Permettre à l’hydratation de se répartir uniformément dans la pâte, (3) Détendre le réseau glutineux (la pâte ‘se repose’ — tirée, elle reprend sa forme ; reposée, elle reste étirée). Sans repos : rétraction à la cuisson, fond de tarte qui rétrécit, texture inégale.”
+        },
+        {
+          “title”: “Pesée précise : la pâtisserie n’est pas la cuisine”,
+          “body”: “En cuisine salée, une cuillère à soupe de sel de plus est corrigeable. En pâtisserie, 20g de farine en trop transforme un brownie fondant en gâteau sec. Les ratios sont des formules chimiques : ils déterminent texture, volume, moelleux et tenue. La balance de précision (au gramme) est l’outil de base. La tasse et la cuillère à soupe sont des instruments approximatifs qui varient de 15-30% selon la façon de mesurer.”
+        },
+        {
+          “title”: “La cuisson : Maillard et caramélisation pour les pâtes sucrées”,
+          “body”: “Les pâtes sucrées colorent grâce à la caramélisation du sucre et à la réaction de Maillard (protéines de la farine et de l’œuf + sucres). Trop chaud : surface brûlée avant que le cœur soit cuit. Pas assez chaud : pâle et sans goût. Position basse du four pour les fonds de tarte (cuisson par le bas, fond cuit et croustillant). Test de cuisson d’un fond à blanc : bord légèrement doré, centre mat et sec.”
         }
       ],
-      "techniqueSteps": [
+      “techniqueSteps”: [
         {
-          "title": "Préparer le contexte",
-          "action": "Lis l’objectif technique, prépare le matériel et identifie le point critique de la recette.",
-          "cue": "Tu sais ce que tu dois observer avant de commencer.",
-          "mistake": "Suivre les étapes sans savoir quel résultat chercher.",
-          "correction": "Reformule l’objectif en une phrase avant de cuisiner."
+          “title”: “Sablage (pâte sablée / brisée)”,
+          “action”: “Mettre farine et beurre froid coupé en cubes dans un bol. Travailler du bout des doigts (jamais la paume chaude) en frottant beurre et farine jusqu’à obtenir une texture de sable fin ou de miettes. Chaque particule de farine est enrobée de gras — le gluten ne peut plus se développer quand l’eau sera ajoutée.”,
+          “cue”: “Texture de sable grossier, pas de gros morceaux de beurre visibles, mélange sec et friable.”,
+          “mistake”: “Travailler avec les paumes (trop chaud) ou trop longtemps (beurre fondu) — le sablage ne fonctionne plus.”,
+          “correction”: “Si le beurre colle et chauffe, mettre 10 min au réfrigérateur et recommencer.”
         },
         {
-          "title": "Contrôler l’intensité",
-          "action": "Adapte chaleur, temps, humidité ou agitation selon la réaction observée.",
-          "cue": "Texture régulière, pâte non élastique si elle doit être friable, cuisson homogène.",
-          "mistake": "Appliquer le temps indiqué même si le résultat visuel dit l’inverse.",
-          "correction": "Ralentis, goûte, touche ou observe avant de continuer."
+          “title”: “Incorporation du liquide sans sur-travailler”,
+          “action”: “Ajouter l’eau (ou œuf) froide progressivement sur le mélange sablé. Incorporer à la fourchette d’abord, puis unifier avec la paume en 2-3 mouvements de fraser (écraser horizontalement sur le plan de travail). S’arrêter dès que la pâte est homogène.”,
+          “cue”: “Pâte homogène qui ne colle pas, ni sèche ni humide, pas élastique.”,
+          “mistake”: “Pétrir comme une pâte à pain — développe le gluten, résultat dur et élastique.”,
+          “correction”: “Tester l’élasticité : tirer un petit morceau. S’il se retracte, trop travaillé. S’il se casse, bon signe.”
         },
         {
-          "title": "Finir proprement",
-          "action": "Goûte, ajuste, puis sers avec une finition cohérente : acidité, gras, herbes, sauce ou repos.",
-          "cue": "Le résultat est net, équilibré et volontaire.",
-          "mistake": "Servir sans dernier contrôle.",
-          "correction": "Goûte une bouchée complète avant dressage."
+          “title”: “Repos au froid obligatoire”,
+          “action”: “Filmer la pâte et refrigerer 30 min minimum (idéalement 1h ou toute une nuit). Ne jamais couper le repos — les professionnels préparent toujours leurs pâtes la veille. Après repos, laisser 5 min à température ambiante avant d’étaler.”,
+          “cue”: “Pâte froide mais pas dure comme pierre, légèrement malléable au toucher.”,
+          “mistake”: “Étaler immédiatement : la pâte se rétracte au four, forme inégale et fond trop mince.”,
+          “correction”: “Si pas le temps, 15 min minimum au congélateur plutôt que pas de repos du tout.”
+        },
+        {
+          “title”: “Fonçage et cuisson à blanc”,
+          “action”: “Étaler sur plan fariné (5mm pour sablée, 3mm pour brisée). Foncer le moule sans tirer ni étirer la pâte — juste la poser. Chiqueter les bords. Pour cuisson à blanc : film alimentaire + lest (haricots secs, billes). Précuire 15 min à 180°C, retirer le lest, 5-8 min de plus pour sécher.”,
+          “cue”: “Fond bien cuit et légèrement doré, bords réguliers, pas de boursouflures.”,
+          “mistake”: “Tirer la pâte dans le moule → elle se rétracte. Ne pas lester → gonfle et déforme.”,
+          “correction”: “Poser la pâte délicatement, laisser tomber dans le moule par gravité, ne jamais étirer.”
+        },
+        {
+          “title”: “Comprendre les 3 pâtes de base”,
+          “action”: “Pâte brisée (beurre sablé 50%, eau) : croustillante, neutre, pour quiches et tartes salées. Pâte sablée (beurre sablé 50%, sans eau) : friable, légèrement sucrée, pour tartes sucrées. Pâte sucrée (beurre pommade + sucre crémés) : fondante, plus fine et fragile, pour fonds de tartelettes de chef. Choisir la pâte selon l’usage.”,
+          “cue”: “La pâte choisie correspond à la finesse et la tenue attendues pour la recette.”,
+          “mistake”: “Utiliser une pâte brisée pour toutes les tartes — la texture et le goût ne sont pas optimaux pour les recettes sucrées.”,
+          “correction”: “Mémoriser les 3 profils et adapter systématiquement.”
         }
       ],
-      "sensoryCues": {
-        "see": "Texture régulière, pâte non élastique si elle doit être friable, cuisson homogène.",
-        "smell": "Odeur nette correspondant à la technique, jamais brûlée ni fade.",
-        "taste": "Goût équilibré et lisible, sans correction excessive.",
-        "touch": "Texture conforme à l’objectif : souple, croquante, nappante, friable ou fondante.",
-        "hear": "Le son doit rester cohérent avec la technique : frémissement doux, crépitement vif ou silence de repos."
+      “sensoryCues”: {
+        “see”: “Pâte étalée : surface mate et lisse, épaisseur régulière. Fond cuit à blanc : légèrement doré sur les bords, mat au centre. Pâte sucrée cuite : brun doré uniforme, jamais noire en dessous.”,
+        “smell”: “Cuisson réussie : arôme de beurre chaud et de pain biscuité. Brûlé : odeur âcre et amère (souvent le fond en contact avec la plaque trop chaude).”,
+        “taste”: “Pâte brisée : croustillante et neutre. Pâte sablée : friable, fondante, légèrement sucrée. Pâte sucrée : fondante, beurrée, fine. Aucune pâte ne doit avoir de goût farineux (farine crue).”,
+        “touch”: “Pâte reposée : souple et malléable, pas élastique. Fond cuit : croustillant au toucher, sonnant creux quand on frappe avec le doigt.”,
+        “hear”: “Fond cuit à blanc : son creux au tapotement = bien cuit. Son mat = encore humide, prolonger la cuisson.”
       },
-      "troubleshooting": [
+      “troubleshooting”: [
         {
-          "problem": "Résultat irrégulier",
-          "cause": "Taille, chaleur ou timing non maîtrisés.",
-          "fix": "Standardise la préparation et ajuste l’intensité plus tôt."
+          “problem”: “Pâte se rétracte à la cuisson”,
+          “cause”: “Gluten développé (trop travaillé ou pas assez reposé), ou pâte étirée au fonçage.”,
+          “fix”: “Repos obligatoire au froid, ne jamais étirer en fonçant. La pâte doit tomber dans le moule par gravité.”
         },
         {
-          "problem": "Goût plat",
-          "cause": "Assaisonnement ou finition insuffisants.",
-          "fix": "Corrige sel, acidité, gras ou fraîcheur par petites touches."
+          “problem”: “Pâte sablée dure comme du béton”,
+          “cause”: “Trop de travail du gluten, beurre trop chaud au sablage, ou trop d’eau.”,
+          “fix”: “Sablage rapide avec beurre froid, incorporation de l’eau minimale, pas de pétrissage.”
         },
         {
-          "problem": "Texture ratée",
-          "cause": "Cuisson prolongée, chaleur mal adaptée ou manque de repos.",
-          "fix": "Identifie le point de bascule et arrête plus tôt la prochaine fois."
+          “problem”: “Fond brûlé en dessous”,
+          “cause”: “Position trop haute dans le four (chaleur insuffisante par le bas pour un fond → trop de chaleur voûte), ou moule sombre conducteur.”,
+          “fix”: “Position basse pour les fonds de tarte. Moule clair ou perforé (meilleure conduction et évaporation).”
+        },
+        {
+          “problem”: “Fond humide et mou”,
+          “cause”: “Cuisson insuffisante, ou garniture trop humide posée sur un fond mal précuit.”,
+          “fix”: “Toujours cuire à blanc pour les tartes à garnitures humides. Lustrer le fond avec un peu de blanc d’œuf battu pour imperméabiliser.”
         }
       ],
-      "practiceDrills": [
+      “practiceDrills”: [
         {
-          "title": "Répétition courte",
-          "duration": "15 min",
-          "instructions": "Réalise une version miniature de la technique en te concentrant sur un seul critère : couleur, texture ou goût.",
-          "goal": "Isoler la compétence sans te perdre dans une recette complète."
+          “title”: “Pâte sablée : test du sablage et du repos”,
+          “duration”: “45 min + 30 min repos”,
+          “instructions”: “150g farine + 75g beurre froid + 30g sucre + 1 pincée sel + 1 jaune. Sablage au bout des doigts. Incorporer jaune + 1-2 cuillères eau froide. Diviser en 2 : version cuite immédiatement, version reposée 1h. Comparer la rétraction et la texture.”,
+          “goal”: “Mesurer physiquement l’impact du repos sur la rétraction et la texture finale.”
         },
         {
-          "title": "Comparaison volontaire",
-          "duration": "20 min",
-          "instructions": "Fais deux versions : une correcte, une avec une erreur contrôlée. Compare le résultat.",
-          "goal": "Reconnaître l’erreur par les sens."
+          “title”: “Fonçage et cuisson à blanc”,
+          “duration”: “30 min”,
+          “instructions”: “Foncer un moule de 20cm avec la pâte sablée. Chiqueter les bords. Piquer le fond. Placer film + haricots secs. Four 180°C, 15 min. Retirer lest, 8 min. Observer et noter l’état : rétraction, couleur, croustillant.”,
+          “goal”: “Maîtriser la cuisson à blanc et les signes d’un fond parfaitement cuit avant garniture.”
         }
       ],
-      "masteryCriteria": [
-        "Tu peux expliquer le mécanisme de la technique.",
-        "Tu reconnais les signes de réussite.",
-        "Tu sais nommer l’erreur la plus probable.",
-        "Tu sais proposer une correction réaliste."
+      “masteryCriteria”: [
+        “Tu peux expliquer pourquoi le beurre froid est obligatoire pour le sablage.”,
+        “Tu sais la différence entre pâte brisée, sablée et sucrée et quand utiliser chacune.”,
+        “Tu réalises un fonçage sans étirer la pâte.”,
+        “Tu maîtrises la cuisson à blanc et reconnais un fond correctement cuit.”,
+        “Tu pèses tous les ingrédients au gramme sans approximation.”
       ],
-      "proTip": "Un bon cuisinier ne suit pas seulement le temps : il observe et ajuste.",
-      "mentorBrief": "En pâtisserie, l’approximation se voit vite : pesée, température, hydratation, repos et cuisson déterminent la texture. L’objectif est d’être précis sans devenir rigide.",
-      "technicalVocabulary": [
+      “proTip”: “Prépare tes pâtes la veille et laisse-les reposer toute la nuit au réfrigérateur. Le résultat est incomparablement meilleur qu’une pâte cuite le jour même — les pros ne font jamais autrement. Une pâte reposée 12h s’étale sans résistance, ne se rétracte pas, et donne une texture parfaitement friable.”,
+      “mentorBrief”: “La pâtisserie est une chimie : les ratios sont des formules, pas des suggestions. Mais la vraie compétence n’est pas de mémoriser les ratios — c’est de comprendre POURQUOI ils existent. Comprendre le gluten, le rôle du beurre et du repos transforme une recette en connaissance transférable à n’importe quelle pâte.”,
+      “technicalVocabulary”: [
         {
-          "term": "Sablage",
-          "definition": "Enrober la farine de gras pour limiter le gluten."
+          “term”: “Sablage”,
+          “definition”: “Technique d’enrobage de la farine par le gras froid pour limiter le développement du gluten lors de l’ajout du liquide.”
         },
         {
-          "term": "Réseau glutineux",
-          "definition": "Structure élastique formée par farine + eau + travail."
+          “term”: “Réseau glutineux”,
+          “definition”: “Structure tridimensionnelle élastique formée par les protéines gluténine et gliadine de la farine en présence d’eau et de travail mécanique.”
         },
         {
-          "term": "Repos",
-          "definition": "Temps permettant au froid ou à l’hydratation de stabiliser la pâte."
+          “term”: “Fraser”,
+          “definition”: “Geste de finition d’une pâte : écraser horizontalement la pâte contre le plan de travail avec la paume pour homogénéiser sans développer le gluten.”
         },
         {
-          "term": "Cuisson à blanc",
-          "definition": "Cuisson d’un fond de tarte avant garniture."
+          “term”: “Cuisson à blanc”,
+          “definition”: “Précuisson d’un fond de tarte sans garniture, lestée pour éviter le gonflement, pour qu’il soit croustillant avant de recevoir une garniture humide.”
+        },
+        {
+          “term”: “Fonçage”,
+          “definition”: “Action de poser la pâte étalée dans le moule sans étirer, en laissant tomber la pâte par gravité et en la plaquant délicatement.”
         }
       ],
-      "guidedLab": [
+      “guidedLab”: [
         {
-          "task": "Même pâte, deux repos",
-          "duration": "30 min",
-          "instructions": "Compare une pâte peu reposée et une pâte bien refroidie.",
-          "expected": "Tu observes tenue, friabilité et rétraction."
+          “task”: “Pâte sablée comparée : avec et sans sablage”,
+          “duration”: “60 min”,
+          “instructions”: “Faire la même pâte en 2 versions : (A) sablage correct beurre froid bout des doigts, (B) beurre fondu incorporé. Cuire les 2 fonds à blanc. Observer texture, rétraction, friabilité.”,
+          “expected”: “Version A : friable, croustillante, aucune rétraction. Version B : dure, dense, rétractée. La différence illustre concrètement le rôle du sablage.”
         },
         {
-          "task": "Pesée stricte",
-          "duration": "15 min",
-          "instructions": "Réalise une petite préparation en pesant tout, y compris liquide.",
-          "expected": "Tu relies précision et régularité du résultat."
+          “task”: “Test des 3 beurres : froid, pommade, fondu”,
+          “duration”: “45 min”,
+          “instructions”: “Faire 3 petits sablés identiques avec 3 états de beurre : froid sablé, pommade crémé avec sucre, fondu incorporé. Cuire. Observer et goûter les textures côte à côte.”,
+          “expected”: “Froid = friable et sec. Pommade = fondant et un peu aéré. Fondu = dense et plat. Comprendre comment l’état du beurre programme la texture finale.”
         }
       ],
-      "progressionStages": [
+      “progressionStages”: [
         {
-          "level": "Débutant",
-          "standard": "Tu pèses et suis l’ordre."
+          “level”: “Débutant”,
+          “standard”: “Tu réalises une pâte brisée ou sablée avec sablage correct et repos de 30 min.”
         },
         {
-          "level": "Intermédiaire",
-          "standard": "Tu comprends température et texture."
+          “level”: “Intermédiaire”,
+          “standard”: “Tu fonçes sans étirer, tu cuis à blanc correctement, tu choisis la pâte selon la recette.”
         },
         {
-          "level": "Excellent amateur",
-          "standard": "Tu ajustes hydratation, repos et cuisson selon le résultat observé."
+          “level”: “Excellent amateur”,
+          “standard”: “Tu maîtrises les 3 pâtes (brisée, sablée, sucrée), tu adaptes l’épaisseur, le repos et la cuisson selon la garniture.”
+        },
+        {
+          “level”: “Expert”,
+          “standard”: “Tu réalises une pâte feuilletée classique (tourages). Tu comprends les formules de pâte à choux, génoise et biscuit.”
         }
       ],
-      "assessmentRubric": [
+      “assessmentRubric”: [
         {
-          "criterion": "Organisation",
-          "standard": "La mise en place est complète, les gestes s’enchaînent sans chercher un outil ou un ingrédient."
+          “criterion”: “Technique du sablage”,
+          “standard”: “Beurre froid, bout des doigts uniquement, résultat sableux sans morceaux.”
         },
         {
-          "criterion": "Observation",
-          "standard": "Tu prends tes décisions sur des signes visibles, sonores, olfactifs ou tactiles, pas seulement sur le minuteur."
+          “criterion”: “Repos”,
+          “standard”: “30 min minimum au froid, film alimentaire, avant d’étaler.”
         },
         {
-          "criterion": "Correction",
-          "standard": "Tu sais identifier une erreur probable et proposer une correction réaliste avant la fin de la recette."
+          “criterion”: “Fonçage”,
+          “standard”: “Pas d’étirement, pâte posée par gravité, bords réguliers.”
         },
         {
-          "criterion": "Répétabilité",
-          "standard": "Tu peux refaire la technique avec un résultat similaire au moins deux fois."
+          “criterion”: “Cuisson”,
+          “standard”: “Fond doré et croustillant, cuisson à blanc avec lest quand nécessaire.”
         }
       ],
-      "antiBacle": [
-        "Ne valide pas mentalement une technique si tu ne peux pas expliquer pourquoi elle fonctionne.",
-        "Ne te fie pas uniquement au temps : vérifie au moins deux repères sensoriels.",
-        "Note l’erreur principale après pratique, même si le plat est bon."
+      “antiBacle”: [
+        “Ne travaille jamais le beurre avec les paumes lors du sablage — la chaleur corporelle fond le beurre et détruit le sablage.”,
+        “Ne saute jamais le repos au froid — la rétraction est garantie.”,
+        “Ne tire jamais la pâte lors du fonçage — elle se rétracte toujours.”,
+        “Ne mesure jamais en volume pour la pâtisserie — balance de précision obligatoire.”
       ],
-      "commonMisconceptions": [
-        "En pâtisserie, “à peu près” change parfois complètement la texture."
+      “commonMisconceptions”: [
+        “Pâte homogène = bien pétrie. Faux : une pâte sablée doit être à peine homogène, pas parfaitement lisse. S’arrêter dès que les ingrédients sont juste assemblés.”,
+        “Plus de beurre = meilleure pâte. Faux : le ratio beurre/farine détermine la texture. Trop de beurre = pâte qui s’effondre. Le ratio classique pâte sablée est 2 parts de farine pour 1 part de beurre.”
       ],
-      "realKitchenTransfer": "Pesée, température et repos sont les équivalents pâtissiers du feu et de l’assaisonnement en cuisine.",
-      "capstonePractice": {
-        "title": "Exercice de transfert",
-        "instructions": "Choisis une recette déjà faite, applique volontairement cette technique, puis note ce qui a changé dans le résultat.",
-        "expected": "Tu dois pouvoir expliquer une décision concrète : taille, feu, couvercle, ordre ou correction."
+      “realKitchenTransfer”: “La logique du sablage (enrober de gras avant le liquide) s’applique aussi aux crumbles, streusel et certaines chapelures. La logique du repos (laisser le gluten se détendre) s’applique à la pâte à pizza, aux tartes et aux pâtes fraîches. Ces deux principes couvrent 80% de la pâtisserie et de la boulangerie amateur.”,
+      “capstonePractice”: {
+        “title”: “Tarte sablée aux fruits : pâte de A à Z”,
+        “instructions”: “Réaliser une pâte sablée (sablage, repos 1h). Foncer un moule. Cuire à blanc (fond sec, doré). Laisser refroidir. Garnir de crème pâtissière + fruits frais de saison. La qualité du fond est le seul facteur de succès — si le fond est bien cuit et croustillant, la tarte sera réussie.”,
+        “expected”: “Fond croustillant et friable, aucune rétraction, couleur dorée uniforme. Texture fondante à la dégustation, sans dureté ni mollesse.”
       },
-      "quizIds": [
-        "q-v19-l-pate-1-0",
+      “quizIds”: [
+        “q-v19-l-pate-1-0”,
         "q-v19-l-pate-1-1",
         "q-v19-l-pate-1-2",
         "q-v19-l-pate-1-3",
@@ -4139,14 +4807,18 @@ window.CUISINE_DATA = {
         "saisir",
         "assaisonnement"
       ],
-      "summary": "Comprendre pourquoi une viande se sèche et comment le repos stabilise les jus.",
-      "objective": "Contrôler coloration, appoint, repos et découpe pour éviter viande grise, sèche ou fibreuse.",
+      "summary": "Fibres musculaires, collagène, températures à cœur, cuisson douce vs vive, repos et découpe dans le bon sens : tout ce qu'il faut comprendre pour ne plus jamais rater une viande.",
+      "objective": "Maîtriser la structure de la viande (fibres, collagène), les températures à cœur selon l'appoint, la technique saisir+four, le repos et la découpe dans le sens perpendiculaire aux fibres.",
       "content": [
-        "La cuisson d'une viande se joue en trois temps : coloration, montée en température, repos.",
-        "Le repos permet aux jus de se redistribuer. Couper trop vite augmente la perte de jus.",
-        "Une belle coloration ne garantit pas une cuisson intérieure parfaite : il faut adapter l'épaisseur, le feu et le temps."
+        "La viande est composée de fibres musculaires regroupées en faisceaux, enveloppées de tissu conjonctif (collagène). Ce que tu cuis, c'est principalement des protéines (myosine, actine) qui coagulent à la chaleur. Comprendre à quelle température chaque protéine coagule te donne le contrôle total de la texture.",
+        "La myosine commence à coaguler à 50°C — c'est ce qui donne la consistance du saignant. L'actine coagule à 65-70°C — au-delà, la viande devient plus ferme et perd de la jutosité. À 80°C+, les fibres musculaires se contractent fortement et expulsent la majorité de leurs jus — c'est le seuil du 'bien cuit sec'.",
+        "Le collagène est différent : c'est le tissu dur qui entoure les fibres. À 70°C+, le collagène commence à se convertir en gélatine, donnant une texture fondante (c'est la magie du braisé et du confit longue durée). Pour les cuissons courtes (steak, côtelette), le collagène ne se gélatinise pas — il reste dur si la viande est trop cuite.",
+        "Les températures à cœur à connaître pour le bœuf et agneau : bleu = 45-50°C (chaud, rouge vif, spongieux), saignant = 52-55°C (rouge rosé, juteux), à point = 58-62°C (rosé au centre, légèrement ferme), bien cuit = 68-72°C (gris uniforme, ferme). Pour le porc et la volaille : cœur à 74°C minimum pour la sécurité alimentaire.",
+        "La technique professionnelle pour les pièces épaisses (>2,5 cm) est la cuisson 'inverse' ou 'saisir puis four' : saisie à feu vif pour la croûte de Maillard (2 min par face), puis four à 180°C pour atteindre la température à cœur souhaitée. Cette méthode donne une croûte homogène et un cœur plus uniformément cuit que la poêle seule.",
+        "Le repos hors feu est non-négociable. Pendant la cuisson, les fibres musculaires contractées chassent les jus vers le centre. Le repos (5-15 min selon l'épaisseur) permet la détente et la redistribution des jus dans toute la pièce. Test : si tu coupes immédiatement, les jus s'écoulent abondamment sur la planche. Avec repos : la tranche reste humide, les jus restent dans la viande.",
+        "La découpe dans le sens perpendiculaire aux fibres est le dernier geste critique. Les fibres musculaires d'un steak courent dans une direction. Couper dans ce sens = longues fibres dures à mastiquer. Couper perpendiculairement = fibres courtes, tendres, faciles à mâcher. C'est particulièrement important pour les pièces de bœuf fibreuses (bavette, onglet, hampe) où ce geste peut transformer une viande coriace en tendresse."
       ],
-      "practice": "Application recommandée : steak beurre maître d'hôtel ou poulet poêlé.",
+      "practice": "Application recommandée : steak poêlé + repos + sauce courte déglacée.",
       "quiz": [
         {
           "question": "Pourquoi laisser reposer une viande après cuisson ?",
@@ -4275,164 +4947,209 @@ window.CUISINE_DATA = {
       ],
       "principles": [
         {
-          "title": "Comprendre avant d’exécuter",
-          "body": "La viande continue d’évoluer hors du feu : repos et découpe comptent autant que la cuisson."
+          "title": "La température à cœur, pas le temps",
+          "body": "Le temps de cuisson d’une viande dépend de son épaisseur, de sa densité et de sa température de départ. Un steak de 2 cm sorti du frigo (4°C) ne se cuit pas comme un steak sorti à température ambiante (20°C). Seule la température à cœur (mesurée par thermomètre à sonde) est un indicateur fiable de l’appoint. Investis dans un thermomètre à sonde — c’est 10€ et ça élimine 90% des erreurs."
         },
         {
-          "title": "Observer le résultat",
-          "body": "Le temps indiqué est une aide. La vraie décision se prend avec la couleur, la texture, l’odeur, le son et le goût."
+          "title": "Myosine et actine : deux seuils à connaître",
+          "body": "50°C : myosine coagule → viande ferme mais encore humide (saignant). 65-70°C : actine coagule → viande plus ferme, jutosité diminue. Au-dessus : les fibres se contractent fortement, la viande devient sèche. La zone de plaisir maximum pour le bœuf est 52-62°C selon les préférences. Pour la volaille : 74°C minimum (sécurité)."
         },
         {
-          "title": "Corriger tôt",
-          "body": "Un petit ajustement au bon moment évite souvent une grosse correction impossible à la fin."
+          "title": "Le collagène et les cuissons longues",
+          "body": "Le collagène entoure les fibres musculaires et est dur en-dessous de 65°C. Pour les viandes riches en collagène (joue de bœuf, jarret, épaule), deux options : cuire court à basse température pour rester juteux mais garder la mâche, ou cuire long (>3h) à 80-85°C pour convertir le collagène en gélatine fondante. Les viandes pauvres en collagène (filet, entrecôte) ne bénéficient pas de la cuisson longue — elles deviendraient filandreuses."
+        },
+        {
+          "title": "Le repos redistribue les jus",
+          "body": "Les fibres musculaires contractées par la chaleur chassent les jus vers le centre de la pièce. Le repos hors feu (aliments sous feuille d’alu posée, pas serrée) permet leur détente progressive et la redistribution des jus vers la périphérie. Perte de jus sans repos : 30-40% sur la planche. Avec repos correct : moins de 10%. Ce n’est pas une superstition — c’est de la physique."
+        },
+        {
+          "title": "Découper dans le sens perpendiculaire aux fibres",
+          "body": "Les fibres musculaires courent dans une direction. Couper dans ce sens = fibres longues et coriaces. Couper à 90° = fibres courtes et tendres. Sur un steak ou une bavette, observe les stries en surface — elles indiquent la direction des fibres. Ta lame doit aller perpendiculairement à ces stries. Ce geste peut transformer une bavette perçue comme dure en viande fondante."
         }
       ],
       "techniqueSteps": [
         {
-          "title": "Préparer le contexte",
-          "action": "Lis l’objectif technique, prépare le matériel et identifie le point critique de la recette.",
-          "cue": "Tu sais ce que tu dois observer avant de commencer.",
-          "mistake": "Suivre les étapes sans savoir quel résultat chercher.",
-          "correction": "Reformule l’objectif en une phrase avant de cuisiner."
+          "title": "Dry brine : saler en avance",
+          "action": "Pour les grosses pièces ou volailles : sel + herbes, 12-48h au réfrigérateur à découvert. Pour les steaks fins : sel juste avant cuisson (ou 45 min+ avant pour laisser le sel se réabsorber). Évite la zone 5-40 min avant cuisson : le sel extrait l’eau en surface sans avoir le temps de se réabsorber → surface humide = pas de Maillard.",
+          "cue": "Viande sèche au toucher. Sel bien distribué en surface.",
+          "mistake": "Saler 15 min avant cuisson et laisser l’eau rendue en surface.",
+          "correction": "Soit sel juste avant cuisson (pas le temps d’extraire), soit 45min+ (l’eau se réabsorbe). Éponge si tu vois de l’humidité en surface."
         },
         {
-          "title": "Contrôler l’intensité",
-          "action": "Adapte chaleur, temps, humidité ou agitation selon la réaction observée.",
-          "cue": "Surface colorée, jus maîtrisé, texture tendre.",
-          "mistake": "Appliquer le temps indiqué même si le résultat visuel dit l’inverse.",
-          "correction": "Ralentis, goûte, touche ou observe avant de continuer."
+          "title": "Saisie à feu vif : croûte de Maillard",
+          "action": "Poêle préchauffée + huile neutre à haute chaleur. Pièce sèche. Cuire sans toucher jusqu’à libération naturelle. 2-3 min par face pour un steak de 2-3 cm. Ajoute une noisette de beurre + thym + ail écrasé en fin de saisie : arrose la pièce en penchant la poêle (basting).",
+          "cue": "Croûte dorée uniforme. Odeur de rôti caramel. Libération naturelle sans résistance.",
+          "mistake": "Retourner toutes les 30 secondes.",
+          "correction": "Retourne 1 fois si la pièce est fine, 2-3 fois maximum si elle est épaisse."
         },
         {
-          "title": "Finir proprement",
-          "action": "Goûte, ajuste, puis sers avec une finition cohérente : acidité, gras, herbes, sauce ou repos.",
-          "cue": "Le résultat est net, équilibré et volontaire.",
-          "mistake": "Servir sans dernier contrôle.",
-          "correction": "Goûte une bouchée complète avant dressage."
+          "title": "Finir au four pour les pièces épaisses",
+          "action": "Après la saisie (croûte formée), transfère la poêle au four préchauffé à 180°C. Laisse cuire jusqu’à 5°C en-dessous de la température cible (la viande remonte légèrement pendant le repos). Contrôle avec un thermomètre à sonde inséré au centre de la pièce la plus épaisse.",
+          "cue": "Thermomètre : 50°C pour bleu, 53°C pour saignant, 58°C pour à point (températures avant repos).",
+          "mistake": "Juger la cuisson uniquement au temps ou à la couleur de surface.",
+          "correction": "Un thermomètre à 10€ élimine toutes les approximations. Utilise-le."
+        },
+        {
+          "title": "Repos et maintien en chaleur",
+          "action": "Retire du four ou de la poêle. Pose sur une grille ou planche. Recouvre d’une feuille d’alu posée (ne serre pas — la vapeur ramollit la croûte). Repos : 5 min pour une escalope fine, 10 min pour un steak de 3 cm, 20-30 min pour un rôti ou gigot. La température à cœur monte encore de 2-3°C pendant le repos.",
+          "cue": "En coupant après repos : le jus reste dans la tranche, pas sur la planche.",
+          "mistake": "Repos dans du papier alu serré ou sous couvercle.",
+          "correction": "Alu posé légèrement, pas emballé. L’alu doit laisser passer un peu d’air."
+        },
+        {
+          "title": "Découper dans le sens perpendiculaire",
+          "action": "Identifie la direction des fibres (stries visibles en surface). Pose le couteau à 90° par rapport à ces stries. Pour la bavette, l’onglet, la hampe, la poitrine de bœuf : ce geste est critique. Pour le filet ou l’entrecôte : les fibres sont plus courtes et la perpendiculaire est moins cruciale.",
+          "cue": "Les tranches sont nettes, sans fibres qui s’éttirent et résistent.",
+          "mistake": "Couper dans la direction des fibres par habitude ou par facilité.",
+          "correction": "Examine la surface avant chaque découpe. 30 secondes d’attention qui changent tout."
         }
       ],
       "sensoryCues": {
-        "see": "Surface colorée, jus maîtrisé, texture tendre.",
-        "smell": "Odeur nette correspondant à la technique, jamais brûlée ni fade.",
-        "taste": "Goût équilibré et lisible, sans correction excessive.",
-        "touch": "Texture conforme à l’objectif : souple, croquante, nappante, friable ou fondante.",
-        "hear": "Le son doit rester cohérent avec la technique : frémissement doux, crépitement vif ou silence de repos."
+        "see": "Croûte dorée à acajou uniforme. En coupant : la couleur à cœur correspond à l’appoint visé (rouge = saignant, rosé = à point, gris = bien cuit). Peu de jus sur la planche après repos.",
+        "smell": "Odeur de rôti intense, caramel, beurre noisette. Si tu sens le brûlé ou l’âcre, la croûte est allée trop loin.",
+        "touch": "Test du pouce : base du pouce détendue = saignant, légère pression = à point, ferme = bien cuit. Méthode indicative — le thermomètre reste plus fiable.",
+        "hear": "Crépitement lors de la saisie. Silence pendant le repos. Si tu entends le jus bouillonner pendant le repos, la pièce est encore trop chaude."
       },
       "troubleshooting": [
         {
-          "problem": "Résultat irrégulier",
-          "cause": "Taille, chaleur ou timing non maîtrisés.",
-          "fix": "Standardise la préparation et ajuste l’intensité plus tôt."
+          "problem": "Viande grise, pas colorée",
+          "cause": "Surface humide, poêle trop froide ou surcharge.",
+          "fix": "Sèche mieux, préchauffe plus, réduis la quantité par fournée."
         },
         {
-          "problem": "Goût plat",
-          "cause": "Assaisonnement ou finition insuffisants.",
-          "fix": "Corrige sel, acidité, gras ou fraîcheur par petites touches."
+          "problem": "Viande cuite en surface, crue au centre",
+          "cause": "Feu trop fort, pièce trop épaisse pour la poêle seule.",
+          "fix": "Saisie rapide + four à 180°C. Ou cuisson à plus basse température plus longtemps."
         },
         {
-          "problem": "Texture ratée",
-          "cause": "Cuisson prolongée, chaleur mal adaptée ou manque de repos.",
-          "fix": "Identifie le point de bascule et arrête plus tôt la prochaine fois."
+          "problem": "Viande sèche et filandreuse",
+          "cause": "Température à cœur trop élevée (>70°C pour le bœuf), ou repos insuffisant.",
+          "fix": "Viande déjà trop cuite = irréparable sur cette pièce. Tranche finement, sauce généreuse. Pour la prochaine : thermomètre à sonde."
+        },
+        {
+          "problem": "Viande dure et coriace (pièce fibreuse comme bavette)",
+          "cause": "Découpe dans le sens des fibres.",
+          "fix": "Re-tranche perpendiculairement aux fibres. Si c’est déjà découpé dans le sens : hacher finement ou utiliser dans une préparation (steak tartare, hash)."
         }
       ],
       "practiceDrills": [
         {
-          "title": "Répétition courte",
-          "duration": "15 min",
-          "instructions": "Réalise une version miniature de la technique en te concentrant sur un seul critère : couleur, texture ou goût.",
-          "goal": "Isoler la compétence sans te perdre dans une recette complète."
+          "title": "Le steak aux 3 apppoints",
+          "duration": "40 min",
+          "instructions": "Prends 3 steaks identiques (même morceaux, même épaisseur). Cuis-les à 3 températures différentes : 53°C (saignant), 60°C (à point), 70°C (bien cuit). Utilise un thermomètre. Coupe et compare : couleur, jutosité, texture. Note tes préférences.",
+          "goal": "Associer une température à cœur à une texture et couleur. Après cet exercice, tu n’estimeras plus — tu cibleras."
         },
         {
-          "title": "Comparaison volontaire",
-          "duration": "20 min",
-          "instructions": "Fais deux versions : une correcte, une avec une erreur contrôlée. Compare le résultat.",
-          "goal": "Reconnaître l’erreur par les sens."
+          "title": "Découpe bavette : sens fibre vs perpendiculaire",
+          "duration": "15 min",
+          "instructions": "Prends une bavette. Coupe-en la moitié dans le sens des fibres (stries visibles), l’autre moitié perpendiculairement. Fais goûter les deux à quelqu’un sans lui dire la différence. Compare les retours.",
+          "goal": "Comprendre viscéralement la différence — la bavette perpendiculaire est 2-3x plus tendre au même point de cuisson."
         }
       ],
       "masteryCriteria": [
-        "Tu peux expliquer le mécanisme de la technique.",
-        "Tu reconnais les signes de réussite.",
-        "Tu sais nommer l’erreur la plus probable.",
-        "Tu sais proposer une correction réaliste."
+        "Tu sais expliquer ce qui se passe aux températures 50°C, 65°C et 80°C dans la viande.",
+        "Tu utilises un thermomètre à sonde pour cibler la température à cœur.",
+        "Tu fais le repos systématiquement avant de couper.",
+        "Tu découpes perpendiculairement aux fibres.",
+        "Tu adaptes la technique selon la coupe (pièce maigre courte vs pièce fibreuse longue)."
       ],
-      "proTip": "Un bon cuisinier ne suit pas seulement le temps : il observe et ajuste.",
-      "mentorBrief": "L’assaisonnement n’est pas 'mettre du sel'. C’est construire un relief : sel pour intensifier, acidité pour tendre, gras pour porter, fraîcheur pour alléger, umami pour donner de la profondeur.",
+      "proTip": "Le test de la main (saignant = base du pouce détendue, à point = légèrement appuyé, bien cuit = poing serré) est utile en dépannage, mais il varie selon les mains et les viandes. Un thermomètre à sonde à 10€ est le seul outil universel fiable pour la température à cœur.",
+      "mentorBrief": "La viande est le défi technique le plus polarisant en cuisine amateur : soit elle est délicieuse, soit elle est décevante, sans beaucoup de milieu. La bonne nouvelle : les deux variables qui font 80% du résultat sont mesurables et contrôlables — la température à cœur (thermomètre) et le repos (minuteur). Maîtrise ces deux variables, et tu peux cuire n’importe quelle pièce de façon reproductible.",
       "technicalVocabulary": [
         {
-          "term": "Relief",
-          "definition": "Sensation qu’un plat n’est pas plat : tension, longueur et contraste."
+          "term": "Myosine",
+          "definition": "Protéine musculaire qui coagule à 50°C. Sa coagulation donne la consistance ‘saignant’. En dessous : viande presque crue et peu goûteuse. Au-dessus mais avant 65°C : zone de jutosité maximale."
         },
         {
-          "term": "Acidité",
-          "definition": "Élément qui réveille et coupe le gras : citron, vinaigre, vin, yaourt."
+          "term": "Actine",
+          "definition": "Protéine musculaire qui coagule à 65-70°C. Sa coagulation ferme la viande et réduit sa jutosité. Au-delà : zone bien cuit, texture sèche et granuleuse."
         },
         {
-          "term": "Umami",
-          "definition": "Profondeur savoureuse : bouillon, champignon, tomate concentrée, parmesan, soja."
+          "term": "Collagène",
+          "definition": "Tissu conjonctif qui entoure les fibres musculaires. Dur en dessous de 65°C. Se convertit en gélatine fondante après plusieurs heures à 80-85°C. Source de la texture fondante des braisés et confits."
         },
         {
-          "term": "Finition",
-          "definition": "Dernière correction juste avant de servir."
+          "term": "Appoint",
+          "definition": "Degré de cuisson d’une viande rouge. Bleu : 45-50°C. Saignant : 52-55°C. À point : 58-62°C. Bien cuit : 68-72°C. Températures mesurées à cœur, avant repos."
+        },
+        {
+          "term": "Basting",
+          "definition": "Technique d’arrosage : on penche la poêle, on récupère le beurre fondu et on l’arrose sur la viande avec une cuillère. Accélère la coloration des parties non en contact avec la poêle et ajoute du goût."
+        },
+        {
+          "term": "Thermomètre à sonde",
+          "definition": "Thermomètre fin qu’on insère au cœur de la pièce pour mesurer la température interne. Seul indicateur fiable de l’appoint. Modèles à cadran (~10€) ou numérique instantané (~15-25€)."
+        },
+        {
+          "term": "Fibres musculaires",
+          "definition": "Structures linéaires qui composent le muscle de la viande. Toujours orientées dans une direction. La découpe perpendiculaire à ces fibres raccourcit leur longueur et réduit la résistance à la mastication."
         }
       ],
       "guidedLab": [
         {
-          "task": "Correction en 4 cuillères",
-          "duration": "15 min",
-          "instructions": "Prends une soupe ou sauce neutre. Compare version sel, sel+citron, sel+gras, sel+herbes.",
-          "expected": "Tu sais nommer ce que chaque ajout change."
+          "task": "Le thermomètre comme boussole",
+          "duration": "30 min",
+          "instructions": "Prends un steak épais (3+ cm). Commence à cuire. Prend la température toutes les minutes en notant les mesures. Observe la vitesse de montée, le plateau, la remontée post-repos. Dessine la courbe si tu peux.",
+          "expected": "Tu comprends que la température monte progressivement, s’accélère puis ralentit. Tu vois le carry-over (remontée post-cuisson de 2-4°C pendant le repos). Tu peux anticiper ce phénomène pour sortir la viande 3-4°C avant la cible."
         },
         {
-          "task": "Plat trop lourd",
-          "duration": "10 min",
-          "instructions": "Sur une bouchée grasse, ajoute progressivement acidité puis herbes.",
-          "expected": "La sensation devient plus nette sans perdre le goût principal."
+          "task": "Bavette dans les deux sens",
+          "duration": "15 min",
+          "instructions": "Grille ou saisis une bavette à point. Coupe-en la moitié dans le sens des fibres, l’autre perpendiculairement. Goûte les deux. La différence de tendreté est immédiate et saisissante.",
+          "expected": "Tu intègreras définitivement le principe de la découpe perpendiculaire. Un seul geste, résultat radicalement différent."
         }
       ],
       "progressionStages": [
         {
           "level": "Débutant",
-          "standard": "Tu sales progressivement."
+          "standard": "Tu sèches la viande avant cuisson, tu fais le repos et tu découpes perpendiculairement aux fibres."
         },
         {
           "level": "Intermédiaire",
-          "standard": "Tu sais distinguer manque de sel et manque d’acidité."
+          "standard": "Tu utilises un thermomètre à sonde pour atteindre l’appoint souhaité. Tu maîtrises saisie + four pour les pièces épaisses."
         },
         {
-          "level": "Excellent amateur",
-          "standard": "Tu corriges un plat en goûtant méthodiquement, sans empiler les ingrédients."
+          "level": "Avancé",
+          "standard": "Tu adaptes ta technique selon la coupe (pièce maigre, pièce fibreuse, pièce avec collagène). Tu maîtrises le basting au beurre."
+        },
+        {
+          "level": "Expert",
+          "standard": "Tu choisis le mode de cuisson selon la structure de la pièce : saisie rapide, four long, braisé ou sous vide. Tu peux cuire n’importe quelle viande sans recette."
         }
       ],
       "assessmentRubric": [
         {
-          "criterion": "Organisation",
-          "standard": "La mise en place est complète, les gestes s’enchaînent sans chercher un outil ou un ingrédient."
+          "criterion": "Connaissance de la structure",
+          "standard": "Tu expliques la différence entre myosine, actine et collagène et ce qu’ils impliquent pour la cuisson."
         },
         {
-          "criterion": "Observation",
-          "standard": "Tu prends tes décisions sur des signes visibles, sonores, olfactifs ou tactiles, pas seulement sur le minuteur."
+          "criterion": "Précision de l’appoint",
+          "standard": "Tu atteins la température à cœur visée à ±3°C près avec thermomètre."
         },
         {
-          "criterion": "Correction",
-          "standard": "Tu sais identifier une erreur probable et proposer une correction réaliste avant la fin de la recette."
+          "criterion": "Repos",
+          "standard": "Systématique. Coupe réalisée après repos, peu de jus sur la planche."
         },
         {
-          "criterion": "Répétabilité",
-          "standard": "Tu peux refaire la technique avec un résultat similaire au moins deux fois."
+          "criterion": "Découpe",
+          "standard": "Tu identifies la direction des fibres avant de couper et tu découpes perpendiculairement."
         }
       ],
       "antiBacle": [
-        "Ne valide pas mentalement une technique si tu ne peux pas expliquer pourquoi elle fonctionne.",
-        "Ne te fie pas uniquement au temps : vérifie au moins deux repères sensoriels.",
-        "Note l’erreur principale après pratique, même si le plat est bon."
+        "Ne juge jamais l’appoint uniquement au temps — l’épaisseur, la température de départ et la source de chaleur varient trop.",
+        "Ne coupe pas avant d’avoir respecté le repos minimum.",
+        "Ne tires pas la direction des fibres au hasard — regarde la surface avant de positionner ton couteau."
       ],
       "commonMisconceptions": [
-        "Bouger souvent ne contrôle pas mieux : parfois il faut laisser le contact créer la croûte."
+        "Saisir une viande ‘scelle les jus’ — c’est un mythe. La saisie crée la réaction de Maillard et la croûte, mais ne scelle rien. Les jus continuent de s’écouler pendant toute la cuisson.",
+        "Le porc doit être cuit à cœur gris et sec pour être sûr. Faux depuis les années 2000 : la trichinose est quasi-éradiquée dans les élevages modernes. Le porc peut être servi rosé à 68-70°C pour une texture bien meilleure qu’à 80°C.",
+        "La couleur rose signifie forcément ‘pas cuit’. Faux : certaines viandes (notamment le jeune agneau, le poulet qui a eu une marinade acide) peuvent rester rosées même bien cuites à température sûre."
       ],
-      "realKitchenTransfer": "Cette compétence sert pour viandes, légumes, champignons, tofu et bases de sauce.",
+      "realKitchenTransfer": "Ces principes s’appliquent à toutes les protéines animales : bœuf, veau, agneau, porc, gibier, volaille. Seules les températures cibles changent. Avec un thermomètre et la connaissance des seuils, tu peux cuire n’importe quelle protéine parfaitement la première fois.",
       "capstonePractice": {
-        "title": "Exercice de transfert",
-        "instructions": "Choisis une recette déjà faite, applique volontairement cette technique, puis note ce qui a changé dans le résultat.",
-        "expected": "Tu dois pouvoir expliquer une décision concrète : taille, feu, couvercle, ordre ou correction."
+        "title": "Le rôti de côte de bœuf pour 4",
+        "instructions": "Prends une côte de bœuf de 1,2 kg (avec os). Dry brine 24h (sel + poivre). Sortir du frigo 45 min avant. Saisie forte 3 min par face en poêle. Rôtissage au four 180°C jusqu’à 52°C à cœur (saignant). Repos 20 min sous alu. Sauce déglacée au vin rouge + fond brun. Découpe perpendiculaire aux fibres, tranche 1,5 cm.",
+        "expected": "Croûte intense et uniforme. Cœur rouge rosé et juteux. Sauce brillante. Tu as orchestré saisie, température à cœur, repos et sauce en parallèle — c’est le niveau du cuisinier autonome."
       },
       "quizIds": [
         "q-v19-l-viande-1-0",
@@ -4607,164 +5324,205 @@ window.CUISINE_DATA = {
       ],
       "principles": [
         {
-          "title": "Comprendre avant d’exécuter",
-          "body": "Le poisson surcuit vite car ses protéines coagulent plus rapidement que celles de la viande."
+          "title": "La structure du poisson est radicalement différente de la viande",
+          "body": "Le poisson n’a quasiment pas de tissu conjonctif (collagène) — ce sont des fibres musculaires très courtes séparées par de fines membranes de collagène. Ces fibres coagulent à des températures basses (45-60°C selon l’espèce) et se désintègrent rapidement au-delà. C’est pour ça qu’un poisson blanc peut passer de cru à surcuit en 90 secondes."
         },
         {
-          "title": "Observer le résultat",
-          "body": "Le temps indiqué est une aide. La vraie décision se prend avec la couleur, la texture, l’odeur, le son et le goût."
+          "title": "La chair nacrée : le repère visuel ultime",
+          "body": "Un poisson à cuisson idéale présente une chair nacrée — translucide au centre, opaque sur les bords. La chair ‘nacre’ progressivement de la périphérie vers le centre. Quand la nacre atteint le centre, stop. Si le centre est déjà blanc opaque = trop cuit. Cette observation depuis le côté de la pièce est plus fiable que n’importe quel minuteur."
         },
         {
-          "title": "Corriger tôt",
-          "body": "Un petit ajustement au bon moment évite souvent une grosse correction impossible à la fin."
+          "title": "La règle des 10 minutes",
+          "body": "Règle approximative mais utile : 10 minutes de cuisson totale par 2,5 cm d’épaisseur à la partie la plus épaisse. Un filet de 2,5 cm → ~10 min total. Applicable à la poêle, au four (180°C), à la vapeur ou en papillote. Ajuste selon la chaleur (feu fort = moins, feu doux = plus). Cette règle donne un ordre de grandeur, pas une durée exacte."
+        },
+        {
+          "title": "La peau comme bouclier thermique",
+          "body": "Pour les filets avec peau (saumon, bar, daurade), cuire la peau en premier, longtemps, à feu moyen : 80% de la cuisson côté peau. La peau protège la chair délicate de la chaleur directe et conduit la chaleur progressivement. La chair cuit par conduction depuis la peau et par convection de l’air sur le dessus — cuisson douce et homogène."
+        },
+        {
+          "title": "L’acidité en finition, pas pendant la cuisson",
+          "body": "Le citron, le vinaigre ou le vin ajoutés avant la cuisson ‘cuisent’ le poisson chimiquement (dénaturation des protéines par l’acide, comme dans le ceviche). C’est intentionnel dans un ceviche — pas dans un poisson poêlé. Ajoute l’acidité juste avant service pour la fraîcheur et le contraste, sans altérer la texture pendant la cuisson."
         }
       ],
       "techniqueSteps": [
         {
-          "title": "Préparer le contexte",
-          "action": "Lis l’objectif technique, prépare le matériel et identifie le point critique de la recette.",
-          "cue": "Tu sais ce que tu dois observer avant de commencer.",
-          "mistake": "Suivre les étapes sans savoir quel résultat chercher.",
-          "correction": "Reformule l’objectif en une phrase avant de cuisiner."
+          "title": "Sécher et tempérer",
+          "action": "Sors le poisson du réfrigérateur 15-20 min avant cuisson. Sèche soigneusement avec du papier absorbant, côté peau en particulier. Sale légèrement côté chair juste avant cuisson.",
+          "cue": "Peau sèche et mate. Chair à température ambiante pour une cuisson uniforme.",
+          "mistake": "Cuire un filet de poisson froid sorti du frigo directement — le centre reste cru quand l’extérieur est cuit.",
+          "correction": "15-20 min sur le plan de travail. Pas plus — le poisson se dégrade vite à température ambiante."
         },
         {
-          "title": "Contrôler l’intensité",
-          "action": "Adapte chaleur, temps, humidité ou agitation selon la réaction observée.",
-          "cue": "Chair nacrée, lamelles qui se détachent, pas de sécheresse.",
-          "mistake": "Appliquer le temps indiqué même si le résultat visuel dit l’inverse.",
-          "correction": "Ralentis, goûte, touche ou observe avant de continuer."
+          "title": "Cuire peau en premier à feu moyen",
+          "action": "Poêle préchauffée à feu moyen (pas vif — le poisson brûle facilement). Filet huile neutre. Dépose le filet peau vers le bas. Presse légèrement les 10 premières secondes avec une spatule pour éviter que la peau se rétracte. Cuis 70-80% du temps côté peau en observant la progression de la nacre depuis le côté.",
+          "cue": "La nacre monte progressivement depuis la peau. La peau est dorée et croustillante.",
+          "mistake": "Feu trop vif ou retourner trop tôt.",
+          "correction": "Feu moyen, patience. La peau se libère toute seule quand elle est dorée."
         },
         {
-          "title": "Finir proprement",
-          "action": "Goûte, ajuste, puis sers avec une finition cohérente : acidité, gras, herbes, sauce ou repos.",
-          "cue": "Le résultat est net, équilibré et volontaire.",
-          "mistake": "Servir sans dernier contrôle.",
-          "correction": "Goûte une bouchée complète avant dressage."
+          "title": "Observer la nacre latéralement",
+          "action": "Regarde le filet depuis le côté, pas du dessus. Observe la zone translucide (cru) et la zone nacrée/opaque (cuit). Quand la nacre atteint à 2-3 mm du dessus, retourne délicatement et cuis 30-60 secondes côté chair.",
+          "cue": "Chair nacrée, légèrement translucide au cœur. Les lamelles commencent à se détacher.",
+          "mistake": "Attendre que toute la chair soit opaque pour retourner.",
+          "correction": "Le poisson continue de cuire hors feu (carry-over). Retire 2-3°C avant la cible."
+        },
+        {
+          "title": "Finition et repos court",
+          "action": "Sors le poisson de la poêle. Laisse reposer 2 min sur une grille (pas plus — le poisson refroidit vite). Finition : jus de citron, herbes fraîches (aneth, persil, ciboulette), trait d’huile d’olive ou beurre noisette coulé.",
+          "cue": "Chair qui se détache en belles lamelles au toucher de la fourchette. Nacre au cœur.",
+          "mistake": "Ajouter le citron 5 min avant la fin et couvrir.",
+          "correction": "Citron et herbes délicates uniquement au dressage, jamais pendant la cuisson."
+        },
+        {
+          "title": "Cuisson en papillote (alternative douce)",
+          "action": "Filet + légumes fins + herbes + vin blanc ou citron en papillote hermétique (papier sulfurisé ou alu). Four 180°C, 12-15 min selon l’épaisseur. Ouvrir la papillote à table pour l’effet aromatique. Aucun risque de coloration excessive — cuisson 100% vapeur.",
+          "cue": "En ouvrant la papillote : vapeur parfumée. Chair nacrée et juteuse.",
+          "mistake": "Papillote pas assez hermétique → la vapeur s’échappe → poisson sec.",
+          "correction": "Scelle bien en repliant plusieurs fois les bords. La papillote doit gonfler légèrement au four."
         }
       ],
       "sensoryCues": {
-        "see": "Chair nacrée, lamelles qui se détachent, pas de sécheresse.",
-        "smell": "Odeur nette correspondant à la technique, jamais brûlée ni fade.",
-        "taste": "Goût équilibré et lisible, sans correction excessive.",
-        "touch": "Texture conforme à l’objectif : souple, croquante, nappante, friable ou fondante.",
-        "hear": "Le son doit rester cohérent avec la technique : frémissement doux, crépitement vif ou silence de repos."
+        "see": "Chair nacrée — translucide au cœur, opaque sur les bords. Peau dorée et croustillante. Les lamelles musculaires commencent à s’ouvrir légèrement. Aucune chair blanche compacte et sèche.",
+        "smell": "Odeur marine fraîche et douce, jamais forte ni ammoniaquée. Si ça sent fort l’ammoniaque, le poisson n’est pas frais.",
+        "touch": "Pression du doigt sur le filet : il s’enfonce légèrement et remonte. Si c’est élastique-ferme = parfait. Si c’est mou = surcuit.",
+        "hear": "Crépitement doux et régulier côté peau, jamais violent. Un poisson qui crache violemment en poêle = feu trop fort."
       },
       "troubleshooting": [
         {
-          "problem": "Résultat irrégulier",
-          "cause": "Taille, chaleur ou timing non maîtrisés.",
-          "fix": "Standardise la préparation et ajuste l’intensité plus tôt."
+          "problem": "Poisson sec et filandreux",
+          "cause": "Surcuisson : chair blanche opaque uniforme, lamelles desséchées.",
+          "fix": "Irréparable sur cette pièce. Sert avec une sauce généreuse (beurre blanc, beurre citron) pour masquer et humidifier. Prochaine fois : observe la nacre et sors 2 min plus tôt."
         },
         {
-          "problem": "Goût plat",
-          "cause": "Assaisonnement ou finition insuffisants.",
-          "fix": "Corrige sel, acidité, gras ou fraîcheur par petites touches."
+          "problem": "Peau molle, pas croustillante",
+          "cause": "Poisson humide avant cuisson, feu trop bas ou poêle non préchauffée.",
+          "fix": "Sèche bien la peau. Poêle préchauffée à feu moyen. Presse les premières secondes pour assurer le contact total."
         },
         {
-          "problem": "Texture ratée",
-          "cause": "Cuisson prolongée, chaleur mal adaptée ou manque de repos.",
-          "fix": "Identifie le point de bascule et arrête plus tôt la prochaine fois."
+          "problem": "Filet qui se casse à la retournement",
+          "cause": "Filet trop fragile (sole, cabillaud fin), retourné trop tôt ou mal soutenu.",
+          "fix": "Pour les poissons fragiles, utilise deux spatules pour retourner. Ou ne retourne pas du tout : cuis 100% côté peau + 2 min au four 180°C pour finir le dessus sans retourner."
+        },
+        {
+          "problem": "Centre cru, extérieur trop cuit",
+          "cause": "Feu trop vif, filet trop épais pour la poêle seule.",
+          "fix": "Commence côté peau à feu moyen. Retourne et finis 3-4 min au four 180°C. La cuisson four est plus douce et uniforme."
         }
       ],
       "practiceDrills": [
         {
-          "title": "Répétition courte",
+          "title": "La nacre sur un pavé de saumon",
           "duration": "15 min",
-          "instructions": "Réalise une version miniature de la technique en te concentrant sur un seul critère : couleur, texture ou goût.",
-          "goal": "Isoler la compétence sans te perdre dans une recette complète."
+          "instructions": "Prends un pavé de saumon épais (3+ cm). Cuis peau en bas à feu moyen. Observe la nacre latéralement toutes les 2 minutes. Note à quel moment tu la vois monter. Retourne au bon moment. Compare avec ta perception habituelle du ‘saumon cuit’.",
+          "goal": "Internaliser le repère visuel de la nacre. Après cet exercice, tu ne cuisineras plus jamais un saumon à l’aveugle."
         },
         {
-          "title": "Comparaison volontaire",
-          "duration": "20 min",
-          "instructions": "Fais deux versions : une correcte, une avec une erreur contrôlée. Compare le résultat.",
-          "goal": "Reconnaître l’erreur par les sens."
+          "title": "Saumon poêlé vs papillote : même saumon, deux textures",
+          "duration": "25 min",
+          "instructions": "Prends 2 pavés de saumon identiques. Un côté peau en poêle (technique ci-dessus). L’autre en papillote (180°C, 12 min). Goûte les deux côte à côte. Note la différence de texture, de jutosité, d’intensité de goût.",
+          "goal": "Comprendre que le mode de cuisson change fondamentalement la texture et le profil d’un même poisson."
         }
       ],
       "masteryCriteria": [
-        "Tu peux expliquer le mécanisme de la technique.",
-        "Tu reconnais les signes de réussite.",
-        "Tu sais nommer l’erreur la plus probable.",
-        "Tu sais proposer une correction réaliste."
+        "Tu sais expliquer la différence structurelle entre poisson et viande.",
+        "Tu reconnais la chair nacrée et tu l’utilises comme repère d’arrêt.",
+        "Tu maîtrises la peau croustillante côté peau en premier.",
+        "Tu ajoutes le citron et les herbes uniquement à la finition.",
+        "Tu sais choisir entre poêle et papillote selon le poisson et l’occasion."
       ],
-      "proTip": "Un bon cuisinier ne suit pas seulement le temps : il observe et ajuste.",
-      "mentorBrief": "L’assaisonnement n’est pas 'mettre du sel'. C’est construire un relief : sel pour intensifier, acidité pour tendre, gras pour porter, fraîcheur pour alléger, umami pour donner de la profondeur.",
+      "proTip": "Le meilleur poisson n’est pas toujours le plus cher — c’est le plus frais. Un maquereau ou un maigre acheté le matin même sera infiniment meilleur qu’un saumon ‘premium’ de 4 jours. Apprends à évaluer la fraîcheur : yeux brillants et bombés, ouïes rouge vif, chair ferme qui ne garde pas l’empreinte du doigt, odeur marine fraîche.",
+      "mentorBrief": "Le poisson est la protéine qui pardonne le moins les excès de cuisson — et pourtant c’est celle où les gens insistent le plus à trop cuire ‘pour être sûrs’. Cette peur est infondée (un poisson frais bien conservé n’est pas dangereux à chair nacrée) et elle détruit la texture. La nacre est la permission de s’arrêter. Apprends à lui faire confiance.",
       "technicalVocabulary": [
         {
-          "term": "Relief",
-          "definition": "Sensation qu’un plat n’est pas plat : tension, longueur et contraste."
+          "term": "Chair nacrée",
+          "definition": "Indicateur visuel de cuisson idéale : la chair du poisson est encore légèrement translucide au cœur (nacrée, comme une perle) et opaque sur les bords. C’est la zone de jutosité maximale. Au-delà : chair blanche, opaque, sèche."
         },
         {
-          "term": "Acidité",
-          "definition": "Élément qui réveille et coupe le gras : citron, vinaigre, vin, yaourt."
+          "term": "Règle des 10 minutes",
+          "definition": "Estimation empirique : 10 minutes de cuisson par 2,5 cm d’épaisseur, toutes méthodes confondues à chaleur modérée (180°C four, feu moyen poêle, vapeur). Point de départ, à ajuster selon l’espèce et l’épaisseur réelle."
         },
         {
-          "term": "Umami",
-          "definition": "Profondeur savoureuse : bouillon, champignon, tomate concentrée, parmesan, soja."
+          "term": "Papillote",
+          "definition": "Cuisson hermétique en papier sulfurisé ou aluminium. Le poisson cuit à la vapeur de son propre jus et des aromates ajoutés. Cuisson douce, 100% humide, aucun risque de brûlé. Idéale pour les filets fragiles et les légumes délicats."
         },
         {
-          "term": "Finition",
-          "definition": "Dernière correction juste avant de servir."
+          "term": "Filet à peau",
+          "definition": "Filet de poisson conservant sa peau, qui sert de bouclier thermique et de surface de coloration. Techniques : cuire 70-80% côté peau à feu moyen, retourner brièvement côté chair pour finir."
+        },
+        {
+          "term": "Denaturation par l’acide",
+          "definition": "Transformation chimique des protéines du poisson par l’acidité (citron, vinaigre). Même effet que la chaleur : la chair devient opaque et ferme. C’est le principe du ceviche. Intentionnel en ceviche, à éviter pendant une cuisson à la poêle."
+        },
+        {
+          "term": "Maigre, gras, semi-gras",
+          "definition": "Classification des poissons par teneur en lipides. Maigres (<2%) : cabillaud, sole, limande, merlan — cuisson très délicate, surcuissent très vite. Semi-gras : bar, daurade, turbot. Gras (>10%) : saumon, maquereau, sardine, thon — plus indulgents à la cuisson mais aussi très savoureux."
         }
       ],
       "guidedLab": [
         {
-          "task": "Correction en 4 cuillères",
-          "duration": "15 min",
-          "instructions": "Prends une soupe ou sauce neutre. Compare version sel, sel+citron, sel+gras, sel+herbes.",
-          "expected": "Tu sais nommer ce que chaque ajout change."
+          "task": "3 moments de cuisson sur un filet de saumon",
+          "duration": "20 min",
+          "instructions": "Prends un gros pavé de saumon (200g+). Cuis côté peau à feu moyen. Prélève une petite tranche à 5 min (cru), 8 min (nacré), 12 min (surcuit). Compare les 3 textures et couleurs. Goûte chaque tranche.",
+          "expected": "Tu ressentiras la différence radicale entre nacré (fondant, juteux) et surcuit (sec, filandreux). Le nacré est la cible — et tu l’auras atteint sans minuteur, uniquement par observation."
         },
         {
-          "task": "Plat trop lourd",
-          "duration": "10 min",
-          "instructions": "Sur une bouchée grasse, ajoute progressivement acidité puis herbes.",
-          "expected": "La sensation devient plus nette sans perdre le goût principal."
+          "task": "Évaluer la fraîcheur : le marché",
+          "duration": "30 min (marché)",
+          "instructions": "Va au marché avec cette liste de critères : yeux (bombés/brillants = frais vs enfoncés/ternes = vieux), ouïes (rouge vif = frais vs brunâtres = vieux), chair (ferme, ne garde pas l’empreinte du doigt), odeur (marine fraîche vs forte ammoniaque). Évalue 3-4 poissons différents.",
+          "expected": "Tu développes l’œil du professionnel au poissonnier. La qualité commence à l’achat, pas à la cuisson."
         }
       ],
       "progressionStages": [
         {
           "level": "Débutant",
-          "standard": "Tu sales progressivement."
+          "standard": "Tu sèches le poisson, cuis peau en bas, et observes la nacre latéralement."
         },
         {
           "level": "Intermédiaire",
-          "standard": "Tu sais distinguer manque de sel et manque d’acidité."
+          "standard": "Tu maîtrises la peau croustillante. Tu adaptes le mode de cuisson (poêle vs papillote) selon la fragilité du poisson."
         },
         {
-          "level": "Excellent amateur",
-          "standard": "Tu corriges un plat en goûtant méthodiquement, sans empiler les ingrédients."
+          "level": "Avancé",
+          "standard": "Tu choisis ton poisson au marché sur des critères de fraîcheur. Tu maîtrises le ceviche, la vapeur et la papillote. Tu assaisonnes et finis sans surcuire."
+        },
+        {
+          "level": "Expert",
+          "standard": "Tu maîtrises tous les modes de cuisson du poisson. Tu adaptes instantanément selon l’épaisseur et l’espèce. Tu peux débiter un poisson entier en filets."
         }
       ],
       "assessmentRubric": [
         {
-          "criterion": "Organisation",
-          "standard": "La mise en place est complète, les gestes s’enchaînent sans chercher un outil ou un ingrédient."
+          "criterion": "Connaissance structurelle",
+          "standard": "Tu expliques pourquoi le poisson surcuit plus vite que la viande et ce qu’est la chair nacrée."
         },
         {
           "criterion": "Observation",
-          "standard": "Tu prends tes décisions sur des signes visibles, sonores, olfactifs ou tactiles, pas seulement sur le minuteur."
+          "standard": "Tu surveilles la nacre latéralement et arrêtes au bon moment sans minuteur."
         },
         {
-          "criterion": "Correction",
-          "standard": "Tu sais identifier une erreur probable et proposer une correction réaliste avant la fin de la recette."
+          "criterion": "Peau croustillante",
+          "standard": "Tu obtiens une peau dorée et croustillante sur filet avec peau."
         },
         {
-          "criterion": "Répétabilité",
-          "standard": "Tu peux refaire la technique avec un résultat similaire au moins deux fois."
+          "criterion": "Finition",
+          "standard": "Tu ajoutes l’acidité et les herbes uniquement au dressage."
         }
       ],
       "antiBacle": [
-        "Ne valide pas mentalement une technique si tu ne peux pas expliquer pourquoi elle fonctionne.",
-        "Ne te fie pas uniquement au temps : vérifie au moins deux repères sensoriels.",
-        "Note l’erreur principale après pratique, même si le plat est bon."
+        "Ne juge jamais la cuisson du poisson uniquement par le dessus — la nacre se voit depuis le côté.",
+        "Ne mets jamais le citron pendant la cuisson — il cuit le poisson chimiquement et détruit les arômes volatils.",
+        "Ne cuisine jamais un poisson douteux ‘à fond’ pour ‘tuer les bactéries’ — une forte chaleur ne sauve pas un poisson mal conservé."
       ],
       "commonMisconceptions": [
-        "Bouger souvent ne contrôle pas mieux : parfois il faut laisser le contact créer la croûte."
+        "Le poisson doit être blanc opaque partout pour être cuit. Faux : une chair nacrée légèrement translucide au cœur est le signe d’une cuisson parfaite, pas d’un poisson cru.",
+        "Le saumon cru est dangereux. Le saumon frais de qualité consommé cru (sashimi, tartare, ceviche) est parfaitement sûr. Le risque vient de la fraîcheur, pas de l’absence de cuisson.",
+        "Tous les poissons se cuisent pareil. Faux : un filet de sole (maigre, très fragile, 0,5 cm) se cuit en 2-3 min par face à chaleur douce. Un pavé de thon (semi-gras, dense, 3 cm) se saisit fort 1 min par face pour rester saignant. La méthode doit s’adapter à l’espèce et à l’épaisseur."
       ],
-      "realKitchenTransfer": "Cette compétence sert pour viandes, légumes, champignons, tofu et bases de sauce.",
+      "realKitchenTransfer": "Ces principes s’appliquent à tous les poissons. Seules changent la température de coagulation optimale (saumon : 50-55°C, thon : 48-52°C, cabillaud : 55-60°C) et le mode de cuisson adapté à la fragilité de la chair. Avec la nacre comme repère, tu peux cuire n’importe quel poisson parfaitement.",
       "capstonePractice": {
-        "title": "Exercice de transfert",
-        "instructions": "Choisis une recette déjà faite, applique volontairement cette technique, puis note ce qui a changé dans le résultat.",
-        "expected": "Tu dois pouvoir expliquer une décision concrète : taille, feu, couvercle, ordre ou correction."
+        "title": "Le bar entier au four + beurre blanc",
+        "instructions": "Prends un bar entier de 500-600g. Incise le flanc en 3 (pour une cuisson uniforme). Aromatise l’intérieur (thym, romarin, citron). Four 200°C, 18-20 min. Test : glisse un couteau entre les arrêtes — si la chair se détache facilement et est nacrée = parfait. Prépare en parallèle un beurre blanc (réduction vinaigre blanc + échalote + beurre froid). Sers entier à table.",
+        "expected": "Chair nacrée et juteuse. Peau croustillante et brillante. Beurre blanc soyeux. Tu maîtrises un poisson entier et une sauce émulsifiée en parallèle."
       },
       "quizIds": [
         "q-v19-l-poisson-1-0",
@@ -4923,164 +5681,202 @@ window.CUISINE_DATA = {
       ],
       "principles": [
         {
-          "title": "Comprendre avant d’exécuter",
-          "body": "Le riz finit souvent de se structurer hors feu sous couvercle : le repos stabilise les grains."
+          "title": "Amylose vs amylopectine : la chimie qui détermine la texture",
+          "body": "Le riz est composé d’amidon sous deux formes : amylose (chaîne longue et droite, ~20%) et amylopectine (chaîne ramifiée, ~80%). Les riz riches en amylopectine (riz rond, sushi, arborio) sont collants et crémeux à la cuisson — l’amylopectine absorbe l’eau et forme un gel visqueux. Les riz pauvres en amylopectine (basmati, jasmin, riz thaï long) restent séparés et secs. Choisir le bon riz pour le bon usage est la première décision."
         },
         {
-          "title": "Observer le résultat",
-          "body": "Le temps indiqué est une aide. La vraie décision se prend avec la couleur, la texture, l’odeur, le son et le goût."
+          "title": "Rinçage : quand oui, quand non",
+          "body": "Rincer le riz sous l’eau froide jusqu’à l’eau claire élimine l’amidon de surface libéré lors du polissage — résultat : grains plus séparés, moins collants. Rincer oui pour : riz pilaf, riz basmati, sushi. Ne pas rincer pour : risotto (l’amidon de surface est indispensable à la crémosité), riz à lait (l’amidon épaissit le lait). Le trempage 30 min dans l’eau froide accélère ensuite la cuisson et homogénéise l’absorption."
         },
         {
-          "title": "Corriger tôt",
-          "body": "Un petit ajustement au bon moment évite souvent une grosse correction impossible à la fin."
+          "title": "Pilaf : absorption précise et jamais toucher",
+          "body": "La méthode pilaf (rapport eau:riz 1,5:1 pour riz long, couvercle hermétique, feu très doux après ébullition) fonctionne parce que le volume d’eau est précisément calculé pour être entièrement absorbé. Si on soulève le couvercle, la vapeur s’échappe et la cuisson est perturbée. Si on remue, l’amidon des grains se libère et le riz devient pâteux. Règle : couvrir, ne plus toucher, attendre le signal (plus d’eau visible)."
+        },
+        {
+          "title": "Risotto : libération progressive de l’amidon",
+          "body": "Le risotto est à l’opposé du pilaf : on veut que l’amidon sorte du grain pour créer une sauce crémeuse. Technique : nacrer le riz dans la matière grasse (enrobe les grains, retarde légèrement l’absorption), puis ajouter le fond chaud louche par louche en agitant constamment. L’agitation mécanique libère l’amidon. La mantecatura finale (beurre froid + parmesan hors du feu, 2 min de repos couvercle) finit l’émulsion crémeuse."
+        },
+        {
+          "title": "Repos sous couvercle : 10 minutes de cuisson à la vapeur",
+          "body": "Après absorption complète, la vapeur résiduelle dans la casserole continue de cuire les grains par diffusion pendant 8-10 minutes. Lever le couvercle immédiatement = riz pas fini à cœur, surface sèche et inégale. Attendre : riz homogène du fond au sommet. Une fois le couvercle levé, égrainer avec une fourchette (jamais une cuillère = écrase les grains)."
         }
       ],
       "techniqueSteps": [
         {
-          "title": "Préparer le contexte",
-          "action": "Lis l’objectif technique, prépare le matériel et identifie le point critique de la recette.",
-          "cue": "Tu sais ce que tu dois observer avant de commencer.",
-          "mistake": "Suivre les étapes sans savoir quel résultat chercher.",
-          "correction": "Reformule l’objectif en une phrase avant de cuisiner."
+          "title": "Choisir le bon riz et le préparer",
+          "action": "Identifier l’usage : pilaf/biriyani → basmati (rinçage + trempage 30 min). Risotto → arborio/carnaroli (pas de rinçage). Sushi → riz rond japonais (rinçage). Riz cantonnais → riz cuit la veille, froid et sec. Préparer selon l’usage : rincer si nécessaire, tremper si indiqué.",
+          "cue": "Le riz choisi est adapté au plat. L’eau de rinçage est claire (plus d’amidon de surface).",
+          "mistake": "Utiliser du riz basmati pour un risotto, ou du riz arborio pour un pilaf.",
+          "correction": "Choisir le riz selon son rapport amylose/amylopectine et l’effet désiré."
         },
         {
-          "title": "Contrôler l’intensité",
-          "action": "Adapte chaleur, temps, humidité ou agitation selon la réaction observée.",
-          "cue": "Grains séparés ou crémeux selon recette, pas de cœur dur ni de bouillie.",
-          "mistake": "Appliquer le temps indiqué même si le résultat visuel dit l’inverse.",
-          "correction": "Ralentis, goûte, touche ou observe avant de continuer."
+          "title": "Riz pilaf par absorption",
+          "action": "Rapport eau:riz = 1,5:1 pour riz long (vérifier le paquet selon la variété). Chauffer dans la casserole avec un peu d’huile, les oignons et le riz jusqu’à légère translucidité (nacrage). Ajouter l’eau bouillante (ou fond chaud) + sel. Porter à ébullition, réduire immédiatement à feu très doux, COUVERCLE. Ne jamais soulever pendant 15-18 min. Repos 10 min couvercle fermé hors feu.",
+          "cue": "Disparition des derniers filets de vapeur par les bords du couvercle, léger chuintement de vapeur qui s’arrête.",
+          "mistake": "Soulever le couvercle pour vérifier — perte de vapeur, cuisson perturbée.",
+          "correction": "Faire confiance au ratio et au temps. Soulever seulement après le temps de repos."
         },
         {
-          "title": "Finir proprement",
-          "action": "Goûte, ajuste, puis sers avec une finition cohérente : acidité, gras, herbes, sauce ou repos.",
-          "cue": "Le résultat est net, équilibré et volontaire.",
-          "mistake": "Servir sans dernier contrôle.",
-          "correction": "Goûte une bouchée complète avant dressage."
+          "title": "Risotto : nacrage et absorption progressive",
+          "action": "Échalote + beurre/huile d’olive → fondre. Ajouter le riz, nacrer 2-3 min à feu moyen (les grains deviennent translucides en périphérie). Déglacer au vin blanc sec (1 verre). Puis fond chaud louche par louche : chaque louche ajoutée seulement quand la précédente est absorbée. Agitation constante. Cuisson totale 17-20 min. Vérifier al dente.",
+          "cue": "Riz al dente (résistant légèrement au centre), texture crémeuse et coulante, ni trop sec ni trop liquide.",
+          "mistake": "Ajouter tout le fond d’un coup — les grains se noient et l’amidon ne se libère pas progressivement.",
+          "correction": "Louche par louche, laisser absorber, agiter, puis louche suivante."
+        },
+        {
+          "title": "Mantecatura (finition du risotto)",
+          "action": "Feu éteint. Ajouter 30-40g beurre froid coupé en cubes + parmesan râpé. Remuer vigoureusement pendant 2 min pour créer une émulsion beurre-amidon. Couvercle 2 min de repos. Servir immédiatement (le risotto se fige rapidement).",
+          "cue": "Texture crémeuse et coulante, brillante, qui se répand doucement dans l’assiette (pas de flaque liquide).",
+          "mistake": "Mantecatura avec beurre fondu ou chaud — l’émulsion ne se forme pas.",
+          "correction": "Beurre froid, sorti du réfrigérateur, jamais à température ambiante pour cette étape."
+        },
+        {
+          "title": "Riz sauté (riz cantonnais) : règle du riz froid",
+          "action": "Préparer le riz cuit la VEILLE et conservé au réfrigérateur (non couvert une nuit pour sécher). Wok ou poêle très chaude, huile fumante. Riz froid directement, agitation constante, feu maximum. Ajouter les garnitures, œuf battu en dernier (pousser le riz sur le côté, cuire l’œuf, incorporer).",
+          "cue": "Grains séparés et légèrement dorés en surface, aucun grain collant.",
+          "mistake": "Utiliser du riz fraîchement cuit chaud — les grains se collent entre eux instantanément.",
+          "correction": "Toujours du riz d’un jour. Emergency : étaler le riz cuit sur une plaque, ventilateur ou four froid pour sécher rapidement."
         }
       ],
       "sensoryCues": {
-        "see": "Grains séparés ou crémeux selon recette, pas de cœur dur ni de bouillie.",
-        "smell": "Odeur nette correspondant à la technique, jamais brûlée ni fade.",
-        "taste": "Goût équilibré et lisible, sans correction excessive.",
-        "touch": "Texture conforme à l’objectif : souple, croquante, nappante, friable ou fondante.",
-        "hear": "Le son doit rester cohérent avec la technique : frémissement doux, crépitement vif ou silence de repos."
+        "see": "Pilaf : grains séparés, aucune flaque d’eau résiduelle, pas de grain collé en masse. Risotto : texture crémeuse et coulante. Riz sauté : grains légèrement dorés, tous séparés.",
+        "smell": "Parfum de riz cuit délicat, légèrement noisette (pilaf nacré). Risotto : arôme de parmesan et fond de cuisson.",
+        "taste": "Al dente pour risotto (légère résistance au cœur). Grains séparés et non pâteux pour pilaf. Riz sauté : légèrement croquant en surface.",
+        "touch": "Grain de pilaf : tendre mais non collant entre les doigts. Grain de risotto : mou mais pas écrasé.",
+        "hear": "Pilaf : léger chuintement de vapeur pendant la cuisson, puis silence = absorption terminée. Riz sauté dans le wok : crépitement vif continu."
       },
       "troubleshooting": [
         {
-          "problem": "Résultat irrégulier",
-          "cause": "Taille, chaleur ou timing non maîtrisés.",
-          "fix": "Standardise la préparation et ajuste l’intensité plus tôt."
+          "problem": "Riz pilaf collant et pâteux",
+          "cause": "Trop d’eau, couvercle soulevé trop tôt, riz pas rincé (si basmati), ou trop remué.",
+          "fix": "Respecter le ratio eau:riz, ne jamais soulever le couvercle pendant la cuisson. Égrainer à la fourchette après repos."
         },
         {
-          "problem": "Goût plat",
-          "cause": "Assaisonnement ou finition insuffisants.",
-          "fix": "Corrige sel, acidité, gras ou fraîcheur par petites touches."
+          "problem": "Riz pilaf avec cœur dur",
+          "cause": "Pas assez d’eau ou feu trop fort (eau évaporée avant la cuisson complète).",
+          "fix": "Ajouter 2-3 cuillères d’eau chaude, remettre couvercle et cuire 5 min de plus à feu doux."
         },
         {
-          "problem": "Texture ratée",
-          "cause": "Cuisson prolongée, chaleur mal adaptée ou manque de repos.",
-          "fix": "Identifie le point de bascule et arrête plus tôt la prochaine fois."
+          "problem": "Risotto trop sec et collé",
+          "cause": "Feu trop fort, pas assez de fond, ou pas assez d’agitation.",
+          "fix": "Ajouter une louche de fond chaud et agiter vigoureusement pour reconstituer la crémosité."
+        },
+        {
+          "problem": "Riz sauté collant",
+          "cause": "Riz frais (trop humide) ou wok pas assez chaud.",
+          "fix": "Toujours riz de la veille. Wok porté à température maximum avant ajout du riz."
         }
       ],
       "practiceDrills": [
         {
-          "title": "Répétition courte",
-          "duration": "15 min",
-          "instructions": "Réalise une version miniature de la technique en te concentrant sur un seul critère : couleur, texture ou goût.",
-          "goal": "Isoler la compétence sans te perdre dans une recette complète."
+          "title": "Riz pilaf basmati : ratio et repos",
+          "duration": "30 min",
+          "instructions": "150g basmati rincé (eau claire). 225ml eau ou fond de volaille. Nacrage 2 min. Porter à ébullition, feu minimum, couvercle 15 min. Repos couvercle 10 min. Égrainer fourchette. Observer la texture des grains : séparés ? Collants ? Cœur dur ?",
+          "goal": "Comprendre l’absorption précise et le rôle du repos en produisant un pilaf parfait ou en identifiant la cause d’échec."
         },
         {
-          "title": "Comparaison volontaire",
-          "duration": "20 min",
-          "instructions": "Fais deux versions : une correcte, une avec une erreur contrôlée. Compare le résultat.",
-          "goal": "Reconnaître l’erreur par les sens."
+          "title": "Riz sauté comparatif : riz chaud vs riz froid",
+          "duration": "15 min",
+          "instructions": "2 poêles identiques très chaudes. Verser du riz fraîchement cuit dans l’une, du riz d’un jour dans l’autre. Sauter 3 min chacun. Comparer.",
+          "goal": "Observer de manière spectaculaire et mémorable pourquoi le riz froid est obligatoire pour le riz sauté."
         }
       ],
       "masteryCriteria": [
-        "Tu peux expliquer le mécanisme de la technique.",
-        "Tu reconnais les signes de réussite.",
-        "Tu sais nommer l’erreur la plus probable.",
-        "Tu sais proposer une correction réaliste."
+        "Tu peux expliquer la différence amylose/amylopectine et choisir le riz selon l’usage.",
+        "Tu sais quand rincer et quand ne pas rincer.",
+        "Tu réalises un pilaf parfait (grains séparés, pas de couvercle soulevé pendant la cuisson).",
+        "Tu maîtrises la technique louche par louche et la mantecatura pour le risotto.",
+        "Tu utilises systématiquement du riz froid de la veille pour le riz sauté."
       ],
-      "proTip": "Un bon cuisinier ne suit pas seulement le temps : il observe et ajuste.",
-      "mentorBrief": "Un cuisinier progresse d’abord par son poste : une recette difficile devient accessible quand tout est prêt, lisible et séquencé. Le but n’est pas d’aller vite, mais de réduire les décisions inutiles pendant les moments chauds.",
+      "proTip": "Pour un risotto de restaurant à la maison, cuire en deux phases : 80% de la cuisson normale, arrêter, laisser refroidir. Au moment de servir : reprendre avec le fond chaud et la mantecatura. Cette technique (utilisée en brasserie) permet de préparer le risotto en avance et de servir à la minute.",
+      "mentorBrief": "Le riz est le céréale le plus consommé au monde et chaque culture a développé une technique parfaitement adaptée à sa variété locale. Comprendre la chimie de l’amidon, c’est comprendre pourquoi le pilaf, le risotto, le sushi et le riz cantonnais ont des techniques radicalement différentes pour un même ingrédient. Cette connaissance transfère immédiatement à d’autres féculents : couscous, quinoa, polenta.",
       "technicalVocabulary": [
         {
-          "term": "Mise en place",
-          "definition": "Préparation complète du poste avant cuisson : ingrédients, matériel, ordre des gestes."
+          "term": "Amylopectine",
+          "definition": "Molécule d’amidon ramifiée, majoritaire dans les riz ronds. Donne la texture collante et crémeuse des sushi et risottos."
         },
         {
-          "term": "Séquençage",
-          "definition": "Classement des actions par durée et par urgence."
+          "term": "Amylose",
+          "definition": "Molécule d’amidon linéaire, présente surtout dans les riz longs (basmati). Donne des grains séparés et secs à la cuisson."
         },
         {
-          "term": "Temps mort",
-          "definition": "Moment exploitable pour nettoyer, goûter ou préparer la finition."
+          "term": "Nacrage",
+          "definition": "Enrober les grains de riz dans la matière grasse chaude jusqu’à légère translucidité, avant ajout du liquide."
         },
         {
-          "term": "Point critique",
-          "definition": "Étape où une erreur devient difficile à rattraper : sauce, coloration, cuisson courte."
+          "term": "Mantecatura",
+          "definition": "Finition du risotto : incorporation de beurre froid et parmesan hors du feu pour créer l’émulsion crémeuse finale."
+        },
+        {
+          "term": "Al dente",
+          "definition": "Riz cuit mais avec légère résistance au cœur du grain. Signe de cuisson parfaite pour le risotto."
         }
       ],
       "guidedLab": [
         {
-          "task": "Chronométrer une recette simple",
-          "duration": "20 min",
-          "instructions": "Avant de cuisiner, écris les 5 actions dans l’ordre. Pendant la recette, note les moments où tu cherches quelque chose.",
-          "expected": "À la deuxième tentative, tu dois chercher moins d’outils et finir plus proprement."
+          "task": "Risotto classique au parmesan",
+          "duration": "30 min",
+          "instructions": "1 échalote + beurre → fondre. 150g arborio → nacrer. Verre de vin blanc. 600ml fond chaud louche par louche (17-20 min total). Mantecatura (40g beurre froid + 50g parmesan, 2 min hors feu). Servir immédiatement.",
+          "expected": "Texture crémeuse et coulante, grains al dente, arôme de parmesan et beurre. Si trop épais : ajouter un peu de fond. Si trop liquide : replonger sur feu 2 min sans couvercle."
         },
         {
-          "task": "Poste propre en continu",
-          "duration": "15 min",
-          "instructions": "Prépare une omelette ou une salade en nettoyant au fur et à mesure.",
-          "expected": "À la fin, le plan de travail est utilisable sans rangement massif."
+          "task": "Pilaf comparatif : rincé vs non rincé",
+          "duration": "30 min",
+          "instructions": "Cuire le même basmati en 2 versions : version rincée (eau claire) et version non rincée. Même ratio, même temps. Observer et comparer la texture et le collant.",
+          "expected": "Version rincée = grains séparés. Version non rincée = plus collante, légère bouillie de surface. La différence illustre concrètement l’impact du rinçage."
         }
       ],
       "progressionStages": [
         {
           "level": "Débutant",
-          "standard": "Tu suis une recette sans oublier d’ingrédient."
+          "standard": "Tu réalises un riz pilaf basmati avec le bon ratio et le repos sous couvercle."
         },
         {
           "level": "Intermédiaire",
-          "standard": "Tu anticipes les cuissons longues et prépares les éléments rapides en dernier."
+          "standard": "Tu maîtrises la technique louche par louche du risotto. Tu utilises du riz froid pour le riz sauté."
         },
         {
           "level": "Excellent amateur",
-          "standard": "Tu peux cuisiner deux préparations en parallèle sans stress ni désordre."
+          "standard": "Tu choisis le riz selon l’usage, tu maîtrises la mantecatura, et tu peux réaliser un biriyani simple."
+        },
+        {
+          "level": "Expert",
+          "standard": "Tu réalises un risotto en deux phases (cuisson avancée + finition à la minute). Tu maîtrises les variantes : paella (riz bomba), riz à lait (amylopectine + chaleur douce)."
         }
       ],
       "assessmentRubric": [
         {
-          "criterion": "Organisation",
-          "standard": "La mise en place est complète, les gestes s’enchaînent sans chercher un outil ou un ingrédient."
+          "criterion": "Choix du riz",
+          "standard": "Le riz choisi est adapté au plat : basmati pour pilaf, arborio pour risotto."
         },
         {
-          "criterion": "Observation",
-          "standard": "Tu prends tes décisions sur des signes visibles, sonores, olfactifs ou tactiles, pas seulement sur le minuteur."
+          "criterion": "Technique pilaf",
+          "standard": "Grains séparés, aucun grain collé, cœur tendre — ratio respecté et couvercle jamais soulevé."
         },
         {
-          "criterion": "Correction",
-          "standard": "Tu sais identifier une erreur probable et proposer une correction réaliste avant la fin de la recette."
+          "criterion": "Technique risotto",
+          "standard": "Texture crémeuse et al dente, mantecatura correcte avec beurre froid."
         },
         {
-          "criterion": "Répétabilité",
-          "standard": "Tu peux refaire la technique avec un résultat similaire au moins deux fois."
+          "criterion": "Riz sauté",
+          "standard": "Riz de la veille utilisé, grains séparés et légèrement dorés."
         }
       ],
       "antiBacle": [
-        "Ne valide pas mentalement une technique si tu ne peux pas expliquer pourquoi elle fonctionne.",
-        "Ne te fie pas uniquement au temps : vérifie au moins deux repères sensoriels.",
-        "Note l’erreur principale après pratique, même si le plat est bon."
+        "Ne soulève jamais le couvercle pendant un riz pilaf en absorption.",
+        "Ne rince jamais un riz arborio destiné au risotto.",
+        "Ne fais jamais un riz sauté avec du riz fraîchement cuit chaud.",
+        "Ne laisse pas le risotto attendre — servir immédiatement après la mantecatura."
       ],
       "commonMisconceptions": [
-        "La mise en place n’est pas une perte de temps : elle déplace l’effort avant la pression de la cuisson."
+        "Plus d’eau = riz plus cuit. Faux : trop d’eau donne un riz pâteux. Le ratio doit être précis. Le riz absorbera exactement la quantité calculée.",
+        "Remuer le riz pendant l’absorption aide la cuisson. Faux : remuer libère l’amidon et transforme le pilaf en bouillie."
       ],
-      "realKitchenTransfer": "Dans un repas complet, elle permet de synchroniser chaud, froid, sauce et dressage sans panique.",
+      "realKitchenTransfer": "La logique d’absorption (ratio précis, couvercle, repos) s’applique aussi au quinoa (ratio 1:2), à la polenta (ratio 1:4), et au couscous (absorption à l’eau bouillante). Comprendre le riz, c’est comprendre tous les féculents.",
       "capstonePractice": {
-        "title": "Exercice de transfert",
-        "instructions": "Choisis une recette déjà faite, applique volontairement cette technique, puis note ce qui a changé dans le résultat.",
-        "expected": "Tu dois pouvoir expliquer une décision concrète : taille, feu, couvercle, ordre ou correction."
+        "title": "Risotto et riz pilaf le même soir",
+        "instructions": "Préparer un risotto classique au parmesan (20 min) ET un riz pilaf basmati aux légumes (20 min) en parallèle. Servir les deux côte à côte. Les deux textures doivent être radicalement différentes — le risotto crémeux et coulant, le pilaf séparé et sec — ce qui prouve la maîtrise de deux techniques opposées sur le même ingrédient.",
+        "expected": "Deux textures distinctes et parfaites. Aucun riz pâteux, aucun risotto sec, aucun pilaf collant."
       },
       "quizIds": [
         "q-v19-l-riz-1-0",
@@ -5118,14 +5914,19 @@ window.CUISINE_DATA = {
         "reduire",
         "mijoter"
       ],
-      "summary": "Comprendre extraction, concentration et usage d'un bouillon.",
-      "objective": "Construire une profondeur aromatique avec eau, légumes, os, parures, temps et écumage.",
+      "summary": "Maîtriser la hiérarchie fond blanc / fond brun / consommé, les ratios, l'écumage et la clarification pour construire la profondeur aromatique de toutes les grandes sauces.",
+      "objective": "Réaliser un fond blanc de volaille clair et gélatineux, comprendre la différence avec un fond brun, et savoir réduire sans sur-saler.",
       "content": [
-        "Un bouillon extrait des goûts dans l'eau par temps et chaleur douce. Un fond est souvent plus concentré et plus structuré.",
-        "Réduire un bouillon augmente la concentration, mais augmente aussi le sel si le bouillon est déjà salé.",
-        "Dans une sauce courte, un bon liquide de déglaçage fait souvent la différence entre jus plat et vraie sauce."
+        "Le vocabulaire de la cuisine professionnelle distingue trois niveaux : le bouillon (eau + légumes + os mijotés, utilisé en cuisine familiale), le fond (extraction rigoureuse d'os, de parures et de garniture aromatique, base des grandes sauces) et le consommé (fond clarifié par une technique de radeau, limpide comme du cristal). Comprendre cette hiérarchie, c'est comprendre pourquoi les sauces de restaurant ont une profondeur impossible à obtenir avec un cube de bouillon.",
+        "Le fond blanc de volaille part à froid : os et carcasses blanchis 5 minutes à l'eau bouillante, rincés puis couverts d'eau froide. Démarrer à froid favorise la migration progressive des protéines et des sucs vers le liquide. On amène doucement à frémissement (85-90°C, jamais à ébullition franche) et on écume immédiatement les impuretés grises qui remontent — si on laisse ces protéines coagulées se disperser à nouveau, le fond devient trouble et amer.",
+        "Le fond brun repose sur la réaction de Maillard : os et parures sont torréfiés au four à 220°C jusqu'à coloration profonde acajou (40-50 min), la garniture aromatique est ensuite rissolée, tout est déglacé et couvert d'eau froide. La torréfaction crée des centaines de composés aromatiques complexes absents du fond blanc — c'est la base du jus de veau, de l'espagnole et de la demi-glace.",
+        "La garniture aromatique standard, le bouquet garni, comprend : 2 oignons (dont 1 oignon brûlé coupé en deux et chauffé à sec en poêle pour le fond brun — il apporte couleur et légère amertume), 2 carottes, 2 branches de céleri, 1 poireau (partie verte), thym, laurier, queue de persil. Les proportions classiques pour un fond de qualité : 1 kg d'os pour 2 litres d'eau, garniture 200-300 g.",
+        "Le temps d'extraction varie selon la structure des os : volaille 2-3h, veau 4-6h, bœuf 6-8h, poisson (fumet) 20-30 minutes maximum — au-delà, les arêtes libèrent une amertume iodée. Une extraction trop longue ne donne pas plus de goût : les molécules aromatiques volatiles s'évaporent et certaines protéines se dégradent. Le remouillage, technique économique de la grande restauration, consiste à couvrir une seconde fois les os déjà extraits — ce second fond moins riche sert pour les braisages ou les pochages.",
+        "La réduction est le levier de concentration : un fond réduit de moitié double sa teneur en gélatine et en saveurs. La gélatine — issue de la conversion du collagène des os et cartilages par hydrolyse prolongée — est ce qui donne au fond refroidi sa consistance de gelée, signe d'un fond de qualité. Un fond sans gélatine est un bouillon pauvre. Règle absolue : ne jamais saler un fond destiné à réduire — saler seulement en fin de réduction ou au montage de la sauce.",
+        "La clarification, qui transforme un fond en consommé, est un procédé fascinant : on mélange viande hachée maigre, blancs d'œufs et mirepoix crus (la 'clarification'), on verse dans le fond froid et on chauffe doucement. Les protéines de la viande et des blancs coagulent progressivement et forment un radeau poreux qui piège toutes les particules en suspension. On ne touche plus le liquide — on fait juste un trou dans le radeau pour le surveiller. En 45-60 minutes, le consommé est limpide avec une robe ambrée intense.",
+        "En cuisine du quotidien, la puissance du fond se retrouve dans trois usages simples : déglacer une viande saisie (fond remplace l'eau, incomparablement meilleur), risotto (le fond chaud absorbé grain par grain construit la profondeur finale), sauce courte express (fond réduit au 2/3 + beurre monté = sauce en 8 minutes). Investir 3h un dimanche pour réaliser 2 litres de fond de volaille changera la qualité de vos plats de semaine de manière visible et permanente."
       ],
-      "practice": "Application recommandée : risotto ou poulet poêlé sauce courte.",
+      "practice": "Application recommandée : fond blanc de volaille puis risotto ou sauce courte de volaille.",
       "quiz": [
         {
           "question": "Que se passe-t-il quand on réduit un bouillon salé ?",
@@ -5241,164 +6042,215 @@ window.CUISINE_DATA = {
       ],
       "principles": [
         {
-          "title": "Comprendre avant d’exécuter",
-          "body": "Un bon bouillon est une extraction contrôlée, pas une casserole fourre-tout bouillie violemment."
+          "title": "Démarrer à froid, frémir jamais bouillir",
+          "body": "Partir avec de l’eau froide sur des os blancs permet une migration lente et progressive des sucs et de la gélatine. L’ébullition franche émulsionne les graisses et disperse les protéines coagulées : le fond devient gras, trouble et amer. Le frémissement à 85-90°C (quelques bulles lentes en surface) est le régime correct pour toute extraction de fond."
         },
         {
-          "title": "Observer le résultat",
-          "body": "Le temps indiqué est une aide. La vraie décision se prend avec la couleur, la texture, l’odeur, le son et le goût."
+          "title": "Écumer immédiatement et souvent",
+          "body": "Les premières 20 minutes de chauffe sont critiques : les protéines solubles montent en écume grise. Si on ne les retire pas avant qu’elles se redispersent à l’ébullition, elles restent en suspension et donnent un goût amer et trouble. Écume avec une louche ou une écumoire, sans agiter le fond."
         },
         {
-          "title": "Corriger tôt",
-          "body": "Un petit ajustement au bon moment évite souvent une grosse correction impossible à la fin."
+          "title": "Fond brun = torréfaction = Maillard osseux",
+          "body": "La différence fondamentale entre fond blanc et fond brun n’est pas la viande ou les os utilisés, mais leur traitement initial. La torréfaction au four à 220°C déclenche la réaction de Maillard sur les protéines et sucres des os — elle crée des centaines de composés aromatiques nouveaux, une couleur acajou profonde et une amertume subtile qui complexifie le fond. Sans torréfaction : fond blanc clair et délicat. Avec : fond brun riche et corsé."
+        },
+        {
+          "title": "Ne jamais saler un fond destiné à réduire",
+          "body": "Le sel ne s’évapore pas. Un fond salé qui réduit de moitié voit sa concentration en sel doubler. En restauration, les fonds sont toujours non salés — le sel est ajouté seulement en fin de préparation de la sauce finale. Pour l’amateur, règle simple : ne saler le fond qu’une fois la réduction terminée, juste avant service."
+        },
+        {
+          "title": "La gélatine : indice de qualité incontournable",
+          "body": "Un fond de qualité refroidi au réfrigérateur prend en gelée — signe que le collagène des os et cartilages s’est bien transformé en gélatine par hydrolyse prolongée. Cette gélatine est ce qui donne aux sauces leur texture veloutée, leur corps et leur tenue. Un fond qui reste liquide froid est un bouillon appauvri, pas un fond de cuisine."
         }
       ],
       "techniqueSteps": [
         {
-          "title": "Préparer le contexte",
-          "action": "Lis l’objectif technique, prépare le matériel et identifie le point critique de la recette.",
-          "cue": "Tu sais ce que tu dois observer avant de commencer.",
-          "mistake": "Suivre les étapes sans savoir quel résultat chercher.",
-          "correction": "Reformule l’objectif en une phrase avant de cuisiner."
+          "title": "Blanchir et rincer les os (fond blanc uniquement)",
+          "action": "Mettre les os dans une grande casserole, couvrir d’eau froide, porter à ébullition 5 minutes. Jeter l’eau et rincer les os à l’eau froide. Cette étape élimine les impuretés sanguines et les résidus amers avant l’extraction.",
+          "cue": "Les os doivent être blancs/gris pâle, sans traces sanglantes.",
+          "mistake": "Sauter le blanchiment ou ne pas rincer à l’eau froide après.",
+          "correction": "Sans rinçage, les impuretés restent sur les os et troublent le fond."
         },
         {
-          "title": "Contrôler l’intensité",
-          "action": "Adapte chaleur, temps, humidité ou agitation selon la réaction observée.",
-          "cue": "Goût clair, parfum net, pas d’amertume trouble.",
-          "mistake": "Appliquer le temps indiqué même si le résultat visuel dit l’inverse.",
-          "correction": "Ralentis, goûte, touche ou observe avant de continuer."
+          "title": "Torréfier les os (fond brun uniquement)",
+          "action": "Étaler les os en une seule couche sur une plaque. Four à 220°C, 40-50 min en retournant à mi-cuisson. En fin de rôtissage, ajouter la garniture aromatique 10 min pour qu’elle caramélise. Déglacer la plaque avec un peu d’eau pour récupérer les sucs caramélisés.",
+          "cue": "Couleur acajou profond, arômes de viande rôtie, aucun os noir (brûlé = amer irratrapable).",
+          "mistake": "Os pas assez colorés (goût plat) ou trop noirs (amertume).",
+          "correction": "Surveiller toutes les 10 min — la fenêtre entre parfait et brûlé est étroite."
         },
         {
-          "title": "Finir proprement",
-          "action": "Goûte, ajuste, puis sers avec une finition cohérente : acidité, gras, herbes, sauce ou repos.",
-          "cue": "Le résultat est net, équilibré et volontaire.",
-          "mistake": "Servir sans dernier contrôle.",
-          "correction": "Goûte une bouchée complète avant dressage."
+          "title": "Construire et porter à frémissement",
+          "action": "Couvrir les os d’eau froide (ratio 1 kg d’os / 2 L d’eau). Porter LENTEMENT à frémissement sur feu moyen. Ne jamais précipiter avec feu fort. Dès les premières bulles, écumer sans arrêt pendant 15-20 min jusqu’à ce que la surface soit propre.",
+          "cue": "Surface propre, quelques bulles lentes, léger frémissement — pas d’ébullition.",
+          "mistake": "Mettre à feu fort pour gagner du temps : le fond devient trouble et amer.",
+          "correction": "Baisser immédiatement le feu et écumer énergiquement."
+        },
+        {
+          "title": "Ajouter la garniture et laisser extraire",
+          "action": "Après écumage, ajouter bouquet garni et légumes. Maintenir le frémissement sans couvercle (la vapeur doit s’échapper pour que le fond se clarifie naturellement). Volaille : 2h30-3h. Veau : 4-6h. Ne jamais toucher, ne pas agiter.",
+          "cue": "Arômes progressivement plus intenses, légère réduction du volume, couleur dorée translucide.",
+          "mistake": "Mettre un couvercle — la condensation retombe et trouble le fond.",
+          "correction": "Laisser à découvert ou avec couvercle en biais pour laisser la vapeur s’échapper."
+        },
+        {
+          "title": "Passer au chinois étamine et dégraisser",
+          "action": "Verser délicatement au travers d’un chinois fin (ne pas presser les os pour ne pas troubler). Laisser refroidir sans couvercle, puis réfrigérer. Le gras fige en surface et se retire facilement en bloc. Vérifier la gélification : le fond doit trembler légèrement comme de la panna cotta.",
+          "cue": "Fond limpide ou légèrement voilé, couleur ambrée (blanc) ou brune (brun), tenue gélatineuse au froid.",
+          "mistake": "Presser les os dans le chinois — libère des particules fines qui troublent.",
+          "correction": "Laisser s’égoutter par gravité, sans manipulation des os."
         }
       ],
       "sensoryCues": {
-        "see": "Goût clair, parfum net, pas d’amertume trouble.",
-        "smell": "Odeur nette correspondant à la technique, jamais brûlée ni fade.",
-        "taste": "Goût équilibré et lisible, sans correction excessive.",
-        "touch": "Texture conforme à l’objectif : souple, croquante, nappante, friable ou fondante.",
-        "hear": "Le son doit rester cohérent avec la technique : frémissement doux, crépitement vif ou silence de repos."
+        "see": "Fond blanc : robe ambrée dorée translucide. Fond brun : acajou profond. Les deux tremblent en gelée au froid. Un fond trouble révèle une ébullition trop forte ou un écumage insuffisant.",
+        "smell": "Fond blanc : arômes délicats de volaille cuite, légumes doux, thym. Fond brun : arômes corsés de viande rôtie, caramel, torréfaction légère. Jamais d’odeur de graisse rance ou d’amertume.",
+        "taste": "Goût net, profond, légèrement gelatineux en bouche, aucune amertume, aucun sel (les fonds professionnels ne sont jamais salés). La réduction d’une cuillère doit donner une impression de ‘corps’ et de longueur en bouche.",
+        "touch": "La cuillère trempée dans le fond froid doit ressortir légèrement nappée. Au frigo, le fond doit avoir la texture d’un gel souple.",
+        "hear": "Frémissement régulier et doux — un clapotis lent et tranquille. L’ébullition forte est un signe d’alarme."
       },
       "troubleshooting": [
         {
-          "problem": "Résultat irrégulier",
-          "cause": "Taille, chaleur ou timing non maîtrisés.",
-          "fix": "Standardise la préparation et ajuste l’intensité plus tôt."
+          "problem": "Fond trouble et amer",
+          "cause": "Ébullition trop forte, écumage insuffisant ou os non blanchis (fond blanc).",
+          "fix": "On ne peut pas récupérer un fond trouble sans clarification. Prévention : frémissement strict et écumage pendant 20 min au départ."
         },
         {
-          "problem": "Goût plat",
-          "cause": "Assaisonnement ou finition insuffisants.",
-          "fix": "Corrige sel, acidité, gras ou fraîcheur par petites touches."
+          "problem": "Fond sans goût, aqueux",
+          "cause": "Trop d’eau par rapport aux os, extraction trop courte, ou os de mauvaise qualité (peu de cartilage).",
+          "fix": "Ratio 1 kg d’os / 2 L d’eau. Préférer les os riches en cartilage (carcasses, pattes, articulations). Réduire le fond pour concentrer."
         },
         {
-          "problem": "Texture ratée",
-          "cause": "Cuisson prolongée, chaleur mal adaptée ou manque de repos.",
-          "fix": "Identifie le point de bascule et arrête plus tôt la prochaine fois."
+          "problem": "Fond pas gélatineux (ne prend pas en gelée)",
+          "cause": "Pas assez de cartilage et d’os (trop de viande maigre), extraction trop courte, ou os jeunes.",
+          "fix": "Ajouter des pieds de veau, des carcasses riches en articulations. Extraire plus longtemps. Un fond sans gélatine reste un bouillon."
+        },
+        {
+          "problem": "Fond trop salé après réduction",
+          "cause": "Fond salé avant ou pendant la cuisson, puis réduit de moitié ou plus.",
+          "fix": "Règle absolue : ne jamais saler un fond. Saler uniquement la sauce finale après réduction."
         }
       ],
       "practiceDrills": [
         {
-          "title": "Répétition courte",
-          "duration": "15 min",
-          "instructions": "Réalise une version miniature de la technique en te concentrant sur un seul critère : couleur, texture ou goût.",
-          "goal": "Isoler la compétence sans te perdre dans une recette complète."
+          "title": "Test de gélification",
+          "duration": "3h + 1h frigo",
+          "instructions": "Réaliser un fond blanc de volaille simplifié (1 carcasse de poulet + oignon + carotte + thym + laurier + 1,5 L eau froide). Écumer, frémir 2h30. Passer au chinois, réfrigérer 1h. Observer la prise en gelée. Goûter une cuillère à chaud pour sentir le ‘corps’ aromatique.",
+          "goal": "Comprendre physiquement la différence entre un fond gélatineux de qualité et un simple bouillon aqueux."
         },
         {
-          "title": "Comparaison volontaire",
+          "title": "Réduction comparative salée/non salée",
           "duration": "20 min",
-          "instructions": "Fais deux versions : une correcte, une avec une erreur contrôlée. Compare le résultat.",
-          "goal": "Reconnaître l’erreur par les sens."
+          "instructions": "Prendre 200 ml de fond, saler la moitié (1 pincée). Réduire les deux au même niveau (100 ml chacun). Goûter côte à côte. Constater l’effet de concentration du sel.",
+          "goal": "Mémoriser dans les sens la règle ‘ne jamais saler un fond destiné à réduire’."
         }
       ],
       "masteryCriteria": [
-        "Tu peux expliquer le mécanisme de la technique.",
-        "Tu reconnais les signes de réussite.",
-        "Tu sais nommer l’erreur la plus probable.",
-        "Tu sais proposer une correction réaliste."
+        "Tu peux expliquer la différence entre fond blanc, fond brun et consommé en une phrase chacun.",
+        "Tu sais pourquoi un fond ne se sale jamais avant réduction.",
+        "Tu reconnais visuellement et au toucher un fond gélatineux de qualité.",
+        "Tu peux lister les 5 composants d’un bouquet garni standard.",
+        "Tu sais corriger un fond trouble (clarification) et un fond plat (réduction)."
       ],
-      "proTip": "Un bon cuisinier ne suit pas seulement le temps : il observe et ajuste.",
-      "mentorBrief": "Une sauce se pense en trois questions : d’où vient le goût, quelle texture je vise, quelle correction finale manque ? Les sauces ratées viennent souvent d’un excès de chaleur, de sel concentré ou d’un gras mal incorporé.",
+      "proTip": "Conserve tes fonds en cubes au congélateur (bacs à glaçons puis sachet) : tu auras toujours sous la main l’équivalent d’un déglaçage professionnel ou 50 ml de sauce express. Un fond maison congelé dure 3 mois sans perte de qualité.",
+      "mentorBrief": "Le fond est l’infrastructure invisible de la cuisine professionnelle. Tout chef qui sait faire un bon fond peut construire n’importe quelle grande sauce de la cuisine française. L’amateur qui comprend cette logique — extraction, concentration, gélatine, pas de sel — monte en niveau en une seule session. La grande différence entre la cuisine maison et la cuisine de restaurant tient souvent à ce seul facteur : la qualité du liquide de base.",
       "technicalVocabulary": [
         {
-          "term": "Réduction",
-          "definition": "Évaporation contrôlée pour concentrer goût et texture."
+          "term": "Fond blanc",
+          "definition": "Fond réalisé à partir d’os non colorés (volaille, veau), démarré à l’eau froide avec blanchiment préalable. Robe dorée claire, goût délicat."
         },
         {
-          "term": "Nappant",
-          "definition": "Texture qui couvre légèrement le dos d’une cuillère."
+          "term": "Fond brun",
+          "definition": "Fond réalisé à partir d’os torréfiés au four (réaction de Maillard). Robe acajou foncée, arômes corsés, base du jus de veau et de la demi-glace."
         },
         {
-          "term": "Monter",
-          "definition": "Incorporer beurre ou gras pour arrondir et lier."
+          "term": "Consommé",
+          "definition": "Fond clarifié par technique du radeau (viande hachée + blancs d’œufs formant un raft poreux). Limpidité cristalline, concentration maximale, apogée de la haute cuisine."
         },
         {
-          "term": "Trancher",
-          "definition": "Séparation visible du gras et du liquide."
+          "term": "Gélatine de fond",
+          "definition": "Collagène des os et cartilages converti en gélatine par hydrolyse lors de la longue extraction. Indicateur de qualité : un fond de qualité fige en gelée souple au réfrigérateur."
+        },
+        {
+          "term": "Bouquet garni",
+          "definition": "Fagot aromatique lié : thym, laurier, queues de persil, vert de poireau. Parfois enrichi selon le fond : estragon pour fond de volaille, romarin pour agneau."
+        },
+        {
+          "term": "Oignon brûlé",
+          "definition": "Oignon coupé en deux et chauffé à sec en poêle jusqu’à noircissement de la face coupée. Apporte couleur caramel et légère amertume au fond brun — technique classique de l’école française."
+        },
+        {
+          "term": "Remouillage",
+          "definition": "Seconde extraction sur les os déjà utilisés. Fond moins riche, utilisé pour braisages ou pochages. Technique d’économie de la restauration professionnelle."
+        },
+        {
+          "term": "Fumet",
+          "definition": "Fond de poisson : arêtes et têtes de poisson blanc (jamais gras), extraction courte 20-30 min maximum. Au-delà, amertume iodée irratrapable."
         }
       ],
       "guidedLab": [
         {
-          "task": "Réduction mesurée",
-          "duration": "15 min",
-          "instructions": "Réduis 200 ml de bouillon à 100 ml puis goûte avant de saler.",
-          "expected": "Tu constates que la réduction concentre aussi le sel."
+          "task": "Fond blanc de volaille express",
+          "duration": "3h",
+          "instructions": "1 carcasse de poulet rôtie (récupérée d’un poulet), 1 oignon, 1 carotte, 1 branche céleri, thym, laurier, 1,5L eau froide. Blanchir les os 5 min, rincer. Couvrir d’eau froide, porter LENTEMENT à frémissement. Écumer 20 min. Ajouter les légumes. Frémir à découvert 2h30. Passer au chinois. Refroidir. Observer la gélification.",
+          "expected": "Un fond doré ambré qui tremble en gelée au froid. Goût net et profond sans amertume ni sel."
         },
         {
-          "task": "Sauce récupérée",
+          "task": "Sauce courte express avec le fond",
           "duration": "10 min",
-          "instructions": "Fais volontairement trancher une mini sauce beurre puis récupère avec eau froide et fouet.",
-          "expected": "Tu comprends l’effet température + agitation."
+          "instructions": "Après avoir saisi une cuisse de poulet, déglacer la poêle avec 150 ml de fond blanc. Réduire aux 2/3. Hors du feu, monter avec 20g de beurre froid. Vérifier la texture nappante. Ne saler qu’à la toute fin.",
+          "expected": "Une sauce courte veloutée avec de la profondeur — comparer au même exercice fait avec de l’eau ou du bouillon cube."
         }
       ],
       "progressionStages": [
         {
           "level": "Débutant",
-          "standard": "Tu réduis sans brûler et goûtes avant de saler."
+          "standard": "Tu réalises un fond blanc simple à partir d’une carcasse, il frémit sans bouillir, il est écumé, il est clair."
         },
         {
           "level": "Intermédiaire",
-          "standard": "Tu ajustes texture et assaisonnement séparément."
+          "standard": "Ton fond gélifie au réfrigérateur. Tu sais l’utiliser pour déglacer et réaliser une sauce courte. Tu ne le sales jamais avant réduction."
         },
         {
           "level": "Excellent amateur",
-          "standard": "Tu sais sauver une sauce trop liquide, trop acide, trop salée ou tranchée."
+          "standard": "Tu maîtrises fond blanc et fond brun, tu les stockes congelés en cubes, tu comprends la différence bouillon/fond/consommé et tu adaptes le fond au plat (fumet pour poisson, fond brun pour gibier)."
+        },
+        {
+          "level": "Expert",
+          "standard": "Tu réalises une clarification pour obtenir un consommé limpide. Tu sais réaliser une demi-glace (fond brun réduit de 75%). Tu utilises le remouillage pour optimiser le rendement de tes os."
         }
       ],
       "assessmentRubric": [
         {
-          "criterion": "Organisation",
-          "standard": "La mise en place est complète, les gestes s’enchaînent sans chercher un outil ou un ingrédient."
+          "criterion": "Clarté du fond",
+          "standard": "Le fond est translucide ou légèrement voilé, sans turbidité visible, sans particules en suspension."
         },
         {
-          "criterion": "Observation",
-          "standard": "Tu prends tes décisions sur des signes visibles, sonores, olfactifs ou tactiles, pas seulement sur le minuteur."
+          "criterion": "Gélification",
+          "standard": "Après refroidissement, le fond prend une consistance de gelée souple — la cuillère laisse une marque nette dans la gelée froide."
         },
         {
-          "criterion": "Correction",
-          "standard": "Tu sais identifier une erreur probable et proposer une correction réaliste avant la fin de la recette."
+          "criterion": "Goût",
+          "standard": "Arômes nets correspondant au fond (délicat pour le blanc, corsé et rôti pour le brun), aucune amertume, aucune astringence, aucun excès de sel."
         },
         {
-          "criterion": "Répétabilité",
-          "standard": "Tu peux refaire la technique avec un résultat similaire au moins deux fois."
+          "criterion": "Technique de réduction",
+          "standard": "Le fond est réduit sans être salé au préalable. L’assaisonnement final intervient en fin de sauce, pas en cours d’extraction."
         }
       ],
       "antiBacle": [
-        "Ne valide pas mentalement une technique si tu ne peux pas expliquer pourquoi elle fonctionne.",
-        "Ne te fie pas uniquement au temps : vérifie au moins deux repères sensoriels.",
-        "Note l’erreur principale après pratique, même si le plat est bon."
+        "Ne démarre jamais un fond à eau bouillante — la migration des protéines doit être lente et progressive.",
+        "Ne mets jamais un couvercle sur un fond en extraction — la condensation trouble le fond.",
+        "Ne presse jamais les os dans le chinois — la gravité suffit, la pression libère des particules fines qui troublent.",
+        "Ne sale jamais un fond avant la réduction finale — le sel se concentre et devient incontrôlable."
       ],
       "commonMisconceptions": [
-        "La technique ne s’acquiert pas en lisant : elle devient utile quand tu sais reconnaître et corriger l’erreur."
+        "Un fond qui a cuit longtemps n’est pas forcément meilleur : au-delà des temps recommandés, les arômes volatils s’échappent et certaines protéines se dégradent. Volaille : 3h maximum. Fumet de poisson : 30 min maximum.",
+        "Le bouillon cube n’est pas un substitut acceptable pour une sauce de qualité : il contient sel, exhausteurs de goût (glutamate) et additifs — il ne permet pas de réduire sans sur-saler et n’apporte aucune gélatine.",
+        "Fond blanc et fond brun ne sont pas interchangeables : utiliser un fond brun pour une blanquette la colore et la rend trop corsée. Respecter l’accord fond/plat."
       ],
-      "realKitchenTransfer": "Cherche à réutiliser cette notion dans au moins deux recettes différentes.",
+      "realKitchenTransfer": "Garde systématiquement les carcasses de poulet rôti au congélateur. Quand tu en as 2-3, réalise un fond blanc. Ce fond transformera immédiatement la qualité de tes risottos, de tes sauces courtes et de tes braisages — sans aucun autre changement de recette.",
       "capstonePractice": {
-        "title": "Exercice de transfert",
-        "instructions": "Choisis une recette déjà faite, applique volontairement cette technique, puis note ce qui a changé dans le résultat.",
-        "expected": "Tu dois pouvoir expliquer une décision concrète : taille, feu, couvercle, ordre ou correction."
+        "title": "Poulet rôti avec jus court au fond brun maison",
+        "instructions": "Réaliser d’abord un fond brun simplifié (ailes de poulet torréfiées au four 45 min, déglacées avec eau, frémissement 2h). Rôtir une volaille entière. Déglacer la plaque de rôtissage avec 200 ml de fond brun. Réduire de moitié. Monter au beurre. Saler uniquement en fin. Comparer la profondeur de ce jus avec n’importe quelle version à base de bouillon cube.",
+        "expected": "Tu dois percevoir nettement la différence : corps, longueur en bouche, absence d’amertume ou de goût chimique. Ce jus court devient ta sauce de référence pour toutes les volailles rôties."
       },
       "quizIds": [
         "q-v19-l-bouillon-1-0",
@@ -5573,164 +6425,190 @@ window.CUISINE_DATA = {
       ],
       "principles": [
         {
-          "title": "Comprendre avant d’exécuter",
+          "title": "Cinq composantes, une assiette",
           "body": "Un plat complet combine souvent base, élément principal, sauce, contraste et finition fraîche."
         },
         {
-          "title": "Observer le résultat",
-          "body": "Le temps indiqué est une aide. La vraie décision se prend avec la couleur, la texture, l’odeur, le son et le goût."
+          "title": "Contrastes visuels et texturaux",
+          "body": "L’œil mange avant la bouche : chaque assiette doit offrir au moins deux textures (fondant/croquant) et trois couleurs distinctes."
         },
         {
-          "title": "Corriger tôt",
-          "body": "Un petit ajustement au bon moment évite souvent une grosse correction impossible à la fin."
+          "title": "La sauce comme lien",
+          "body": "La sauce n’est pas un ajout optionnel : elle unifie les éléments, apporte humidité et porte l’assaisonnement final."
+        },
+        {
+          "title": "Relief et non-monotonie",
+          "body": "Un plat réussi joue sur les registres : chaud vs froid, gras vs acide, sucré vs amer. Sans contraste, la dégustation devient lassante après trois bouchées."
+        },
+        {
+          "title": "La finition fraîche, en dernier",
+          "body": "Herbes ciselées, zeste, jus de citron ou trait d’huile crue s’ajoutent à la dernière seconde : ils apportent arôme volatil et éclat visuel que la chaleur détruirait."
         }
       ],
       "techniqueSteps": [
         {
-          "title": "Préparer le contexte",
-          "action": "Lis l’objectif technique, prépare le matériel et identifie le point critique de la recette.",
-          "cue": "Tu sais ce que tu dois observer avant de commencer.",
-          "mistake": "Suivre les étapes sans savoir quel résultat chercher.",
-          "correction": "Reformule l’objectif en une phrase avant de cuisiner."
+          "title": "Identifier les cinq composantes",
+          "action": "Avant de cuisiner, nomme chaque composante : quelle base (riz, purée, polenta) ? quel principal (protéine, légume rôti) ? quelle sauce ou jus ? quel contraste (pickles, noisettes, crudité) ? quelle finition fraîche ?",
+          "cue": "Tu peux décrire l’assiette en une phrase avant même d’allumer le feu.",
+          "mistake": "Cuisiner les éléments séparément sans penser à leur assemblage.",
+          "correction": "Dessine l’assiette à l’avance ou nomme chaque composante à voix haute."
         },
         {
-          "title": "Contrôler l’intensité",
-          "action": "Adapte chaleur, temps, humidité ou agitation selon la réaction observée.",
-          "cue": "Lecture claire, bouchées équilibrées, pas de monotonie.",
-          "mistake": "Appliquer le temps indiqué même si le résultat visuel dit l’inverse.",
-          "correction": "Ralentis, goûte, touche ou observe avant de continuer."
+          "title": "Équilibrer les proportions visuelles",
+          "action": "La protéine ou l’élément principal occupe 1/4 à 1/3 de l’assiette ; les légumes 40-50 % ; la base féculente 20-25 %. La sauce nappe partiellement, elle ne noie pas.",
+          "cue": "Chaque composante est visible et identifiable, aucune n’en écrase une autre.",
+          "mistake": "Un élément couvre tout : assiette monochrome de pâtes sans légumes ni couleur.",
+          "correction": "Dresse les éléments séparément, côte à côte, avant d’ajouter la sauce."
         },
         {
-          "title": "Finir proprement",
-          "action": "Goûte, ajuste, puis sers avec une finition cohérente : acidité, gras, herbes, sauce ou repos.",
-          "cue": "Le résultat est net, équilibré et volontaire.",
-          "mistake": "Servir sans dernier contrôle.",
-          "correction": "Goûte une bouchée complète avant dressage."
+          "title": "Jouer les contrastes de texture",
+          "action": "Identifie l’élément fondant (viande braisée, purée) et ajoute un élément croquant (noisettes torréfiées, chips de légumes, croûton, graines).",
+          "cue": "En fermant les yeux, chaque bouchée donne deux sensations de texture différentes.",
+          "mistake": "Tout mou ou tout croustillant : uniformité lassante.",
+          "correction": "Torréfie quelques graines ou ajoute une brunoise de légumes crus en finition."
+        },
+        {
+          "title": "Équilibrer l’acidité",
+          "action": "Chaque assiette riche en gras ou en umami réclame un contrepoids acide : jus de citron, vinaigre, pickles rapides, tomate fraîche ou crème acide.",
+          "cue": "Après une bouchée grasse, tu n’as pas envie de boire d’eau — la bouche est propre.",
+          "mistake": "Assiette trop grasse sans acidité : sensation lourde, envie d’arrêter après quelques bouchées.",
+          "correction": "Ajoute une pointe de jus de citron ou un pickle rapide, même minime."
+        },
+        {
+          "title": "Dresser et finir",
+          "action": "Dresse chaud sur assiette chaude (préchauffée 2 min au four ou eau chaude). Ajoute la finition fraîche — herbe ciselée, zeste, huile crue — à la toute dernière seconde.",
+          "cue": "L’assiette a du relief visuel, des couleurs nettes, et elle fume légèrement.",
+          "mistake": "Finition ajoutée trop tôt : herbes noircies, huile absorbée, arômes évaporés.",
+          "correction": "Garde la finition à portée de main et ne la pose qu’une fois l’assiette devant toi."
         }
       ],
       "sensoryCues": {
-        "see": "Lecture claire, bouchées équilibrées, pas de monotonie.",
-        "smell": "Odeur nette correspondant à la technique, jamais brûlée ni fade.",
-        "taste": "Goût équilibré et lisible, sans correction excessive.",
-        "touch": "Texture conforme à l’objectif : souple, croquante, nappante, friable ou fondante.",
-        "hear": "Le son doit rester cohérent avec la technique : frémissement doux, crépitement vif ou silence de repos."
+        "see": "Lecture claire : chaque composante visible, au moins trois couleurs, sauce qui nappe sans noyer.",
+        "smell": "Arômes distincts et nets : herbes fraîches au premier plan, fond riche en arrière-plan.",
+        "taste": "Première bouchée équilibrée : gras, acidité, sel et fraîcheur lisibles sans correction.",
+        "touch": "Au moins deux textures identifiables sans chercher : fondant et croquant coexistent.",
+        "hear": "Silence de service — un plat bien composé ne nécessite pas d’explication avant goûtage."
       },
       "troubleshooting": [
         {
-          "problem": "Résultat irrégulier",
-          "cause": "Taille, chaleur ou timing non maîtrisés.",
-          "fix": "Standardise la préparation et ajuste l’intensité plus tôt."
+          "problem": "Assiette monochrome (tout beige/brun)",
+          "cause": "Absence de légumes verts ou d’éléments de couleur.",
+          "fix": "Ajoute une herbe fraîche, une purée de légume coloré ou des pickles rapides."
         },
         {
-          "problem": "Goût plat",
-          "cause": "Assaisonnement ou finition insuffisants.",
-          "fix": "Corrige sel, acidité, gras ou fraîcheur par petites touches."
+          "problem": "Assiette trop lourde en bouche",
+          "cause": "Excès de gras sans contrepoids acide ou frais.",
+          "fix": "Zeste de citron, vinaigre en finition ou légume cru en contraste."
         },
         {
-          "problem": "Texture ratée",
-          "cause": "Cuisson prolongée, chaleur mal adaptée ou manque de repos.",
-          "fix": "Identifie le point de bascule et arrête plus tôt la prochaine fois."
+          "problem": "Les composantes semblent sans lien",
+          "cause": "Absence de sauce ou de jus commun.",
+          "fix": "Réduis le jus de cuisson ou prépare une sauce simple (beurre noisette, vinaigrette tiède) qui relie les éléments."
         }
       ],
       "practiceDrills": [
         {
-          "title": "Répétition courte",
-          "duration": "15 min",
-          "instructions": "Réalise une version miniature de la technique en te concentrant sur un seul critère : couleur, texture ou goût.",
-          "goal": "Isoler la compétence sans te perdre dans une recette complète."
+          "title": "Dissection d’une assiette du commerce",
+          "duration": "10 min",
+          "instructions": "Prends n’importe quel plat préparé ou photo de restaurant. Identifie les cinq composantes. Lesquelles manquent ? Que rajouterais-tu ?",
+          "goal": "Développer l’œil analytique sans cuisiner."
         },
         {
-          "title": "Comparaison volontaire",
+          "title": "Plat du placard en 5 composantes",
           "duration": "20 min",
-          "instructions": "Fais deux versions : une correcte, une avec une erreur contrôlée. Compare le résultat.",
-          "goal": "Reconnaître l’erreur par les sens."
+          "instructions": "Avec ce que tu as en stock, compose une assiette qui coche les 5 cases : base, principal, sauce/jus, contraste, finition. Même simple.",
+          "goal": "Déclencher le réflexe de composition à partir de rien."
         }
       ],
       "masteryCriteria": [
-        "Tu peux expliquer le mécanisme de la technique.",
-        "Tu reconnais les signes de réussite.",
-        "Tu sais nommer l’erreur la plus probable.",
-        "Tu sais proposer une correction réaliste."
+        "Tu nommes les 5 composantes d’une assiette sans hésiter.",
+        "Tu identifies l’élément manquant dans n’importe quelle assiette.",
+        "Tu ajoutes spontanément un contraste de texture et un contrepoids acide.",
+        "Tu appliques la finition fraîche en dernier, systématiquement."
       ],
-      "proTip": "Un bon cuisinier ne suit pas seulement le temps : il observe et ajuste.",
-      "mentorBrief": "L’assaisonnement n’est pas 'mettre du sel'. C’est construire un relief : sel pour intensifier, acidité pour tendre, gras pour porter, fraîcheur pour alléger, umami pour donner de la profondeur.",
+      "proTip": "Un plat ordinaire devient mémorable avec une finition précise : zeste, herbe fraîche ou trait d’huile crue ajoutés à la dernière seconde ne coûtent rien et changent tout.",
+      "mentorBrief": "Composer une assiette c’est penser en cinq couches : la base qui nourrit, le principal qui impressionne, la sauce qui lie, le contraste qui réveille et la finition qui signe. Sans contraste, l’assiette est plate même si chaque élément est bon séparément.",
       "technicalVocabulary": [
         {
-          "term": "Relief",
-          "definition": "Sensation qu’un plat n’est pas plat : tension, longueur et contraste."
+          "term": "Contraste texturale",
+          "definition": "Opposition délibérée entre deux textures dans un même plat : fondant/croquant, crémeux/granuleux."
         },
         {
-          "term": "Acidité",
-          "definition": "Élément qui réveille et coupe le gras : citron, vinaigre, vin, yaourt."
+          "term": "Finition fraîche",
+          "definition": "Herbe ciselée, zeste agrume, huile crue ou jus de citron ajouté à la dernière seconde pour l’arôme et l’éclat visuel."
         },
         {
-          "term": "Umami",
-          "definition": "Profondeur savoureuse : bouillon, champignon, tomate concentrée, parmesan, soja."
+          "term": "Relief gustatif",
+          "definition": "Sensation qu’un plat évolue en bouche : attaque, milieu, finale — jamais monotone."
         },
         {
-          "term": "Finition",
-          "definition": "Dernière correction juste avant de servir."
+          "term": "Sauce de liaison",
+          "definition": "Sauce ou jus qui unifie visuellement et gustativement les composantes d’une assiette."
+        },
+        {
+          "term": "Proportion assiette",
+          "definition": "Répartition visuelle recommandée : protéine 25-30 %, légumes 40-50 %, féculents 20-25 %."
         }
       ],
       "guidedLab": [
         {
-          "task": "Correction en 4 cuillères",
-          "duration": "15 min",
-          "instructions": "Prends une soupe ou sauce neutre. Compare version sel, sel+citron, sel+gras, sel+herbes.",
-          "expected": "Tu sais nommer ce que chaque ajout change."
+          "task": "Assiette en 5 composantes chrono",
+          "duration": "30 min",
+          "instructions": "Cuisine un plat simple (œuf, légume, céréale). Nomme chaque composante avant de dresser. Ajoute délibérément un contraste de texture et une finition fraîche.",
+          "expected": "L’assiette comporte 5 composantes identifiables, 3 couleurs et 2 textures distinctes."
         },
         {
-          "task": "Plat trop lourd",
+          "task": "Repas déjà cuisiné à améliorer",
           "duration": "10 min",
-          "instructions": "Sur une bouchée grasse, ajoute progressivement acidité puis herbes.",
-          "expected": "La sensation devient plus nette sans perdre le goût principal."
+          "instructions": "Sur un plat déjà cuisiné (restes, plat simple), identifie ce qui manque parmi les 5 composantes et ajoute-le.",
+          "expected": "Le plat gagne en intérêt gustatif et visuel sans reculinaison complète."
         }
       ],
       "progressionStages": [
         {
           "level": "Débutant",
-          "standard": "Tu sales progressivement."
+          "standard": "Tu cuisines chaque élément sans penser à l’assemblage."
         },
         {
           "level": "Intermédiaire",
-          "standard": "Tu sais distinguer manque de sel et manque d’acidité."
+          "standard": "Tu penses aux 5 composantes avant de cuisiner et tu ajoutes systématiquement une finition fraîche."
         },
         {
           "level": "Excellent amateur",
-          "standard": "Tu corriges un plat en goûtant méthodiquement, sans empiler les ingrédients."
+          "standard": "Tu composes une assiette mémorable avec n’importe quel set d’ingrédients en jouant consciemment des contrastes."
         }
       ],
       "assessmentRubric": [
         {
-          "criterion": "Organisation",
-          "standard": "La mise en place est complète, les gestes s’enchaînent sans chercher un outil ou un ingrédient."
+          "criterion": "Lisibilité",
+          "standard": "Chaque composante est identifiable visuellement sans explication."
         },
         {
-          "criterion": "Observation",
-          "standard": "Tu prends tes décisions sur des signes visibles, sonores, olfactifs ou tactiles, pas seulement sur le minuteur."
+          "criterion": "Contraste",
+          "standard": "L’assiette présente au moins deux textures distinctes et un contrepoids acide."
         },
         {
-          "criterion": "Correction",
-          "standard": "Tu sais identifier une erreur probable et proposer une correction réaliste avant la fin de la recette."
+          "criterion": "Finition",
+          "standard": "La finition fraîche est ajoutée en dernier et reste vive (pas flétrie, pas absorbée)."
         },
         {
-          "criterion": "Répétabilité",
-          "standard": "Tu peux refaire la technique avec un résultat similaire au moins deux fois."
+          "criterion": "Relief gustatif",
+          "standard": "La première bouchée est équilibrée : sel, acidité, gras et fraîcheur sont tous présents."
         }
       ],
       "antiBacle": [
-        "Ne valide pas mentalement une technique si tu ne peux pas expliquer pourquoi elle fonctionne.",
-        "Ne te fie pas uniquement au temps : vérifie au moins deux repères sensoriels.",
-        "Note l’erreur principale après pratique, même si le plat est bon."
+        "Ne dresser jamais sans finition fraîche : même une pincée de persil ciselé change tout.",
+        "Ne jamais négliger l’assiette froide : un plat chaud sur assiette froide perd 2°C à la minute.",
+        "Ne pas confondre garnir et composer : une touche de sauce supplémentaire n’est pas un contraste de texture."
       ],
       "commonMisconceptions": [
-        "Assaisonner ne veut pas dire saler plus : il faut parfois ajouter acide, gras, amertume, sucre ou fraîcheur."
+        "Composer n’est pas décorer : c’est structurer la dégustation. Chaque élément a une fonction gustative, pas seulement visuelle."
       ],
-      "realKitchenTransfer": "Un plat quelconque devient souvent bon grâce à une correction finale précise.",
+      "realKitchenTransfer": "Cette logique des 5 composantes s’applique au petit-déjeuner, aux salades repas, aux bento et aux assiettes de restaurant. C’est le socle de tout service.",
       "capstonePractice": {
-        "title": "Exercice de transfert",
-        "instructions": "Choisis une recette déjà faite, applique volontairement cette technique, puis note ce qui a changé dans le résultat.",
-        "expected": "Tu dois pouvoir expliquer une décision concrète : taille, feu, couvercle, ordre ou correction."
+        "title": "Menu du jour en 5 composantes",
+        "instructions": "Planifie et cuisine un repas complet (entrée ou plat unique) en nommant à l’avance les 5 composantes de chaque assiette. Photographie avant et après ajout de la finition fraîche.",
+        "expected": "Tu peux expliquer le rôle de chaque élément et identifier ce que tu changerais pour la prochaine fois."
       },
       "quizIds": [
         "q-v19-l-menu-1-0",
@@ -5903,164 +6781,190 @@ window.CUISINE_DATA = {
       ],
       "principles": [
         {
-          "title": "Comprendre avant d’exécuter",
+          "title": "L’émulsion temporaire",
           "body": "La proportion acide/gras est une base, mais la justesse dépend du produit à assaisonner."
         },
         {
-          "title": "Observer le résultat",
-          "body": "Le temps indiqué est une aide. La vraie décision se prend avec la couleur, la texture, l’odeur, le son et le goût."
+          "title": "La moutarde : émulsifiant naturel",
+          "body": "La moutarde de Dijon contient des mucilages qui enveloppent les gouttelettes d’huile et retardent leur coalescence — c’est elle qui donne à la vinaigrette sa tenue."
         },
         {
-          "title": "Corriger tôt",
-          "body": "Un petit ajustement au bon moment évite souvent une grosse correction impossible à la fin."
+          "title": "Le sel dans l’acide, pas dans l’huile",
+          "body": "Le sel est soluble dans l’eau (vinaigre, jus de citron) mais pas dans l’huile. Le dissoudre dans le vinaigre en premier garantit une dispersion homogène dans toute la sauce."
+        },
+        {
+          "title": "Ratio variable selon le support",
+          "body": "Le ratio 1:3 (acide:gras) est un point de départ. Salade verte fragile → 1:2 ; céréales ou légumes rôtis riches → 1:4. Goûter sur une feuille du support, pas à la cuillère seule."
+        },
+        {
+          "title": "Récupération d’une émulsion cassée",
+          "body": "Une vinaigrette qui se sépare n’est pas perdue. Commence avec une nouvelle base (moutarde + une goutte de vinaigre) et verse la vinaigrette cassée en filet en fouettant énergiquement."
         }
       ],
       "techniqueSteps": [
         {
-          "title": "Préparer le contexte",
-          "action": "Lis l’objectif technique, prépare le matériel et identifie le point critique de la recette.",
-          "cue": "Tu sais ce que tu dois observer avant de commencer.",
-          "mistake": "Suivre les étapes sans savoir quel résultat chercher.",
-          "correction": "Reformule l’objectif en une phrase avant de cuisiner."
+          "title": "Dissoudre le sel dans l’acide",
+          "action": "Dans le bol : vinaigre (ou jus de citron) + sel + poivre + moutarde. Fouette jusqu’à dissolution complète du sel — environ 30 secondes.",
+          "cue": "Le mélange est lisse, légèrement trouble, sans grain de sel visible.",
+          "mistake": "Verser l’huile directement sans dissoudre le sel.",
+          "correction": "Pincée de sel dans l’acide, fouetter avant d’ajouter quoi que ce soit d’autre."
         },
         {
-          "title": "Contrôler l’intensité",
-          "action": "Adapte chaleur, temps, humidité ou agitation selon la réaction observée.",
-          "cue": "Sauce brillante, acidité nette mais pas agressive.",
-          "mistake": "Appliquer le temps indiqué même si le résultat visuel dit l’inverse.",
-          "correction": "Ralentis, goûte, touche ou observe avant de continuer."
+          "title": "Verser l’huile en filet",
+          "action": "Ajoute l’huile en filet fin et continu en fouettant ou en secouant le bocal énergiquement. Ne pas verser tout d’un coup.",
+          "cue": "La sauce s’épaissit, devient opaque et prend une teinte dorée homogène.",
+          "mistake": "Verser toute l’huile d’un coup : l’émulsion ne se forme pas.",
+          "correction": "Si cassée, recommence avec une base moutarde fraîche et verse la vinaigrette cassée en filet."
         },
         {
-          "title": "Finir proprement",
-          "action": "Goûte, ajuste, puis sers avec une finition cohérente : acidité, gras, herbes, sauce ou repos.",
-          "cue": "Le résultat est net, équilibré et volontaire.",
-          "mistake": "Servir sans dernier contrôle.",
-          "correction": "Goûte une bouchée complète avant dressage."
+          "title": "Ajuster le ratio et goûter sur le support",
+          "action": "Trempe une feuille de salade dans la vinaigrette. Goûte. Ajuste : trop acide → quelques gouttes d’huile ; trop flat → une goutte de vinaigre ou pincée de sel.",
+          "cue": "Sur la feuille, la vinaigrette est vive, nette, ni agressive ni grasse.",
+          "mistake": "Goûter uniquement à la cuillère — une vinaigrette semble toujours plus acide seule que sur la salade.",
+          "correction": "Goût final = toujours sur le support réel (feuille, légume, céréale)."
+        },
+        {
+          "title": "Personnaliser",
+          "action": "Ajoute aromats selon l’usage : ail confit écrasé (plus doux que cru), miel (1 c. à café pour équilibrer acidité), herbes fraîches ciselées (ajoutées en dernier), tahini (émulsion épaisse pour céréales).",
+          "cue": "Le profil aromatique correspond au plat : légère pour salade verte, corsée pour betterave ou lentilles.",
+          "mistake": "Ajouter ail cru à une vinaigrette conservée en bocal : il devient âcre après 24h.",
+          "correction": "Ail confit ou ail blanchi pour les vinaigrettes de conservation."
+        },
+        {
+          "title": "Conserver et utiliser",
+          "action": "Bocal hermétique, 1 semaine au réfrigérateur. Sortir 10 min avant usage (le froid solidifie l’huile et casse l’émulsion). Secouer énergiquement avant chaque utilisation.",
+          "cue": "La vinaigrette se réémulsionne en 10 secondes de secouage.",
+          "mistake": "Sortir la vinaigrette froide directement du frigo et s’étonner qu’elle se sépare immédiatement.",
+          "correction": "10 min à température ambiante + secouage vigoureux."
         }
       ],
       "sensoryCues": {
-        "see": "Sauce brillante, acidité nette mais pas agressive.",
-        "smell": "Odeur nette correspondant à la technique, jamais brûlée ni fade.",
-        "taste": "Goût équilibré et lisible, sans correction excessive.",
-        "touch": "Texture conforme à l’objectif : souple, croquante, nappante, friable ou fondante.",
-        "hear": "Le son doit rester cohérent avec la technique : frémissement doux, crépitement vif ou silence de repos."
+        "see": "Sauce opaque, dorée, homogène — pas de flaque d’huile séparée au-dessus.",
+        "smell": "Acidité nette de vinaigre ou citron, fond aromatique de moutarde.",
+        "taste": "Sur une feuille : vive sans agressivité, équilibre sel-acide-gras perceptible.",
+        "touch": "Légèrement nappante au doigt, pas aqueuse.",
+        "hear": "Fouet ou bocal secoué : son de liquide épais, pas d’éclaboussure aqueuse."
       },
       "troubleshooting": [
         {
-          "problem": "Résultat irrégulier",
-          "cause": "Taille, chaleur ou timing non maîtrisés.",
-          "fix": "Standardise la préparation et ajuste l’intensité plus tôt."
+          "problem": "Vinaigrette cassée (huile séparée)",
+          "cause": "Huile versée trop vite, pas assez de moutarde, ou température trop froide.",
+          "fix": "Nouvelle base : 1 c. à café moutarde + 1 c. à café vinaigre, fouetter, puis verser la vinaigrette cassée en filet."
         },
         {
-          "problem": "Goût plat",
-          "cause": "Assaisonnement ou finition insuffisants.",
-          "fix": "Corrige sel, acidité, gras ou fraîcheur par petites touches."
+          "problem": "Trop acide",
+          "cause": "Ratio acide trop élevé ou vinaigre trop fort.",
+          "fix": "Ajouter de l’huile en filet ou une pointe de miel. Réajuster en goûtant sur le support."
         },
         {
-          "problem": "Texture ratée",
-          "cause": "Cuisson prolongée, chaleur mal adaptée ou manque de repos.",
-          "fix": "Identifie le point de bascule et arrête plus tôt la prochaine fois."
+          "problem": "Goût d’huile dominant, trop grasse",
+          "cause": "Trop d’huile ou manque de sel.",
+          "fix": "Ajouter une goutte de vinaigre et une pincée de sel, puis fouetter."
         }
       ],
       "practiceDrills": [
         {
-          "title": "Répétition courte",
-          "duration": "15 min",
-          "instructions": "Réalise une version miniature de la technique en te concentrant sur un seul critère : couleur, texture ou goût.",
-          "goal": "Isoler la compétence sans te perdre dans une recette complète."
+          "title": "Test des 4 ratios",
+          "duration": "20 min",
+          "instructions": "Fais quatre versions : 1:2, 1:3, 1:4 acide:gras, et une sans moutarde. Goûte chacune sur une feuille de salade verte. Note les différences.",
+          "goal": "Mémoriser par les sens quel ratio correspond à quel usage."
         },
         {
-          "title": "Comparaison volontaire",
-          "duration": "20 min",
-          "instructions": "Fais deux versions : une correcte, une avec une erreur contrôlée. Compare le résultat.",
-          "goal": "Reconnaître l’erreur par les sens."
+          "title": "Récupération forcée",
+          "duration": "10 min",
+          "instructions": "Casse volontairement une vinaigrette (verse toute l’huile d’un coup). Puis récupère-la avec la technique base moutarde fraîche.",
+          "goal": "Dédramatiser la vinaigrette cassée et maîtriser la récupération."
         }
       ],
       "masteryCriteria": [
-        "Tu peux expliquer le mécanisme de la technique.",
-        "Tu reconnais les signes de réussite.",
-        "Tu sais nommer l’erreur la plus probable.",
-        "Tu sais proposer une correction réaliste."
+        "Tu fais une vinaigrette émulsifiée en moins de 2 minutes sans recette.",
+        "Tu goûtes systématiquement sur le support, pas à la cuillère.",
+        "Tu ajustes le ratio selon le plat à assaisonner.",
+        "Tu récupères une émulsion cassée sans recommencer à zéro."
       ],
-      "proTip": "Un bon cuisinier ne suit pas seulement le temps : il observe et ajuste.",
-      "mentorBrief": "L’assaisonnement n’est pas 'mettre du sel'. C’est construire un relief : sel pour intensifier, acidité pour tendre, gras pour porter, fraîcheur pour alléger, umami pour donner de la profondeur.",
+      "proTip": "Le secret d’une grande vinaigrette : dissoudre le sel dans le vinaigre avant toute chose, un peu de moutarde à l’ancienne comme émulsifiant, et goûter sur le support réel — jamais à la cuillère seule.",
+      "mentorBrief": "La vinaigrette est le premier test de compréhension des émulsions. Maîtrise-la et tu comprends la mayo, le beurre blanc et la hollandaise. Le principe est toujours le même : phase aqueuse + phase grasse + tensioactif + énergie = émulsion.",
       "technicalVocabulary": [
         {
-          "term": "Relief",
-          "definition": "Sensation qu’un plat n’est pas plat : tension, longueur et contraste."
+          "term": "Émulsion temporaire",
+          "definition": "Mélange instable huile/eau maintenu par agitation : se sépare au repos sans tensioactif efficace."
         },
         {
-          "term": "Acidité",
-          "definition": "Élément qui réveille et coupe le gras : citron, vinaigre, vin, yaourt."
+          "term": "Tensioactif / émulsifiant",
+          "definition": "Molécule à double affinité (eau et gras) qui stabilise l’émulsion : mucilages de la moutarde, lécithine du jaune d’œuf."
         },
         {
-          "term": "Umami",
-          "definition": "Profondeur savoureuse : bouillon, champignon, tomate concentrée, parmesan, soja."
+          "term": "Coalescence",
+          "definition": "Phénomène par lequel les gouttelettes d’huile fusionnent — c’est ce qui casse une émulsion."
         },
         {
-          "term": "Finition",
-          "definition": "Dernière correction juste avant de servir."
+          "term": "Ratio acide:gras",
+          "definition": "Proportion vinaigre/huile — classiquement 1:3, ajustable : 1:2 pour salade légère, 1:4 pour céréales ou légumes riches."
+        },
+        {
+          "term": "Réémulsification",
+          "definition": "Technique de récupération d’une émulsion cassée : nouvelle base tensioactif + incorporation en filet de l’émulsion cassée."
         }
       ],
       "guidedLab": [
         {
-          "task": "Correction en 4 cuillères",
-          "duration": "15 min",
-          "instructions": "Prends une soupe ou sauce neutre. Compare version sel, sel+citron, sel+gras, sel+herbes.",
-          "expected": "Tu sais nommer ce que chaque ajout change."
+          "task": "Vinaigrette classique moutarde-vinaigre",
+          "duration": "10 min",
+          "instructions": "1 c. à café moutarde Dijon + 2 c. à soupe vinaigre de vin rouge + sel + poivre. Fouette. Ajoute 6 c. à soupe huile d’olive en filet. Goûte sur une feuille.",
+          "expected": "Sauce homogène, nappe la feuille, goût équilibré acide-gras."
         },
         {
-          "task": "Plat trop lourd",
+          "task": "Vinaigrette miel-moutarde pour légumes rôtis",
           "duration": "10 min",
-          "instructions": "Sur une bouchée grasse, ajoute progressivement acidité puis herbes.",
-          "expected": "La sensation devient plus nette sans perdre le goût principal."
+          "instructions": "1 c. à café moutarde + 1 c. à café miel + 1 c. à soupe vinaigre de cidre + 3 c. à soupe huile de tournesol. Ratio 1:3 adouci par le miel.",
+          "expected": "Vinaigrette légèrement sucrée qui équilibre l’amertume des légumes rôtis."
         }
       ],
       "progressionStages": [
         {
           "level": "Débutant",
-          "standard": "Tu sales progressivement."
+          "standard": "Tu mélanges huile et vinaigre sans moutarde, le résultat se sépare en 30 secondes."
         },
         {
           "level": "Intermédiaire",
-          "standard": "Tu sais distinguer manque de sel et manque d’acidité."
+          "standard": "Tu fais une vinaigrette émulsifiée stable, tu goûtes sur le support et tu ajustes le ratio."
         },
         {
           "level": "Excellent amateur",
-          "standard": "Tu corriges un plat en goûtant méthodiquement, sans empiler les ingrédients."
+          "standard": "Tu adaptes la vinaigrette au plat, tu récupères une émulsion cassée et tu varies les profils (miel, ail confit, herbes, tahini)."
         }
       ],
       "assessmentRubric": [
         {
-          "criterion": "Organisation",
-          "standard": "La mise en place est complète, les gestes s’enchaînent sans chercher un outil ou un ingrédient."
+          "criterion": "Technique d’émulsion",
+          "standard": "La vinaigrette est homogène, opaque, sans flaque d’huile après 30 secondes de repos."
         },
         {
-          "criterion": "Observation",
-          "standard": "Tu prends tes décisions sur des signes visibles, sonores, olfactifs ou tactiles, pas seulement sur le minuteur."
+          "criterion": "Équilibre gustatif",
+          "standard": "Testée sur une feuille : ni agressive, ni grasse, sel perceptible."
         },
         {
-          "criterion": "Correction",
-          "standard": "Tu sais identifier une erreur probable et proposer une correction réaliste avant la fin de la recette."
+          "criterion": "Adaptation",
+          "standard": "Tu choisis un ratio différent selon que tu assaisonnes une salade verte ou des lentilles."
         },
         {
-          "criterion": "Répétabilité",
-          "standard": "Tu peux refaire la technique avec un résultat similaire au moins deux fois."
+          "criterion": "Récupération",
+          "standard": "Tu peux récupérer une émulsion cassée sans recommencer entièrement."
         }
       ],
       "antiBacle": [
-        "Ne valide pas mentalement une technique si tu ne peux pas expliquer pourquoi elle fonctionne.",
-        "Ne te fie pas uniquement au temps : vérifie au moins deux repères sensoriels.",
-        "Note l’erreur principale après pratique, même si le plat est bon."
+        "Ne pas verser l’huile d’un coup : l’émulsion ne se forme pas, la vinaigrette reste cassée.",
+        "Ne jamais goûter uniquement à la cuillère : la vinaigrette semble toujours plus acide hors support.",
+        "Ne pas sortir la vinaigrette du frigo et l’utiliser immédiatement froide : le froid cristallise l’huile et casse l’émulsion."
       ],
       "commonMisconceptions": [
-        "Une émulsion cassée n’est pas toujours perdue : température et eau peuvent souvent la récupérer."
+        "Une vinaigrette cassée n’est pas ratée : elle se récupère en 2 minutes avec une nouvelle base moutardée. La jeter serait du gaspillage."
       ],
-      "realKitchenTransfer": "Mayonnaise, vinaigrette, beurre blanc, hollandaise et carbonara reposent sur la même logique.",
+      "realKitchenTransfer": "Mayonnaise, sauce gribiche, beurre blanc et hollandaise reposent tous sur la même logique d’émulsion. Maîtriser la vinaigrette c’est comprendre le mécanisme fondamental de toutes les sauces émulsionnées.",
       "capstonePractice": {
-        "title": "Exercice de transfert",
-        "instructions": "Choisis une recette déjà faite, applique volontairement cette technique, puis note ce qui a changé dans le résultat.",
-        "expected": "Tu dois pouvoir expliquer une décision concrète : taille, feu, couvercle, ordre ou correction."
+        "title": "Trois vinaigrettes, trois usages",
+        "instructions": "En une séance, prépare trois vinaigrettes différentes : classique moutarde pour salade verte (ratio 1:3), miel-moutarde pour légumes rôtis (ratio 1:3 adouci), et tahini-citron pour céréales (ratio 1:2). Goûte chacune sur son support respectif.",
+        "expected": "Tu peux expliquer pourquoi chaque ratio et chaque profil correspond à son support, et tu identifies spontanément la vinaigrette trop acide ou trop grasse."
       },
       "quizIds": [
         "q-v19-l-vinaigrette-1-0",
@@ -6233,164 +7137,190 @@ window.CUISINE_DATA = {
       ],
       "principles": [
         {
-          "title": "Comprendre avant d’exécuter",
+          "title": "Le roux : cuire l’amidon sans le brunir",
           "body": "Le roux doit cuire sans brunir pour perdre le goût cru tout en gardant le pouvoir épaississant."
         },
         {
-          "title": "Observer le résultat",
-          "body": "Le temps indiqué est une aide. La vraie décision se prend avec la couleur, la texture, l’odeur, le son et le goût."
+          "title": "La gélatinisation de l’amidon",
+          "body": "À partir de 65°C, les granules d’amidon absorbent l’eau et gonflent — c’est la gélatinisation qui épaissit la sauce. Elle est irréversible : un roux trop peu cuit restera farineux même après ajout de liquide."
         },
         {
-          "title": "Corriger tôt",
-          "body": "Un petit ajustement au bon moment évite souvent une grosse correction impossible à la fin."
+          "title": "Lait chaud = zéro grumeau",
+          "body": "Verser du lait froid sur un roux chaud provoque un choc thermique : l’amidon en surface gélatinise immédiatement et forme des grumeaux. Lait tiède à chaud + fouet constant = texture lisse garantie."
+        },
+        {
+          "title": "Cuisson post-ajout : 10 minutes minimum",
+          "body": "Après incorporation du lait, la béchamel doit cuire à feu doux en fouettant au moins 10 minutes. En dessous, il reste des composés crus de la farine qui donnent un goût farineux prononcé."
+        },
+        {
+          "title": "Ratio et densité selon l’usage",
+          "body": "Roux léger (15 g beurre + 15 g farine / litre de lait) pour sauce nappante. Roux épais (60-80 g/L) pour soufflé ou croquettes. Adapter le ratio à l’usage, pas à l’intuition."
         }
       ],
       "techniqueSteps": [
         {
-          "title": "Préparer le contexte",
-          "action": "Lis l’objectif technique, prépare le matériel et identifie le point critique de la recette.",
-          "cue": "Tu sais ce que tu dois observer avant de commencer.",
-          "mistake": "Suivre les étapes sans savoir quel résultat chercher.",
-          "correction": "Reformule l’objectif en une phrase avant de cuisiner."
+          "title": "Préparer le roux blanc",
+          "action": "Faire fondre le beurre à feu moyen. Ajouter la farine d’un coup en remuant avec une spatule ou fouet. Cuire 2 minutes à feu doux en remuant sans arrêt — le roux doit mousser légèrement mais rester blanc.",
+          "cue": "Odeur de biscuit sablé, couleur blanc crème, texture qui se détache de la casserole.",
+          "mistake": "Ne pas cuire le roux assez longtemps → goût farineux persistant même après ajout du lait.",
+          "correction": "2 minutes chrono à feu doux, en remuant constamment."
         },
         {
-          "title": "Contrôler l’intensité",
-          "action": "Adapte chaleur, temps, humidité ou agitation selon la réaction observée.",
-          "cue": "Texture lisse, nappante, sans grumeaux ni goût farineux.",
-          "mistake": "Appliquer le temps indiqué même si le résultat visuel dit l’inverse.",
-          "correction": "Ralentis, goûte, touche ou observe avant de continuer."
+          "title": "Incorporer le lait chaud en trois fois",
+          "action": "Verser 1/3 du lait chaud (pas bouillant) sur le roux hors feu ou à feu très doux. Fouetter vigoureusement jusqu’à obtenir une pâte lisse. Ajouter le 2e tiers, fouetter. Puis le reste.",
+          "cue": "Après chaque ajout, la masse devient lisse avant de recevoir le liquide suivant.",
+          "mistake": "Verser tout le lait d’un coup → grumeaux immédiats.",
+          "correction": "Si grumeaux : passer la béchamel au tamis fin ou mixer avec un mixeur plongeant."
         },
         {
-          "title": "Finir proprement",
-          "action": "Goûte, ajuste, puis sers avec une finition cohérente : acidité, gras, herbes, sauce ou repos.",
-          "cue": "Le résultat est net, équilibré et volontaire.",
-          "mistake": "Servir sans dernier contrôle.",
-          "correction": "Goûte une bouchée complète avant dressage."
+          "title": "Cuire 10 minutes à feu doux",
+          "action": "Remettre sur feu doux, fouetter en continu ou toutes les 30 secondes. La sauce épaissit progressivement. Elle est prête quand elle nappe une cuillère et que le goût farineux a disparu.",
+          "cue": "Nappe le dos d’une cuillère, trace le doigt laisse un sillon net, goût de crème cuite.",
+          "mistake": "Arrêter dès que la sauce épaissit sans vérifier le goût.",
+          "correction": "Goûter à 8 min et à 12 min : le goût farineux doit avoir disparu."
+        },
+        {
+          "title": "Assaisonner",
+          "action": "Hors feu : sel, poivre blanc (moins visible que noir), noix de muscade râpée fraîche. Goûter et ajuster.",
+          "cue": "Goût rond, légèrement lacté, assaisonnement discret mais présent.",
+          "mistake": "Oublier la muscade ou assaisonner trop tôt (le sel se concentre à la cuisson).",
+          "correction": "Assaisonnement toujours en fin, hors feu, après ajustement de texture."
+        },
+        {
+          "title": "Conserver et dériver",
+          "action": "Film plastique au contact pour éviter la peau. Réchauffe en fouettant avec un peu de lait si elle a épaissi. Dériver en sauce Mornay (+ gruyère râpé) ou sauce aurore (+ concentré de tomate).",
+          "cue": "À la réchauffée : lisse après 1 minute de fouet avec lait tiède.",
+          "mistake": "Laisser la béchamel à l’air : elle forme une peau épaisse difficile à réincorporer.",
+          "correction": "Film contact systématique, même pour 10 minutes de pause."
         }
       ],
       "sensoryCues": {
-        "see": "Texture lisse, nappante, sans grumeaux ni goût farineux.",
-        "smell": "Odeur nette correspondant à la technique, jamais brûlée ni fade.",
-        "taste": "Goût équilibré et lisible, sans correction excessive.",
-        "touch": "Texture conforme à l’objectif : souple, croquante, nappante, friable ou fondante.",
-        "hear": "Le son doit rester cohérent avec la technique : frémissement doux, crépitement vif ou silence de repos."
+        "see": "Sauce blanc crème, lisse, brillante, nappe uniformément le dos d’une cuillère.",
+        "smell": "Odeur de crème cuite et beurre noisette doux — jamais farine crue ni brûlé.",
+        "taste": "Goût lacté, rond, assaisonnement discret de muscade. Zéro goût farineux.",
+        "touch": "Texture nappante au doigt, pas collante, pas aqueuse.",
+        "hear": "Frémissement très doux, presque silencieux — aucune ébullition."
       },
       "troubleshooting": [
         {
-          "problem": "Résultat irrégulier",
-          "cause": "Taille, chaleur ou timing non maîtrisés.",
-          "fix": "Standardise la préparation et ajuste l’intensité plus tôt."
+          "problem": "Grumeaux",
+          "cause": "Lait froid versé sur roux chaud, ou lait ajouté trop vite.",
+          "fix": "Passer au tamis fin ou mixer au mixeur plongeant. Remettre sur feu doux et fouetter."
         },
         {
-          "problem": "Goût plat",
-          "cause": "Assaisonnement ou finition insuffisants.",
-          "fix": "Corrige sel, acidité, gras ou fraîcheur par petites touches."
+          "problem": "Goût farineux persistant",
+          "cause": "Roux insuffisamment cuit, ou béchamel pas cuite assez longtemps après ajout du lait.",
+          "fix": "Poursuivre la cuisson à feu très doux 5 minutes de plus en fouettant — le goût disparaît avec la chaleur."
         },
         {
-          "problem": "Texture ratée",
-          "cause": "Cuisson prolongée, chaleur mal adaptée ou manque de repos.",
-          "fix": "Identifie le point de bascule et arrête plus tôt la prochaine fois."
+          "problem": "Trop épaisse",
+          "cause": "Trop de roux ou trop de réduction.",
+          "fix": "Ajouter du lait tiède en filet en fouettant jusqu’à la texture voulue."
         }
       ],
       "practiceDrills": [
         {
-          "title": "Répétition courte",
+          "title": "Roux en aveugle gustatif",
           "duration": "15 min",
-          "instructions": "Réalise une version miniature de la technique en te concentrant sur un seul critère : couleur, texture ou goût.",
-          "goal": "Isoler la compétence sans te perdre dans une recette complète."
+          "instructions": "Fais un roux blanc. Goûte à 1 min, 2 min et 4 min. Note l’évolution du goût farineux.",
+          "goal": "Mémoriser par le goût quand le roux est prêt."
         },
         {
-          "title": "Comparaison volontaire",
+          "title": "Test lait froid vs lait chaud",
           "duration": "20 min",
-          "instructions": "Fais deux versions : une correcte, une avec une erreur contrôlée. Compare le résultat.",
-          "goal": "Reconnaître l’erreur par les sens."
+          "instructions": "Fais deux béchamels identiques : une avec lait froid, une avec lait chaud. Compare la texture après incorporation.",
+          "goal": "Comprendre physiquement pourquoi le lait chaud évite les grumeaux."
         }
       ],
       "masteryCriteria": [
-        "Tu peux expliquer le mécanisme de la technique.",
-        "Tu reconnais les signes de réussite.",
-        "Tu sais nommer l’erreur la plus probable.",
-        "Tu sais proposer une correction réaliste."
+        "Tu fais une béchamel sans grumeaux du premier coup.",
+        "Tu sais dire par le goût si le roux est assez cuit.",
+        "Tu adaptes la densité à l’usage (gratin, soufflé, lasagne).",
+        "Tu dérivés la béchamel en sauce Mornay ou aurore sans recette."
       ],
-      "proTip": "Un bon cuisinier ne suit pas seulement le temps : il observe et ajuste.",
-      "mentorBrief": "Une sauce se pense en trois questions : d’où vient le goût, quelle texture je vise, quelle correction finale manque ? Les sauces ratées viennent souvent d’un excès de chaleur, de sel concentré ou d’un gras mal incorporé.",
+      "proTip": "Pour une béchamel express sans grumeaux : infuse le lait avec un oignon piqué de clous de girofle et une feuille de laurier 10 minutes avant. Le lait aromatisé est incorporé chaud et apporte une profondeur que peu de gens identifient mais que tout le monde remarque.",
+      "mentorBrief": "La béchamel est la mère des sauces blanches. Son mécanisme (roux + gélatinisation de l’amidon) est exactement le même que pour la sauce velouté ou la sauce suprême. Maîtrise-la et toutes les sauces liées par le roux deviennent accessibles.",
       "technicalVocabulary": [
         {
-          "term": "Réduction",
-          "definition": "Évaporation contrôlée pour concentrer goût et texture."
+          "term": "Roux",
+          "definition": "Mélange beurre + farine cuits ensemble : liaison pour sauces épaisses. Blanc (2 min), blond (5 min), brun (10+ min)."
+        },
+        {
+          "term": "Gélatinisation",
+          "definition": "Gonflement des granules d’amidon à partir de 65°C qui absorbe l’eau et épaissit la sauce."
         },
         {
           "term": "Nappant",
-          "definition": "Texture qui couvre légèrement le dos d’une cuillère."
+          "definition": "Texture idéale d’une béchamel : couvre uniformément le dos d’une cuillère, sillon net au doigt."
         },
         {
-          "term": "Monter",
-          "definition": "Incorporer beurre ou gras pour arrondir et lier."
+          "term": "Sauce Mornay",
+          "definition": "Béchamel + gruyère ou parmesan râpé : utilisée pour les gratins."
         },
         {
-          "term": "Trancher",
-          "definition": "Séparation visible du gras et du liquide."
+          "term": "Film contact",
+          "definition": "Film plastique posé directement sur la surface de la sauce pour empêcher la formation d’une peau lors du refroidissement."
         }
       ],
       "guidedLab": [
         {
-          "task": "Réduction mesurée",
-          "duration": "15 min",
-          "instructions": "Réduis 200 ml de bouillon à 100 ml puis goûte avant de saler.",
-          "expected": "Tu constates que la réduction concentre aussi le sel."
+          "task": "Béchamel de base en 20 minutes",
+          "duration": "20 min",
+          "instructions": "30 g beurre + 30 g farine → roux 2 min. 500 ml lait chaud en 3 fois, fouetter. Cuire 10 min feu doux. Sel + poivre + muscade.",
+          "expected": "Sauce lisse, nappante, zéro goût farineux, arôme de crème cuite."
         },
         {
-          "task": "Sauce récupérée",
+          "task": "Dérivée Mornay pour gratin",
           "duration": "10 min",
-          "instructions": "Fais volontairement trancher une mini sauce beurre puis récupère avec eau froide et fouet.",
-          "expected": "Tu comprends l’effet température + agitation."
+          "instructions": "Sur la béchamel prête, hors feu, incorporer 60 g de gruyère râpé. Verser sur légumes blanchis, gratiner au four 200°C jusqu’à dorure.",
+          "expected": "Sauce gratinée dorée, texture nappante maintenue, goût fromager prononcé."
         }
       ],
       "progressionStages": [
         {
           "level": "Débutant",
-          "standard": "Tu réduis sans brûler et goûtes avant de saler."
+          "standard": "Tu obtiens une béchamel sans grumeaux en utilisant du lait chaud."
         },
         {
           "level": "Intermédiaire",
-          "standard": "Tu ajustes texture et assaisonnement séparément."
+          "standard": "Tu ajustes la densité selon l’usage et tu assaisonnes en fin de cuisson."
         },
         {
           "level": "Excellent amateur",
-          "standard": "Tu sais sauver une sauce trop liquide, trop acide, trop salée ou tranchée."
+          "standard": "Tu dérivés la béchamel (Mornay, aurore, soubise), tu récupères une sauce trop épaisse et tu sais éviter la peau à la conservation."
         }
       ],
       "assessmentRubric": [
         {
-          "criterion": "Organisation",
-          "standard": "La mise en place est complète, les gestes s’enchaînent sans chercher un outil ou un ingrédient."
+          "criterion": "Texture",
+          "standard": "La béchamel est lisse, sans grumeaux, nappante — sillon net au doigt sur cuillère."
         },
         {
-          "criterion": "Observation",
-          "standard": "Tu prends tes décisions sur des signes visibles, sonores, olfactifs ou tactiles, pas seulement sur le minuteur."
+          "criterion": "Goût",
+          "standard": "Zéro goût farineux, arôme lacté et beurré, muscade discrète mais présente."
         },
         {
-          "criterion": "Correction",
-          "standard": "Tu sais identifier une erreur probable et proposer une correction réaliste avant la fin de la recette."
+          "criterion": "Technique roux",
+          "standard": "Tu peux expliquer pourquoi le roux doit cuire 2 minutes et pourquoi le lait doit être chaud."
         },
         {
-          "criterion": "Répétabilité",
-          "standard": "Tu peux refaire la technique avec un résultat similaire au moins deux fois."
+          "criterion": "Adaptabilité",
+          "standard": "Tu ajustes la quantité de roux selon la densité voulue sans recette."
         }
       ],
       "antiBacle": [
-        "Ne valide pas mentalement une technique si tu ne peux pas expliquer pourquoi elle fonctionne.",
-        "Ne te fie pas uniquement au temps : vérifie au moins deux repères sensoriels.",
-        "Note l’erreur principale après pratique, même si le plat est bon."
+        "Ne jamais verser le lait froid d’un coup sur le roux chaud : les grumeaux sont immédiats et difficiles à récupérer.",
+        "Ne pas arrêter la cuisson dès que la sauce épaissit : le goût farineux disparaît seulement après 10 minutes.",
+        "Ne pas laisser la béchamel sans film contact : la peau formée s’incorpore mal et crée des grumeaux à la réchauffée."
       ],
       "commonMisconceptions": [
-        "Une émulsion cassée n’est pas toujours perdue : température et eau peuvent souvent la récupérer."
+        "Les grumeaux ne viennent pas forcément d’une mauvaise technique : ils viennent souvent d’un simple écart de température entre le roux et le lait. Lait chaud = problème évité."
       ],
-      "realKitchenTransfer": "Mayonnaise, vinaigrette, beurre blanc, hollandaise et carbonara reposent sur la même logique.",
+      "realKitchenTransfer": "Le même principe roux → gélatinisation → nappant s’applique à toutes les sauces de la famille des sauces mères blanches : velouté (roux + bouillon), sauce suprême (velouté + crème). Une béchamel maîtrisée ouvre l’accès à toute la famille.",
       "capstonePractice": {
-        "title": "Exercice de transfert",
-        "instructions": "Choisis une recette déjà faite, applique volontairement cette technique, puis note ce qui a changé dans le résultat.",
-        "expected": "Tu dois pouvoir expliquer une décision concrète : taille, feu, couvercle, ordre ou correction."
+        "title": "Gratin Mornay de A à Z",
+        "instructions": "Prépare une béchamel, dérive en Mornay, assemble un gratin avec légumes blanchis ou pâtes précuites, gratine au four. Évalue la texture de la sauce avant et après gratinage.",
+        "expected": "Tu expliques l’évolution de texture entre la béchamel crue, la Mornay et la sauce gratinée. Tu identifies une erreur éventuelle et sa cause."
       },
       "quizIds": [
         "q-v19-l-bechamel-1-0",
@@ -6550,164 +7480,186 @@ window.CUISINE_DATA = {
       ],
       "principles": [
         {
-          "title": "Comprendre avant d’exécuter",
+          "title": "Trempage : réhydratation et réduction des antinutriments",
           "body": "Sel, acidité, trempage et âge des légumineuses influencent fortement la cuisson."
         },
         {
-          "title": "Observer le résultat",
-          "body": "Le temps indiqué est une aide. La vraie décision se prend avec la couleur, la texture, l’odeur, le son et le goût."
+          "title": "L’acidité bloque l’attendrissement",
+          "body": "Tomate, vinaigre ou jus de citron ajoutés en début de cuisson interfèrent avec les pectines de la paroi cellulaire et empêchent les légumineuses de devenir tendres. Acidité = toujours en fin, texture atteinte."
         },
         {
-          "title": "Corriger tôt",
-          "body": "Un petit ajustement au bon moment évite souvent une grosse correction impossible à la fin."
+          "title": "Le sel : mythe et réalité",
+          "body": "Le sel ne durcit pas les légumineuses si elles sont bien hydratées. En revanche, il peut ralentir la pénétration d’eau sur légumineuses sèches non trempées. Règle pratique : saler dans les 15 dernières minutes de cuisson."
+        },
+        {
+          "title": "L’âge compte",
+          "body": "Des légumineuses de plus de 2 ans cuisent irrégulièrement, même après un trempage prolongé. La paroi cellulaire vieillit et durcit. Acheter en circuit rapide, ranger en pot hermétique, renouveler tous les 6-12 mois."
+        },
+        {
+          "title": "Goûter, pas chronomètre",
+          "body": "La cuisson s’évalue en goûtant et pressant entre les doigts : grain fondant sans résistance, sans arrière-goût farineux. Les durées données sont des guides — chaque lot peut varier de 30 %."
         }
       ],
       "techniqueSteps": [
         {
-          "title": "Préparer le contexte",
-          "action": "Lis l’objectif technique, prépare le matériel et identifie le point critique de la recette.",
-          "cue": "Tu sais ce que tu dois observer avant de commencer.",
-          "mistake": "Suivre les étapes sans savoir quel résultat chercher.",
-          "correction": "Reformule l’objectif en une phrase avant de cuisiner."
+          "title": "Choisir et tremper",
+          "action": "Lentilles corail (décortiquées) : pas de trempage, cuisent 15-20 min. Lentilles vertes/du Puy : trempage optionnel, cuisson 25-35 min. Pois chiches et haricots : trempage 8-12h obligatoire, cuisson 1h30-2h (ou 25 min cocotte-minute).",
+          "cue": "Tu connais le temps estimé avant de démarrer.",
+          "mistake": "Oublier de tremper les pois chiches et s’étonner qu’ils soient encore durs après 45 min.",
+          "correction": "Planification : vérifier la veille ce qui a besoin de tremper."
         },
         {
-          "title": "Contrôler l’intensité",
-          "action": "Adapte chaleur, temps, humidité ou agitation selon la réaction observée.",
-          "cue": "Texture tendre mais non éclatée, assaisonnement intégré.",
-          "mistake": "Appliquer le temps indiqué même si le résultat visuel dit l’inverse.",
-          "correction": "Ralentis, goûte, touche ou observe avant de continuer."
+          "title": "Démarrer à l’eau froide, feu progressif",
+          "action": "Couvrir d’eau froide (3× volume), porter à ébullition, écumer les 5 premières minutes (mousse = saponines et impuretés). Réduire à frémissement doux. Ne jamais bouillir à gros bouillons : les grains s’ouvrent et deviennent farineux.",
+          "cue": "Frémissement régulier, léger mouvement de surface, pas de bouillonnement violent.",
+          "mistake": "Cuire à gros bouillons pour aller plus vite → grains éclatés et texture farineuse.",
+          "correction": "Réduire le feu et couvrir partiellement pour maintenir le frémissement."
         },
         {
-          "title": "Finir proprement",
-          "action": "Goûte, ajuste, puis sers avec une finition cohérente : acidité, gras, herbes, sauce ou repos.",
-          "cue": "Le résultat est net, équilibré et volontaire.",
-          "mistake": "Servir sans dernier contrôle.",
-          "correction": "Goûte une bouchée complète avant dressage."
+          "title": "Saler dans les 15 dernières minutes",
+          "action": "Goûter à mi-cuisson. Quand la texture est presque atteinte (un peu de résistance encore), ajouter le sel. Cuire encore 10-15 minutes.",
+          "cue": "Grain qui cède facilement sous la dent, légère résistance au centre.",
+          "mistake": "Saler au début sur légumineuses non trempées → ralentit l’hydratation.",
+          "correction": "Toujours goûter avant de saler et avant la finition."
+        },
+        {
+          "title": "Acidité et aromats en finition",
+          "action": "Hors feu ou en toute fin : jus de citron, vinaigre, tomate fraîche, huile d’olive. Goûter et ajuster. Herbes fraîches, ail, épices grillées (cumin, coriandre, paprika fumé) rehaussent le goût profond des légumineuses.",
+          "cue": "Le plat est vif, profond, pas plat ni farineux.",
+          "mistake": "Ajouter le citron en début de cuisson → légumineuses qui restent dures même après 2 heures.",
+          "correction": "Tomate ou citron = toujours après que la texture est atteinte."
+        },
+        {
+          "title": "Égoutter et conserver",
+          "action": "Égoutter en gardant le bouillon de cuisson (savoureux, utilisable comme base de soupe). Légumineuses cuites se conservent 4 jours au frigo, 3 mois au congélateur.",
+          "cue": "Bouillon légèrement trouble et parfumé — à ne pas jeter.",
+          "mistake": "Jeter le bouillon de cuisson systématiquement.",
+          "correction": "Garder le bouillon pour soupes, mijotés ou sauce."
         }
       ],
       "sensoryCues": {
-        "see": "Texture tendre mais non éclatée, assaisonnement intégré.",
-        "smell": "Odeur nette correspondant à la technique, jamais brûlée ni fade.",
-        "taste": "Goût équilibré et lisible, sans correction excessive.",
-        "touch": "Texture conforme à l’objectif : souple, croquante, nappante, friable ou fondante.",
-        "hear": "Le son doit rester cohérent avec la technique : frémissement doux, crépitement vif ou silence de repos."
+        "see": "Grains entiers, peau lisse (lentilles) ou légèrement ouverte (pois chiches bien cuits), couleur homogène.",
+        "smell": "Odeur terreuse et légèrement sucrée, jamais âcre ni de cru.",
+        "taste": "Fondant sans être farineux, goût légèrement noisette (lentilles) ou crémeux (pois chiches).",
+        "touch": "Grain qui cède sous une légère pression entre les doigts — pas de résistance ni de cœur dur.",
+        "hear": "Frémissement doux, régulier, pas de bouillons violents."
       },
       "troubleshooting": [
         {
-          "problem": "Résultat irrégulier",
-          "cause": "Taille, chaleur ou timing non maîtrisés.",
-          "fix": "Standardise la préparation et ajuste l’intensité plus tôt."
+          "problem": "Légumineuses encore dures après le temps prévu",
+          "cause": "Trop vieilles, pas assez trempées, acidité ajoutée trop tôt, ou eau trop calcaire.",
+          "fix": "Poursuivre la cuisson. Si eau calcaire, ajouter 1/4 de c. à café de bicarbonate en fin de trempage. Éviter toute acidité jusqu’à texture atteinte."
         },
         {
-          "problem": "Goût plat",
-          "cause": "Assaisonnement ou finition insuffisants.",
-          "fix": "Corrige sel, acidité, gras ou fraîcheur par petites touches."
+          "problem": "Texture farineuse, grains éclatés",
+          "cause": "Cuisson trop vigoureuse ou trop longue.",
+          "fix": "Transformer en purée ou dhal — pas de récupération possible. Prochaine fois : frémissement doux et contrôle régulier."
         },
         {
-          "problem": "Texture ratée",
-          "cause": "Cuisson prolongée, chaleur mal adaptée ou manque de repos.",
-          "fix": "Identifie le point de bascule et arrête plus tôt la prochaine fois."
+          "problem": "Goût plat malgré un bon assaisonnement",
+          "cause": "Pas assez d’aromatisation pendant la cuisson (ail, oignon, épices, laurier).",
+          "fix": "Ajouter systématiquement oignon, ail, laurier et épices en début de cuisson. Ajuster acidité et huile en finition."
         }
       ],
       "practiceDrills": [
         {
-          "title": "Répétition courte",
-          "duration": "15 min",
-          "instructions": "Réalise une version miniature de la technique en te concentrant sur un seul critère : couleur, texture ou goût.",
-          "goal": "Isoler la compétence sans te perdre dans une recette complète."
+          "title": "Test acidité début vs fin",
+          "duration": "30 min",
+          "instructions": "Cuis deux petites portions de lentilles vertes identiques : ajoute le jus de citron au début pour l’une, à la fin pour l’autre. Compare la texture.",
+          "goal": "Comprendre par la pratique pourquoi l’acidité en fin préserve la texture."
         },
         {
-          "title": "Comparaison volontaire",
-          "duration": "20 min",
-          "instructions": "Fais deux versions : une correcte, une avec une erreur contrôlée. Compare le résultat.",
-          "goal": "Reconnaître l’erreur par les sens."
+          "title": "Dhal 20 minutes",
+          "duration": "25 min",
+          "instructions": "Lentilles corail + oignon + ail + tomates + cumin + lait de coco. Assaisonnement en fin. Focus sur la texture cible : ni crunchy ni bouillie.",
+          "goal": "Calibrer le timing des lentilles corail, les plus rapides à cuire."
         }
       ],
       "masteryCriteria": [
-        "Tu peux expliquer le mécanisme de la technique.",
-        "Tu reconnais les signes de réussite.",
-        "Tu sais nommer l’erreur la plus probable.",
-        "Tu sais proposer une correction réaliste."
+        "Tu sais quel type de légumineuse nécessite un trempage et combien de temps.",
+        "Tu n’ajoutes jamais d’acidité avant que la texture soit atteinte.",
+        "Tu évalues la cuisson par le goût et la pression, pas par le chronomètre.",
+        "Tu aromatises le bouillon de cuisson et tu le valorises."
       ],
-      "proTip": "Un bon cuisinier ne suit pas seulement le temps : il observe et ajuste.",
-      "mentorBrief": "La cuisson n’est pas une durée : c’est une trajectoire. Tu pars d’un produit donné, tu appliques chaleur et humidité, puis tu t’arrêtes au bon état sensoriel.",
+      "proTip": "Le secret d’un dhal ou d’un houmous mémorable : cuire les légumineuses dans un bouillon légèrement aromatisé (oignon, ail, laurier, cumin entier) depuis le début, puis finir avec une touche de tadka — épices grillées dans du ghee ou de l’huile, versées bouillonnantes sur le plat juste avant de servir.",
+      "mentorBrief": "Les légumineuses sont parmi les aliments les plus nourrissants et les moins chers à cuisiner. Leur réputation de ‘difficiles’ vient de deux erreurs : cuisson trop vigoureuse et acidité trop tôt. Corrige ces deux points et tu obtiens des résultats réguliers.",
       "technicalVocabulary": [
         {
-          "term": "Inertie",
-          "definition": "La cuisson continue parfois hors du feu."
+          "term": "Trempage",
+          "definition": "Hydratation préalable (8-12h) qui réduit le temps de cuisson de 30-50 % et élimine une partie des phytates."
         },
         {
-          "term": "Humidité",
-          "definition": "Facteur clé de texture et coloration."
+          "term": "Phytates",
+          "definition": "Antinutriments présents dans les légumineuses sèches, réduits par trempage et cuisson longue."
         },
         {
-          "term": "Appoint",
-          "definition": "Niveau de cuisson recherché."
+          "term": "Frémissement",
+          "definition": "Léger mouvement de surface à environ 85-90°C — idéal pour légumineuses sans les éclater."
         },
         {
-          "term": "Texture cible",
-          "definition": "Résultat tactile attendu : fondant, ferme, croustillant, nacré."
+          "term": "Tadka",
+          "definition": "Technique indienne : épices entières grillées dans du gras chaud, versées bouillonnantes sur le plat en finition."
         }
       ],
       "guidedLab": [
         {
-          "task": "Arrêt anticipé",
-          "duration": "20 min",
-          "instructions": "Sur œuf, poisson ou légume, arrête une portion 1 minute plus tôt que d’habitude et compare.",
-          "expected": "Tu repères l’inertie et évites la surcuisson."
+          "task": "Lentilles du Puy façon bistrot",
+          "duration": "40 min",
+          "instructions": "200 g lentilles vertes + oignon + carotte + laurier + thym. Frémissement 30 min. Sel à 20 min. Finition : vinaigrette moutarde-vinaigre + persil plat. Goûter texture avant et après finition.",
+          "expected": "Grains entiers fondants, goût profond, finition vinaigrée vive."
         },
         {
-          "task": "Même produit, deux feux",
-          "duration": "20 min",
-          "instructions": "Cuisine deux petites portions à feu doux puis feu vif.",
-          "expected": "Tu comprends l’effet de l’intensité sur texture et coloration."
+          "task": "Dhal de lentilles corail express",
+          "duration": "25 min",
+          "instructions": "150 g lentilles corail + oignon + ail + gingembre + tomates concassées (ajoutées à 15 min) + cumin + coriandre + lait de coco. Sel en fin. Citron en finition.",
+          "expected": "Texture crémeuse, légumes fondus, acidité vive en finale."
         }
       ],
       "progressionStages": [
         {
           "level": "Débutant",
-          "standard": "Tu évites brûlé et cru."
+          "standard": "Tu fais cuire des lentilles corail sans les écraser et tu sals en fin."
         },
         {
           "level": "Intermédiaire",
-          "standard": "Tu ajustes le feu pendant la cuisson."
+          "standard": "Tu gères le trempage, le frémissement doux et l’ordre sel/acidité pour pois chiches et haricots."
         },
         {
           "level": "Excellent amateur",
-          "standard": "Tu choisis la méthode selon produit, épaisseur et résultat voulu."
+          "standard": "Tu cuisines les légumineuses avec aromatisation complète, tu valorises le bouillon et tu maîtrises la finition tadka ou vinaigrette."
         }
       ],
       "assessmentRubric": [
         {
-          "criterion": "Organisation",
-          "standard": "La mise en place est complète, les gestes s’enchaînent sans chercher un outil ou un ingrédient."
+          "criterion": "Texture",
+          "standard": "Grains entiers fondants, pas farineux, pas éclatés."
         },
         {
-          "criterion": "Observation",
-          "standard": "Tu prends tes décisions sur des signes visibles, sonores, olfactifs ou tactiles, pas seulement sur le minuteur."
+          "criterion": "Ordre d’assaisonnement",
+          "standard": "Sel ajouté dans les 15 dernières minutes, acidité strictement en finition."
         },
         {
-          "criterion": "Correction",
-          "standard": "Tu sais identifier une erreur probable et proposer une correction réaliste avant la fin de la recette."
+          "criterion": "Goût",
+          "standard": "Plat profond, vif, pas plat — aromatisation pendant la cuisson + finition distincte."
         },
         {
-          "criterion": "Répétabilité",
-          "standard": "Tu peux refaire la technique avec un résultat similaire au moins deux fois."
+          "criterion": "Diagnostic",
+          "standard": "Tu identifies la cause si les légumineuses sont encore dures après le temps prévu."
         }
       ],
       "antiBacle": [
-        "Ne valide pas mentalement une technique si tu ne peux pas expliquer pourquoi elle fonctionne.",
-        "Ne te fie pas uniquement au temps : vérifie au moins deux repères sensoriels.",
-        "Note l’erreur principale après pratique, même si le plat est bon."
+        "Ne jamais ajouter tomate, citron ou vinaigre avant que la texture soit atteinte — les légumineuses ne s’attendriront plus.",
+        "Ne pas cuire à gros bouillons : les grains s’ouvrent et deviennent farineux.",
+        "Ne pas juger la cuisson au temps seul : goûter et presser entre les doigts."
       ],
       "commonMisconceptions": [
-        "La technique ne s’acquiert pas en lisant : elle devient utile quand tu sais reconnaître et corriger l’erreur."
+        "Le sel ne durcit pas les légumineuses bien hydratées — c’est l’acidité qui bloque l’attendrissement. Ajouter le sel tard est une précaution utile principalement pour les légumineuses non trempées."
       ],
-      "realKitchenTransfer": "Cherche à réutiliser cette notion dans au moins deux recettes différentes.",
+      "realKitchenTransfer": "Cette maîtrise s’applique directement aux dalhs, houmous maison, salades de lentilles, cassoulet, minestrone et à tous les plats végétariens où les légumineuses sont l’élément central.",
       "capstonePractice": {
-        "title": "Exercice de transfert",
-        "instructions": "Choisis une recette déjà faite, applique volontairement cette technique, puis note ce qui a changé dans le résultat.",
-        "expected": "Tu dois pouvoir expliquer une décision concrète : taille, feu, couvercle, ordre ou correction."
+        "title": "Pois chiches rôtis et salade de lentilles",
+        "instructions": "Séance double : 1) Cuis des pois chiches trempés depuis la veille, fais une version rôtie au four (200°C, huile, épices). 2) Prépare des lentilles du Puy avec finition vinaigrée. Évalue texture et assaisonnement de chaque.",
+        "expected": "Tu identifies la différence de texture entre légumineuse mijotée et rôtie, et tu expliques pourquoi l’acidité est ajoutée en dernier dans les deux cas."
       },
       "quizIds": [
         "q-v19-l-legumineuses-1-0",
@@ -6878,169 +7830,195 @@ window.CUISINE_DATA = {
           "explanation": "Le temps dépend du four et de la taille."
         }
       ],
-      "principles": [
+      “principles”: [
         {
-          "title": "Comprendre avant d’exécuter",
-          "body": "La friabilité vient du gras qui limite le réseau de gluten ; trop travailler rend la pâte dure."
+          “title”: “Le gras blinde le gluten”,
+          “body”: “La friabilité vient du gras qui limite le réseau de gluten ; trop travailler rend la pâte dure.”
         },
         {
-          "title": "Observer le résultat",
-          "body": "Le temps indiqué est une aide. La vraie décision se prend avec la couleur, la texture, l’odeur, le son et le goût."
+          “title”: “Sablage = enrobage de la farine”,
+          “body”: “Le sablage (frotter beurre froid + farine du bout des doigts) enrobe chaque grain de farine d’une pellicule de gras. Quand l’eau est ajoutée, la gliadine et la gluténine ne peuvent pas s’hydrater complètement → réseau glutineux minimal → texture friable.”
         },
         {
-          "title": "Corriger tôt",
-          "body": "Un petit ajustement au bon moment évite souvent une grosse correction impossible à la fin."
+          “title”: “Température du beurre : tout ou rien”,
+          “body”: “Beurre froid (< 10°C) = sablage efficace, texture friable. Beurre mou = les grains de farine baignent dans le gras sans être enrobés → le réseau glutineux se forme quand même → pâte dure et élastique.”
+        },
+        {
+          “title”: “Le repos au froid : trois fonctions”,
+          “body”: “30 minutes minimum au froid : 1) le beurre se resolidifie et stoppe le développement du gluten, 2) l’humidité se distribue uniformément dans la pâte, 3) le gluten formé se détend → rétraction minimale à la cuisson.”
+        },
+        {
+          “title”: “Fraser une fois, pas pétrir”,
+          “body”: “Fraser = écraser la pâte une seule fois contre le plan de travail avec la paume, sans replier. Homogénéise sans chauffer ni développer le gluten. Pétrir = erreur fatale pour la friabilité.”
         }
       ],
-      "techniqueSteps": [
+      “techniqueSteps”: [
         {
-          "title": "Préparer le contexte",
-          "action": "Lis l’objectif technique, prépare le matériel et identifie le point critique de la recette.",
-          "cue": "Tu sais ce que tu dois observer avant de commencer.",
-          "mistake": "Suivre les étapes sans savoir quel résultat chercher.",
-          "correction": "Reformule l’objectif en une phrase avant de cuisiner."
+          “title”: “Sabler beurre froid + farine”,
+          “action”: “Beurre sorti du frigo et coupé en petits dés. Du bout des doigts (jamais la paume — trop chaude), mélanger beurre + farine + sucre glace en ‘effritant’ jusqu’à obtenir une texture sablonneuse, comme du sable humide.”,
+          “cue”: “Aucun morceau de beurre visible, mélange ressemble à de la chapelure fine.”,
+          “mistake”: “Travailler avec les paumes → beurre fond → pâte élastique et dure.”,
+          “correction”: “Si le beurre commence à fondre : 10 minutes au congélateur, puis reprendre.”
         },
         {
-          "title": "Contrôler l’intensité",
-          "action": "Adapte chaleur, temps, humidité ou agitation selon la réaction observée.",
-          "cue": "Pâte qui se tient, casse net, texture sablée.",
-          "mistake": "Appliquer le temps indiqué même si le résultat visuel dit l’inverse.",
-          "correction": "Ralentis, goûte, touche ou observe avant de continuer."
+          “title”: “Ajouter l’œuf/liquide minimal, sans pétrir”,
+          “action”: “Creuser un puits. Verser l’œuf battu (ou eau glacée) en une seule fois. Mélanger très brièvement avec une corne ou spatule, juste jusqu’à ce que la pâte s’agglomère. Arrêter dès qu’elle tient ensemble.”,
+          “cue”: “La pâte est homogène mais hétérogène — quelques traces de beurre encore visibles, pas lisse.”,
+          “mistake”: “Continuer à mélanger jusqu’à texture lisse → réseau glutineux trop développé.”,
+          “correction”: “S’arrêter 10 secondes trop tôt plutôt que 10 secondes trop tard.”
         },
         {
-          "title": "Finir proprement",
-          "action": "Goûte, ajuste, puis sers avec une finition cohérente : acidité, gras, herbes, sauce ou repos.",
-          "cue": "Le résultat est net, équilibré et volontaire.",
-          "mistake": "Servir sans dernier contrôle.",
-          "correction": "Goûte une bouchée complète avant dressage."
+          “title”: “Fraser une fois”,
+          “action”: “Sur le plan de travail légèrement fariné, écraser la pâte en un seul passage de la paume, de gauche à droite. Rassembler en boule et filmer.”,
+          “cue”: “La pâte est lisse après frasage, sans traces de beurre, mais ne colle pas.”,
+          “mistake”: “Faire plusieurs allers-retours de frasage.”,
+          “correction”: “Un seul passage de la paume, puis au frigo immédiatement.”
+        },
+        {
+          “title”: “Repos au froid 30 min minimum”,
+          “action”: “Film alimentaire, disque aplati (pas boule — plus rapide à refroidir), 30 min au frigo. Peut rester jusqu’à 48h.”,
+          “cue”: “Pâte ferme au toucher, froide, ne colle pas au film.”,
+          “mistake”: “Abaisser directement sans repos : pâte trop molle, colle, se rétracte à la cuisson.”,
+          “correction”: “Si urgence : 15 min au congélateur au lieu de 30 min au frigo.”
+        },
+        {
+          “title”: “Abaisser et cuire à blanc”,
+          “action”: “Sortir 5 min du frigo. Abaisser sur papier sulfurisé à 3-4 mm. Foncer le moule. Piquer le fond. Repos 15 min au frigo. Four 180°C, billes 15 min, sans billes 5-8 min jusqu’à dorure uniforme.”,
+          “cue”: “Fond doré, sec, légèrement coloré — pas pâle ni gonflé.”,
+          “mistake”: “Sortir la pâte trop longtemps du frigo avant d’abaisser → colle, se déforme.”,
+          “correction”: “Abaisser vite sur surface froide. Si ça colle : 5 min au frigo.”
         }
       ],
-      "sensoryCues": {
-        "see": "Pâte qui se tient, casse net, texture sablée.",
-        "smell": "Odeur nette correspondant à la technique, jamais brûlée ni fade.",
-        "taste": "Goût équilibré et lisible, sans correction excessive.",
-        "touch": "Texture conforme à l’objectif : souple, croquante, nappante, friable ou fondante.",
-        "hear": "Le son doit rester cohérent avec la technique : frémissement doux, crépitement vif ou silence de repos."
+      “sensoryCues”: {
+        “see”: “Cuite : doré homogène, bord légèrement plus coloré, aucune zone pâle ni gonflée.”,
+        “smell”: “Odeur de beurre noisette et sucre légèrement caramélisé — jamais brûlé.”,
+        “taste”: “Croquante et friable sous la dent, fond en bouche en quelques secondes, goût beurré prononcé.”,
+        “touch”: “Pâte crue : froide, ferme, ne colle pas. Cuite : craque nettement sous la pression.”,
+        “hear”: “Bruit sec et net quand on casse la pâte cuite — pas de mollesse.”
       },
-      "troubleshooting": [
+      “troubleshooting”: [
         {
-          "problem": "Résultat irrégulier",
-          "cause": "Taille, chaleur ou timing non maîtrisés.",
-          "fix": "Standardise la préparation et ajuste l’intensité plus tôt."
+          “problem”: “Pâte qui se rétracte à la cuisson”,
+          “cause”: “Trop travaillée (réseau glutineux trop développé) ou pas assez reposée.”,
+          “fix”: “Repos obligatoire 30 min minimum. Lors du fonçage, ne pas étirer la pâte — la laisser tomber d’elle-même dans le moule.”
         },
         {
-          "problem": "Goût plat",
-          "cause": "Assaisonnement ou finition insuffisants.",
-          "fix": "Corrige sel, acidité, gras ou fraîcheur par petites touches."
+          “problem”: “Pâte dure, non friable”,
+          “cause”: “Beurre trop mou lors du sablage, ou trop de travail après ajout du liquide.”,
+          “fix”: “Non récupérable. La prochaine fois : beurre sorti du frigo 5 min seulement, et arrêter le mélange dès que la pâte s’agglomère.”
         },
         {
-          "problem": "Texture ratée",
-          "cause": "Cuisson prolongée, chaleur mal adaptée ou manque de repos.",
-          "fix": "Identifie le point de bascule et arrête plus tôt la prochaine fois."
+          “problem”: “Fond qui gonfle à la cuisson à blanc”,
+          “cause”: “Pâte non piquée ou billes insuffisantes.”,
+          “fix”: “Piquer systématiquement et veiller à ce que les billes couvrent toute la surface et remontent sur les bords.”
         }
       ],
-      "practiceDrills": [
+      “practiceDrills”: [
         {
-          "title": "Répétition courte",
-          "duration": "15 min",
-          "instructions": "Réalise une version miniature de la technique en te concentrant sur un seul critère : couleur, texture ou goût.",
-          "goal": "Isoler la compétence sans te perdre dans une recette complète."
+          “title”: “Sablage comparatif (beurre froid vs beurre mou)”,
+          “duration”: “30 min”,
+          “instructions”: “Fais deux petites portions de pâte : une avec beurre froid, une avec beurre mou (pommade). Cuis et compare la texture.”,
+          “goal”: “Mémoriser par les sens l’impact de la température du beurre sur la friabilité.”
         },
         {
-          "title": "Comparaison volontaire",
-          "duration": "20 min",
-          "instructions": "Fais deux versions : une correcte, une avec une erreur contrôlée. Compare le résultat.",
-          "goal": "Reconnaître l’erreur par les sens."
+          “title”: “Cuisson à blanc avec et sans billes”,
+          “duration”: “25 min”,
+          “instructions”: “Cuis deux fonds : un avec billes + piquer, un sans. Observe le gonflement et la coloration.”,
+          “goal”: “Comprendre pourquoi chaque étape (piquer, billes, repos) est nécessaire.”
         }
       ],
-      "masteryCriteria": [
-        "Tu peux expliquer le mécanisme de la technique.",
-        "Tu reconnais les signes de réussite.",
-        "Tu sais nommer l’erreur la plus probable.",
-        "Tu sais proposer une correction réaliste."
+      “masteryCriteria”: [
+        “Tu expliques pourquoi le beurre doit être froid en nommant le mécanisme glutineux.”,
+        “Tu fais une pâte sablée friable sans qu’elle se rétracte à la cuisson.”,
+        “Tu sais adapter le repos (frigo 30 min, congélateur 15 min, conservation 48h).”,
+        “Tu cuis à blanc avec billes et obtiens un fond doré et sec.”
       ],
-      "proTip": "Un bon cuisinier ne suit pas seulement le temps : il observe et ajuste.",
-      "mentorBrief": "En pâtisserie, l’approximation se voit vite : pesée, température, hydratation, repos et cuisson déterminent la texture. L’objectif est d’être précis sans devenir rigide.",
-      "technicalVocabulary": [
+      “proTip”: “Pour une pâte sablée ultra-friable : remplacer 20 % de la farine par de la poudre d’amandes. La matière grasse des amandes amplifie l’effet sablé du beurre et apporte un arôme noisette sans changer le processus.”,
+      “mentorBrief”: “La pâte sablée est un exercice de précision minimale : peser, ne pas chauffer, ne pas surtravailler. Chaque fois qu’une pâte est dure ou se rétracte, c’est que le gluten a été développé. La solution est toujours la même : plus froid, moins de travail.”,
+      “technicalVocabulary”: [
         {
-          "term": "Sablage",
-          "definition": "Enrober la farine de gras pour limiter le gluten."
+          “term”: “Sablage”,
+          “definition”: “Technique d’enrobage de la farine par le beurre froid : chaque grain de farine isolé empêche le réseau glutineux de se former.”
         },
         {
-          "term": "Réseau glutineux",
-          "definition": "Structure élastique formée par farine + eau + travail."
+          “term”: “Réseau glutineux”,
+          “definition”: “Structure protéique élastique formée par hydratation et travail mécanique de la farine — responsable de l’élasticité et de la rétraction.”
         },
         {
-          "term": "Repos",
-          "definition": "Temps permettant au froid ou à l’hydratation de stabiliser la pâte."
+          “term”: “Fraser”,
+          “definition”: “Écraser la pâte une fois contre le plan de travail avec la paume — homogénéise sans développer le gluten.”
         },
         {
-          "term": "Cuisson à blanc",
-          "definition": "Cuisson d’un fond de tarte avant garniture."
+          “term”: “Cuisson à blanc”,
+          “definition”: “Cuisson du fond de tarte garni de billes (ou haricots secs) avant la garniture — évite les gonflements et assure un fond croustillant.”
+        },
+        {
+          “term”: “Rétraction”,
+          “definition”: “Rétrécissement de la pâte à la cuisson, signe de réseau glutineux trop développé ou de repos insuffisant.”
         }
       ],
-      "guidedLab": [
+      “guidedLab”: [
         {
-          "task": "Même pâte, deux repos",
-          "duration": "30 min",
-          "instructions": "Compare une pâte peu reposée et une pâte bien refroidie.",
-          "expected": "Tu observes tenue, friabilité et rétraction."
+          “task”: “Pâte sablée classique avec cuisson à blanc”,
+          “duration”: “60 min (dont 30 min repos)”,
+          “instructions”: “250 g farine + 125 g beurre froid + 80 g sucre glace + 1 œuf. Sabler, ajouter œuf, fraser, disque, frigo 30 min. Abaisser 3 mm, foncer moule 22 cm, piquer, billes, 180°C 15 min, retirer billes, 8 min.”,
+          “expected”: “Fond doré, sec, friable, qui craque sous la dent.”
         },
         {
-          "task": "Pesée stricte",
-          "duration": "15 min",
-          "instructions": "Réalise une petite préparation en pesant tout, y compris liquide.",
-          "expected": "Tu relies précision et régularité du résultat."
+          “task”: “Mini-tartelettes pour s’entraîner”,
+          “duration”: “45 min”,
+          “instructions”: “Avec la même pâte, foncer 4-5 petits moules. Cuire à blanc à 180°C. Remplir avec crème pâtissière ou compote.”,
+          “expected”: “Fonds uniformément cuits, texture friable maintenue même avec la garniture humide.”
         }
       ],
-      "progressionStages": [
+      “progressionStages”: [
         {
-          "level": "Débutant",
-          "standard": "Tu pèses et suis l’ordre."
+          “level”: “Débutant”,
+          “standard”: “Tu sabler correctement et tu respectes le repos au froid.”
         },
         {
-          "level": "Intermédiaire",
-          "standard": "Tu comprends température et texture."
+          “level”: “Intermédiaire”,
+          “standard”: “Tu obtiens un fond sans rétraction et tu maîtrises la cuisson à blanc.”
         },
         {
-          "level": "Excellent amateur",
-          "standard": "Tu ajustes hydratation, repos et cuisson selon le résultat observé."
+          “level”: “Excellent amateur”,
+          “standard”: “Tu adaptes la recette (poudre d’amandes, vanille, zeste) et tu ajustes l’hydratation selon le rendu visuel de la pâte crue.”
         }
       ],
-      "assessmentRubric": [
+      “assessmentRubric”: [
         {
-          "criterion": "Organisation",
-          "standard": "La mise en place est complète, les gestes s’enchaînent sans chercher un outil ou un ingrédient."
+          “criterion”: “Texture”,
+          “standard”: “Pâte cuite friable et croquante, fond sec, aucune zone molle ou gommée.”
         },
         {
-          "criterion": "Observation",
-          "standard": "Tu prends tes décisions sur des signes visibles, sonores, olfactifs ou tactiles, pas seulement sur le minuteur."
+          “criterion”: “Forme”,
+          “standard”: “Pas de rétraction significative, bords nets, hauteur uniforme.”
         },
         {
-          "criterion": "Correction",
-          "standard": "Tu sais identifier une erreur probable et proposer une correction réaliste avant la fin de la recette."
+          “criterion”: “Compréhension”,
+          “standard”: “Tu expliques pourquoi le beurre froid et le repos sont indispensables.”
         },
         {
-          "criterion": "Répétabilité",
-          "standard": "Tu peux refaire la technique avec un résultat similaire au moins deux fois."
+          “criterion”: “Répétabilité”,
+          “standard”: “Tu obtiens le même résultat deux fois d’affilée avec des ingrédients différents.”
         }
       ],
-      "antiBacle": [
-        "Ne valide pas mentalement une technique si tu ne peux pas expliquer pourquoi elle fonctionne.",
-        "Ne te fie pas uniquement au temps : vérifie au moins deux repères sensoriels.",
-        "Note l’erreur principale après pratique, même si le plat est bon."
+      “antiBacle”: [
+        “Ne jamais travailler la pâte avec les paumes : la chaleur des mains fait fondre le beurre et développe le gluten.”,
+        “Ne pas sauter le repos : 30 minutes au frigo ne sont pas optionnelles pour une pâte sans rétraction.”,
+        “Ne pas étirer la pâte pour la faire rentrer dans le moule : la laisser tomber d’elle-même évite la rétraction.”
       ],
-      "commonMisconceptions": [
-        "En pâtisserie, “à peu près” change parfois complètement la texture."
+      “commonMisconceptions”: [
+        “Pâte dure ≠ pas assez cuite. Pâte dure = trop travaillée ou beurre trop chaud lors du sablage. La cuisson n’y changera rien.”
       ],
-      "realKitchenTransfer": "Pesée, température et repos sont les équivalents pâtissiers du feu et de l’assaisonnement en cuisine.",
-      "capstonePractice": {
-        "title": "Exercice de transfert",
-        "instructions": "Choisis une recette déjà faite, applique volontairement cette technique, puis note ce qui a changé dans le résultat.",
-        "expected": "Tu dois pouvoir expliquer une décision concrète : taille, feu, couvercle, ordre ou correction."
+      “realKitchenTransfer”: “Le même principe (sablage + beurre froid + repos) s’applique à la pâte brisée (moins sucrée, pour tartes salées) et à la pâte sucrée (encore plus de sucre, pour desserts fins). Trois pâtes différentes, un seul mécanisme à comprendre.”,
+      “capstonePractice”: {
+        “title”: “Tarte complète de A à Z”,
+        “instructions”: “Prépare une pâte sablée, cuis à blanc, garnis d’une crème pâtissière et de fruits frais. Évalue la texture du fond après remplissage : reste-t-il friable ou est-il devenu détrempé ?”,
+        “expected”: “Tu identifies si le fond est resté friable et tu expliques pourquoi la cuisson à blanc était nécessaire.”
       },
-      "quizIds": [
-        "q-v19-l-pate-sablee-1-0",
+      “quizIds”: [
+        “q-v19-l-pate-sablee-1-0”,
         "q-v19-l-pate-sablee-1-1",
         "q-v17-l-pate-sablee-1-0",
         "q-v17-l-pate-sablee-1-1",
@@ -7197,164 +8175,190 @@ window.CUISINE_DATA = {
       ],
       "principles": [
         {
-          "title": "Comprendre avant d’exécuter",
+          "title": "Dressage = guide de dégustation",
           "body": "Le dressage ne doit pas décorer au hasard : il doit guider la dégustation."
         },
         {
-          "title": "Observer le résultat",
-          "body": "Le temps indiqué est une aide. La vraie décision se prend avec la couleur, la texture, l’odeur, le son et le goût."
+          "title": "Lisibilité avant esthétique",
+          "body": "Une assiette réussie se lit en 2 secondes : protéine, base, sauce, contraste — chaque élément identifiable sans chercher. Si le convive doit ‘fouiller’ l’assiette, le dressage a échoué."
         },
         {
-          "title": "Corriger tôt",
-          "body": "Un petit ajustement au bon moment évite souvent une grosse correction impossible à la fin."
+          "title": "La sauce : position stratégique",
+          "body": "Sauce dessous la protéine = protège le croustillant. Sauce autour = encadre proprement. Sauce à part = préserve la texture (plat avec croustillant délicat). Jamais noyé dans la sauce."
+        },
+        {
+          "title": "L’espace vide est un outil",
+          "body": "Un bord d’assiette blanc et un espace de respiration autour des éléments signalent la maîtrise. Assiette trop chargée = manque de confiance. Règle : 30-40 % de l’assiette reste visible."
+        },
+        {
+          "title": "Finition fraîche en dernier, toujours",
+          "body": "Herbe ciselée, zeste, fleur comestible ou trait d’huile posés en toute dernière seconde — pas avant, pas pendant. Ces éléments sont des signaux visuels et aromatiques qui se dégradent en quelques secondes sur un plat chaud."
         }
       ],
       "techniqueSteps": [
         {
-          "title": "Préparer le contexte",
-          "action": "Lis l’objectif technique, prépare le matériel et identifie le point critique de la recette.",
-          "cue": "Tu sais ce que tu dois observer avant de commencer.",
-          "mistake": "Suivre les étapes sans savoir quel résultat chercher.",
-          "correction": "Reformule l’objectif en une phrase avant de cuisiner."
+          "title": "Préchauffer l’assiette",
+          "action": "Assiette à soupe ou plat chaud : 2 min au four à 80°C ou eau chaude. Assiette froide = plat qui refroidit à -2°C/min. Service raté avant même d’avoir commencé.",
+          "cue": "Assiette tiède au dos de la main.",
+          "mistake": "Dresser sur assiette froide sortie du placard.",
+          "correction": "Préchauffer pendant que le plat finit de cuire."
         },
         {
-          "title": "Contrôler l’intensité",
-          "action": "Adapte chaleur, temps, humidité ou agitation selon la réaction observée.",
-          "cue": "Assiette lisible, sauce propre, contraste visible.",
-          "mistake": "Appliquer le temps indiqué même si le résultat visuel dit l’inverse.",
-          "correction": "Ralentis, goûte, touche ou observe avant de continuer."
+          "title": "Installer la base et la sauce",
+          "action": "Poser la base (purée, risotto, céréale) légèrement décentrée ou au 1/3 de l’assiette. Sauce dessous l’élément principal si croustillant, autour si fondant.",
+          "cue": "La base occupe 20-25 % de l’assiette, la sauce trace une limite nette.",
+          "mistake": "Napper toute l’assiette de sauce — noie les éléments, rend tout homogène.",
+          "correction": "Sauce au pinceau ou à la cuillère, geste précis et limité."
         },
         {
-          "title": "Finir proprement",
-          "action": "Goûte, ajuste, puis sers avec une finition cohérente : acidité, gras, herbes, sauce ou repos.",
-          "cue": "Le résultat est net, équilibré et volontaire.",
-          "mistake": "Servir sans dernier contrôle.",
-          "correction": "Goûte une bouchée complète avant dressage."
+          "title": "Poser l’élément principal avec volume",
+          "action": "Positionner la protéine ou l’élément principal légèrement en angle ou en appui sur la base pour créer du relief. L’œil préfère la hauteur à la planéité.",
+          "cue": "L’élément principal ressort visuellement, il n’est pas ‘couché à plat’.",
+          "mistake": "Poser chaque élément à plat, équidistant — assiette qui ressemble à une carte.",
+          "correction": "Incliner légèrement la protéine contre la base ou superposer légèrement."
+        },
+        {
+          "title": "Ajouter l’élément de contraste",
+          "action": "Élément croquant, coloré ou texturalement différent (chips de légume, herbe fraîche, graines, pickles) positionné de façon à être visible sans couvrir l’élément principal.",
+          "cue": "L’œil voit immédiatement le contraste de couleur et de texture.",
+          "mistake": "Éparpiller l’élément de contraste partout — perd son impact.",
+          "correction": "Concentrer le contraste en un seul point stratégique : coin, dessus, côté."
+        },
+        {
+          "title": "Finition et nettoyage des bords",
+          "action": "Finition fraîche en dernier. Nettoyer les bords de l’assiette avec un chiffon propre humide. Vérifier : 3 couleurs visibles, espace de respiration, bords nets.",
+          "cue": "Assiette propre, chaque élément a sa place, bords immaculés.",
+          "mistake": "Traces de sauce ou de doigts sur les bords.",
+          "correction": "Chiffon humide systématique avant envoi — geste de 3 secondes, impact majeur."
         }
       ],
       "sensoryCues": {
-        "see": "Assiette lisible, sauce propre, contraste visible.",
-        "smell": "Odeur nette correspondant à la technique, jamais brûlée ni fade.",
-        "taste": "Goût équilibré et lisible, sans correction excessive.",
-        "touch": "Texture conforme à l’objectif : souple, croquante, nappante, friable ou fondante.",
-        "hear": "Le son doit rester cohérent avec la technique : frémissement doux, crépitement vif ou silence de repos."
+        "see": "Trois couleurs distinctes, un élément en relief, sauce nette, bords propres, espace de respiration visible.",
+        "smell": "Arômes de la finition fraîche au premier plan dès présentation.",
+        "taste": "Première bouchée représentative du plat : tous les éléments présents dans le même volume.",
+        "touch": "Assiette chaude au dos de la main.",
+        "hear": "Silence du service — une assiette bien dressée ne demande pas d’explication."
       },
       "troubleshooting": [
         {
-          "problem": "Résultat irrégulier",
-          "cause": "Taille, chaleur ou timing non maîtrisés.",
-          "fix": "Standardise la préparation et ajuste l’intensité plus tôt."
+          "problem": "Assiette brouillonne, illisible",
+          "cause": "Trop d’éléments ou positionnement sans logique.",
+          "fix": "Règle du 3 : pas plus de 3 éléments distincts visibles à première vue. Simplifier."
         },
         {
-          "problem": "Goût plat",
-          "cause": "Assaisonnement ou finition insuffisants.",
-          "fix": "Corrige sel, acidité, gras ou fraîcheur par petites touches."
+          "problem": "Sauce qui noie la croustillance",
+          "cause": "Sauce versée avant ou par-dessus l’élément croustillant.",
+          "fix": "Toujours sauce dessous le croustillant ou à part. En dernier ou en côté."
         },
         {
-          "problem": "Texture ratée",
-          "cause": "Cuisson prolongée, chaleur mal adaptée ou manque de repos.",
-          "fix": "Identifie le point de bascule et arrête plus tôt la prochaine fois."
+          "problem": "Assiette froide au service",
+          "cause": "Préchauffage oublié ou trop de temps entre dressage et service.",
+          "fix": "Préchauffer systématiquement. Dresser au dernier moment, servir immédiatement."
         }
       ],
       "practiceDrills": [
         {
-          "title": "Répétition courte",
-          "duration": "15 min",
-          "instructions": "Réalise une version miniature de la technique en te concentrant sur un seul critère : couleur, texture ou goût.",
-          "goal": "Isoler la compétence sans te perdre dans une recette complète."
+          "title": "Trois dressages du même plat",
+          "duration": "20 min",
+          "instructions": "Dresse le même plat trois fois : tout centré, en ligne, puis avec volume et espace de respiration. Photographie chaque version. Compare.",
+          "goal": "Développer l’œil pour la lisibilité et identifier la version la plus percutante."
         },
         {
-          "title": "Comparaison volontaire",
-          "duration": "20 min",
-          "instructions": "Fais deux versions : une correcte, une avec une erreur contrôlée. Compare le résultat.",
-          "goal": "Reconnaître l’erreur par les sens."
+          "title": "Positionnement de sauce",
+          "duration": "10 min",
+          "instructions": "Avec une sauce colorée (réduit de betterave, pesto, sauce soja), teste : dessous, autour, à part, en taches. Photographier.",
+          "goal": "Maîtriser l’impact visuel et gustatif de la position de sauce."
         }
       ],
       "masteryCriteria": [
-        "Tu peux expliquer le mécanisme de la technique.",
-        "Tu reconnais les signes de réussite.",
-        "Tu sais nommer l’erreur la plus probable.",
-        "Tu sais proposer une correction réaliste."
+        "Tu préchauffes systématiquement l’assiette sans qu’on te le rappelle.",
+        "Tu positionnes la sauce stratégiquement selon la texture de l’élément principal.",
+        "Tu laisses 30-40 % d’espace de respiration visible.",
+        "Tu ajoutes la finition fraîche en dernier et tu nettoies les bords avant service."
       ],
-      "proTip": "Un bon cuisinier ne suit pas seulement le temps : il observe et ajuste.",
-      "mentorBrief": "Le dressage n’est pas une décoration : il rend le plat lisible. Une bonne assiette dit où est la protéine, où est la sauce, où est le contraste et comment manger la bouchée.",
+      "proTip": "Un seul geste transforme une assiette amateur en assiette professionnelle : nettoyer les bords avec un chiffon propre humide avant de servir. 3 secondes de geste, perception radicalement différente.",
+      "mentorBrief": "Le dressage n’est pas une décoration : il rend le plat lisible. Une bonne assiette dit où est la protéine, où est la sauce, où est le contraste et comment composer la bouchée idéale. Chaque décision a une raison gustative, pas seulement esthétique.",
       "technicalVocabulary": [
         {
           "term": "Lisibilité",
-          "definition": "Le mangeur comprend l’assiette immédiatement."
-        },
-        {
-          "term": "Volume",
-          "definition": "Hauteur ou relief sans surcharge."
-        },
-        {
-          "term": "Contraste",
-          "definition": "Différence de couleur, texture ou température."
+          "definition": "Capacité à identifier chaque élément de l’assiette en 2 secondes sans explication."
         },
         {
           "term": "Zone de respiration",
-          "definition": "Espace vide volontaire qui évite l’assiette brouillonne."
+          "definition": "Espace vide volontaire sur l’assiette — outil de lisibilité, pas d’oubli."
+        },
+        {
+          "term": "Volume / relief",
+          "definition": "Hauteur ou inclinaison d’un élément qui crée de l’intérêt visuel et signale les textures."
+        },
+        {
+          "term": "Finition fraîche",
+          "definition": "Herbe ciselée, zeste, fleur comestible — ajoutés en dernier pour l’arôme et l’éclat visuel."
+        },
+        {
+          "term": "Nettoyage des bords",
+          "definition": "Passage d’un chiffon humide sur le rebord de l’assiette avant service — geste professionnel fondamental."
         }
       ],
       "guidedLab": [
         {
-          "task": "Trois dressages",
-          "duration": "20 min",
-          "instructions": "Dresse le même plat centré, en ligne, puis en volume. Photographie et compare.",
-          "expected": "Tu identifies la version la plus lisible."
+          "task": "Trois positions de sauce",
+          "duration": "15 min",
+          "instructions": "Même assiette, même protéine. Dresse trois fois : sauce dessous, sauce autour, sauce à part. Photographie et note l’impact sur l’aspect croustillant et la lisibilité.",
+          "expected": "Tu identifies quelle position préserve le mieux la texture et la lisibilité."
         },
         {
-          "task": "Sauce contrôlée",
-          "duration": "10 min",
-          "instructions": "Teste sauce dessous, autour, puis à part.",
-          "expected": "Tu comprends comment la sauce influence netteté et dégustation."
+          "task": "Assiette bistrot complète",
+          "duration": "20 min",
+          "instructions": "Dresse un plat simple (œuf, légume, sauce) en appliquant : préchauffage, sauce positionnée, volume, finition fraîche, nettoyage des bords. Photographie avant et après nettoyage.",
+          "expected": "Tu vois la différence entre assiette soignée et assiette non nettoyée."
         }
       ],
       "progressionStages": [
         {
           "level": "Débutant",
-          "standard": "Tu sers proprement."
+          "standard": "Tu préchauffes l’assiette et tu nettoies les bords avant service."
         },
         {
           "level": "Intermédiaire",
-          "standard": "Tu crées contraste et volume."
+          "standard": "Tu positionnes chaque élément avec intention : sauce, contraste, espace de respiration."
         },
         {
           "level": "Excellent amateur",
-          "standard": "Tu dresses pour guider la bouchée, pas pour décorer au hasard."
+          "standard": "Tu dresses une assiette lisible, avec volume, finition fraîche et bords nets en moins de 90 secondes."
         }
       ],
       "assessmentRubric": [
         {
-          "criterion": "Organisation",
-          "standard": "La mise en place est complète, les gestes s’enchaînent sans chercher un outil ou un ingrédient."
+          "criterion": "Lisibilité",
+          "standard": "Chaque élément identifiable en 2 secondes sans explication."
         },
         {
-          "criterion": "Observation",
-          "standard": "Tu prends tes décisions sur des signes visibles, sonores, olfactifs ou tactiles, pas seulement sur le minuteur."
+          "criterion": "Technique sauce",
+          "standard": "Sauce positionnée stratégiquement selon la texture de l’élément principal."
         },
         {
-          "criterion": "Correction",
-          "standard": "Tu sais identifier une erreur probable et proposer une correction réaliste avant la fin de la recette."
+          "criterion": "Volume et espace",
+          "standard": "Au moins un élément en relief, 30 % d’espace de respiration visible."
         },
         {
-          "criterion": "Répétabilité",
-          "standard": "Tu peux refaire la technique avec un résultat similaire au moins deux fois."
+          "criterion": "Finition",
+          "standard": "Finition fraîche ajoutée en dernier, bords propres avant service."
         }
       ],
       "antiBacle": [
-        "Ne valide pas mentalement une technique si tu ne peux pas expliquer pourquoi elle fonctionne.",
-        "Ne te fie pas uniquement au temps : vérifie au moins deux repères sensoriels.",
-        "Note l’erreur principale après pratique, même si le plat est bon."
+        "Ne jamais dresser sur assiette froide : le plat chaud perd 2°C par minute, la dégustation en pâtit directement.",
+        "Ne pas noyer les éléments croustillants dans la sauce : sauce toujours dessous ou à part.",
+        "Ne pas oublier le nettoyage des bords : c’est le geste le plus simple et le plus visible qui sépare l’amateur du professionnel."
       ],
       "commonMisconceptions": [
-        "La technique ne s’acquiert pas en lisant : elle devient utile quand tu sais reconnaître et corriger l’erreur."
+        "Dressage soigné ≠ dressage compliqué. Un œuf sur une purée avec quelques herbes fraîches et des bords propres est plus professionnel qu’une assiette chargée de garnitures inutiles."
       ],
-      "realKitchenTransfer": "Cherche à réutiliser cette notion dans au moins deux recettes différentes.",
+      "realKitchenTransfer": "Ces principes s’appliquent à chaque repas que tu sers : brunch, dîner, bento, entrée. Le dressage est une habitude, pas une performance exceptionnelle réservée aux repas importants.",
       "capstonePractice": {
-        "title": "Exercice de transfert",
-        "instructions": "Choisis une recette déjà faite, applique volontairement cette technique, puis note ce qui a changé dans le résultat.",
-        "expected": "Tu dois pouvoir expliquer une décision concrète : taille, feu, couvercle, ordre ou correction."
+        "title": "Service de trois assiettes identiques",
+        "instructions": "Prépare et dresse trois assiettes du même plat en moins de 5 minutes. Évalue : sont-elles uniformes ? Bords propres ? Finitions fraîches au dernier moment ? Assiettes chaudes ?",
+        "expected": "Tu maintiens la qualité de dressage sous contrainte de temps et de répétition."
       },
       "quizIds": [
         "q-v19-l-dressage-1-0",
@@ -7486,59 +8490,63 @@ window.CUISINE_DATA = {
       ],
       "guidedLab": [
         {
-          "title": "Observer trois frémissements",
+          "task": "Calibration du frémissement",
           "duration": "10 min",
-          "instructions": "Fais chauffer de l’eau et observe : vapeur sans bulle, frémissement, ébullition.",
-          "goal": "Reconnaître visuellement le bon niveau."
+          "instructions": "Fais chauffer de l’eau dans une petite casserole. Observe et nomme trois stades : vapeur sans bulles (80°C), frémissement (85-90°C, quelques bulles régulières), ébullition (100°C, gros bouillonnement). Mémorise le visuel du frémissement.",
+          "expected": "Tu peux régler n’importe quelle casserole sur frémissement sans thermomètre."
         },
         {
-          "title": "Mini-mijoté",
-          "duration": "35 min",
-          "instructions": "Mijote oignon, carotte et pois chiches avec bouillon à feu doux, couvercle entrouvert.",
-          "goal": "Obtenir une texture fondante sans bouillie."
+          "task": "Mijoté de légumes express",
+          "duration": "40 min",
+          "instructions": "Colorer oignon et carottes en fournées. Déglacer avec bouillon. Ajouter pois chiches cuits. Frémissement doux, couvercle entrouvert 25 min. Découvrir 10 min pour concentrer. Sel en fin. Goûter avant et après réduction.",
+          "expected": "Légumes fondants, sauce nappante, pas de bouillie. Tu identifies le moment où découvrir."
         }
       ],
       "progressionStages": [
         {
           "level": "Débutant",
-          "standard": "Tu suis la méthode sans brûler les étapes."
+          "standard": "Tu règles un frémissement stable et tu vérifies la texture avant de servir."
         },
         {
           "level": "Intermédiaire",
-          "standard": "Tu ajustes selon les signes observés."
+          "standard": "Tu colores correctement, tu déglaces les sucs et tu décides couvert/découvert selon l’état de la sauce."
         },
         {
           "level": "Excellent amateur",
-          "standard": "Tu corriges une erreur et reproduis le résultat sur une autre recette."
+          "standard": "Tu gères un mijoté de 2h+ sans surveillance constante, avec sauce ajustée en finition et viande à texture parfaite."
         }
       ],
       "assessmentRubric": [
         {
-          "criterion": "Méthode",
-          "standard": "La séquence est respectée et expliquée."
+          "criterion": "Coloration",
+          "standard": "Viande ou légumes colorés en fournées, sucs au fond, pas de jus abondant pendant la coloration."
         },
         {
-          "criterion": "Observation",
-          "standard": "Tu cites au moins deux signes sensoriels."
+          "criterion": "Frémissement",
+          "standard": "Liquide à frémissement doux pendant toute la cuisson — jamais gros bouillon."
         },
         {
-          "criterion": "Correction",
-          "standard": "Tu sais quoi changer si le résultat dévie."
+          "criterion": "Texture",
+          "standard": "Tu arrêtes sur texture (fourchette, pas minuteur). Viande qui cède, légumes fondants mais pas en bouillie."
+        },
+        {
+          "criterion": "Sauce",
+          "standard": "Sauce nappante, assaisonnée en fin, sans excès de sel dû à la réduction."
         }
       ],
       "antiBacle": [
-        "Ne valide pas une technique si tu ne peux pas nommer le signe de fin.",
-        "Ne suis pas le minuteur contre l’observation.",
-        "Ne change qu’une variable à la fois entre deux essais."
+        "Ne jamais faire bouillir à gros bouillons une viande à mijoter : les fibres musculaires se contractent et durcissent irréversiblement.",
+        "Ne saler jamais en début de cuisson une sauce qui va réduire : attendre la fin pour doser le sel final.",
+        "Ne pas ouvrir le couvercle trop souvent : chaque ouverture perd de la vapeur et déstabilise le frémissement."
       ],
       "commonMisconceptions": [
-        "La précision n’est pas du perfectionnisme : elle sert à rendre le résultat répétable."
+        "Mijoter longtemps ne pardonne pas tout : un collagène mal fondu (gros bouillon) donne une viande filandreuse même après 3 heures. La douceur du feu est plus importante que la durée."
       ],
-      "realKitchenTransfer": "Cette notion se retrouve dans plusieurs recettes : elle doit devenir un réflexe, pas une consigne isolée.",
+      "realKitchenTransfer": "Bœuf bourguignon, tajine, blanquette, osso buco, curry de légumes, ratatouille et pot-au-feu reposent tous sur le même mécanisme : colorer pour les sucs, mouiller, frémir, ajuster la sauce en finition. Maîtriser le frémissement, c’est maîtriser toute la cuisine mijotée.",
       "capstonePractice": {
-        "title": "Transfert",
-        "instructions": "Applique cette notion dans une recette déjà connue et note ce qui change.",
-        "expected": "Une correction ou un meilleur contrôle observable."
+        "title": "Mijoté complet avec deux contrôles",
+        "instructions": "Prépare un mijoté de viande (bœuf, poulet ou pois chiches) en respectant : coloration par fournées, déglacage, frémissement régulier. À mi-cuisson, goûte la sauce et décide : couvrir ou découvrir ? Saler ou pas encore ? Réduire ou ajouter du liquide ?",
+        "expected": "Tu expliques chaque décision prise à mi-cuisson et tu identifies si la texture finale correspond à l’objectif — viande qui cède, sauce nappante."
       },
       "quiz": [
         {
@@ -7815,169 +8823,195 @@ window.CUISINE_DATA = {
           "explanation": "Le temps dépend du four et de la taille."
         }
       ],
-      "principles": [
+      “principles”: [
         {
-          "title": "Comprendre avant d’exécuter",
-          "body": "La pâtisserie est une cuisine de ratios : un petit écart change texture, volume et friabilité."
+          “title”: “Pâtisserie = cuisine de ratios”,
+          “body”: “La pâtisserie est une cuisine de ratios : un petit écart change texture, volume et friabilité.”
         },
         {
-          "title": "Observer le résultat",
-          "body": "Le temps indiqué est une aide. La vraie décision se prend avec la couleur, la texture, l’odeur, le son et le goût."
+          “title”: “Les trois familles de texture”,
+          “body”: “Croustillant/friable (pâtes, feuilletage), moelleux/aéré (gâteaux, soufflés, génoise), fondant/crémeux (crèmes, ganaches, mousses). Chaque recette appartient à une famille et son mécanisme principal est différent — comprendre la famille avant la recette.”
         },
         {
-          "title": "Corriger tôt",
-          "body": "Un petit ajustement au bon moment évite souvent une grosse correction impossible à la fin."
+          “title”: “L’œuf : liant, émulsifiant, structure”,
+          “body”: “Blanc battu en neige = air emprisonné dans un réseau de protéines → légèreté. Jaune = lécithine → émulsification des appareils riches en gras. Œuf entier tempéré → meilleure incorporation dans la pâte.”
+        },
+        {
+          “title”: “Le sucre : bien au-delà du goût sucré”,
+          “body”: “Le sucre retient l’humidité (hygroscopique) → moelleux prolongé. Interfère avec le réseau glutineux → pâte plus friable. Caramélise à 165°C (couleur et arôme). Son dosage change la texture autant que le goût.”
+        },
+        {
+          “title”: “Température du beurre : trois états, trois usages”,
+          “body”: “Beurre froid → sablage (friabilité). Beurre pommade (18-20°C, s’écrase sans fondre) → crémage avec sucre, gâteaux moelleux. Beurre fondu → gâteaux denses et humides (brownies, fondants). Un seul degré d’écart change tout.”
         }
       ],
-      "techniqueSteps": [
+      “techniqueSteps”: [
         {
-          "title": "Préparer le contexte",
-          "action": "Lis l’objectif technique, prépare le matériel et identifie le point critique de la recette.",
-          "cue": "Tu sais ce que tu dois observer avant de commencer.",
-          "mistake": "Suivre les étapes sans savoir quel résultat chercher.",
-          "correction": "Reformule l’objectif en une phrase avant de cuisiner."
+          “title”: “Peser, pas mesurer en volume”,
+          “action”: “Balance de précision obligatoire. La farine en tasse peut varier de 30 % selon le tassement. Peser même les liquides (1 ml eau = 1 g, mais l’huile ≠ l’eau). Peser = répétabilité garantie.”,
+          “cue”: “Chaque ingrédient pesé séparément avant de commencer.”,
+          “mistake”: “Utiliser des mesures en volume pour les ingrédients secs.”,
+          “correction”: “Balance à 1 g près pour petites quantités (levure, sel, arômes).”
         },
         {
-          "title": "Contrôler l’intensité",
-          "action": "Adapte chaleur, temps, humidité ou agitation selon la réaction observée.",
-          "cue": "Texture régulière, pâte non élastique si elle doit être friable, cuisson homogène.",
-          "mistake": "Appliquer le temps indiqué même si le résultat visuel dit l’inverse.",
-          "correction": "Ralentis, goûte, touche ou observe avant de continuer."
+          “title”: “Tempérer les ingrédients”,
+          “action”: “Œufs et beurre pommade doivent être à température ambiante (20°C) pour les gâteaux. Crème fraîche froide pour fouetter. Ne pas mélanger ingrédients chauds et froids — le choc de température casse les émulsions.”,
+          “cue”: “Beurre pommade s’écrase sous le doigt sans fondre. Œuf tempéré non glacé.”,
+          “mistake”: “Beurre trop froid ou trop fondu pour un crémage → texture granuleuse.”,
+          “correction”: “Sortir beurre et œufs 30-45 min avant de commencer.”
         },
         {
-          "title": "Finir proprement",
-          "action": "Goûte, ajuste, puis sers avec une finition cohérente : acidité, gras, herbes, sauce ou repos.",
-          "cue": "Le résultat est net, équilibré et volontaire.",
-          "mistake": "Servir sans dernier contrôle.",
-          "correction": "Goûte une bouchée complète avant dressage."
+          “title”: “Respecter l’ordre d’incorporation”,
+          “action”: “Chaque recette a un ordre précis : gras + sucre → œufs → farine → liquide. Cet ordre n’est pas arbitraire : il construit la structure en couches (émulsion d’abord, structure ensuite).”,
+          “cue”: “Appareil lisse et homogène à chaque étape avant d’ajouter le suivant.”,
+          “mistake”: “Mélanger tout ensemble → grains, pâte irrégulière, volume insuffisant.”,
+          “correction”: “Lire la recette entière avant de commencer et respecter l’ordre.”
+        },
+        {
+          “title”: “Incorporer les blancs en neige sans les casser”,
+          “action”: “Mélanger 1/4 des blancs dans l’appareil avec un fouet (pour l’alléger). Puis incorporer le reste à la maryse par mouvements amples de bas en haut — jamais de mouvement circulaire.”,
+          “cue”: “L’appareil reste aéré, léger, légèrement marbré au début.”,
+          “mistake”: “Fouetter vigoureusement les blancs dans l’appareil → mousse détruite.”,
+          “correction”: “Maryse, gestes lents et amples, arrêter dès que les traînées blanches disparaissent.”
+        },
+        {
+          “title”: “Cuire selon les signes, pas le minuteur seul”,
+          “action”: “Test cure-dent : inséré au centre, ressort sec. Rebond : appuie légèrement, la pâte reprend sa forme. Couleur dorée. Retrait des bords du moule. Vérifier avant la fin du temps indiqué.”,
+          “cue”: “Cure-dent sec, rebond franc, couleur dorée uniforme.”,
+          “mistake”: “Ouvrir le four dans les 2/3 du temps de cuisson → gâteau qui s’affaisse.”,
+          “correction”: “Ouvrir pour le premier contrôle aux 3/4 du temps indiqué, jamais avant.”
         }
       ],
-      "sensoryCues": {
-        "see": "Texture régulière, pâte non élastique si elle doit être friable, cuisson homogène.",
-        "smell": "Odeur nette correspondant à la technique, jamais brûlée ni fade.",
-        "taste": "Goût équilibré et lisible, sans correction excessive.",
-        "touch": "Texture conforme à l’objectif : souple, croquante, nappante, friable ou fondante.",
-        "hear": "Le son doit rester cohérent avec la technique : frémissement doux, crépitement vif ou silence de repos."
+      “sensoryCues”: {
+        “see”: “Croûte dorée uniforme, légère rétraction des bords du moule, surface mate (pas brillante = encore crue).”,
+        “smell”: “Odeur de beurre noisette et sucre caramélisé — jamais d’odeur de cru ni de brûlé.”,
+        “taste”: “Texture conforme à la famille : friable (pâtes), moelleux avec mâche (gâteaux), fondant (crèmes).”,
+        “touch”: “Rebond sous le doigt : la pâte reprend sa forme → cuite. Reste une empreinte → encore crue au centre.”,
+        “hear”: “Léger craquement à la sortie du four (gâteaux) — signe de cuisson aboutie.”
       },
-      "troubleshooting": [
+      “troubleshooting”: [
         {
-          "problem": "Résultat irrégulier",
-          "cause": "Taille, chaleur ou timing non maîtrisés.",
-          "fix": "Standardise la préparation et ajuste l’intensité plus tôt."
+          “problem”: “Gâteau qui s’affaisse au centre”,
+          “cause”: “Sous-cuit, four ouvert trop tôt, ou trop de levure (monte puis retombe).”,
+          “fix”: “Prolonger la cuisson 5-8 min. Vérifier le dosage de la levure (1 c. à café / 200 g farine max).”
         },
         {
-          "problem": "Goût plat",
-          "cause": "Assaisonnement ou finition insuffisants.",
-          "fix": "Corrige sel, acidité, gras ou fraîcheur par petites touches."
+          “problem”: “Texture caoutchouteuse ou dense”,
+          “cause”: “Trop mélangé (gluten développé), ou beurre trop chaud lors de l’incorporation.”,
+          “fix”: “Non récupérable. Prochaine fois : arrêter le mélange dès homogénéité, pas après.”
         },
         {
-          "problem": "Texture ratée",
-          "cause": "Cuisson prolongée, chaleur mal adaptée ou manque de repos.",
-          "fix": "Identifie le point de bascule et arrête plus tôt la prochaine fois."
+          “problem”: “Pâte qui ne monte pas”,
+          “cause”: “Levure chimique trop vieille, ou blancs battus trop tôt (retombés).”,
+          “fix”: “Tester la levure : une pincée dans l’eau chaude doit mousser immédiatement. Battre les blancs juste avant incorporation.”
         }
       ],
-      "practiceDrills": [
+      “practiceDrills”: [
         {
-          "title": "Répétition courte",
-          "duration": "15 min",
-          "instructions": "Réalise une version miniature de la technique en te concentrant sur un seul critère : couleur, texture ou goût.",
-          "goal": "Isoler la compétence sans te perdre dans une recette complète."
+          “title”: “Beurre à trois températures”,
+          “duration”: “20 min”,
+          “instructions”: “Prépare trois petits bols de beurre : froid, pommade, fondu. Essaie de faire un crémage sucre-beurre avec chacun. Observe la texture obtenue.”,
+          “goal”: “Mémoriser physiquement les trois états du beurre et leur impact.”
         },
         {
-          "title": "Comparaison volontaire",
-          "duration": "20 min",
-          "instructions": "Fais deux versions : une correcte, une avec une erreur contrôlée. Compare le résultat.",
-          "goal": "Reconnaître l’erreur par les sens."
+          “title”: “Pesée vs mesure en volume”,
+          “duration”: “10 min”,
+          “instructions”: “Mesure 100 g de farine en tassant vs en versant délicatement dans la tasse. Pèse les deux. Note la différence.”,
+          “goal”: “Comprendre pourquoi peser est indispensable en pâtisserie.”
         }
       ],
-      "masteryCriteria": [
-        "Tu peux expliquer le mécanisme de la technique.",
-        "Tu reconnais les signes de réussite.",
-        "Tu sais nommer l’erreur la plus probable.",
-        "Tu sais proposer une correction réaliste."
+      “masteryCriteria”: [
+        “Tu identifies la famille de texture d’une recette avant de commencer.”,
+        “Tu pèses systématiquement tous les ingrédients, y compris les liquides.”,
+        “Tu choisis l’état du beurre selon la recette : froid, pommade ou fondu.”,
+        “Tu incorpores les blancs en neige sans les casser avec la bonne technique maryse.”
       ],
-      "proTip": "Un bon cuisinier ne suit pas seulement le temps : il observe et ajuste.",
-      "mentorBrief": "En pâtisserie, l’approximation se voit vite : pesée, température, hydratation, repos et cuisson déterminent la texture. L’objectif est d’être précis sans devenir rigide.",
-      "technicalVocabulary": [
+      “proTip”: “La pâtisserie pardonne les petits écarts de technique si les proportions sont exactes. Commence toujours par une recette éprouvée, avec des ingrédients à température ambiante — les deux seules variables que tu contrôles vraiment sans matériel professionnel.”,
+      “mentorBrief”: “En pâtisserie, comprendre pourquoi ça fonctionne vaut mieux que mémoriser des recettes. Chaque recette réussie est un ratio précis entre gras, sucre, farine, liquide et air. Une fois les mécanismes compris (gluten, émulsion, air, Maillard), n’importe quelle recette devient lisible.”,
+      “technicalVocabulary”: [
         {
-          "term": "Sablage",
-          "definition": "Enrober la farine de gras pour limiter le gluten."
+          “term”: “Crémage”,
+          “definition”: “Technique de mélange beurre pommade + sucre jusqu’à blanchissement et légèreté : incorpore de l’air pour un gâteau moelleux.”
         },
         {
-          "term": "Réseau glutineux",
-          "definition": "Structure élastique formée par farine + eau + travail."
+          “term”: “Beurre pommade”,
+          “definition”: “Beurre à température ambiante (18-20°C) qui s’écrase facilement sans fondre — état idéal pour le crémage.”
         },
         {
-          "term": "Repos",
-          "definition": "Temps permettant au froid ou à l’hydratation de stabiliser la pâte."
+          “term”: “Levure chimique (bicarbonate)”,
+          “definition”: “Agent levant chimique : réagit avec l’humidité et la chaleur pour libérer du CO₂ → légèreté.”
         },
         {
-          "term": "Cuisson à blanc",
-          "definition": "Cuisson d’un fond de tarte avant garniture."
+          “term”: “Tempérer les ingrédients”,
+          “definition”: “Amener œufs et beurre à température ambiante avant incorporation pour éviter les chocs thermiques.”
+        },
+        {
+          “term”: “Test cure-dent”,
+          “definition”: “Insérer au centre d’un gâteau : sec = cuit ; avec traces de pâte crue = poursuivre la cuisson.”
         }
       ],
-      "guidedLab": [
+      “guidedLab”: [
         {
-          "task": "Même pâte, deux repos",
-          "duration": "30 min",
-          "instructions": "Compare une pâte peu reposée et une pâte bien refroidie.",
-          "expected": "Tu observes tenue, friabilité et rétraction."
+          “task”: “Gâteau quatre-quarts : la base de tout”,
+          “duration”: “50 min”,
+          “instructions”: “200 g beurre pommade + 200 g sucre (crémer) + 4 œufs tempérés (un par un) + 200 g farine + 1 c. à café levure. Moule beurré, 170°C 40 min. Cure-dent test.”,
+          “expected”: “Gâteau doré, moelleux, cure-dent sec. Tu identifies le crémage, l’incorporation et la cuisson.”
         },
         {
-          "task": "Pesée stricte",
-          "duration": "15 min",
-          "instructions": "Réalise une petite préparation en pesant tout, y compris liquide.",
-          "expected": "Tu relies précision et régularité du résultat."
+          “task”: “Test blanc en neige dans une mousse au chocolat”,
+          “duration”: “30 min”,
+          “instructions”: “Faire fondre 150 g chocolat noir. Battre 3 blancs en neige ferme. Incorporer à la maryse. Réfrigérer 1h. Comparer avec une version où les blancs sont cassés.”,
+          “expected”: “Version réussie = mousse légère et aérée. Version ratée = crème dense. Comprendre le rôle de l’air.”
         }
       ],
-      "progressionStages": [
+      “progressionStages”: [
         {
-          "level": "Débutant",
-          "standard": "Tu pèses et suis l’ordre."
+          “level”: “Débutant”,
+          “standard”: “Tu pèses tous les ingrédients et tu respectes l’ordre d’incorporation.”
         },
         {
-          "level": "Intermédiaire",
-          "standard": "Tu comprends température et texture."
+          “level”: “Intermédiaire”,
+          “standard”: “Tu identifies l’état du beurre nécessaire et tu incorpores les blancs sans les casser.”
         },
         {
-          "level": "Excellent amateur",
-          "standard": "Tu ajustes hydratation, repos et cuisson selon le résultat observé."
+          “level”: “Excellent amateur”,
+          “standard”: “Tu lis une recette, identifies la famille de texture et les mécanismes clés avant même de commencer.”
         }
       ],
-      "assessmentRubric": [
+      “assessmentRubric”: [
         {
-          "criterion": "Organisation",
-          "standard": "La mise en place est complète, les gestes s’enchaînent sans chercher un outil ou un ingrédient."
+          “criterion”: “Précision”,
+          “standard”: “Tous les ingrédients pesés au gramme près, ordre d’incorporation respecté.”
         },
         {
-          "criterion": "Observation",
-          "standard": "Tu prends tes décisions sur des signes visibles, sonores, olfactifs ou tactiles, pas seulement sur le minuteur."
+          “criterion”: “Température”,
+          “standard”: “Beurre à l’état voulu (froid/pommade/fondu) selon la recette.”
         },
         {
-          "criterion": "Correction",
-          "standard": "Tu sais identifier une erreur probable et proposer une correction réaliste avant la fin de la recette."
+          “criterion”: “Cuisson”,
+          “standard”: “Sortir du four sur signes sensoriels (couleur, rebond, cure-dent) et non sur le seul minuteur.”
         },
         {
-          "criterion": "Répétabilité",
-          "standard": "Tu peux refaire la technique avec un résultat similaire au moins deux fois."
+          “criterion”: “Diagnostic”,
+          “standard”: “Identifier la cause d’un gâteau raté : sous-cuit, trop mélangé, levure inactive, blancs cassés.”
         }
       ],
-      "antiBacle": [
-        "Ne valide pas mentalement une technique si tu ne peux pas expliquer pourquoi elle fonctionne.",
-        "Ne te fie pas uniquement au temps : vérifie au moins deux repères sensoriels.",
-        "Note l’erreur principale après pratique, même si le plat est bon."
+      “antiBacle”: [
+        “Ne jamais estimer les quantités à vue ou en volume pour les ingrédients secs : 20 % d’écart sur la farine change complètement la texture.”,
+        “Ne pas ouvrir le four pendant les 2/3 du temps de cuisson : le gâteau peut s’affaisser irrémédiablement.”,
+        “Ne pas substituer beurre fondu à beurre pommade ou inversement — ce ne sont pas des équivalents.”
       ],
-      "commonMisconceptions": [
-        "En pâtisserie, “à peu près” change parfois complètement la texture."
+      “commonMisconceptions”: [
+        “Ajouter plus de levure ne fait pas monter davantage : au-delà de la dose correcte, le gâteau monte puis retombe, créant un centre creux et une texture caoutchouteuse.”
       ],
-      "realKitchenTransfer": "Pesée, température et repos sont les équivalents pâtissiers du feu et de l’assaisonnement en cuisine.",
-      "capstonePractice": {
-        "title": "Exercice de transfert",
-        "instructions": "Choisis une recette déjà faite, applique volontairement cette technique, puis note ce qui a changé dans le résultat.",
-        "expected": "Tu dois pouvoir expliquer une décision concrète : taille, feu, couvercle, ordre ou correction."
+      “realKitchenTransfer”: “Ces principes (ratio, température, ordre, incorporation d’air, cuisson sur signes) s’appliquent à tous les gâteaux, quelle que soit la recette. Une fois les mécanismes compris, lire une nouvelle recette de pâtisserie devient une simple question d’identification des ratios.”,
+      “capstonePractice”: {
+        “title”: “Deux gâteaux, deux familles de texture”,
+        “instructions”: “Prépare un quatre-quarts moelleux (crémage + levure) et un fondant au chocolat (beurre fondu, pas de levure, blanc en neige). Compare les mécanismes, les textures et les signes de cuisson.”,
+        “expected”: “Tu expliques pourquoi les deux recettes donnent des textures radicalement différentes malgré des ingrédients similaires.”
       },
-      "quizIds": [
-        "q-v20-l-patisserie-1-0",
+      “quizIds”: [
+        “q-v20-l-patisserie-1-0”,
         "q-v20-l-patisserie-1-1",
         "q-v20-l-patisserie-1-2",
         "q-v20-l-patisserie-1-3",
@@ -8021,128 +9055,186 @@ window.CUISINE_DATA = {
           "body": "Blond : doux ; ambré : plus profond ; brun : amer si poussé trop loin."
         },
         {
-          "title": "Ne pas remuer n’importe comment",
-          "body": "Remuer au début peut projeter du sucre sur les bords et favoriser la cristallisation."
+          "title": "Caramélisation ≠ Maillard",
+          "body": "La caramélisation est la décomposition thermique du sucre pur à 160-190°C. Elle ne nécessite pas de protéines (contrairement à Maillard). C’est pourquoi le sucre seul, sans viande ni farine, peut brunir et développer des arômes complexes."
+        },
+        {
+          "title": "L’inertie thermique du caramel",
+          "body": "Le caramel continue de cuire plusieurs secondes hors du feu (la casserole reste à 180°C+). Arrêter une demi-teinte avant le résultat souhaité n’est pas une précaution excessive — c’est la technique correcte."
+        },
+        {
+          "title": "Cristallisation : le piège du sucre",
+          "body": "Un seul cristal de sucre en suspension (ou trace de gras) peut déclencher la recristallisation de tout le bain de sucre. Pinceau humide sur les bords, pas de remuage, et récipient propre — c’est tout ce qu’il faut pour éviter le problème."
         },
         {
           "title": "Décuire avec prudence",
-          "body": "Crème, beurre ou eau font bouillonner fortement : hors feu, petit à petit."
+          "body": "Crème, beurre ou eau ajoutés dans le caramel chaud provoquent un bouillonnement violent (différence de température extrême). Hors feu, liquide tiède ou chaud, versé en filet fin — jamais froid d’un coup."
         }
       ],
       "techniqueSteps": [
         {
-          "title": "Mouiller le sucre",
-          "action": "Verse sucre et un peu d’eau dans une casserole claire, sans éclabousser les bords.",
-          "cue": "Sucre humidifié uniformément.",
-          "mistake": "Cristaux sur les parois.",
-          "correction": "Nettoie les bords avec un pinceau humide."
+          "title": "Préparer la casserole et les ingrédients",
+          "action": "Casserole claire (inox ou acier) pour lire la couleur. Sucre + eau (ratio 5:1) sans éclabousser les bords. Pinceau humide à portée. Crème ou beurre tempérés pour la décuisson.",
+          "cue": "Sucre humidifié uniformément, pas de cristaux sur les parois.",
+          "mistake": "Cristaux de sucre sur les bords → point de départ de cristallisation.",
+          "correction": "Pinceau humide sur les parois avant de chauffer."
         },
         {
-          "title": "Cuire sans brutaliser",
-          "action": "Chauffe moyen-vif, surveille la couleur, tourne la casserole si besoin au lieu de remuer.",
-          "cue": "Couleur homogène du blond à l’ambré.",
-          "mistake": "Fond brun et bords clairs.",
-          "correction": "Baisse légèrement et fais tourner doucement."
+          "title": "Cuire sans remuer",
+          "action": "Feu moyen-vif. Ne pas remuer avec cuillère ou spatule. Si coloration inégale (bords plus foncés), faire tourner doucement la casserole en la soulevant.",
+          "cue": "Bouillonnement qui ralentit quand l’eau s’évapore, puis couleur qui apparaît uniformément.",
+          "mistake": "Remuer avec une cuillère → projette du sucre sur les bords → cristallisation.",
+          "correction": "Rotation douce de la casserole uniquement."
         },
         {
-          "title": "Arrêter / décuire",
-          "action": "Retire du feu une teinte avant la couleur voulue, puis utilise ou décuis prudemment.",
-          "cue": "Odeur chaude, pas piquante ni brûlée.",
-          "mistake": "Attendre le brun très foncé.",
-          "correction": "Stoppe plus tôt ; si brûlé, recommence."
+          "title": "Lire la couleur et anticiper",
+          "action": "Blond pâle (160°C) = douceur, salé. Ambré (170-175°C) = profondeur, sauce caramel. Brun (180-185°C) = amer prononcé, décor. Au-delà = irréversiblement brûlé. Retirer du feu une demi-teinte avant la couleur voulue.",
+          "cue": "Odeur de noisette et sucre chaud — jamais piquante ni âcre.",
+          "mistake": "Attendre la couleur exacte voulue : l’inertie finit de brûler le caramel.",
+          "correction": "Retirer du feu dès la teinte précédente. Pas de récupération possible si brûlé."
+        },
+        {
+          "title": "Décuire — sauce caramel au beurre salé",
+          "action": "Hors feu : verser la crème tiède en filet fin en remuant vigoureusement. Ajouter le beurre froid en dés un par un, monter en remuant. Saler généreusement.",
+          "cue": "Sauce lisse, brillante, couleur acajou. Nappe le dos d’une cuillère.",
+          "mistake": "Verser la crème froide d’un coup → projections de caramel bouillant (danger).",
+          "correction": "Crème tiède ou chaude, en filet, jamais froide en grande quantité."
+        },
+        {
+          "title": "Sécurité et nettoyage",
+          "action": "Poser la casserole sur une surface résistante à la chaleur. Jamais de contact direct avec le caramel chaud. Pour nettoyer : remplir d’eau froide, chauffer pour dissoudre le caramel durci.",
+          "cue": "Casserole nettoyée sans effort après trempage à l’eau chaude.",
+          "mistake": "Gratter le caramel durci à sec → rayures et effort inutile.",
+          "correction": "Eau froide dans la casserole chaude (loin du feu), laisser tremper 10 min."
         }
       ],
       "sensoryCues": {
-        "see": "Bulles denses puis couleur qui apparaît ; la teinte fonce vite.",
-        "smell": "Odeur de sucre chaud, noisette légère ; odeur piquante = trop loin.",
-        "hear": "Bouillonnement fort au départ, plus calme quand l’eau part.",
-        "touch": "Ne jamais toucher directement : danger de brûlure."
+        "see": "Bulles denses au départ, se raréfient quand l’eau part. Couleur qui fonce rapidement — blond, ambré, brun en quelques secondes.",
+        "smell": "Sucre chaud → noisette grillée (blond) → caramel profond (ambré) → odeur piquante et âcre (brun/brûlé).",
+        "taste": "Blond : doux, légère amertume. Ambré : complexe, équilibre sucré-amer. Brun : amer prononcé, persistant.",
+        "touch": "Ne jamais toucher directement : le caramel à 180°C colle instantanément à la peau.",
+        "hear": "Bouillonnement vif avec l’eau, puis silence quand elle s’évapore. Crépitement fort à la décuisson."
       },
       "troubleshooting": [
         {
-          "problem": "Caramel cristallise",
-          "cause": "Cristaux sur les bords ou agitation excessive.",
-          "fix": "Recommencer ou ajouter très peu d’eau et fondre doucement selon le stade."
+          "problem": "Caramel cristallise (masse et blanchit)",
+          "cause": "Cristaux de sucre sur les bords ou agitation avec une cuillère.",
+          "fix": "Non récupérable à un stade avancé. Recommencer. Prévention : pinceau humide + pas de remuage."
         },
         {
-          "problem": "Caramel brûlé",
-          "cause": "Arrêt trop tardif.",
-          "fix": "Ne tente pas de masquer : recommence, car l’amertume domine."
+          "problem": "Caramel brûlé, odeur âcre",
+          "cause": "Arrêt trop tardif ou feu trop fort.",
+          "fix": "Jeter et recommencer — l’amertume du brûlé est irréversible. Feu plus doux la prochaine fois."
+        },
+        {
+          "problem": "Sauce caramel granuleuse après décuisson",
+          "cause": "Crème trop froide, ou cristallisation déclenchée par la différence de température.",
+          "fix": "Réchauffer à feu très doux en fouettant. Si persistant, filtrer au tamis fin."
         }
       ],
       "practiceDrills": [
         {
-          "title": "Nuancier caramel",
+          "title": "Nuancier caramel : trois couleurs",
+          "duration": "20 min",
+          "instructions": "Fais trois petits caramels séparément, arrêtés blond, ambré, brun foncé. Dépose sur papier sulfurisé. Note odeur et goût de chaque.",
+          "goal": "Mémoriser par les sens (odorat + goût) à quoi correspond chaque étape de couleur."
+        },
+        {
+          "title": "Sauce caramel beurre salé",
           "duration": "15 min",
-          "instructions": "Fais trois petits caramels arrêtés blond, ambré, brun. Note odeur et goût.",
-          "goal": "Relier couleur et saveur."
+          "instructions": "Caramel ambré + crème tiède en filet + beurre salé en dés. Goûter sur une cuillerée de glace vanille.",
+          "goal": "Maîtriser la décuisson et comprendre l’effet de la qualité du caramel sur la sauce finale."
         }
       ],
       "masteryCriteria": [
-        "Tu sais identifier blond, ambré et brûlé.",
-        "Tu sais arrêter hors feu avant le point voulu.",
-        "Tu sais décuire sans projection dangereuse."
+        "Tu identifies blond, ambré et brun par la couleur et l’odeur, sans thermomètre.",
+        "Tu retires du feu une demi-teinte avant le résultat voulu.",
+        "Tu décuis sans projection dangereuse (crème tiède, filet fin).",
+        "Tu sais prévenir la cristallisation (pinceau humide, pas de remuage)."
       ],
-      "proTip": "Utilise une casserole claire : voir la couleur est plus fiable qu’estimer dans une casserole noire.",
+      "proTip": "Casserole claire (inox argenté) indispensable : dans une casserole noire ou foncée, lire la couleur du caramel est quasi-impossible. Ce seul choix de matériel évite la majorité des caramels ratés.",
+      "mentorBrief": "Le caramel est l’une des préparations les plus forgivantes si on comprend l’inertie : le caramel brûlé est une erreur de timing de 15 secondes, pas de méthode. Apprendre à anticiper la couleur change tout — une fois que tu ‘vois’ le caramel avancer, tu ne le rateras plus.",
       "technicalVocabulary": [
         {
-          "term": "Décuire",
-          "definition": "Ajouter un liquide ou gras pour stopper et transformer le caramel."
+          "term": "Caramélisation",
+          "definition": "Décomposition thermique du sucre à 160-190°C produisant des composés colorés et aromatiques — sans protéines (différent de Maillard)."
+        },
+        {
+          "term": "Décuisson",
+          "definition": "Ajout de liquide (crème, eau) ou de gras (beurre) pour stopper la cuisson du caramel et le transformer en sauce."
         },
         {
           "term": "Cristallisation",
-          "definition": "Retour du sucre en cristaux, souvent causé par impuretés ou agitation."
+          "definition": "Recristallisation du sucre en masse blanche et granuleuse, déclenchée par une impureté ou un remuage intempestif."
+        },
+        {
+          "term": "Inertie thermique",
+          "definition": "La casserole reste très chaude après retrait du feu — le caramel continue de brunir plusieurs secondes. Anticiper en retirant plus tôt."
+        },
+        {
+          "term": "Caramel sec vs humide",
+          "definition": "Sec (sucre seul, sans eau) : plus rapide, risque de cristallisation réduit. Humide (sucre + eau) : plus contrôlable pour débutant, dissolution plus uniforme."
         }
       ],
       "guidedLab": [
         {
-          "title": "Nuancier caramel",
-          "duration": "15 min",
-          "instructions": "Fais trois petits caramels arrêtés blond, ambré, brun. Note odeur et goût.",
-          "goal": "Relier couleur et saveur."
+          "task": "Caramel ambré + sauce beurre salé",
+          "duration": "25 min",
+          "instructions": "200 g sucre + 60 ml eau. Cuire sans remuer jusqu’à ambré. Hors feu, 100 ml crème tiède en filet + 60 g beurre salé en dés. Sel. Conserver en pot. Tester sur glace.",
+          "expected": "Sauce lisse, couleur acajou, goût équilibré sucré-amer-salé."
+        },
+        {
+          "task": "Crème caramel (test de la décuisson inversée)",
+          "duration": "30 min",
+          "instructions": "Faire un caramel blond, le verser dans des ramequins et laisser durcir. Prépare un appareil à flan (lait + œufs + sucre). Cuire au bain-marie 40 min à 160°C.",
+          "expected": "Caramel liquéfié sous le flan au démoulage, sans amertume — signe que la couleur blond était correcte."
         }
       ],
       "progressionStages": [
         {
           "level": "Débutant",
-          "standard": "Tu suis la méthode sans brûler les étapes."
+          "standard": "Tu fais un caramel ambré sans le brûler ni le cristalliser."
         },
         {
           "level": "Intermédiaire",
-          "standard": "Tu ajustes selon les signes observés."
+          "standard": "Tu contrôles la couleur selon l’usage et tu maîtrises la décuisson en sauce."
         },
         {
           "level": "Excellent amateur",
-          "standard": "Tu corriges une erreur et reproduis le résultat sur une autre recette."
+          "standard": "Tu choisis la couleur exacte selon la recette (crème caramel = blond, sauce = ambré, décor = brun), tu anticipes l’inertie et tu récupères une sauce granuleuse."
         }
       ],
       "assessmentRubric": [
         {
-          "criterion": "Méthode",
-          "standard": "La séquence est respectée et expliquée."
+          "criterion": "Lecture de couleur",
+          "standard": "Tu identifies blond, ambré et brun en nommant ce qui les distingue par l’odeur et la teinte."
         },
         {
-          "criterion": "Observation",
-          "standard": "Tu cites au moins deux signes sensoriels."
+          "criterion": "Timing",
+          "standard": "Tu retires systématiquement du feu avant la couleur voulue et la couleur finale est correcte."
         },
         {
-          "criterion": "Correction",
-          "standard": "Tu sais quoi changer si le résultat dévie."
+          "criterion": "Décuisson",
+          "standard": "Sauce lisse, sans granules, crème versée tiède en filet — aucune projection."
+        },
+        {
+          "criterion": "Sécurité",
+          "standard": "Tu ne touches jamais le caramel directement et tu nettoies la casserole correctement."
         }
       ],
       "antiBacle": [
-        "Ne valide pas une technique si tu ne peux pas nommer le signe de fin.",
-        "Ne suis pas le minuteur contre l’observation.",
-        "Ne change qu’une variable à la fois entre deux essais."
+        "Ne jamais remuer le caramel avec une cuillère : un seul mouvement déclenche la cristallisation.",
+        "Ne pas verser la crème froide d’un coup : les projections de caramel à 180°C brûlent gravement.",
+        "Ne pas essayer de ‘rattraper’ un caramel brûlé en ajoutant du sucre : l’amertume est irréversible."
       ],
       "commonMisconceptions": [
-        "La précision n’est pas du perfectionnisme : elle sert à rendre le résultat répétable."
+        "Un caramel qui cristallise n’est pas un caramel brûlé — il est blanc et granuleux, pas brun. Les deux accidents sont différents et se préviennent différemment."
       ],
-      "realKitchenTransfer": "Cette notion se retrouve dans plusieurs recettes : elle doit devenir un réflexe, pas une consigne isolée.",
+      "realKitchenTransfer": "Le caramel est la base de la crème caramel, de la sauce caramel au beurre salé, des pralinés, des décors en sucre filé, de la crème brûlée et du nougat. Maîtriser la lecture de couleur et la décuisson ouvre l’accès à tout ce registre sucré.",
       "capstonePractice": {
-        "title": "Transfert",
-        "instructions": "Applique cette notion dans une recette déjà connue et note ce qui change.",
-        "expected": "Une correction ou un meilleur contrôle observable."
+        "title": "Trois usages du caramel en une séance",
+        "instructions": "Prépare : 1) un caramel blond pour foncer des ramequins de crème caramel, 2) un caramel ambré pour une sauce beurre salé, 3) un caramel brun pour des décors sur papier sulfurisé (refroidis). Évalue la différence de goût à chaque étape.",
+        "expected": "Tu expliques pourquoi chaque usage nécessite une couleur différente et tu identifies l’impact gustatif de chaque degré de cuisson."
       },
       "quiz": [
         {

@@ -1,8 +1,8 @@
 (() => {
   const DATA = window.CUISINE_DATA;
-  const STORAGE_KEY = "coach-cuisine-progress-v19";
-  const LEGACY_STORAGE_KEYS = ["coach-cuisine-progress-v18", "coach-cuisine-progress-v17", "coach-cuisine-progress-v16", "coach-cuisine-progress-v15", "coach-cuisine-progress-v14", "coach-cuisine-progress-v13", "coach-cuisine-progress-v12", "coach-cuisine-progress-v11", "coach-cuisine-progress-v10", "coach-cuisine-progress-v9", "coach-cuisine-progress-v8", "coach-cuisine-progress-v7", "coach-cuisine-progress-v4", "coach-cuisine-progress-v3", "coach-cuisine-progress-v2", "coach-cuisine-progress-v1"];
-  const PRE_IMPORT_BACKUP_KEY = "coach-cuisine-pre-import-backup-v19";
+  const STORAGE_KEY = "coach-cuisine-progress-v20";
+  const LEGACY_STORAGE_KEYS = ["coach-cuisine-progress-v19", "coach-cuisine-progress-v18", "coach-cuisine-progress-v17", "coach-cuisine-progress-v16", "coach-cuisine-progress-v15", "coach-cuisine-progress-v14", "coach-cuisine-progress-v13", "coach-cuisine-progress-v12", "coach-cuisine-progress-v11", "coach-cuisine-progress-v10", "coach-cuisine-progress-v9", "coach-cuisine-progress-v8", "coach-cuisine-progress-v7", "coach-cuisine-progress-v4", "coach-cuisine-progress-v3", "coach-cuisine-progress-v2", "coach-cuisine-progress-v1"];
+  const PRE_IMPORT_BACKUP_KEY = "coach-cuisine-pre-import-backup-v20";
   const PHOTO_DB_NAME = "coach-cuisine-photos-v1";
   const PHOTO_STORE_NAME = "photos";
   const ROUTES = ["home", "learn", "recipes", "training", "journal", "profile"];
@@ -25,6 +25,7 @@
     recipeSearch: "",
     recipeLevelFilter: "all",
     recipeDurationFilter: "all",
+    trainingSearch: "",
     selectedLessonId: null,
     selectedRecipeId: null,
     cooking: null,
@@ -40,7 +41,9 @@
   const app = document.getElementById("app");
 
   window.addEventListener("hashchange", () => {
+    const prevRoute = state.route;
     state.route = getInitialRoute();
+    if (prevRoute !== state.route) window.scrollTo({ top: 0, behavior: "instant" });
     render();
   });
 
@@ -570,6 +573,9 @@
   }
 
   function renderTopbar(level) {
+    const xpLabel = level.maxed
+      ? `${state.progress.xp} XP · max`
+      : `${state.progress.xp} XP · ${level.currentXp}/${level.span} → ${escapeHtml(level.next.name)}`;
     return `
       <header class="topbar">
         <div class="brand-row">
@@ -577,10 +583,13 @@
             <div class="brand-mark">🍳</div>
             <div>
               <h1>Coach Cuisine</h1>
-              <p>${escapeHtml(level.current.name)} · niveau ${level.rank} · série ${state.progress.streak.current}j</p>
+              <p>${escapeHtml(level.current.name)} · niv. ${level.rank} · série ${state.progress.streak.current}j</p>
             </div>
           </div>
-          <div class="pill primary">${state.progress.xp} XP</div>
+          <div class="topbar-xp">
+            <span class="topbar-xp-label">${xpLabel}</span>
+            <div class="topbar-xp-track"><div class="topbar-xp-fill" style="width:${level.percent}%"></div></div>
+          </div>
         </div>
       </header>
     `;
@@ -1542,9 +1551,22 @@
     `;
   }
 
+  function relativeDate(iso) {
+    try {
+      const diffMs = Date.now() - new Date(iso).getTime();
+      const diffDays = Math.floor(diffMs / 86400000);
+      if (diffDays === 0) return "aujourd'hui";
+      if (diffDays === 1) return "hier";
+      if (diffDays < 7) return `il y a ${diffDays} jours`;
+      if (diffDays < 30) return `il y a ${Math.floor(diffDays / 7)} semaine${Math.floor(diffDays / 7) > 1 ? "s" : ""}`;
+      return formatDate(iso);
+    } catch { return formatDate(iso); }
+  }
+
   function renderJournal() {
     const logs = state.progress.recipeLogs.slice().sort((a, b) => new Date(b.date) - new Date(a.date));
     const weakness = mostCommon(logs.map((log) => log.errorType).filter(Boolean));
+    const bestRating = logs.length ? Math.max(...logs.map((l) => l.rating || 0)) : 0;
     return `
       <section class="view">
         <section class="card">
@@ -1556,7 +1578,9 @@
           </div>
           <div class="grid-two">
             <div class="metric"><strong>${logs.length}</strong><span>sessions notées</span></div>
-            <div class="metric"><strong>${averageRating(logs)}</strong><span>note moyenne</span></div>
+            <div class="metric"><strong>${averageRating(logs)}/5</strong><span>note moyenne</span></div>
+            <div class="metric"><strong>${bestRating > 0 ? bestRating + "/5" : "—"}</strong><span>meilleur résultat</span></div>
+            <div class="metric"><strong>${logs.filter((l) => l.rating >= 4).length}</strong><span>réussites (≥ 4/5)</span></div>
           </div>
           ${weakness ? `<div class="signal-card"><strong>Point faible récurrent</strong><span>${escapeHtml(labelErrorType(weakness))}</span></div>` : ""}
         </section>
@@ -1591,12 +1615,13 @@
   function renderLogCard(log) {
     const recipe = getRecipe(log.recipeId);
     const skills = (log.skillIds || []).map((id) => getSkill(id)?.name).filter(Boolean);
+    const stars = "★".repeat(log.rating || 0) + "☆".repeat(5 - (log.rating || 0));
     return `
       <article class="log-card">
         ${renderLogPhoto(log, recipe)}
         <div>
           <h3>${escapeHtml(recipe?.title || "Recette supprimée")}</h3>
-          <p class="muted">${formatDate(log.date)} · note ${log.rating}/5 · difficulté ${log.difficulty}/5</p>
+          <p class="muted">${escapeHtml(relativeDate(log.date))} · <span title="${escapeAttr(formatDate(log.date))}">${escapeHtml(stars)}</span> · difficulté ${log.difficulty}/5</p>
         </div>
         ${log.errorType ? `<div class="tag red-tag">Erreur principale : ${escapeHtml(labelErrorType(log.errorType))}</div>` : ""}
         ${log.comment ? `<p>${escapeHtml(log.comment)}</p>` : ""}
@@ -1604,8 +1629,8 @@
         ${renderEvaluationSummary(log.evaluation)}
         ${skills.length ? `<div class="tags">${skills.map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
         <div class="actions">
+          ${recipe ? `<button class="btn primary" data-open-recipe="${escapeAttr(recipe.id)}">Refaire</button>` : ""}
           <button class="btn danger" data-delete-log="${escapeAttr(log.id)}">Supprimer</button>
-          ${recipe ? `<button class="btn" data-open-recipe="${escapeAttr(recipe.id)}">Refaire</button>` : ""}
         </div>
       </article>
     `;
@@ -1641,12 +1666,22 @@
     `;
   }
 
+  function filterTrainingDrills(items, fields) {
+    const q = normalizeSearchText(state.trainingSearch);
+    if (!q) return items;
+    return items.filter((item) => {
+      const haystack = normalizeSearchText(fields.map((f) => item[f] || "").join(" "));
+      return haystack.includes(q);
+    });
+  }
+
   function renderTraining() {
-    const drills = DATA.trainingDrills || [];
-    const tasteDrills = DATA.tasteDrills || [];
-    const improvisation = DATA.improvisationDrills || [];
-    const visualGuides = DATA.visualGuides || [];
+    const drills = filterTrainingDrills(DATA.trainingDrills || [], ["title", "scenario", "cause", "fix"]);
+    const tasteDrills = filterTrainingDrills(DATA.tasteDrills || [], ["title", "exercise", "observe"]);
+    const improvisation = filterTrainingDrills(DATA.improvisationDrills || [], ["title", "constraint"]);
+    const totalDrills = (DATA.trainingDrills || []).length + (DATA.tasteDrills || []).length + (DATA.improvisationDrills || []).length + (DATA.visualGuides || []).length;
     const completed = state.progress.completedDrills.length;
+    const searching = Boolean(state.trainingSearch);
     return `
       <section class="view">
         <section class="training-hero card">
@@ -1655,32 +1690,36 @@
           <p>Diagnostics, goût, organisation et improvisation. Ces ateliers courts compensent la limite classique des apps de recettes : apprendre à corriger et décider.</p>
           <div class="hero-grid compact-stats">
             <div class="hero-stat"><strong>${completed}</strong><span>ateliers faits</span></div>
-            <div class="hero-stat"><strong>${drills.length + tasteDrills.length + improvisation.length + visualGuides.length}</strong><span>disponibles</span></div>
+            <div class="hero-stat"><strong>${totalDrills}</strong><span>disponibles</span></div>
             <div class="hero-stat"><strong>${getWeakSkills()[0] ? escapeHtml(getWeakSkills()[0].name) : "Bases"}</strong><span>priorité</span></div>
+          </div>
+          <div class="field training-search-field" style="margin-top:14px;">
+            <label for="training-search">Rechercher un atelier</label>
+            <input id="training-search" value="${escapeAttr(state.trainingSearch)}" placeholder="Ex : sauce, cuisson, sel, timing..." />
           </div>
         </section>
 
-        ${renderMasteryProgram()}
-        ${renderSkillProofPanel()}
-        ${renderQualityRules()}
-        ${renderLongPrograms()}
-        ${renderTechniqueLibrary()}
-        ${renderPracticalAssessments()}
-        ${renderVisualGuides()}
+        ${searching ? "" : renderMasteryProgram()}
+        ${searching ? "" : renderSkillProofPanel()}
+        ${searching ? "" : renderQualityRules()}
+        ${searching ? "" : renderLongPrograms()}
+        ${searching ? "" : renderTechniqueLibrary()}
+        ${searching ? "" : renderPracticalAssessments()}
+        ${searching ? "" : renderVisualGuides()}
 
         <section class="card">
-          <div class="section-head"><div><h2>Diagnostics cuisine</h2><p>Comprendre une erreur et choisir la bonne correction.</p></div></div>
-          <div class="list">${drills.map(renderDrillCard).join("")}</div>
+          <div class="section-head"><div><h2>Diagnostics cuisine</h2><p>Comprendre une erreur et choisir la bonne correction.</p></div><span class="pill blue">${drills.length}</span></div>
+          ${drills.length ? `<div class="list">${drills.map(renderDrillCard).join("")}</div>` : `<p class="muted">Aucun diagnostic correspond à la recherche.</p>`}
         </section>
 
         <section class="card">
-          <div class="section-head"><div><h2>Travail du goût</h2><p>Petits exercices pour construire le palais : sel, acide, gras, fraîcheur, umami.</p></div></div>
-          <div class="list">${tasteDrills.map(renderTasteDrillCard).join("")}</div>
+          <div class="section-head"><div><h2>Travail du goût</h2><p>Petits exercices pour construire le palais : sel, acide, gras, fraîcheur, umami.</p></div><span class="pill blue">${tasteDrills.length}</span></div>
+          ${tasteDrills.length ? `<div class="list">${tasteDrills.map(renderTasteDrillCard).join("")}</div>` : `<p class="muted">Aucun exercice correspond à la recherche.</p>`}
         </section>
 
         <section class="card">
-          <div class="section-head"><div><h2>Improvisation guidée</h2><p>Apprendre à cuisiner avec contraintes et à sortir de la dépendance aux recettes.</p></div></div>
-          <div class="list">${improvisation.map(renderImprovisationCard).join("")}</div>
+          <div class="section-head"><div><h2>Improvisation guidée</h2><p>Apprendre à cuisiner avec contraintes et à sortir de la dépendance aux recettes.</p></div><span class="pill blue">${improvisation.length}</span></div>
+          ${improvisation.length ? `<div class="list">${improvisation.map(renderImprovisationCard).join("")}</div>` : `<p class="muted">Aucun atelier correspond à la recherche.</p>`}
         </section>
       </section>
     `;
@@ -1905,11 +1944,12 @@
   }
 
   function renderExecutionPlan(recipe) {
-    const groups = [
-      ["Préparer", recipe.steps.slice(0, 1)],
-      ["Cuire", recipe.steps.slice(1, Math.max(2, recipe.steps.length - 1))],
-      ["Finir", recipe.steps.slice(-1)]
-    ].filter(([, steps]) => steps.length);
+    const total = recipe.steps.length;
+    const groups = [];
+    if (total >= 1) groups.push(["Préparer", recipe.steps.slice(0, 1)]);
+    if (total >= 3) groups.push(["Cuire", recipe.steps.slice(1, total - 1)]);
+    if (total >= 2) groups.push(["Finir", recipe.steps.slice(-1)]);
+    if (!groups.length) return "";
     return `
       <section class="card flat execution-plan">
         <h3>Plan d’exécution</h3>
@@ -2017,11 +2057,19 @@
         <section class="card">
           <div class="section-head">
             <div>
-              <h2>Modèle d'export léger</h2>
-              <p>Extrait généré sans données photo pour rester lisible.</p>
+              <h2>Résumé de progression</h2>
+              <p>Extrait sans photos — utilise "Export complet JSON" pour inclure les images.</p>
             </div>
           </div>
-          <pre class="code-box">${escapeHtml(JSON.stringify(lightPayload, null, 2))}</pre>
+          <div class="grid-two">
+            <div class="metric"><strong>${lightPayload.summary.xp}</strong><span>XP total</span></div>
+            <div class="metric"><strong>${lightPayload.summary.lessons}</strong><span>leçons terminées</span></div>
+            <div class="metric"><strong>${lightPayload.summary.recipes}</strong><span>recettes faites</span></div>
+            <div class="metric"><strong>${lightPayload.summary.logs}</strong><span>entrées journal</span></div>
+            <div class="metric"><strong>${lightPayload.summary.photos}</strong><span>photos</span></div>
+            <div class="metric"><strong>${lightPayload.summary.badges}</strong><span>badges</span></div>
+          </div>
+          <p class="small-note">Dernière mise à jour : ${escapeHtml(lightPayload.exportedAt ? formatDate(lightPayload.exportedAt) : "—")}</p>
         </section>
 
         <section class="card">
@@ -2516,11 +2564,14 @@
 
     const recipeSearch = document.getElementById("recipe-search");
     if (recipeSearch) {
+      let searchDebounce = null;
       recipeSearch.addEventListener("input", () => {
         state.recipeSearch = recipeSearch.value;
+        clearTimeout(searchDebounce);
+        searchDebounce = setTimeout(() => render(), 260);
       });
       recipeSearch.addEventListener("keydown", (event) => {
-        if (event.key === "Enter") render();
+        if (event.key === "Enter") { clearTimeout(searchDebounce); render(); }
       });
     }
 
@@ -2551,6 +2602,16 @@
       recipeDurationFilter.addEventListener("change", () => {
         state.recipeDurationFilter = recipeDurationFilter.value;
         render();
+      });
+    }
+
+    const trainingSearch = document.getElementById("training-search");
+    if (trainingSearch) {
+      let trainingDebounce = null;
+      trainingSearch.addEventListener("input", () => {
+        state.trainingSearch = trainingSearch.value;
+        clearTimeout(trainingDebounce);
+        trainingDebounce = setTimeout(() => render(), 260);
       });
     }
 
@@ -2615,6 +2676,31 @@
         render();
       });
     });
+
+    // Raccourcis clavier 1–4 pour répondre au quiz sans clic
+    const quizZone = document.getElementById("quiz-zone");
+    if (quizZone && state.selectedLessonId) {
+      const lesson = getLesson(state.selectedLessonId);
+      if (lesson) {
+        const keyHandler = (event) => {
+          const key = event.key;
+          if (!["1", "2", "3", "4"].includes(key)) return;
+          const answerIndex = Number(key) - 1;
+          // Trouver la question active (première non répondue)
+          const answers = state.quizAnswers[lesson.id] || {};
+          const activeQIndex = lesson.quiz.findIndex((_, i) => !Number.isInteger(answers[i]));
+          if (activeQIndex === -1) return;
+          const question = lesson.quiz[activeQIndex];
+          if (!question || answerIndex >= question.options.length) return;
+          state.quizAnswers[lesson.id] = state.quizAnswers[lesson.id] || {};
+          state.quizAnswers[lesson.id][activeQIndex] = answerIndex;
+          render();
+        };
+        document.addEventListener("keydown", keyHandler, { once: false });
+        // Nettoyer quand le modal se ferme (au prochain closeModal)
+        bindLessonEvents._quizKeyHandler = keyHandler;
+      }
+    }
 
     document.querySelectorAll("[data-complete-lesson]").forEach((button) => {
       button.addEventListener("click", () => {
@@ -2944,6 +3030,10 @@
   }
 
   function closeModal() {
+    if (bindLessonEvents._quizKeyHandler) {
+      document.removeEventListener("keydown", bindLessonEvents._quizKeyHandler);
+      bindLessonEvents._quizKeyHandler = null;
+    }
     state.selectedLessonId = null;
     state.selectedRecipeId = null;
     render();
@@ -2962,8 +3052,17 @@
         stopTimer(false);
         setToast("Minuteur terminé.");
         if (navigator.vibrate) navigator.vibrate([180, 100, 180]);
+        render();
+        return;
       }
-      render();
+      // Mise à jour ciblée : évite un full re-render toutes les secondes
+      const timerEl = document.querySelector(".timer-value");
+      if (timerEl && state.cooking) {
+        const remaining = Math.max(0, Math.ceil((state.activeTimer.endAt - Date.now()) / 1000));
+        timerEl.textContent = formatSeconds(remaining);
+      } else {
+        render();
+      }
     }, 1000);
     render();
   }
@@ -3030,13 +3129,16 @@
     return Object.values(state.progress.lessonResults).filter((result) => result?.nextReviewLocalDate && result.nextReviewLocalDate <= today).length;
   }
 
-  function setToast(message) {
+  function setToast(message, duration) {
     state.toast = sanitizeText(message, 180);
     window.clearTimeout(setToast.timeoutId);
+    // Durée plus longue pour les messages de badge ou d'XP important
+    const isBadge = String(message).toLowerCase().includes("badge") || String(message).toLowerCase().includes("xp");
+    const ms = duration || (isBadge ? 4000 : 2800);
     setToast.timeoutId = window.setTimeout(() => {
       state.toast = null;
       render();
-    }, 2600);
+    }, ms);
     render();
   }
 

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-label="Pâte sablée friable vs dure">
+<defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff7ed"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs>
+<rect width="900" height="520" rx="38" fill="url(#bg)"/>
+<text x="60" y="70" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#111827">Pâte sablée friable vs dure</text>
+<rect x="60" y="120" width="360" height="300" rx="28" fill="#ffffff" stroke="#e5e7eb" stroke-width="4"/>
+<rect x="480" y="120" width="360" height="300" rx="28" fill="#ffffff" stroke="#e5e7eb" stroke-width="4"/>
+<text x="90" y="165" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#166534">Résultat recherché</text>
+<text x="510" y="165" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#991b1b">Erreur fréquente</text>
+<circle cx="240" cy="270" r="82" fill="#fde68a" opacity="0.9"/><circle cx="660" cy="270" r="82" fill="#9ca3af" opacity="0.55"/>
+<path d="M175 330 C220 365, 290 365, 335 330" stroke="#166534" stroke-width="10" fill="none" stroke-linecap="round"/>
+<path d="M595 335 C625 310, 690 310, 725 335" stroke="#991b1b" stroke-width="10" fill="none" stroke-linecap="round"/>
+<text x="90" y="395" font-family="Arial, sans-serif" font-size="20" fill="#374151">Observer couleur, texture, humidité.</text>
+<text x="510" y="395" font-family="Arial, sans-serif" font-size="20" fill="#374151">Diagnostiquer avant de corriger.</text>
+</svg>
