@@ -1,4 +1,4 @@
-window.CUISINE_DATA = {
+﻿window.CUISINE_DATA = {
   "appVersion": "2.0.0",
   "levels": [
     {
@@ -1157,258 +1157,258 @@ window.CUISINE_DATA = {
           "explanation": "Un plat peut être salé sans être vivant."
         }
       ],
-      “objective”: “Maîtriser les 5 saveurs fondamentales et le rôle du gras ; corriger méthodiquement un plat en identifiant précisément ce qui manque avant d’ajouter quoi que ce soit.”,
-      “principles”: [
+      "objective": "Maîtriser les 5 saveurs fondamentales et le rôle du gras ; corriger méthodiquement un plat en identifiant précisément ce qui manque avant d’ajouter quoi que ce soit.",
+      "principles": [
         {
-          “title”: “Le sel révèle, il ne ‘sale’ pas”,
-          “body”: “En dessous du seuil de 0,5%, tous les goûts sont ternes. Le sel supprime l’amertume et amplifie la diffusion des arômes. Son rôle n’est pas d’être perçu mais d’amplifier ce qui est déjà là. Un plat bien salé ne goûte pas le sel — il goûte lui-même, mais en plus fort.”
+          "title": "Le sel révèle, il ne ‘sale’ pas",
+          "body": "En dessous du seuil de 0,5%, tous les goûts sont ternes. Le sel supprime l’amertume et amplifie la diffusion des arômes. Son rôle n’est pas d’être perçu mais d’amplifier ce qui est déjà là. Un plat bien salé ne goûte pas le sel — il goûte lui-même, mais en plus fort."
         },
         {
-          “title”: “L’acide crée la tension”,
-          “body”: “Une sauce sans acidité est molle. L’acidité coupe le gras, réveille les notes fraîches et allonge la persistance en bouche. Sources : citron, vinaigre (vin blanc, de Xérès, balsamique), vin blanc réduit, verjus, yaourt, tomate. Attention : l’acide se concentre aussi à la réduction — ajoute-le à la fin pour garder le contrôle.”
+          "title": "L’acide crée la tension",
+          "body": "Une sauce sans acidité est molle. L’acidité coupe le gras, réveille les notes fraîches et allonge la persistance en bouche. Sources : citron, vinaigre (vin blanc, de Xérès, balsamique), vin blanc réduit, verjus, yaourt, tomate. Attention : l’acide se concentre aussi à la réduction — ajoute-le à la fin pour garder le contrôle."
         },
         {
-          “title”: “Le gras est un vecteur, pas un goût”,
-          “body”: “Le gras enrobe les récepteurs gustatifs et ralentit la diffusion des molécules aromatiques — ce qui prolonge le goût. Beurre, huile d’olive, crème, jaune d’œuf ont chacun leur profil. Une cuillerée de beurre froid montée hors feu ne ‘graisse’ pas : elle arrondit, lie et enrichit simultanément.”
+          "title": "Le gras est un vecteur, pas un goût",
+          "body": "Le gras enrobe les récepteurs gustatifs et ralentit la diffusion des molécules aromatiques — ce qui prolonge le goût. Beurre, huile d’olive, crème, jaune d’œuf ont chacun leur profil. Une cuillerée de beurre froid montée hors feu ne ‘graisse’ pas : elle arrondit, lie et enrichit simultanément."
         },
         {
-          “title”: “L’umami donne de la profondeur”,
-          “body”: “L’umami (glutamate) seul ne fait presque rien. Associé au sel et à l’acidité, il crée de la longueur en bouche et de la complexité. Sources naturelles : parmesan, anchois, sauce soja, miso, champignons séchés, concentré de tomate, fond de veau réduit. Ajouter un soupçon d’anchois dans une sauce tomate — même si personne ne le détecte — double la profondeur.”
+          "title": "L’umami donne de la profondeur",
+          "body": "L’umami (glutamate) seul ne fait presque rien. Associé au sel et à l’acidité, il crée de la longueur en bouche et de la complexité. Sources naturelles : parmesan, anchois, sauce soja, miso, champignons séchés, concentré de tomate, fond de veau réduit. Ajouter un soupçon d’anchois dans une sauce tomate — même si personne ne le détecte — double la profondeur."
         },
         {
-          “title”: “Sucré et amer s’équilibrent mutuellement”,
-          “body”: “Une pointe de sucre corrige une acidité ou amertume excessive (sauce tomate trop acide). Une touche d’amertume (radicchio, zeste, café) évite la monotonie d’un plat très doux ou très gras. Le sel est aussi le meilleur antidote à l’amertume.”
+          "title": "Sucré et amer s’équilibrent mutuellement",
+          "body": "Une pointe de sucre corrige une acidité ou amertume excessive (sauce tomate trop acide). Une touche d’amertume (radicchio, zeste, café) évite la monotonie d’un plat très doux ou très gras. Le sel est aussi le meilleur antidote à l’amertume."
         },
         {
-          “title”: “Corriger une variable à la fois”,
-          “body”: “Si tu ajoutes sel + citron + beurre en même temps, tu ne sauras jamais lequel a tout changé. La méthode professionnelle : identifie le manque, ajoute un seul correctif en micro-dose, attends 15 secondes, goûte. Répète si nécessaire. C’est ainsi que tu formes ton palais.”
+          "title": "Corriger une variable à la fois",
+          "body": "Si tu ajoutes sel + citron + beurre en même temps, tu ne sauras jamais lequel a tout changé. La méthode professionnelle : identifie le manque, ajoute un seul correctif en micro-dose, attends 15 secondes, goûte. Répète si nécessaire. C’est ainsi que tu formes ton palais."
         }
       ],
-      “techniqueSteps”: [
+      "techniqueSteps": [
         {
-          “title”: “Goûter en contexte complet”,
-          “action”: “Prends une bouchée qui combine tous les éléments du plat : sauce + protéine + garniture. Le goût d’un élément isolé n’est pas représentatif de l’ensemble.”,
-          “cue”: “Tu dois identifier précisément ce qui manque : sel, tension, profondeur, fraîcheur ou longueur.”,
-          “mistake”: “Goûter uniquement la sauce en la trempant du bout du doigt.”,
-          “correction”: “Use une petite cuillère avec tous les éléments, comme au service.”
+          "title": "Goûter en contexte complet",
+          "action": "Prends une bouchée qui combine tous les éléments du plat : sauce + protéine + garniture. Le goût d’un élément isolé n’est pas représentatif de l’ensemble.",
+          "cue": "Tu dois identifier précisément ce qui manque : sel, tension, profondeur, fraîcheur ou longueur.",
+          "mistake": "Goûter uniquement la sauce en la trempant du bout du doigt.",
+          "correction": "Use une petite cuillère avec tous les éléments, comme au service."
         },
         {
-          “title”: “Diagnostiquer avant de corriger”,
-          “action”: “Pose-toi : est-ce fade (manque de sel) ? lourd (manque d’acidité) ? plat (manque d’umami ou de fraîcheur) ? âcre/amer (brûlé, sauce réduite à l’excès) ? trop acide (excès de citron ou vinaigre) ?”,
-          “cue”: “Tu peux nommer le manque en un mot avant d’ouvrir un flacon.”,
-          “mistake”: “Ajouter sel en réflexe conditionné à chaque fois que quelque chose ne va pas.”,
-          “correction”: “Oblige-toi à nommer le manque à voix haute. Ça force l’analyse plutôt que le réflexe.”
+          "title": "Diagnostiquer avant de corriger",
+          "action": "Pose-toi : est-ce fade (manque de sel) ? lourd (manque d’acidité) ? plat (manque d’umami ou de fraîcheur) ? âcre/amer (brûlé, sauce réduite à l’excès) ? trop acide (excès de citron ou vinaigre) ?",
+          "cue": "Tu peux nommer le manque en un mot avant d’ouvrir un flacon.",
+          "mistake": "Ajouter sel en réflexe conditionné à chaque fois que quelque chose ne va pas.",
+          "correction": "Oblige-toi à nommer le manque à voix haute. Ça force l’analyse plutôt que le réflexe."
         },
         {
-          “title”: “Corriger en micro-doses”,
-          “action”: “Ajoute 1 pincée de sel, ou 5 gouttes de citron, ou une larme de vinaigre. Mélange. Attends 15 secondes que la chaleur diffuse la correction. Goûte. Si pas assez, répète.”,
-          “cue”: “Le plat s’ouvre progressivement. Les arômes que tu ne percevais pas deviennent visibles.”,
-          “mistake”: “Tout corriger d’un coup par impatience.”,
-          “correction”: “Travaille en 2-3 micro-ajustements successifs. C’est plus lent mais irréversible — un plat trop salé ne se corrige pas.”
+          "title": "Corriger en micro-doses",
+          "action": "Ajoute 1 pincée de sel, ou 5 gouttes de citron, ou une larme de vinaigre. Mélange. Attends 15 secondes que la chaleur diffuse la correction. Goûte. Si pas assez, répète.",
+          "cue": "Le plat s’ouvre progressivement. Les arômes que tu ne percevais pas deviennent visibles.",
+          "mistake": "Tout corriger d’un coup par impatience.",
+          "correction": "Travaille en 2-3 micro-ajustements successifs. C’est plus lent mais irréversible — un plat trop salé ne se corrige pas."
         },
         {
-          “title”: “Saler en cours de cuisson, ajuster en fin”,
-          “action”: “Sale les légumes dès la sauteuse (pour extraire l’humidité et concentrer les saveurs). Pour une sauce qui réduit, sale légèrement à mi-cuisson et ajuste après réduction. Pour une viande : soit juste avant cuisson, soit dry brine 12-24h à l’avance.”,
-          “cue”: “La sauce a la même concentration saline en fin de réduction qu’au service.”,
-          “mistake”: “Saler une sauce au début sans anticiper la réduction.”,
-          “correction”: “Une sauce réduite de moitié double sa concentration en sel. Sale à 10% du niveau souhaité en début, et finis au service.”
+          "title": "Saler en cours de cuisson, ajuster en fin",
+          "action": "Sale les légumes dès la sauteuse (pour extraire l’humidité et concentrer les saveurs). Pour une sauce qui réduit, sale légèrement à mi-cuisson et ajuste après réduction. Pour une viande : soit juste avant cuisson, soit dry brine 12-24h à l’avance.",
+          "cue": "La sauce a la même concentration saline en fin de réduction qu’au service.",
+          "mistake": "Saler une sauce au début sans anticiper la réduction.",
+          "correction": "Une sauce réduite de moitié double sa concentration en sel. Sale à 10% du niveau souhaité en début, et finis au service."
         },
         {
-          “title”: “La finition : le dernier coup de pinceau”,
-          “action”: “Hors feu ou juste au moment de dresser : quelques gouttes de jus de citron frais, un filet d’huile d’olive, quelques feuilles d’herbes cisélées, un tour de moulin à poivre. Ces éléments fragiles perdent tout intérêt à la chaleur.”,
-          “cue”: “Le plat a une note fraîche et lumineuse au premier nez et en bouche.”,
-          “mistake”: “Mettre les herbes fraîches 10 minutes avant la fin et couvrir.”,
-          “correction”: “Toutes les notes fragiles (citron, herbes tendres, huile de qualité, vinaigrette) se mettent au dernier moment, jamais avant.”
+          "title": "La finition : le dernier coup de pinceau",
+          "action": "Hors feu ou juste au moment de dresser : quelques gouttes de jus de citron frais, un filet d’huile d’olive, quelques feuilles d’herbes cisélées, un tour de moulin à poivre. Ces éléments fragiles perdent tout intérêt à la chaleur.",
+          "cue": "Le plat a une note fraîche et lumineuse au premier nez et en bouche.",
+          "mistake": "Mettre les herbes fraîches 10 minutes avant la fin et couvrir.",
+          "correction": "Toutes les notes fragiles (citron, herbes tendres, huile de qualité, vinaigrette) se mettent au dernier moment, jamais avant."
         }
       ],
-      “sensoryCues”: {
-        “taste”: “Un plat bien assaisonné donne envie d’une deuxième bouchée. Il a du relief : une attaque, un développement et une fin. Un plat sous-assaisonné est flou et disparaît immédiatement. Sur-salé : sensation persistante et agressive.”,
-        “smell”: “Les herbes fraîches et le zeste donnent des notes volatiles immédiatement perceptibles au nez. Si tu ne les sens pas dans l’assiette, ils ont été ajoutés trop tôt ou chauffés trop longtemps.”,
-        “see”: “Une finition herbacée ou acide ajoute souvent de la couleur et du contraste visuel — le vert d’un persil ciselé, le jaune-orange d’un zeste, le brillant d’un filet d’huile verte.”,
-        “touch”: “Un plat bien lié et assaisonné a une texture en bouche lisse, ni aqueuse ni grasse. Le sel influence aussi la texture : une viande dry brinée a une chair plus ferme et plus juteuse.”
+      "sensoryCues": {
+        "taste": "Un plat bien assaisonné donne envie d’une deuxième bouchée. Il a du relief : une attaque, un développement et une fin. Un plat sous-assaisonné est flou et disparaît immédiatement. Sur-salé : sensation persistante et agressive.",
+        "smell": "Les herbes fraîches et le zeste donnent des notes volatiles immédiatement perceptibles au nez. Si tu ne les sens pas dans l’assiette, ils ont été ajoutés trop tôt ou chauffés trop longtemps.",
+        "see": "Une finition herbacée ou acide ajoute souvent de la couleur et du contraste visuel — le vert d’un persil ciselé, le jaune-orange d’un zeste, le brillant d’un filet d’huile verte.",
+        "touch": "Un plat bien lié et assaisonné a une texture en bouche lisse, ni aqueuse ni grasse. Le sel influence aussi la texture : une viande dry brinée a une chair plus ferme et plus juteuse."
       },
-      “troubleshooting”: [
+      "troubleshooting": [
         {
-          “problem”: “Plat fade, sans relief”,
-          “cause”: “Manque de sel en dessous du seuil de révélation des arômes.”,
-          “fix”: “Pincée de sel. Goûte 15s plus tard. Si ça ne change rien, le problème est ailleurs (manque d’umami ou d’acide).”
+          "problem": "Plat fade, sans relief",
+          "cause": "Manque de sel en dessous du seuil de révélation des arômes.",
+          "fix": "Pincée de sel. Goûte 15s plus tard. Si ça ne change rien, le problème est ailleurs (manque d’umami ou d’acide)."
         },
         {
-          “problem”: “Plat salé mais toujours plat”,
-          “cause”: “Manque d’acidité, d’umami, ou de fraîcheur — le sel seul ne suffit pas.”,
-          “fix”: “Teste quelques gouttes de jus de citron. Ou une micro-dose d’anchois/sauce soja/concentré de tomate. Ou des herbes fraîches.”
+          "problem": "Plat salé mais toujours plat",
+          "cause": "Manque d’acidité, d’umami, ou de fraîcheur — le sel seul ne suffit pas.",
+          "fix": "Teste quelques gouttes de jus de citron. Ou une micro-dose d’anchois/sauce soja/concentré de tomate. Ou des herbes fraîches."
         },
         {
-          “problem”: “Plat lourd, écœurant”,
-          “cause”: “Trop de gras sans contrepoint acide.”,
-          “fix”: “Acidité (citron, vinaigre) ou fraîcheur (herbes, légumes crus). Pas de sel supplémentaire.”
+          "problem": "Plat lourd, écœurant",
+          "cause": "Trop de gras sans contrepoint acide.",
+          "fix": "Acidité (citron, vinaigre) ou fraîcheur (herbes, légumes crus). Pas de sel supplémentaire."
         },
         {
-          “problem”: “Plat trop acide”,
-          “cause”: “Acide ajouté trop brutalement ou sauce réduite avec citron ou vin.”,
-          “fix”: “Gras (beurre, crème), touche de sucre, dilution légère. Jamais de sel pour corriger l’acide.”
+          "problem": "Plat trop acide",
+          "cause": "Acide ajouté trop brutalement ou sauce réduite avec citron ou vin.",
+          "fix": "Gras (beurre, crème), touche de sucre, dilution légère. Jamais de sel pour corriger l’acide."
         },
         {
-          “problem”: “Plat trop amer”,
-          “cause”: “Légumes brûlés, café sur-extrait, réduction excessive d’alcool.”,
-          “fix”: “Sel en premier (il bloque les récepteurs amers). Puis gras ou douceur (sucre, oignon caramélisé).”
+          "problem": "Plat trop amer",
+          "cause": "Légumes brûlés, café sur-extrait, réduction excessive d’alcool.",
+          "fix": "Sel en premier (il bloque les récepteurs amers). Puis gras ou douceur (sucre, oignon caramélisé)."
         },
         {
-          “problem”: “Plat trop salé — irréparable ?”,
-          “cause”: “Trop de sel ou réduction non anticipée.”,
-          “fix”: “Dilution (ajouter volume : eau, bouillon non salé, crème). Ajouter un ingrédient neutre (pomme de terre, riz qui absorbe). Ou accepter la leçon et recommencer. Il n’existe pas de ‘détecteur de sel’ qui fonctionne à 100%.”
+          "problem": "Plat trop salé — irréparable ?",
+          "cause": "Trop de sel ou réduction non anticipée.",
+          "fix": "Dilution (ajouter volume : eau, bouillon non salé, crème). Ajouter un ingrédient neutre (pomme de terre, riz qui absorbe). Ou accepter la leçon et recommencer. Il n’existe pas de ‘détecteur de sel’ qui fonctionne à 100%."
         }
       ],
-      “practiceDrills”: [
+      "practiceDrills": [
         {
-          “title”: “Le test des 6 cuillères”,
-          “duration”: “20 min”,
-          “instructions”: “Prépare 200ml de bouillon de légumes simple non salé. Sépare en 6 tasses. Laisse une nature. Ajoute dans chacune : (1) sel seul, (2) citron seul, (3) sel + citron, (4) sel + citron + trait de sauce soja, (5) sel + citron + filet d’huile d’olive, (6) sel + citron + basilic ciselé. Goûte dans l’ordre. Note ta perception de chaque.”,
-          “goal”: “Expérimenter concrètement ce que chaque saveur fait aux autres. C’est le meilleur entraînement du palais qui existe.”
+          "title": "Le test des 6 cuillères",
+          "duration": "20 min",
+          "instructions": "Prépare 200ml de bouillon de légumes simple non salé. Sépare en 6 tasses. Laisse une nature. Ajoute dans chacune : (1) sel seul, (2) citron seul, (3) sel + citron, (4) sel + citron + trait de sauce soja, (5) sel + citron + filet d’huile d’olive, (6) sel + citron + basilic ciselé. Goûte dans l’ordre. Note ta perception de chaque.",
+          "goal": "Expérimenter concrètement ce que chaque saveur fait aux autres. C’est le meilleur entraînement du palais qui existe."
         },
         {
-          “title”: “La sauce tomate : 4 niveaux d’assaisonnement”,
-          “duration”: “25 min”,
-          “instructions”: “Fais une sauce tomate simple. Sépare en 4. Goûte la version nature. Corrige la 2e avec sel seul. La 3e avec sel + pointe de sucre. La 4e avec sel + sucre + filet d’huile d’olive + basilic frais. Compare les 4 versions.”,
-          “goal”: “Comprendre la progression : de plat à équilibré à complexe. Le sel seul ne suffit pas pour la tomate (trop acide naturellement) — c’est une leçon pratique d’équilibre sucré/acide.”
+          "title": "La sauce tomate : 4 niveaux d’assaisonnement",
+          "duration": "25 min",
+          "instructions": "Fais une sauce tomate simple. Sépare en 4. Goûte la version nature. Corrige la 2e avec sel seul. La 3e avec sel + pointe de sucre. La 4e avec sel + sucre + filet d’huile d’olive + basilic frais. Compare les 4 versions.",
+          "goal": "Comprendre la progression : de plat à équilibré à complexe. Le sel seul ne suffit pas pour la tomate (trop acide naturellement) — c’est une leçon pratique d’équilibre sucré/acide."
         },
         {
-          “title”: “Dry brine sur une cuisse de poulet”,
-          “duration”: “5 min actifs + 12-24h attente”,
-          “instructions”: “Sale généreusement une cuisse de poulet (1% du poids en sel, soit ~8g pour 800g), poivre, thym. Laisse au frigo à découvert 12-24h. Compare à une cuisse cuisinée sans dry brine. Cuisson identique : peau en bas, poêle froide montée à feu moyen.”,
-          “goal”: “Sentir la différence de jutosité, de croquant de peau et de profondeur de saveur que le sel a le temps de pénétrer dans la chair.”
+          "title": "Dry brine sur une cuisse de poulet",
+          "duration": "5 min actifs + 12-24h attente",
+          "instructions": "Sale généreusement une cuisse de poulet (1% du poids en sel, soit ~8g pour 800g), poivre, thym. Laisse au frigo à découvert 12-24h. Compare à une cuisse cuisinée sans dry brine. Cuisson identique : peau en bas, poêle froide montée à feu moyen.",
+          "goal": "Sentir la différence de jutosité, de croquant de peau et de profondeur de saveur que le sel a le temps de pénétrer dans la chair."
         }
       ],
-      “masteryCriteria”: [
-        “Tu goûtes avant chaque ajout et tu nommes le manque.”,
-        “Tu sais distinguer fade (sel), lourd (acide), plat (umami/fraîcheur), amer (sel/gras), trop acide (gras/sucre).”,
-        “Tu ajustes en micro-doses sans dépasser le seuil.”,
-        “Tu soles en anticipation de la réduction, pas après.”,
-        “Ta finition arrive au dernier moment et donne une note fraîche perceptible.”
+      "masteryCriteria": [
+        "Tu goûtes avant chaque ajout et tu nommes le manque.",
+        "Tu sais distinguer fade (sel), lourd (acide), plat (umami/fraîcheur), amer (sel/gras), trop acide (gras/sucre).",
+        "Tu ajustes en micro-doses sans dépasser le seuil.",
+        "Tu soles en anticipation de la réduction, pas après.",
+        "Ta finition arrive au dernier moment et donne une note fraîche perceptible."
       ],
-      “proTip”: “Les chefs assaisonnent 15-20 fois par plat, pas une fois à la fin. Chaque étape de cuisson a ses propres besoins. Le sel de l’eau de cuisson des pâtes n’est pas le sel de la sauce. L’assaisonnement est une conversation continue avec le plat, pas une conclusion.”,
-      “mentorBrief”: “Un cuisinier moyen assaisonne à la fin. Un bon cuisinier assaisonne à chaque étape. Un grand cuisinier sait à quel moment chaque correction fait le plus d’effet. Le palais s’éduque par comparaison consciente — pas par intuition innée. Fais les exercices de dégustation comparative régulièrement : c’est ta séance de musculation du goût.”,
-      “technicalVocabulary”: [
+      "proTip": "Les chefs assaisonnent 15-20 fois par plat, pas une fois à la fin. Chaque étape de cuisson a ses propres besoins. Le sel de l’eau de cuisson des pâtes n’est pas le sel de la sauce. L’assaisonnement est une conversation continue avec le plat, pas une conclusion.",
+      "mentorBrief": "Un cuisinier moyen assaisonne à la fin. Un bon cuisinier assaisonne à chaque étape. Un grand cuisinier sait à quel moment chaque correction fait le plus d’effet. Le palais s’éduque par comparaison consciente — pas par intuition innée. Fais les exercices de dégustation comparative régulièrement : c’est ta séance de musculation du goût.",
+      "technicalVocabulary": [
         {
-          “term”: “Umami”,
-          “definition”: “5e saveur fondamentale (après sucré, salé, acide, amer). Mot japonais signifiant ‘saveur délicieuse’. Provient du glutamate, naturellement présent dans parmesan, anchois, champignons séchés, sauce soja, concentré de tomate. Donne de la profondeur et de la persistance en bouche.”
+          "term": "Umami",
+          "definition": "5e saveur fondamentale (après sucré, salé, acide, amer). Mot japonais signifiant ‘saveur délicieuse’. Provient du glutamate, naturellement présent dans parmesan, anchois, champignons séchés, sauce soja, concentré de tomate. Donne de la profondeur et de la persistance en bouche."
         },
         {
-          “term”: “Seuil de détection du sel”,
-          “definition”: “Concentration en dessous de laquelle le sel n’est pas perçu mais agit comme amplificateur d’arômes (environ 0,3-0,5% dans un liquide). En dessous : plat flou. Au-dessus de 1,5% : trop salé. La zone idéale est 0,8-1,2% selon le plat.”
+          "term": "Seuil de détection du sel",
+          "definition": "Concentration en dessous de laquelle le sel n’est pas perçu mais agit comme amplificateur d’arômes (environ 0,3-0,5% dans un liquide). En dessous : plat flou. Au-dessus de 1,5% : trop salé. La zone idéale est 0,8-1,2% selon le plat."
         },
         {
-          “term”: “Dry brine (salage à sec)”,
-          “definition”: “Technique de sel en avance sur une viande ou volaille (12-48h). Le sel extrait d’abord l’humidité de surface, puis est réabsorbé avec les jus dans la chair — améliorant la jutosité, la pénétration de saveur et le brunissage à la cuisson.”
+          "term": "Dry brine (salage à sec)",
+          "definition": "Technique de sel en avance sur une viande ou volaille (12-48h). Le sel extrait d’abord l’humidité de surface, puis est réabsorbé avec les jus dans la chair — améliorant la jutosité, la pénétration de saveur et le brunissage à la cuisson."
         },
         {
-          “term”: “Relief (en cuisine)”,
-          “definition”: “Sensation qu’un plat a plusieurs dimensions : une attaque, un développement, une persistance. Contraire de ‘plat’ ou ‘monodimensionnel’. Le relief se construit avec les 5 saveurs, les textures et les températures.”
+          "term": "Relief (en cuisine)",
+          "definition": "Sensation qu’un plat a plusieurs dimensions : une attaque, un développement, une persistance. Contraire de ‘plat’ ou ‘monodimensionnel’. Le relief se construit avec les 5 saveurs, les textures et les températures."
         },
         {
-          “term”: “Finition”,
-          “definition”: “Derniers ajustements au moment du dressage ou juste avant service : citron, herbes fraîches, huile de qualité, sel fin, poivre. Ces éléments doivent être ajoutés en dernier car ils perdent leur intérêt à la chaleur.”
+          "term": "Finition",
+          "definition": "Derniers ajustements au moment du dressage ou juste avant service : citron, herbes fraîches, huile de qualité, sel fin, poivre. Ces éléments doivent être ajoutés en dernier car ils perdent leur intérêt à la chaleur."
         },
         {
-          “term”: “Longueur en bouche (persistance)”,
-          “definition”: “Durée pendant laquelle les saveurs restent perceptibles après avoir avalé. Le gras et l’umami augmentent la longueur. L’acidité peut l’accélérer (nette et courte) ou l’enrichir selon le contexte.”
+          "term": "Longueur en bouche (persistance)",
+          "definition": "Durée pendant laquelle les saveurs restent perceptibles après avoir avalé. Le gras et l’umami augmentent la longueur. L’acidité peut l’accélérer (nette et courte) ou l’enrichir selon le contexte."
         },
         {
-          “term”: “Acidité”,
-          “definition”: “Saveur de pH bas. Citron, vinaigre, vin, yaourt, verjus. Coupe le gras, réveille les notes fraîches, allonge la persistance. Attention : se concentre à la réduction — ajouter en fin de préparation.”
+          "term": "Acidité",
+          "definition": "Saveur de pH bas. Citron, vinaigre, vin, yaourt, verjus. Coupe le gras, réveille les notes fraîches, allonge la persistance. Attention : se concentre à la réduction — ajouter en fin de préparation."
         },
         {
-          “term”: “Verjus”,
-          “definition”: “Jus de raisin non fermenté. Plus doux que le vinaigre, plus aromatique que le citron. Source d’acidité subtile pour sauces, vinaigrettes, marinades. Ingrédient classique de la cuisine médiévale remis au goût du jour.”
+          "term": "Verjus",
+          "definition": "Jus de raisin non fermenté. Plus doux que le vinaigre, plus aromatique que le citron. Source d’acidité subtile pour sauces, vinaigrettes, marinades. Ingrédient classique de la cuisine médiévale remis au goût du jour."
         }
       ],
-      “guidedLab”: [
+      "guidedLab": [
         {
-          “task”: “Autopsie d’un plat raté”,
-          “duration”: “15 min”,
-          “instructions”: “Prends n’importe quel plat simple que tu trouves ‘pas top’. Goûte et identifie le problème en 5 mots maximum. Puis corrige UNE seule chose. Goûte. Note ce qui a changé. Décide si tu continues à corriger ou si c’est bon.”,
-          “expected”: “Tu commences à avoir un dialogue avec le plat plutôt qu’une réaction automatique.”
+          "task": "Autopsie d’un plat raté",
+          "duration": "15 min",
+          "instructions": "Prends n’importe quel plat simple que tu trouves ‘pas top’. Goûte et identifie le problème en 5 mots maximum. Puis corrige UNE seule chose. Goûte. Note ce qui a changé. Décide si tu continues à corriger ou si c’est bon.",
+          "expected": "Tu commences à avoir un dialogue avec le plat plutôt qu’une réaction automatique."
         },
         {
-          “task”: “L’effet sel sur le café”,
-          “duration”: “5 min”,
-          “instructions”: “Prépare un café légèrement sur-extrait (amer). Prends deux tasses. Dans l’une, ajoute une micro-pincée de sel (vraiment minuscule, 0,1g). Compare les deux.”,
-          “expected”: “Le sel bloque perceptiblement l’amertume. C’est la démonstration la plus rapide et mémorable du rôle du sel — pas comme exhausteur de goût mais comme bloqueur d’amertume.”
+          "task": "L’effet sel sur le café",
+          "duration": "5 min",
+          "instructions": "Prépare un café légèrement sur-extrait (amer). Prends deux tasses. Dans l’une, ajoute une micro-pincée de sel (vraiment minuscule, 0,1g). Compare les deux.",
+          "expected": "Le sel bloque perceptiblement l’amertume. C’est la démonstration la plus rapide et mémorable du rôle du sel — pas comme exhausteur de goût mais comme bloqueur d’amertume."
         },
         {
-          “task”: “La vinaigrette équilibrée”,
-          “duration”: “20 min”,
-          “instructions”: “Fais une vinaigrette : 3 volumes huile + 1 volume vinaigre de vin + sel + moutarde. Goûte. Puis ajuste : trop acide → plus d’huile. Trop fade → sel ou moutarde. Trop plat → vinaigre de qualité supérieure ou trait de miel. L’objectif : une vinaigrette que tu trouves parfaite, pas celle de la recette.”,
-          “expected”: “Tu comprends que les ratios sont des points de départ, pas des absolus. Ton palais, ton vinaigre, ton huile — tous différents. La recette ne peut pas décider à ta place.”
+          "task": "La vinaigrette équilibrée",
+          "duration": "20 min",
+          "instructions": "Fais une vinaigrette : 3 volumes huile + 1 volume vinaigre de vin + sel + moutarde. Goûte. Puis ajuste : trop acide → plus d’huile. Trop fade → sel ou moutarde. Trop plat → vinaigre de qualité supérieure ou trait de miel. L’objectif : une vinaigrette que tu trouves parfaite, pas celle de la recette.",
+          "expected": "Tu comprends que les ratios sont des points de départ, pas des absolus. Ton palais, ton vinaigre, ton huile — tous différents. La recette ne peut pas décider à ta place."
         }
       ],
-      “progressionStages”: [
+      "progressionStages": [
         {
-          “level”: “Débutant”,
-          “standard”: “Tu goûtes avant de saler et tu sales progressivement.”
+          "level": "Débutant",
+          "standard": "Tu goûtes avant de saler et tu sales progressivement."
         },
         {
-          “level”: “Intermédiaire”,
-          “standard”: “Tu distingues manque de sel, manque d’acidité et manque d’umami. Tu corriges une variable à la fois.”
+          "level": "Intermédiaire",
+          "standard": "Tu distingues manque de sel, manque d’acidité et manque d’umami. Tu corriges une variable à la fois."
         },
         {
-          “level”: “Avancé”,
-          “standard”: “Tu sais à quel moment dans la cuisson saler, acidifier et finir pour maximiser l’effet de chaque correction.”
+          "level": "Avancé",
+          "standard": "Tu sais à quel moment dans la cuisson saler, acidifier et finir pour maximiser l’effet de chaque correction."
         },
         {
-          “level”: “Expert”,
-          “standard”: “Tu goûtes et corriges en temps réel pendant la cuisson, pas à la fin. Tu utilises l’umami, le sucré et l’amer comme outils conscients. Ton palais détecte rapidement le correctif manquant.”
+          "level": "Expert",
+          "standard": "Tu goûtes et corriges en temps réel pendant la cuisson, pas à la fin. Tu utilises l’umami, le sucré et l’amer comme outils conscients. Ton palais détecte rapidement le correctif manquant."
         }
       ],
-      “assessmentRubric”: [
+      "assessmentRubric": [
         {
-          “criterion”: “Diagnostic”,
-          “standard”: “Tu peux nommer précisément ce qui manque avant d’ajouter quoi que ce soit.”
+          "criterion": "Diagnostic",
+          "standard": "Tu peux nommer précisément ce qui manque avant d’ajouter quoi que ce soit."
         },
         {
-          “criterion”: “Méthode”,
-          “standard”: “Tu corriges une variable à la fois en micro-doses, avec pause et réévaluation entre chaque ajout.”
+          "criterion": "Méthode",
+          "standard": "Tu corriges une variable à la fois en micro-doses, avec pause et réévaluation entre chaque ajout."
         },
         {
-          “criterion”: “Timing”,
-          “standard”: “Tu sais quand saler (début, milieu, fin selon le plat) et quand ajouter les éléments fragiles (fin ou hors feu).”
+          "criterion": "Timing",
+          "standard": "Tu sais quand saler (début, milieu, fin selon le plat) et quand ajouter les éléments fragiles (fin ou hors feu)."
         },
         {
-          “criterion”: “Vocabulaire”,
-          “standard”: “Tu utilises sel, acide, gras, umami, sucré, amer comme vocabulaire de diagnostic, pas seulement ‘c’est pas bon’.”
+          "criterion": "Vocabulaire",
+          "standard": "Tu utilises sel, acide, gras, umami, sucré, amer comme vocabulaire de diagnostic, pas seulement ‘c’est pas bon’."
         }
       ],
-      “antiBacle”: [
-        “Ne goûte pas juste la sauce en isolation — goûte l’ensemble du plat comme le fera le convive.”,
-        “Ne corrige jamais plusieurs choses en même temps : tu n’apprendras rien.”,
-        “Ne sale pas une sauce qui n’a pas fini de réduire — tu seras à 3x la concentration cible à la fin.”
+      "antiBacle": [
+        "Ne goûte pas juste la sauce en isolation — goûte l’ensemble du plat comme le fera le convive.",
+        "Ne corrige jamais plusieurs choses en même temps : tu n’apprendras rien.",
+        "Ne sale pas une sauce qui n’a pas fini de réduire — tu seras à 3x la concentration cible à la fin."
       ],
-      “commonMisconceptions”: [
-        “Assaisonner ≠ saler. Un plat peut être trop salé et manquer quand même de ‘goût’ (manque d’umami, d’acidité ou de fraîcheur).”,
-        “Le poivre noir n’est pas un assaisonnement de base comme le sel : c’est une épice. Il ajoute du piquant et de l’arôme, pas de l’amplification. Poivrer en fin de cuisson, pas au début (le poivre brûle à haute température et devient amer).”,
-        “L’huile d’olive ne supporte pas les hautes températures : son point de fumée est plus bas que l’huile de tournesol. Pour saisir, utilise huile neutre ou beurre clarifié. Réserve l’huile d’olive de qualité pour les finitions et vinaigrettes.”,
-        “Le sucre dans une sauce salée n’est pas une erreur ou un ‘truc de paresseux’ — c’est une technique de rééquilibrage acide/sucré parfaitement légitime utilisée en cuisine professionnelle.”
+      "commonMisconceptions": [
+        "Assaisonner ≠ saler. Un plat peut être trop salé et manquer quand même de ‘goût’ (manque d’umami, d’acidité ou de fraîcheur).",
+        "Le poivre noir n’est pas un assaisonnement de base comme le sel : c’est une épice. Il ajoute du piquant et de l’arôme, pas de l’amplification. Poivrer en fin de cuisson, pas au début (le poivre brûle à haute température et devient amer).",
+        "L’huile d’olive ne supporte pas les hautes températures : son point de fumée est plus bas que l’huile de tournesol. Pour saisir, utilise huile neutre ou beurre clarifié. Réserve l’huile d’olive de qualité pour les finitions et vinaigrettes.",
+        "Le sucre dans une sauce salée n’est pas une erreur ou un ‘truc de paresseux’ — c’est une technique de rééquilibrage acide/sucré parfaitement légitime utilisée en cuisine professionnelle."
       ],
-      “realKitchenTransfer”: “Chaque fois que tu goûtes un plat avant de le servir, tu as une occasion d’apprendre. Est-ce que ça manque de sel (flou), d’acide (lourd), de fraîcheur (plat), de profondeur (vide), de sucré (trop acide ou trop amer) ? Si tu peux répondre à cette question, tu progresses. Si tu réagis juste par ‘c’est bon ou c’est pas bon’, tu stagues.”,
-      “capstonePractice”: {
-        “title”: “Le plat en 3 états”,
-        “instructions”: “Prépare n’importe quel plat simple (soupe, sauce, sauté de légumes). Mets-en une portion de côté à l’état ‘naturel’ (peu ou pas assaisonné). Assaisonne le reste normalement et prélève une 2e portion. Pousse jusqu’à un assaisonnement très généreux pour la 3e portion. Compare les 3 côte à côte. Prends des notes sur la texture en bouche, la longueur, la clarté des arômes.”,
-        “expected”: “Tu percevras clairement la zone ‘sous la révélation’, la zone ‘équilibrée’ et la zone ‘agressive’. C’est la carte de ton palais pour ce plat spécifique.”
+      "realKitchenTransfer": "Chaque fois que tu goûtes un plat avant de le servir, tu as une occasion d’apprendre. Est-ce que ça manque de sel (flou), d’acide (lourd), de fraîcheur (plat), de profondeur (vide), de sucré (trop acide ou trop amer) ? Si tu peux répondre à cette question, tu progresses. Si tu réagis juste par ‘c’est bon ou c’est pas bon’, tu stagues.",
+      "capstonePractice": {
+        "title": "Le plat en 3 états",
+        "instructions": "Prépare n’importe quel plat simple (soupe, sauce, sauté de légumes). Mets-en une portion de côté à l’état ‘naturel’ (peu ou pas assaisonné). Assaisonne le reste normalement et prélève une 2e portion. Pousse jusqu’à un assaisonnement très généreux pour la 3e portion. Compare les 3 côte à côte. Prends des notes sur la texture en bouche, la longueur, la clarté des arômes.",
+        "expected": "Tu percevras clairement la zone ‘sous la révélation’, la zone ‘équilibrée’ et la zone ‘agressive’. C’est la carte de ton palais pour ce plat spécifique."
       },
-      “advancedCases”: [
-        “Sauce réduite trop salée : diluer avec fond non salé ou crème. Ou monter en température avec une pomme de terre coupée qui absorbe.”,
-        “Plat trop acide (sauce tomate, ratatouille) : une pincée de sucre, ou oignons caramélisés, ou crème. Jamais de bicarbonate qui détruit la texture.”,
-        “Fond de braisé trop concentré et amer : dilution + gras (beurre monté) + éventuellement une touche de sucre.”,
-        “Vinaigrette plate : sel + moutarde (émulsifiant et exhausteur) + un vrai vinaigre de qualité (pas de vinaigre bas de gamme).”,
-        “Plat de légumes de printemps (asperges, petits pois) : l’acidité du citron juste avant service les rend deux fois plus frais et vifs — c’est la finition standard en cuisine moderne.”
+      "advancedCases": [
+        "Sauce réduite trop salée : diluer avec fond non salé ou crème. Ou monter en température avec une pomme de terre coupée qui absorbe.",
+        "Plat trop acide (sauce tomate, ratatouille) : une pincée de sucre, ou oignons caramélisés, ou crème. Jamais de bicarbonate qui détruit la texture.",
+        "Fond de braisé trop concentré et amer : dilution + gras (beurre monté) + éventuellement une touche de sucre.",
+        "Vinaigrette plate : sel + moutarde (émulsifiant et exhausteur) + un vrai vinaigre de qualité (pas de vinaigre bas de gamme).",
+        "Plat de légumes de printemps (asperges, petits pois) : l’acidité du citron juste avant service les rend deux fois plus frais et vifs — c’est la finition standard en cuisine moderne."
       ],
-      “expertMistakes”: [
-        “Saler une sauce au début sans anticiper la réduction → sur-salage garanti.”,
-        “Ajouter le citron 10 minutes avant la fin et couvrir → il cuit, l’acidité s’émousse, les arômes volatils s’évaporent.”,
-        “Confondre piquant (poivre, piment) et relief (sel+acide+umami) — le piquant peut masquer un manque d’assaisonnement mais ne le corrige pas.”,
-        “Sur-corriger l’amertume avec du sucre : la cause (brûlé) reste, le résultat est un plat à la fois sucré et amer.”
+      "expertMistakes": [
+        "Saler une sauce au début sans anticiper la réduction → sur-salage garanti.",
+        "Ajouter le citron 10 minutes avant la fin et couvrir → il cuit, l’acidité s’émousse, les arômes volatils s’évaporent.",
+        "Confondre piquant (poivre, piment) et relief (sel+acide+umami) — le piquant peut masquer un manque d’assaisonnement mais ne le corrige pas.",
+        "Sur-corriger l’amertume avec du sucre : la cause (brûlé) reste, le résultat est un plat à la fois sucré et amer."
       ],
-      “transferRule”: “Avant chaque bouchée de contrôle, pose-toi la question : qu’est-ce que je cherche précisément ? Puis : est-ce que je le trouve ? Puis : si non, quelle est la cause la plus probable ?”,
+      "transferRule": "Avant chaque bouchée de contrôle, pose-toi la question : qu’est-ce que je cherche précisément ? Puis : est-ce que je le trouve ? Puis : si non, quelle est la cause la plus probable ?",
       "quizIds": [
         "q-v19-l-assaisonnement-1-0",
         "q-v19-l-assaisonnement-1-1",
@@ -4572,207 +4572,207 @@ window.CUISINE_DATA = {
           "explanation": "Le temps dépend du four et de la taille."
         }
       ],
-      “principles”: [
+      "principles": [
         {
-          “title”: “Le gluten : le levier central de toute pâte”,
-          “body”: “Le gluten est un réseau de protéines (gluténine + gliadine) qui se forme quand la farine entre en contact avec l’eau et est travaillée. Ce réseau donne l’élasticité et la ténacité aux pâtes. En pâtisserie, le gluten est parfois voulu (pâte feuilletée, pain) mais souvent évité (sablée, brisée, shortcrust) : il faut alors protéger la farine de l’eau avec le gras (sablage) et limiter le pétrissage.”
+          "title": "Le gluten : le levier central de toute pâte",
+          "body": "Le gluten est un réseau de protéines (gluténine + gliadine) qui se forme quand la farine entre en contact avec l’eau et est travaillée. Ce réseau donne l’élasticité et la ténacité aux pâtes. En pâtisserie, le gluten est parfois voulu (pâte feuilletée, pain) mais souvent évité (sablée, brisée, shortcrust) : il faut alors protéger la farine de l’eau avec le gras (sablage) et limiter le pétrissage."
         },
         {
-          “title”: “Température du beurre = texture finale”,
-          “body”: “Beurre froid (4°C) : reste en morceaux dans la farine, crée des feuillets à la cuisson (pâte feuilletée, croissant). Beurre pommade (20°C) : crème avec le sucre, emprisonne l’air (pâte sucrée, cookies). Beurre fondu (liquid) : s’incorpore partout, fond aucun réseau gras protecteur — pâte plus dense (financiers, moelleux). L’erreur la plus fréquente en pâtisserie est de ne pas respecter la température du beurre prescrite.”
+          "title": "Température du beurre = texture finale",
+          "body": "Beurre froid (4°C) : reste en morceaux dans la farine, crée des feuillets à la cuisson (pâte feuilletée, croissant). Beurre pommade (20°C) : crème avec le sucre, emprisonne l’air (pâte sucrée, cookies). Beurre fondu (liquid) : s’incorpore partout, fond aucun réseau gras protecteur — pâte plus dense (financiers, moelleux). L’erreur la plus fréquente en pâtisserie est de ne pas respecter la température du beurre prescrite."
         },
         {
-          “title”: “Le repos au froid : trois fonctions essentielles”,
-          “body”: “Un repos de 30 min au réfrigérateur après la confection d’une pâte sert à : (1) Refroidir le beurre qui s’est réchauffé au contact des mains → moins de développement de gluten, (2) Permettre à l’hydratation de se répartir uniformément dans la pâte, (3) Détendre le réseau glutineux (la pâte ‘se repose’ — tirée, elle reprend sa forme ; reposée, elle reste étirée). Sans repos : rétraction à la cuisson, fond de tarte qui rétrécit, texture inégale.”
+          "title": "Le repos au froid : trois fonctions essentielles",
+          "body": "Un repos de 30 min au réfrigérateur après la confection d’une pâte sert à : (1) Refroidir le beurre qui s’est réchauffé au contact des mains → moins de développement de gluten, (2) Permettre à l’hydratation de se répartir uniformément dans la pâte, (3) Détendre le réseau glutineux (la pâte ‘se repose’ — tirée, elle reprend sa forme ; reposée, elle reste étirée). Sans repos : rétraction à la cuisson, fond de tarte qui rétrécit, texture inégale."
         },
         {
-          “title”: “Pesée précise : la pâtisserie n’est pas la cuisine”,
-          “body”: “En cuisine salée, une cuillère à soupe de sel de plus est corrigeable. En pâtisserie, 20g de farine en trop transforme un brownie fondant en gâteau sec. Les ratios sont des formules chimiques : ils déterminent texture, volume, moelleux et tenue. La balance de précision (au gramme) est l’outil de base. La tasse et la cuillère à soupe sont des instruments approximatifs qui varient de 15-30% selon la façon de mesurer.”
+          "title": "Pesée précise : la pâtisserie n’est pas la cuisine",
+          "body": "En cuisine salée, une cuillère à soupe de sel de plus est corrigeable. En pâtisserie, 20g de farine en trop transforme un brownie fondant en gâteau sec. Les ratios sont des formules chimiques : ils déterminent texture, volume, moelleux et tenue. La balance de précision (au gramme) est l’outil de base. La tasse et la cuillère à soupe sont des instruments approximatifs qui varient de 15-30% selon la façon de mesurer."
         },
         {
-          “title”: “La cuisson : Maillard et caramélisation pour les pâtes sucrées”,
-          “body”: “Les pâtes sucrées colorent grâce à la caramélisation du sucre et à la réaction de Maillard (protéines de la farine et de l’œuf + sucres). Trop chaud : surface brûlée avant que le cœur soit cuit. Pas assez chaud : pâle et sans goût. Position basse du four pour les fonds de tarte (cuisson par le bas, fond cuit et croustillant). Test de cuisson d’un fond à blanc : bord légèrement doré, centre mat et sec.”
+          "title": "La cuisson : Maillard et caramélisation pour les pâtes sucrées",
+          "body": "Les pâtes sucrées colorent grâce à la caramélisation du sucre et à la réaction de Maillard (protéines de la farine et de l’œuf + sucres). Trop chaud : surface brûlée avant que le cœur soit cuit. Pas assez chaud : pâle et sans goût. Position basse du four pour les fonds de tarte (cuisson par le bas, fond cuit et croustillant). Test de cuisson d’un fond à blanc : bord légèrement doré, centre mat et sec."
         }
       ],
-      “techniqueSteps”: [
+      "techniqueSteps": [
         {
-          “title”: “Sablage (pâte sablée / brisée)”,
-          “action”: “Mettre farine et beurre froid coupé en cubes dans un bol. Travailler du bout des doigts (jamais la paume chaude) en frottant beurre et farine jusqu’à obtenir une texture de sable fin ou de miettes. Chaque particule de farine est enrobée de gras — le gluten ne peut plus se développer quand l’eau sera ajoutée.”,
-          “cue”: “Texture de sable grossier, pas de gros morceaux de beurre visibles, mélange sec et friable.”,
-          “mistake”: “Travailler avec les paumes (trop chaud) ou trop longtemps (beurre fondu) — le sablage ne fonctionne plus.”,
-          “correction”: “Si le beurre colle et chauffe, mettre 10 min au réfrigérateur et recommencer.”
+          "title": "Sablage (pâte sablée / brisée)",
+          "action": "Mettre farine et beurre froid coupé en cubes dans un bol. Travailler du bout des doigts (jamais la paume chaude) en frottant beurre et farine jusqu’à obtenir une texture de sable fin ou de miettes. Chaque particule de farine est enrobée de gras — le gluten ne peut plus se développer quand l’eau sera ajoutée.",
+          "cue": "Texture de sable grossier, pas de gros morceaux de beurre visibles, mélange sec et friable.",
+          "mistake": "Travailler avec les paumes (trop chaud) ou trop longtemps (beurre fondu) — le sablage ne fonctionne plus.",
+          "correction": "Si le beurre colle et chauffe, mettre 10 min au réfrigérateur et recommencer."
         },
         {
-          “title”: “Incorporation du liquide sans sur-travailler”,
-          “action”: “Ajouter l’eau (ou œuf) froide progressivement sur le mélange sablé. Incorporer à la fourchette d’abord, puis unifier avec la paume en 2-3 mouvements de fraser (écraser horizontalement sur le plan de travail). S’arrêter dès que la pâte est homogène.”,
-          “cue”: “Pâte homogène qui ne colle pas, ni sèche ni humide, pas élastique.”,
-          “mistake”: “Pétrir comme une pâte à pain — développe le gluten, résultat dur et élastique.”,
-          “correction”: “Tester l’élasticité : tirer un petit morceau. S’il se retracte, trop travaillé. S’il se casse, bon signe.”
+          "title": "Incorporation du liquide sans sur-travailler",
+          "action": "Ajouter l’eau (ou œuf) froide progressivement sur le mélange sablé. Incorporer à la fourchette d’abord, puis unifier avec la paume en 2-3 mouvements de fraser (écraser horizontalement sur le plan de travail). S’arrêter dès que la pâte est homogène.",
+          "cue": "Pâte homogène qui ne colle pas, ni sèche ni humide, pas élastique.",
+          "mistake": "Pétrir comme une pâte à pain — développe le gluten, résultat dur et élastique.",
+          "correction": "Tester l’élasticité : tirer un petit morceau. S’il se retracte, trop travaillé. S’il se casse, bon signe."
         },
         {
-          “title”: “Repos au froid obligatoire”,
-          “action”: “Filmer la pâte et refrigerer 30 min minimum (idéalement 1h ou toute une nuit). Ne jamais couper le repos — les professionnels préparent toujours leurs pâtes la veille. Après repos, laisser 5 min à température ambiante avant d’étaler.”,
-          “cue”: “Pâte froide mais pas dure comme pierre, légèrement malléable au toucher.”,
-          “mistake”: “Étaler immédiatement : la pâte se rétracte au four, forme inégale et fond trop mince.”,
-          “correction”: “Si pas le temps, 15 min minimum au congélateur plutôt que pas de repos du tout.”
+          "title": "Repos au froid obligatoire",
+          "action": "Filmer la pâte et refrigerer 30 min minimum (idéalement 1h ou toute une nuit). Ne jamais couper le repos — les professionnels préparent toujours leurs pâtes la veille. Après repos, laisser 5 min à température ambiante avant d’étaler.",
+          "cue": "Pâte froide mais pas dure comme pierre, légèrement malléable au toucher.",
+          "mistake": "Étaler immédiatement : la pâte se rétracte au four, forme inégale et fond trop mince.",
+          "correction": "Si pas le temps, 15 min minimum au congélateur plutôt que pas de repos du tout."
         },
         {
-          “title”: “Fonçage et cuisson à blanc”,
-          “action”: “Étaler sur plan fariné (5mm pour sablée, 3mm pour brisée). Foncer le moule sans tirer ni étirer la pâte — juste la poser. Chiqueter les bords. Pour cuisson à blanc : film alimentaire + lest (haricots secs, billes). Précuire 15 min à 180°C, retirer le lest, 5-8 min de plus pour sécher.”,
-          “cue”: “Fond bien cuit et légèrement doré, bords réguliers, pas de boursouflures.”,
-          “mistake”: “Tirer la pâte dans le moule → elle se rétracte. Ne pas lester → gonfle et déforme.”,
-          “correction”: “Poser la pâte délicatement, laisser tomber dans le moule par gravité, ne jamais étirer.”
+          "title": "Fonçage et cuisson à blanc",
+          "action": "Étaler sur plan fariné (5mm pour sablée, 3mm pour brisée). Foncer le moule sans tirer ni étirer la pâte — juste la poser. Chiqueter les bords. Pour cuisson à blanc : film alimentaire + lest (haricots secs, billes). Précuire 15 min à 180°C, retirer le lest, 5-8 min de plus pour sécher.",
+          "cue": "Fond bien cuit et légèrement doré, bords réguliers, pas de boursouflures.",
+          "mistake": "Tirer la pâte dans le moule → elle se rétracte. Ne pas lester → gonfle et déforme.",
+          "correction": "Poser la pâte délicatement, laisser tomber dans le moule par gravité, ne jamais étirer."
         },
         {
-          “title”: “Comprendre les 3 pâtes de base”,
-          “action”: “Pâte brisée (beurre sablé 50%, eau) : croustillante, neutre, pour quiches et tartes salées. Pâte sablée (beurre sablé 50%, sans eau) : friable, légèrement sucrée, pour tartes sucrées. Pâte sucrée (beurre pommade + sucre crémés) : fondante, plus fine et fragile, pour fonds de tartelettes de chef. Choisir la pâte selon l’usage.”,
-          “cue”: “La pâte choisie correspond à la finesse et la tenue attendues pour la recette.”,
-          “mistake”: “Utiliser une pâte brisée pour toutes les tartes — la texture et le goût ne sont pas optimaux pour les recettes sucrées.”,
-          “correction”: “Mémoriser les 3 profils et adapter systématiquement.”
+          "title": "Comprendre les 3 pâtes de base",
+          "action": "Pâte brisée (beurre sablé 50%, eau) : croustillante, neutre, pour quiches et tartes salées. Pâte sablée (beurre sablé 50%, sans eau) : friable, légèrement sucrée, pour tartes sucrées. Pâte sucrée (beurre pommade + sucre crémés) : fondante, plus fine et fragile, pour fonds de tartelettes de chef. Choisir la pâte selon l’usage.",
+          "cue": "La pâte choisie correspond à la finesse et la tenue attendues pour la recette.",
+          "mistake": "Utiliser une pâte brisée pour toutes les tartes — la texture et le goût ne sont pas optimaux pour les recettes sucrées.",
+          "correction": "Mémoriser les 3 profils et adapter systématiquement."
         }
       ],
-      “sensoryCues”: {
-        “see”: “Pâte étalée : surface mate et lisse, épaisseur régulière. Fond cuit à blanc : légèrement doré sur les bords, mat au centre. Pâte sucrée cuite : brun doré uniforme, jamais noire en dessous.”,
-        “smell”: “Cuisson réussie : arôme de beurre chaud et de pain biscuité. Brûlé : odeur âcre et amère (souvent le fond en contact avec la plaque trop chaude).”,
-        “taste”: “Pâte brisée : croustillante et neutre. Pâte sablée : friable, fondante, légèrement sucrée. Pâte sucrée : fondante, beurrée, fine. Aucune pâte ne doit avoir de goût farineux (farine crue).”,
-        “touch”: “Pâte reposée : souple et malléable, pas élastique. Fond cuit : croustillant au toucher, sonnant creux quand on frappe avec le doigt.”,
-        “hear”: “Fond cuit à blanc : son creux au tapotement = bien cuit. Son mat = encore humide, prolonger la cuisson.”
+      "sensoryCues": {
+        "see": "Pâte étalée : surface mate et lisse, épaisseur régulière. Fond cuit à blanc : légèrement doré sur les bords, mat au centre. Pâte sucrée cuite : brun doré uniforme, jamais noire en dessous.",
+        "smell": "Cuisson réussie : arôme de beurre chaud et de pain biscuité. Brûlé : odeur âcre et amère (souvent le fond en contact avec la plaque trop chaude).",
+        "taste": "Pâte brisée : croustillante et neutre. Pâte sablée : friable, fondante, légèrement sucrée. Pâte sucrée : fondante, beurrée, fine. Aucune pâte ne doit avoir de goût farineux (farine crue).",
+        "touch": "Pâte reposée : souple et malléable, pas élastique. Fond cuit : croustillant au toucher, sonnant creux quand on frappe avec le doigt.",
+        "hear": "Fond cuit à blanc : son creux au tapotement = bien cuit. Son mat = encore humide, prolonger la cuisson."
       },
-      “troubleshooting”: [
+      "troubleshooting": [
         {
-          “problem”: “Pâte se rétracte à la cuisson”,
-          “cause”: “Gluten développé (trop travaillé ou pas assez reposé), ou pâte étirée au fonçage.”,
-          “fix”: “Repos obligatoire au froid, ne jamais étirer en fonçant. La pâte doit tomber dans le moule par gravité.”
+          "problem": "Pâte se rétracte à la cuisson",
+          "cause": "Gluten développé (trop travaillé ou pas assez reposé), ou pâte étirée au fonçage.",
+          "fix": "Repos obligatoire au froid, ne jamais étirer en fonçant. La pâte doit tomber dans le moule par gravité."
         },
         {
-          “problem”: “Pâte sablée dure comme du béton”,
-          “cause”: “Trop de travail du gluten, beurre trop chaud au sablage, ou trop d’eau.”,
-          “fix”: “Sablage rapide avec beurre froid, incorporation de l’eau minimale, pas de pétrissage.”
+          "problem": "Pâte sablée dure comme du béton",
+          "cause": "Trop de travail du gluten, beurre trop chaud au sablage, ou trop d’eau.",
+          "fix": "Sablage rapide avec beurre froid, incorporation de l’eau minimale, pas de pétrissage."
         },
         {
-          “problem”: “Fond brûlé en dessous”,
-          “cause”: “Position trop haute dans le four (chaleur insuffisante par le bas pour un fond → trop de chaleur voûte), ou moule sombre conducteur.”,
-          “fix”: “Position basse pour les fonds de tarte. Moule clair ou perforé (meilleure conduction et évaporation).”
+          "problem": "Fond brûlé en dessous",
+          "cause": "Position trop haute dans le four (chaleur insuffisante par le bas pour un fond → trop de chaleur voûte), ou moule sombre conducteur.",
+          "fix": "Position basse pour les fonds de tarte. Moule clair ou perforé (meilleure conduction et évaporation)."
         },
         {
-          “problem”: “Fond humide et mou”,
-          “cause”: “Cuisson insuffisante, ou garniture trop humide posée sur un fond mal précuit.”,
-          “fix”: “Toujours cuire à blanc pour les tartes à garnitures humides. Lustrer le fond avec un peu de blanc d’œuf battu pour imperméabiliser.”
+          "problem": "Fond humide et mou",
+          "cause": "Cuisson insuffisante, ou garniture trop humide posée sur un fond mal précuit.",
+          "fix": "Toujours cuire à blanc pour les tartes à garnitures humides. Lustrer le fond avec un peu de blanc d’œuf battu pour imperméabiliser."
         }
       ],
-      “practiceDrills”: [
+      "practiceDrills": [
         {
-          “title”: “Pâte sablée : test du sablage et du repos”,
-          “duration”: “45 min + 30 min repos”,
-          “instructions”: “150g farine + 75g beurre froid + 30g sucre + 1 pincée sel + 1 jaune. Sablage au bout des doigts. Incorporer jaune + 1-2 cuillères eau froide. Diviser en 2 : version cuite immédiatement, version reposée 1h. Comparer la rétraction et la texture.”,
-          “goal”: “Mesurer physiquement l’impact du repos sur la rétraction et la texture finale.”
+          "title": "Pâte sablée : test du sablage et du repos",
+          "duration": "45 min + 30 min repos",
+          "instructions": "150g farine + 75g beurre froid + 30g sucre + 1 pincée sel + 1 jaune. Sablage au bout des doigts. Incorporer jaune + 1-2 cuillères eau froide. Diviser en 2 : version cuite immédiatement, version reposée 1h. Comparer la rétraction et la texture.",
+          "goal": "Mesurer physiquement l’impact du repos sur la rétraction et la texture finale."
         },
         {
-          “title”: “Fonçage et cuisson à blanc”,
-          “duration”: “30 min”,
-          “instructions”: “Foncer un moule de 20cm avec la pâte sablée. Chiqueter les bords. Piquer le fond. Placer film + haricots secs. Four 180°C, 15 min. Retirer lest, 8 min. Observer et noter l’état : rétraction, couleur, croustillant.”,
-          “goal”: “Maîtriser la cuisson à blanc et les signes d’un fond parfaitement cuit avant garniture.”
+          "title": "Fonçage et cuisson à blanc",
+          "duration": "30 min",
+          "instructions": "Foncer un moule de 20cm avec la pâte sablée. Chiqueter les bords. Piquer le fond. Placer film + haricots secs. Four 180°C, 15 min. Retirer lest, 8 min. Observer et noter l’état : rétraction, couleur, croustillant.",
+          "goal": "Maîtriser la cuisson à blanc et les signes d’un fond parfaitement cuit avant garniture."
         }
       ],
-      “masteryCriteria”: [
-        “Tu peux expliquer pourquoi le beurre froid est obligatoire pour le sablage.”,
-        “Tu sais la différence entre pâte brisée, sablée et sucrée et quand utiliser chacune.”,
-        “Tu réalises un fonçage sans étirer la pâte.”,
-        “Tu maîtrises la cuisson à blanc et reconnais un fond correctement cuit.”,
-        “Tu pèses tous les ingrédients au gramme sans approximation.”
+      "masteryCriteria": [
+        "Tu peux expliquer pourquoi le beurre froid est obligatoire pour le sablage.",
+        "Tu sais la différence entre pâte brisée, sablée et sucrée et quand utiliser chacune.",
+        "Tu réalises un fonçage sans étirer la pâte.",
+        "Tu maîtrises la cuisson à blanc et reconnais un fond correctement cuit.",
+        "Tu pèses tous les ingrédients au gramme sans approximation."
       ],
-      “proTip”: “Prépare tes pâtes la veille et laisse-les reposer toute la nuit au réfrigérateur. Le résultat est incomparablement meilleur qu’une pâte cuite le jour même — les pros ne font jamais autrement. Une pâte reposée 12h s’étale sans résistance, ne se rétracte pas, et donne une texture parfaitement friable.”,
-      “mentorBrief”: “La pâtisserie est une chimie : les ratios sont des formules, pas des suggestions. Mais la vraie compétence n’est pas de mémoriser les ratios — c’est de comprendre POURQUOI ils existent. Comprendre le gluten, le rôle du beurre et du repos transforme une recette en connaissance transférable à n’importe quelle pâte.”,
-      “technicalVocabulary”: [
+      "proTip": "Prépare tes pâtes la veille et laisse-les reposer toute la nuit au réfrigérateur. Le résultat est incomparablement meilleur qu’une pâte cuite le jour même — les pros ne font jamais autrement. Une pâte reposée 12h s’étale sans résistance, ne se rétracte pas, et donne une texture parfaitement friable.",
+      "mentorBrief": "La pâtisserie est une chimie : les ratios sont des formules, pas des suggestions. Mais la vraie compétence n’est pas de mémoriser les ratios — c’est de comprendre POURQUOI ils existent. Comprendre le gluten, le rôle du beurre et du repos transforme une recette en connaissance transférable à n’importe quelle pâte.",
+      "technicalVocabulary": [
         {
-          “term”: “Sablage”,
-          “definition”: “Technique d’enrobage de la farine par le gras froid pour limiter le développement du gluten lors de l’ajout du liquide.”
+          "term": "Sablage",
+          "definition": "Technique d’enrobage de la farine par le gras froid pour limiter le développement du gluten lors de l’ajout du liquide."
         },
         {
-          “term”: “Réseau glutineux”,
-          “definition”: “Structure tridimensionnelle élastique formée par les protéines gluténine et gliadine de la farine en présence d’eau et de travail mécanique.”
+          "term": "Réseau glutineux",
+          "definition": "Structure tridimensionnelle élastique formée par les protéines gluténine et gliadine de la farine en présence d’eau et de travail mécanique."
         },
         {
-          “term”: “Fraser”,
-          “definition”: “Geste de finition d’une pâte : écraser horizontalement la pâte contre le plan de travail avec la paume pour homogénéiser sans développer le gluten.”
+          "term": "Fraser",
+          "definition": "Geste de finition d’une pâte : écraser horizontalement la pâte contre le plan de travail avec la paume pour homogénéiser sans développer le gluten."
         },
         {
-          “term”: “Cuisson à blanc”,
-          “definition”: “Précuisson d’un fond de tarte sans garniture, lestée pour éviter le gonflement, pour qu’il soit croustillant avant de recevoir une garniture humide.”
+          "term": "Cuisson à blanc",
+          "definition": "Précuisson d’un fond de tarte sans garniture, lestée pour éviter le gonflement, pour qu’il soit croustillant avant de recevoir une garniture humide."
         },
         {
-          “term”: “Fonçage”,
-          “definition”: “Action de poser la pâte étalée dans le moule sans étirer, en laissant tomber la pâte par gravité et en la plaquant délicatement.”
+          "term": "Fonçage",
+          "definition": "Action de poser la pâte étalée dans le moule sans étirer, en laissant tomber la pâte par gravité et en la plaquant délicatement."
         }
       ],
-      “guidedLab”: [
+      "guidedLab": [
         {
-          “task”: “Pâte sablée comparée : avec et sans sablage”,
-          “duration”: “60 min”,
-          “instructions”: “Faire la même pâte en 2 versions : (A) sablage correct beurre froid bout des doigts, (B) beurre fondu incorporé. Cuire les 2 fonds à blanc. Observer texture, rétraction, friabilité.”,
-          “expected”: “Version A : friable, croustillante, aucune rétraction. Version B : dure, dense, rétractée. La différence illustre concrètement le rôle du sablage.”
+          "task": "Pâte sablée comparée : avec et sans sablage",
+          "duration": "60 min",
+          "instructions": "Faire la même pâte en 2 versions : (A) sablage correct beurre froid bout des doigts, (B) beurre fondu incorporé. Cuire les 2 fonds à blanc. Observer texture, rétraction, friabilité.",
+          "expected": "Version A : friable, croustillante, aucune rétraction. Version B : dure, dense, rétractée. La différence illustre concrètement le rôle du sablage."
         },
         {
-          “task”: “Test des 3 beurres : froid, pommade, fondu”,
-          “duration”: “45 min”,
-          “instructions”: “Faire 3 petits sablés identiques avec 3 états de beurre : froid sablé, pommade crémé avec sucre, fondu incorporé. Cuire. Observer et goûter les textures côte à côte.”,
-          “expected”: “Froid = friable et sec. Pommade = fondant et un peu aéré. Fondu = dense et plat. Comprendre comment l’état du beurre programme la texture finale.”
+          "task": "Test des 3 beurres : froid, pommade, fondu",
+          "duration": "45 min",
+          "instructions": "Faire 3 petits sablés identiques avec 3 états de beurre : froid sablé, pommade crémé avec sucre, fondu incorporé. Cuire. Observer et goûter les textures côte à côte.",
+          "expected": "Froid = friable et sec. Pommade = fondant et un peu aéré. Fondu = dense et plat. Comprendre comment l’état du beurre programme la texture finale."
         }
       ],
-      “progressionStages”: [
+      "progressionStages": [
         {
-          “level”: “Débutant”,
-          “standard”: “Tu réalises une pâte brisée ou sablée avec sablage correct et repos de 30 min.”
+          "level": "Débutant",
+          "standard": "Tu réalises une pâte brisée ou sablée avec sablage correct et repos de 30 min."
         },
         {
-          “level”: “Intermédiaire”,
-          “standard”: “Tu fonçes sans étirer, tu cuis à blanc correctement, tu choisis la pâte selon la recette.”
+          "level": "Intermédiaire",
+          "standard": "Tu fonçes sans étirer, tu cuis à blanc correctement, tu choisis la pâte selon la recette."
         },
         {
-          “level”: “Excellent amateur”,
-          “standard”: “Tu maîtrises les 3 pâtes (brisée, sablée, sucrée), tu adaptes l’épaisseur, le repos et la cuisson selon la garniture.”
+          "level": "Excellent amateur",
+          "standard": "Tu maîtrises les 3 pâtes (brisée, sablée, sucrée), tu adaptes l’épaisseur, le repos et la cuisson selon la garniture."
         },
         {
-          “level”: “Expert”,
-          “standard”: “Tu réalises une pâte feuilletée classique (tourages). Tu comprends les formules de pâte à choux, génoise et biscuit.”
+          "level": "Expert",
+          "standard": "Tu réalises une pâte feuilletée classique (tourages). Tu comprends les formules de pâte à choux, génoise et biscuit."
         }
       ],
-      “assessmentRubric”: [
+      "assessmentRubric": [
         {
-          “criterion”: “Technique du sablage”,
-          “standard”: “Beurre froid, bout des doigts uniquement, résultat sableux sans morceaux.”
+          "criterion": "Technique du sablage",
+          "standard": "Beurre froid, bout des doigts uniquement, résultat sableux sans morceaux."
         },
         {
-          “criterion”: “Repos”,
-          “standard”: “30 min minimum au froid, film alimentaire, avant d’étaler.”
+          "criterion": "Repos",
+          "standard": "30 min minimum au froid, film alimentaire, avant d’étaler."
         },
         {
-          “criterion”: “Fonçage”,
-          “standard”: “Pas d’étirement, pâte posée par gravité, bords réguliers.”
+          "criterion": "Fonçage",
+          "standard": "Pas d’étirement, pâte posée par gravité, bords réguliers."
         },
         {
-          “criterion”: “Cuisson”,
-          “standard”: “Fond doré et croustillant, cuisson à blanc avec lest quand nécessaire.”
+          "criterion": "Cuisson",
+          "standard": "Fond doré et croustillant, cuisson à blanc avec lest quand nécessaire."
         }
       ],
-      “antiBacle”: [
-        “Ne travaille jamais le beurre avec les paumes lors du sablage — la chaleur corporelle fond le beurre et détruit le sablage.”,
-        “Ne saute jamais le repos au froid — la rétraction est garantie.”,
-        “Ne tire jamais la pâte lors du fonçage — elle se rétracte toujours.”,
-        “Ne mesure jamais en volume pour la pâtisserie — balance de précision obligatoire.”
+      "antiBacle": [
+        "Ne travaille jamais le beurre avec les paumes lors du sablage — la chaleur corporelle fond le beurre et détruit le sablage.",
+        "Ne saute jamais le repos au froid — la rétraction est garantie.",
+        "Ne tire jamais la pâte lors du fonçage — elle se rétracte toujours.",
+        "Ne mesure jamais en volume pour la pâtisserie — balance de précision obligatoire."
       ],
-      “commonMisconceptions”: [
-        “Pâte homogène = bien pétrie. Faux : une pâte sablée doit être à peine homogène, pas parfaitement lisse. S’arrêter dès que les ingrédients sont juste assemblés.”,
-        “Plus de beurre = meilleure pâte. Faux : le ratio beurre/farine détermine la texture. Trop de beurre = pâte qui s’effondre. Le ratio classique pâte sablée est 2 parts de farine pour 1 part de beurre.”
+      "commonMisconceptions": [
+        "Pâte homogène = bien pétrie. Faux : une pâte sablée doit être à peine homogène, pas parfaitement lisse. S’arrêter dès que les ingrédients sont juste assemblés.",
+        "Plus de beurre = meilleure pâte. Faux : le ratio beurre/farine détermine la texture. Trop de beurre = pâte qui s’effondre. Le ratio classique pâte sablée est 2 parts de farine pour 1 part de beurre."
       ],
-      “realKitchenTransfer”: “La logique du sablage (enrober de gras avant le liquide) s’applique aussi aux crumbles, streusel et certaines chapelures. La logique du repos (laisser le gluten se détendre) s’applique à la pâte à pizza, aux tartes et aux pâtes fraîches. Ces deux principes couvrent 80% de la pâtisserie et de la boulangerie amateur.”,
-      “capstonePractice”: {
-        “title”: “Tarte sablée aux fruits : pâte de A à Z”,
-        “instructions”: “Réaliser une pâte sablée (sablage, repos 1h). Foncer un moule. Cuire à blanc (fond sec, doré). Laisser refroidir. Garnir de crème pâtissière + fruits frais de saison. La qualité du fond est le seul facteur de succès — si le fond est bien cuit et croustillant, la tarte sera réussie.”,
-        “expected”: “Fond croustillant et friable, aucune rétraction, couleur dorée uniforme. Texture fondante à la dégustation, sans dureté ni mollesse.”
+      "realKitchenTransfer": "La logique du sablage (enrober de gras avant le liquide) s’applique aussi aux crumbles, streusel et certaines chapelures. La logique du repos (laisser le gluten se détendre) s’applique à la pâte à pizza, aux tartes et aux pâtes fraîches. Ces deux principes couvrent 80% de la pâtisserie et de la boulangerie amateur.",
+      "capstonePractice": {
+        "title": "Tarte sablée aux fruits : pâte de A à Z",
+        "instructions": "Réaliser une pâte sablée (sablage, repos 1h). Foncer un moule. Cuire à blanc (fond sec, doré). Laisser refroidir. Garnir de crème pâtissière + fruits frais de saison. La qualité du fond est le seul facteur de succès — si le fond est bien cuit et croustillant, la tarte sera réussie.",
+        "expected": "Fond croustillant et friable, aucune rétraction, couleur dorée uniforme. Texture fondante à la dégustation, sans dureté ni mollesse."
       },
-      “quizIds”: [
-        “q-v19-l-pate-1-0”,
+      "quizIds": [
+        "q-v19-l-pate-1-0",
         "q-v19-l-pate-1-1",
         "q-v19-l-pate-1-2",
         "q-v19-l-pate-1-3",
@@ -7830,195 +7830,195 @@ window.CUISINE_DATA = {
           "explanation": "Le temps dépend du four et de la taille."
         }
       ],
-      “principles”: [
+      "principles": [
         {
-          “title”: “Le gras blinde le gluten”,
-          “body”: “La friabilité vient du gras qui limite le réseau de gluten ; trop travailler rend la pâte dure.”
+          "title": "Le gras blinde le gluten",
+          "body": "La friabilité vient du gras qui limite le réseau de gluten ; trop travailler rend la pâte dure."
         },
         {
-          “title”: “Sablage = enrobage de la farine”,
-          “body”: “Le sablage (frotter beurre froid + farine du bout des doigts) enrobe chaque grain de farine d’une pellicule de gras. Quand l’eau est ajoutée, la gliadine et la gluténine ne peuvent pas s’hydrater complètement → réseau glutineux minimal → texture friable.”
+          "title": "Sablage = enrobage de la farine",
+          "body": "Le sablage (frotter beurre froid + farine du bout des doigts) enrobe chaque grain de farine d’une pellicule de gras. Quand l’eau est ajoutée, la gliadine et la gluténine ne peuvent pas s’hydrater complètement → réseau glutineux minimal → texture friable."
         },
         {
-          “title”: “Température du beurre : tout ou rien”,
-          “body”: “Beurre froid (< 10°C) = sablage efficace, texture friable. Beurre mou = les grains de farine baignent dans le gras sans être enrobés → le réseau glutineux se forme quand même → pâte dure et élastique.”
+          "title": "Température du beurre : tout ou rien",
+          "body": "Beurre froid (< 10°C) = sablage efficace, texture friable. Beurre mou = les grains de farine baignent dans le gras sans être enrobés → le réseau glutineux se forme quand même → pâte dure et élastique."
         },
         {
-          “title”: “Le repos au froid : trois fonctions”,
-          “body”: “30 minutes minimum au froid : 1) le beurre se resolidifie et stoppe le développement du gluten, 2) l’humidité se distribue uniformément dans la pâte, 3) le gluten formé se détend → rétraction minimale à la cuisson.”
+          "title": "Le repos au froid : trois fonctions",
+          "body": "30 minutes minimum au froid : 1) le beurre se resolidifie et stoppe le développement du gluten, 2) l’humidité se distribue uniformément dans la pâte, 3) le gluten formé se détend → rétraction minimale à la cuisson."
         },
         {
-          “title”: “Fraser une fois, pas pétrir”,
-          “body”: “Fraser = écraser la pâte une seule fois contre le plan de travail avec la paume, sans replier. Homogénéise sans chauffer ni développer le gluten. Pétrir = erreur fatale pour la friabilité.”
+          "title": "Fraser une fois, pas pétrir",
+          "body": "Fraser = écraser la pâte une seule fois contre le plan de travail avec la paume, sans replier. Homogénéise sans chauffer ni développer le gluten. Pétrir = erreur fatale pour la friabilité."
         }
       ],
-      “techniqueSteps”: [
+      "techniqueSteps": [
         {
-          “title”: “Sabler beurre froid + farine”,
-          “action”: “Beurre sorti du frigo et coupé en petits dés. Du bout des doigts (jamais la paume — trop chaude), mélanger beurre + farine + sucre glace en ‘effritant’ jusqu’à obtenir une texture sablonneuse, comme du sable humide.”,
-          “cue”: “Aucun morceau de beurre visible, mélange ressemble à de la chapelure fine.”,
-          “mistake”: “Travailler avec les paumes → beurre fond → pâte élastique et dure.”,
-          “correction”: “Si le beurre commence à fondre : 10 minutes au congélateur, puis reprendre.”
+          "title": "Sabler beurre froid + farine",
+          "action": "Beurre sorti du frigo et coupé en petits dés. Du bout des doigts (jamais la paume — trop chaude), mélanger beurre + farine + sucre glace en ‘effritant’ jusqu’à obtenir une texture sablonneuse, comme du sable humide.",
+          "cue": "Aucun morceau de beurre visible, mélange ressemble à de la chapelure fine.",
+          "mistake": "Travailler avec les paumes → beurre fond → pâte élastique et dure.",
+          "correction": "Si le beurre commence à fondre : 10 minutes au congélateur, puis reprendre."
         },
         {
-          “title”: “Ajouter l’œuf/liquide minimal, sans pétrir”,
-          “action”: “Creuser un puits. Verser l’œuf battu (ou eau glacée) en une seule fois. Mélanger très brièvement avec une corne ou spatule, juste jusqu’à ce que la pâte s’agglomère. Arrêter dès qu’elle tient ensemble.”,
-          “cue”: “La pâte est homogène mais hétérogène — quelques traces de beurre encore visibles, pas lisse.”,
-          “mistake”: “Continuer à mélanger jusqu’à texture lisse → réseau glutineux trop développé.”,
-          “correction”: “S’arrêter 10 secondes trop tôt plutôt que 10 secondes trop tard.”
+          "title": "Ajouter l’œuf/liquide minimal, sans pétrir",
+          "action": "Creuser un puits. Verser l’œuf battu (ou eau glacée) en une seule fois. Mélanger très brièvement avec une corne ou spatule, juste jusqu’à ce que la pâte s’agglomère. Arrêter dès qu’elle tient ensemble.",
+          "cue": "La pâte est homogène mais hétérogène — quelques traces de beurre encore visibles, pas lisse.",
+          "mistake": "Continuer à mélanger jusqu’à texture lisse → réseau glutineux trop développé.",
+          "correction": "S’arrêter 10 secondes trop tôt plutôt que 10 secondes trop tard."
         },
         {
-          “title”: “Fraser une fois”,
-          “action”: “Sur le plan de travail légèrement fariné, écraser la pâte en un seul passage de la paume, de gauche à droite. Rassembler en boule et filmer.”,
-          “cue”: “La pâte est lisse après frasage, sans traces de beurre, mais ne colle pas.”,
-          “mistake”: “Faire plusieurs allers-retours de frasage.”,
-          “correction”: “Un seul passage de la paume, puis au frigo immédiatement.”
+          "title": "Fraser une fois",
+          "action": "Sur le plan de travail légèrement fariné, écraser la pâte en un seul passage de la paume, de gauche à droite. Rassembler en boule et filmer.",
+          "cue": "La pâte est lisse après frasage, sans traces de beurre, mais ne colle pas.",
+          "mistake": "Faire plusieurs allers-retours de frasage.",
+          "correction": "Un seul passage de la paume, puis au frigo immédiatement."
         },
         {
-          “title”: “Repos au froid 30 min minimum”,
-          “action”: “Film alimentaire, disque aplati (pas boule — plus rapide à refroidir), 30 min au frigo. Peut rester jusqu’à 48h.”,
-          “cue”: “Pâte ferme au toucher, froide, ne colle pas au film.”,
-          “mistake”: “Abaisser directement sans repos : pâte trop molle, colle, se rétracte à la cuisson.”,
-          “correction”: “Si urgence : 15 min au congélateur au lieu de 30 min au frigo.”
+          "title": "Repos au froid 30 min minimum",
+          "action": "Film alimentaire, disque aplati (pas boule — plus rapide à refroidir), 30 min au frigo. Peut rester jusqu’à 48h.",
+          "cue": "Pâte ferme au toucher, froide, ne colle pas au film.",
+          "mistake": "Abaisser directement sans repos : pâte trop molle, colle, se rétracte à la cuisson.",
+          "correction": "Si urgence : 15 min au congélateur au lieu de 30 min au frigo."
         },
         {
-          “title”: “Abaisser et cuire à blanc”,
-          “action”: “Sortir 5 min du frigo. Abaisser sur papier sulfurisé à 3-4 mm. Foncer le moule. Piquer le fond. Repos 15 min au frigo. Four 180°C, billes 15 min, sans billes 5-8 min jusqu’à dorure uniforme.”,
-          “cue”: “Fond doré, sec, légèrement coloré — pas pâle ni gonflé.”,
-          “mistake”: “Sortir la pâte trop longtemps du frigo avant d’abaisser → colle, se déforme.”,
-          “correction”: “Abaisser vite sur surface froide. Si ça colle : 5 min au frigo.”
+          "title": "Abaisser et cuire à blanc",
+          "action": "Sortir 5 min du frigo. Abaisser sur papier sulfurisé à 3-4 mm. Foncer le moule. Piquer le fond. Repos 15 min au frigo. Four 180°C, billes 15 min, sans billes 5-8 min jusqu’à dorure uniforme.",
+          "cue": "Fond doré, sec, légèrement coloré — pas pâle ni gonflé.",
+          "mistake": "Sortir la pâte trop longtemps du frigo avant d’abaisser → colle, se déforme.",
+          "correction": "Abaisser vite sur surface froide. Si ça colle : 5 min au frigo."
         }
       ],
-      “sensoryCues”: {
-        “see”: “Cuite : doré homogène, bord légèrement plus coloré, aucune zone pâle ni gonflée.”,
-        “smell”: “Odeur de beurre noisette et sucre légèrement caramélisé — jamais brûlé.”,
-        “taste”: “Croquante et friable sous la dent, fond en bouche en quelques secondes, goût beurré prononcé.”,
-        “touch”: “Pâte crue : froide, ferme, ne colle pas. Cuite : craque nettement sous la pression.”,
-        “hear”: “Bruit sec et net quand on casse la pâte cuite — pas de mollesse.”
+      "sensoryCues": {
+        "see": "Cuite : doré homogène, bord légèrement plus coloré, aucune zone pâle ni gonflée.",
+        "smell": "Odeur de beurre noisette et sucre légèrement caramélisé — jamais brûlé.",
+        "taste": "Croquante et friable sous la dent, fond en bouche en quelques secondes, goût beurré prononcé.",
+        "touch": "Pâte crue : froide, ferme, ne colle pas. Cuite : craque nettement sous la pression.",
+        "hear": "Bruit sec et net quand on casse la pâte cuite — pas de mollesse."
       },
-      “troubleshooting”: [
+      "troubleshooting": [
         {
-          “problem”: “Pâte qui se rétracte à la cuisson”,
-          “cause”: “Trop travaillée (réseau glutineux trop développé) ou pas assez reposée.”,
-          “fix”: “Repos obligatoire 30 min minimum. Lors du fonçage, ne pas étirer la pâte — la laisser tomber d’elle-même dans le moule.”
+          "problem": "Pâte qui se rétracte à la cuisson",
+          "cause": "Trop travaillée (réseau glutineux trop développé) ou pas assez reposée.",
+          "fix": "Repos obligatoire 30 min minimum. Lors du fonçage, ne pas étirer la pâte — la laisser tomber d’elle-même dans le moule."
         },
         {
-          “problem”: “Pâte dure, non friable”,
-          “cause”: “Beurre trop mou lors du sablage, ou trop de travail après ajout du liquide.”,
-          “fix”: “Non récupérable. La prochaine fois : beurre sorti du frigo 5 min seulement, et arrêter le mélange dès que la pâte s’agglomère.”
+          "problem": "Pâte dure, non friable",
+          "cause": "Beurre trop mou lors du sablage, ou trop de travail après ajout du liquide.",
+          "fix": "Non récupérable. La prochaine fois : beurre sorti du frigo 5 min seulement, et arrêter le mélange dès que la pâte s’agglomère."
         },
         {
-          “problem”: “Fond qui gonfle à la cuisson à blanc”,
-          “cause”: “Pâte non piquée ou billes insuffisantes.”,
-          “fix”: “Piquer systématiquement et veiller à ce que les billes couvrent toute la surface et remontent sur les bords.”
+          "problem": "Fond qui gonfle à la cuisson à blanc",
+          "cause": "Pâte non piquée ou billes insuffisantes.",
+          "fix": "Piquer systématiquement et veiller à ce que les billes couvrent toute la surface et remontent sur les bords."
         }
       ],
-      “practiceDrills”: [
+      "practiceDrills": [
         {
-          “title”: “Sablage comparatif (beurre froid vs beurre mou)”,
-          “duration”: “30 min”,
-          “instructions”: “Fais deux petites portions de pâte : une avec beurre froid, une avec beurre mou (pommade). Cuis et compare la texture.”,
-          “goal”: “Mémoriser par les sens l’impact de la température du beurre sur la friabilité.”
+          "title": "Sablage comparatif (beurre froid vs beurre mou)",
+          "duration": "30 min",
+          "instructions": "Fais deux petites portions de pâte : une avec beurre froid, une avec beurre mou (pommade). Cuis et compare la texture.",
+          "goal": "Mémoriser par les sens l’impact de la température du beurre sur la friabilité."
         },
         {
-          “title”: “Cuisson à blanc avec et sans billes”,
-          “duration”: “25 min”,
-          “instructions”: “Cuis deux fonds : un avec billes + piquer, un sans. Observe le gonflement et la coloration.”,
-          “goal”: “Comprendre pourquoi chaque étape (piquer, billes, repos) est nécessaire.”
+          "title": "Cuisson à blanc avec et sans billes",
+          "duration": "25 min",
+          "instructions": "Cuis deux fonds : un avec billes + piquer, un sans. Observe le gonflement et la coloration.",
+          "goal": "Comprendre pourquoi chaque étape (piquer, billes, repos) est nécessaire."
         }
       ],
-      “masteryCriteria”: [
-        “Tu expliques pourquoi le beurre doit être froid en nommant le mécanisme glutineux.”,
-        “Tu fais une pâte sablée friable sans qu’elle se rétracte à la cuisson.”,
-        “Tu sais adapter le repos (frigo 30 min, congélateur 15 min, conservation 48h).”,
-        “Tu cuis à blanc avec billes et obtiens un fond doré et sec.”
+      "masteryCriteria": [
+        "Tu expliques pourquoi le beurre doit être froid en nommant le mécanisme glutineux.",
+        "Tu fais une pâte sablée friable sans qu’elle se rétracte à la cuisson.",
+        "Tu sais adapter le repos (frigo 30 min, congélateur 15 min, conservation 48h).",
+        "Tu cuis à blanc avec billes et obtiens un fond doré et sec."
       ],
-      “proTip”: “Pour une pâte sablée ultra-friable : remplacer 20 % de la farine par de la poudre d’amandes. La matière grasse des amandes amplifie l’effet sablé du beurre et apporte un arôme noisette sans changer le processus.”,
-      “mentorBrief”: “La pâte sablée est un exercice de précision minimale : peser, ne pas chauffer, ne pas surtravailler. Chaque fois qu’une pâte est dure ou se rétracte, c’est que le gluten a été développé. La solution est toujours la même : plus froid, moins de travail.”,
-      “technicalVocabulary”: [
+      "proTip": "Pour une pâte sablée ultra-friable : remplacer 20 % de la farine par de la poudre d’amandes. La matière grasse des amandes amplifie l’effet sablé du beurre et apporte un arôme noisette sans changer le processus.",
+      "mentorBrief": "La pâte sablée est un exercice de précision minimale : peser, ne pas chauffer, ne pas surtravailler. Chaque fois qu’une pâte est dure ou se rétracte, c’est que le gluten a été développé. La solution est toujours la même : plus froid, moins de travail.",
+      "technicalVocabulary": [
         {
-          “term”: “Sablage”,
-          “definition”: “Technique d’enrobage de la farine par le beurre froid : chaque grain de farine isolé empêche le réseau glutineux de se former.”
+          "term": "Sablage",
+          "definition": "Technique d’enrobage de la farine par le beurre froid : chaque grain de farine isolé empêche le réseau glutineux de se former."
         },
         {
-          “term”: “Réseau glutineux”,
-          “definition”: “Structure protéique élastique formée par hydratation et travail mécanique de la farine — responsable de l’élasticité et de la rétraction.”
+          "term": "Réseau glutineux",
+          "definition": "Structure protéique élastique formée par hydratation et travail mécanique de la farine — responsable de l’élasticité et de la rétraction."
         },
         {
-          “term”: “Fraser”,
-          “definition”: “Écraser la pâte une fois contre le plan de travail avec la paume — homogénéise sans développer le gluten.”
+          "term": "Fraser",
+          "definition": "Écraser la pâte une fois contre le plan de travail avec la paume — homogénéise sans développer le gluten."
         },
         {
-          “term”: “Cuisson à blanc”,
-          “definition”: “Cuisson du fond de tarte garni de billes (ou haricots secs) avant la garniture — évite les gonflements et assure un fond croustillant.”
+          "term": "Cuisson à blanc",
+          "definition": "Cuisson du fond de tarte garni de billes (ou haricots secs) avant la garniture — évite les gonflements et assure un fond croustillant."
         },
         {
-          “term”: “Rétraction”,
-          “definition”: “Rétrécissement de la pâte à la cuisson, signe de réseau glutineux trop développé ou de repos insuffisant.”
+          "term": "Rétraction",
+          "definition": "Rétrécissement de la pâte à la cuisson, signe de réseau glutineux trop développé ou de repos insuffisant."
         }
       ],
-      “guidedLab”: [
+      "guidedLab": [
         {
-          “task”: “Pâte sablée classique avec cuisson à blanc”,
-          “duration”: “60 min (dont 30 min repos)”,
-          “instructions”: “250 g farine + 125 g beurre froid + 80 g sucre glace + 1 œuf. Sabler, ajouter œuf, fraser, disque, frigo 30 min. Abaisser 3 mm, foncer moule 22 cm, piquer, billes, 180°C 15 min, retirer billes, 8 min.”,
-          “expected”: “Fond doré, sec, friable, qui craque sous la dent.”
+          "task": "Pâte sablée classique avec cuisson à blanc",
+          "duration": "60 min (dont 30 min repos)",
+          "instructions": "250 g farine + 125 g beurre froid + 80 g sucre glace + 1 œuf. Sabler, ajouter œuf, fraser, disque, frigo 30 min. Abaisser 3 mm, foncer moule 22 cm, piquer, billes, 180°C 15 min, retirer billes, 8 min.",
+          "expected": "Fond doré, sec, friable, qui craque sous la dent."
         },
         {
-          “task”: “Mini-tartelettes pour s’entraîner”,
-          “duration”: “45 min”,
-          “instructions”: “Avec la même pâte, foncer 4-5 petits moules. Cuire à blanc à 180°C. Remplir avec crème pâtissière ou compote.”,
-          “expected”: “Fonds uniformément cuits, texture friable maintenue même avec la garniture humide.”
+          "task": "Mini-tartelettes pour s’entraîner",
+          "duration": "45 min",
+          "instructions": "Avec la même pâte, foncer 4-5 petits moules. Cuire à blanc à 180°C. Remplir avec crème pâtissière ou compote.",
+          "expected": "Fonds uniformément cuits, texture friable maintenue même avec la garniture humide."
         }
       ],
-      “progressionStages”: [
+      "progressionStages": [
         {
-          “level”: “Débutant”,
-          “standard”: “Tu sabler correctement et tu respectes le repos au froid.”
+          "level": "Débutant",
+          "standard": "Tu sabler correctement et tu respectes le repos au froid."
         },
         {
-          “level”: “Intermédiaire”,
-          “standard”: “Tu obtiens un fond sans rétraction et tu maîtrises la cuisson à blanc.”
+          "level": "Intermédiaire",
+          "standard": "Tu obtiens un fond sans rétraction et tu maîtrises la cuisson à blanc."
         },
         {
-          “level”: “Excellent amateur”,
-          “standard”: “Tu adaptes la recette (poudre d’amandes, vanille, zeste) et tu ajustes l’hydratation selon le rendu visuel de la pâte crue.”
+          "level": "Excellent amateur",
+          "standard": "Tu adaptes la recette (poudre d’amandes, vanille, zeste) et tu ajustes l’hydratation selon le rendu visuel de la pâte crue."
         }
       ],
-      “assessmentRubric”: [
+      "assessmentRubric": [
         {
-          “criterion”: “Texture”,
-          “standard”: “Pâte cuite friable et croquante, fond sec, aucune zone molle ou gommée.”
+          "criterion": "Texture",
+          "standard": "Pâte cuite friable et croquante, fond sec, aucune zone molle ou gommée."
         },
         {
-          “criterion”: “Forme”,
-          “standard”: “Pas de rétraction significative, bords nets, hauteur uniforme.”
+          "criterion": "Forme",
+          "standard": "Pas de rétraction significative, bords nets, hauteur uniforme."
         },
         {
-          “criterion”: “Compréhension”,
-          “standard”: “Tu expliques pourquoi le beurre froid et le repos sont indispensables.”
+          "criterion": "Compréhension",
+          "standard": "Tu expliques pourquoi le beurre froid et le repos sont indispensables."
         },
         {
-          “criterion”: “Répétabilité”,
-          “standard”: “Tu obtiens le même résultat deux fois d’affilée avec des ingrédients différents.”
+          "criterion": "Répétabilité",
+          "standard": "Tu obtiens le même résultat deux fois d’affilée avec des ingrédients différents."
         }
       ],
-      “antiBacle”: [
-        “Ne jamais travailler la pâte avec les paumes : la chaleur des mains fait fondre le beurre et développe le gluten.”,
-        “Ne pas sauter le repos : 30 minutes au frigo ne sont pas optionnelles pour une pâte sans rétraction.”,
-        “Ne pas étirer la pâte pour la faire rentrer dans le moule : la laisser tomber d’elle-même évite la rétraction.”
+      "antiBacle": [
+        "Ne jamais travailler la pâte avec les paumes : la chaleur des mains fait fondre le beurre et développe le gluten.",
+        "Ne pas sauter le repos : 30 minutes au frigo ne sont pas optionnelles pour une pâte sans rétraction.",
+        "Ne pas étirer la pâte pour la faire rentrer dans le moule : la laisser tomber d’elle-même évite la rétraction."
       ],
-      “commonMisconceptions”: [
-        “Pâte dure ≠ pas assez cuite. Pâte dure = trop travaillée ou beurre trop chaud lors du sablage. La cuisson n’y changera rien.”
+      "commonMisconceptions": [
+        "Pâte dure ≠ pas assez cuite. Pâte dure = trop travaillée ou beurre trop chaud lors du sablage. La cuisson n’y changera rien."
       ],
-      “realKitchenTransfer”: “Le même principe (sablage + beurre froid + repos) s’applique à la pâte brisée (moins sucrée, pour tartes salées) et à la pâte sucrée (encore plus de sucre, pour desserts fins). Trois pâtes différentes, un seul mécanisme à comprendre.”,
-      “capstonePractice”: {
-        “title”: “Tarte complète de A à Z”,
-        “instructions”: “Prépare une pâte sablée, cuis à blanc, garnis d’une crème pâtissière et de fruits frais. Évalue la texture du fond après remplissage : reste-t-il friable ou est-il devenu détrempé ?”,
-        “expected”: “Tu identifies si le fond est resté friable et tu expliques pourquoi la cuisson à blanc était nécessaire.”
+      "realKitchenTransfer": "Le même principe (sablage + beurre froid + repos) s’applique à la pâte brisée (moins sucrée, pour tartes salées) et à la pâte sucrée (encore plus de sucre, pour desserts fins). Trois pâtes différentes, un seul mécanisme à comprendre.",
+      "capstonePractice": {
+        "title": "Tarte complète de A à Z",
+        "instructions": "Prépare une pâte sablée, cuis à blanc, garnis d’une crème pâtissière et de fruits frais. Évalue la texture du fond après remplissage : reste-t-il friable ou est-il devenu détrempé ?",
+        "expected": "Tu identifies si le fond est resté friable et tu expliques pourquoi la cuisson à blanc était nécessaire."
       },
-      “quizIds”: [
-        “q-v19-l-pate-sablee-1-0”,
+      "quizIds": [
+        "q-v19-l-pate-sablee-1-0",
         "q-v19-l-pate-sablee-1-1",
         "q-v17-l-pate-sablee-1-0",
         "q-v17-l-pate-sablee-1-1",
@@ -8823,195 +8823,195 @@ window.CUISINE_DATA = {
           "explanation": "Le temps dépend du four et de la taille."
         }
       ],
-      “principles”: [
+      "principles": [
         {
-          “title”: “Pâtisserie = cuisine de ratios”,
-          “body”: “La pâtisserie est une cuisine de ratios : un petit écart change texture, volume et friabilité.”
+          "title": "Pâtisserie = cuisine de ratios",
+          "body": "La pâtisserie est une cuisine de ratios : un petit écart change texture, volume et friabilité."
         },
         {
-          “title”: “Les trois familles de texture”,
-          “body”: “Croustillant/friable (pâtes, feuilletage), moelleux/aéré (gâteaux, soufflés, génoise), fondant/crémeux (crèmes, ganaches, mousses). Chaque recette appartient à une famille et son mécanisme principal est différent — comprendre la famille avant la recette.”
+          "title": "Les trois familles de texture",
+          "body": "Croustillant/friable (pâtes, feuilletage), moelleux/aéré (gâteaux, soufflés, génoise), fondant/crémeux (crèmes, ganaches, mousses). Chaque recette appartient à une famille et son mécanisme principal est différent — comprendre la famille avant la recette."
         },
         {
-          “title”: “L’œuf : liant, émulsifiant, structure”,
-          “body”: “Blanc battu en neige = air emprisonné dans un réseau de protéines → légèreté. Jaune = lécithine → émulsification des appareils riches en gras. Œuf entier tempéré → meilleure incorporation dans la pâte.”
+          "title": "L’œuf : liant, émulsifiant, structure",
+          "body": "Blanc battu en neige = air emprisonné dans un réseau de protéines → légèreté. Jaune = lécithine → émulsification des appareils riches en gras. Œuf entier tempéré → meilleure incorporation dans la pâte."
         },
         {
-          “title”: “Le sucre : bien au-delà du goût sucré”,
-          “body”: “Le sucre retient l’humidité (hygroscopique) → moelleux prolongé. Interfère avec le réseau glutineux → pâte plus friable. Caramélise à 165°C (couleur et arôme). Son dosage change la texture autant que le goût.”
+          "title": "Le sucre : bien au-delà du goût sucré",
+          "body": "Le sucre retient l’humidité (hygroscopique) → moelleux prolongé. Interfère avec le réseau glutineux → pâte plus friable. Caramélise à 165°C (couleur et arôme). Son dosage change la texture autant que le goût."
         },
         {
-          “title”: “Température du beurre : trois états, trois usages”,
-          “body”: “Beurre froid → sablage (friabilité). Beurre pommade (18-20°C, s’écrase sans fondre) → crémage avec sucre, gâteaux moelleux. Beurre fondu → gâteaux denses et humides (brownies, fondants). Un seul degré d’écart change tout.”
+          "title": "Température du beurre : trois états, trois usages",
+          "body": "Beurre froid → sablage (friabilité). Beurre pommade (18-20°C, s’écrase sans fondre) → crémage avec sucre, gâteaux moelleux. Beurre fondu → gâteaux denses et humides (brownies, fondants). Un seul degré d’écart change tout."
         }
       ],
-      “techniqueSteps”: [
+      "techniqueSteps": [
         {
-          “title”: “Peser, pas mesurer en volume”,
-          “action”: “Balance de précision obligatoire. La farine en tasse peut varier de 30 % selon le tassement. Peser même les liquides (1 ml eau = 1 g, mais l’huile ≠ l’eau). Peser = répétabilité garantie.”,
-          “cue”: “Chaque ingrédient pesé séparément avant de commencer.”,
-          “mistake”: “Utiliser des mesures en volume pour les ingrédients secs.”,
-          “correction”: “Balance à 1 g près pour petites quantités (levure, sel, arômes).”
+          "title": "Peser, pas mesurer en volume",
+          "action": "Balance de précision obligatoire. La farine en tasse peut varier de 30 % selon le tassement. Peser même les liquides (1 ml eau = 1 g, mais l’huile ≠ l’eau). Peser = répétabilité garantie.",
+          "cue": "Chaque ingrédient pesé séparément avant de commencer.",
+          "mistake": "Utiliser des mesures en volume pour les ingrédients secs.",
+          "correction": "Balance à 1 g près pour petites quantités (levure, sel, arômes)."
         },
         {
-          “title”: “Tempérer les ingrédients”,
-          “action”: “Œufs et beurre pommade doivent être à température ambiante (20°C) pour les gâteaux. Crème fraîche froide pour fouetter. Ne pas mélanger ingrédients chauds et froids — le choc de température casse les émulsions.”,
-          “cue”: “Beurre pommade s’écrase sous le doigt sans fondre. Œuf tempéré non glacé.”,
-          “mistake”: “Beurre trop froid ou trop fondu pour un crémage → texture granuleuse.”,
-          “correction”: “Sortir beurre et œufs 30-45 min avant de commencer.”
+          "title": "Tempérer les ingrédients",
+          "action": "Œufs et beurre pommade doivent être à température ambiante (20°C) pour les gâteaux. Crème fraîche froide pour fouetter. Ne pas mélanger ingrédients chauds et froids — le choc de température casse les émulsions.",
+          "cue": "Beurre pommade s’écrase sous le doigt sans fondre. Œuf tempéré non glacé.",
+          "mistake": "Beurre trop froid ou trop fondu pour un crémage → texture granuleuse.",
+          "correction": "Sortir beurre et œufs 30-45 min avant de commencer."
         },
         {
-          “title”: “Respecter l’ordre d’incorporation”,
-          “action”: “Chaque recette a un ordre précis : gras + sucre → œufs → farine → liquide. Cet ordre n’est pas arbitraire : il construit la structure en couches (émulsion d’abord, structure ensuite).”,
-          “cue”: “Appareil lisse et homogène à chaque étape avant d’ajouter le suivant.”,
-          “mistake”: “Mélanger tout ensemble → grains, pâte irrégulière, volume insuffisant.”,
-          “correction”: “Lire la recette entière avant de commencer et respecter l’ordre.”
+          "title": "Respecter l’ordre d’incorporation",
+          "action": "Chaque recette a un ordre précis : gras + sucre → œufs → farine → liquide. Cet ordre n’est pas arbitraire : il construit la structure en couches (émulsion d’abord, structure ensuite).",
+          "cue": "Appareil lisse et homogène à chaque étape avant d’ajouter le suivant.",
+          "mistake": "Mélanger tout ensemble → grains, pâte irrégulière, volume insuffisant.",
+          "correction": "Lire la recette entière avant de commencer et respecter l’ordre."
         },
         {
-          “title”: “Incorporer les blancs en neige sans les casser”,
-          “action”: “Mélanger 1/4 des blancs dans l’appareil avec un fouet (pour l’alléger). Puis incorporer le reste à la maryse par mouvements amples de bas en haut — jamais de mouvement circulaire.”,
-          “cue”: “L’appareil reste aéré, léger, légèrement marbré au début.”,
-          “mistake”: “Fouetter vigoureusement les blancs dans l’appareil → mousse détruite.”,
-          “correction”: “Maryse, gestes lents et amples, arrêter dès que les traînées blanches disparaissent.”
+          "title": "Incorporer les blancs en neige sans les casser",
+          "action": "Mélanger 1/4 des blancs dans l’appareil avec un fouet (pour l’alléger). Puis incorporer le reste à la maryse par mouvements amples de bas en haut — jamais de mouvement circulaire.",
+          "cue": "L’appareil reste aéré, léger, légèrement marbré au début.",
+          "mistake": "Fouetter vigoureusement les blancs dans l’appareil → mousse détruite.",
+          "correction": "Maryse, gestes lents et amples, arrêter dès que les traînées blanches disparaissent."
         },
         {
-          “title”: “Cuire selon les signes, pas le minuteur seul”,
-          “action”: “Test cure-dent : inséré au centre, ressort sec. Rebond : appuie légèrement, la pâte reprend sa forme. Couleur dorée. Retrait des bords du moule. Vérifier avant la fin du temps indiqué.”,
-          “cue”: “Cure-dent sec, rebond franc, couleur dorée uniforme.”,
-          “mistake”: “Ouvrir le four dans les 2/3 du temps de cuisson → gâteau qui s’affaisse.”,
-          “correction”: “Ouvrir pour le premier contrôle aux 3/4 du temps indiqué, jamais avant.”
+          "title": "Cuire selon les signes, pas le minuteur seul",
+          "action": "Test cure-dent : inséré au centre, ressort sec. Rebond : appuie légèrement, la pâte reprend sa forme. Couleur dorée. Retrait des bords du moule. Vérifier avant la fin du temps indiqué.",
+          "cue": "Cure-dent sec, rebond franc, couleur dorée uniforme.",
+          "mistake": "Ouvrir le four dans les 2/3 du temps de cuisson → gâteau qui s’affaisse.",
+          "correction": "Ouvrir pour le premier contrôle aux 3/4 du temps indiqué, jamais avant."
         }
       ],
-      “sensoryCues”: {
-        “see”: “Croûte dorée uniforme, légère rétraction des bords du moule, surface mate (pas brillante = encore crue).”,
-        “smell”: “Odeur de beurre noisette et sucre caramélisé — jamais d’odeur de cru ni de brûlé.”,
-        “taste”: “Texture conforme à la famille : friable (pâtes), moelleux avec mâche (gâteaux), fondant (crèmes).”,
-        “touch”: “Rebond sous le doigt : la pâte reprend sa forme → cuite. Reste une empreinte → encore crue au centre.”,
-        “hear”: “Léger craquement à la sortie du four (gâteaux) — signe de cuisson aboutie.”
+      "sensoryCues": {
+        "see": "Croûte dorée uniforme, légère rétraction des bords du moule, surface mate (pas brillante = encore crue).",
+        "smell": "Odeur de beurre noisette et sucre caramélisé — jamais d’odeur de cru ni de brûlé.",
+        "taste": "Texture conforme à la famille : friable (pâtes), moelleux avec mâche (gâteaux), fondant (crèmes).",
+        "touch": "Rebond sous le doigt : la pâte reprend sa forme → cuite. Reste une empreinte → encore crue au centre.",
+        "hear": "Léger craquement à la sortie du four (gâteaux) — signe de cuisson aboutie."
       },
-      “troubleshooting”: [
+      "troubleshooting": [
         {
-          “problem”: “Gâteau qui s’affaisse au centre”,
-          “cause”: “Sous-cuit, four ouvert trop tôt, ou trop de levure (monte puis retombe).”,
-          “fix”: “Prolonger la cuisson 5-8 min. Vérifier le dosage de la levure (1 c. à café / 200 g farine max).”
+          "problem": "Gâteau qui s’affaisse au centre",
+          "cause": "Sous-cuit, four ouvert trop tôt, ou trop de levure (monte puis retombe).",
+          "fix": "Prolonger la cuisson 5-8 min. Vérifier le dosage de la levure (1 c. à café / 200 g farine max)."
         },
         {
-          “problem”: “Texture caoutchouteuse ou dense”,
-          “cause”: “Trop mélangé (gluten développé), ou beurre trop chaud lors de l’incorporation.”,
-          “fix”: “Non récupérable. Prochaine fois : arrêter le mélange dès homogénéité, pas après.”
+          "problem": "Texture caoutchouteuse ou dense",
+          "cause": "Trop mélangé (gluten développé), ou beurre trop chaud lors de l’incorporation.",
+          "fix": "Non récupérable. Prochaine fois : arrêter le mélange dès homogénéité, pas après."
         },
         {
-          “problem”: “Pâte qui ne monte pas”,
-          “cause”: “Levure chimique trop vieille, ou blancs battus trop tôt (retombés).”,
-          “fix”: “Tester la levure : une pincée dans l’eau chaude doit mousser immédiatement. Battre les blancs juste avant incorporation.”
+          "problem": "Pâte qui ne monte pas",
+          "cause": "Levure chimique trop vieille, ou blancs battus trop tôt (retombés).",
+          "fix": "Tester la levure : une pincée dans l’eau chaude doit mousser immédiatement. Battre les blancs juste avant incorporation."
         }
       ],
-      “practiceDrills”: [
+      "practiceDrills": [
         {
-          “title”: “Beurre à trois températures”,
-          “duration”: “20 min”,
-          “instructions”: “Prépare trois petits bols de beurre : froid, pommade, fondu. Essaie de faire un crémage sucre-beurre avec chacun. Observe la texture obtenue.”,
-          “goal”: “Mémoriser physiquement les trois états du beurre et leur impact.”
+          "title": "Beurre à trois températures",
+          "duration": "20 min",
+          "instructions": "Prépare trois petits bols de beurre : froid, pommade, fondu. Essaie de faire un crémage sucre-beurre avec chacun. Observe la texture obtenue.",
+          "goal": "Mémoriser physiquement les trois états du beurre et leur impact."
         },
         {
-          “title”: “Pesée vs mesure en volume”,
-          “duration”: “10 min”,
-          “instructions”: “Mesure 100 g de farine en tassant vs en versant délicatement dans la tasse. Pèse les deux. Note la différence.”,
-          “goal”: “Comprendre pourquoi peser est indispensable en pâtisserie.”
+          "title": "Pesée vs mesure en volume",
+          "duration": "10 min",
+          "instructions": "Mesure 100 g de farine en tassant vs en versant délicatement dans la tasse. Pèse les deux. Note la différence.",
+          "goal": "Comprendre pourquoi peser est indispensable en pâtisserie."
         }
       ],
-      “masteryCriteria”: [
-        “Tu identifies la famille de texture d’une recette avant de commencer.”,
-        “Tu pèses systématiquement tous les ingrédients, y compris les liquides.”,
-        “Tu choisis l’état du beurre selon la recette : froid, pommade ou fondu.”,
-        “Tu incorpores les blancs en neige sans les casser avec la bonne technique maryse.”
+      "masteryCriteria": [
+        "Tu identifies la famille de texture d’une recette avant de commencer.",
+        "Tu pèses systématiquement tous les ingrédients, y compris les liquides.",
+        "Tu choisis l’état du beurre selon la recette : froid, pommade ou fondu.",
+        "Tu incorpores les blancs en neige sans les casser avec la bonne technique maryse."
       ],
-      “proTip”: “La pâtisserie pardonne les petits écarts de technique si les proportions sont exactes. Commence toujours par une recette éprouvée, avec des ingrédients à température ambiante — les deux seules variables que tu contrôles vraiment sans matériel professionnel.”,
-      “mentorBrief”: “En pâtisserie, comprendre pourquoi ça fonctionne vaut mieux que mémoriser des recettes. Chaque recette réussie est un ratio précis entre gras, sucre, farine, liquide et air. Une fois les mécanismes compris (gluten, émulsion, air, Maillard), n’importe quelle recette devient lisible.”,
-      “technicalVocabulary”: [
+      "proTip": "La pâtisserie pardonne les petits écarts de technique si les proportions sont exactes. Commence toujours par une recette éprouvée, avec des ingrédients à température ambiante — les deux seules variables que tu contrôles vraiment sans matériel professionnel.",
+      "mentorBrief": "En pâtisserie, comprendre pourquoi ça fonctionne vaut mieux que mémoriser des recettes. Chaque recette réussie est un ratio précis entre gras, sucre, farine, liquide et air. Une fois les mécanismes compris (gluten, émulsion, air, Maillard), n’importe quelle recette devient lisible.",
+      "technicalVocabulary": [
         {
-          “term”: “Crémage”,
-          “definition”: “Technique de mélange beurre pommade + sucre jusqu’à blanchissement et légèreté : incorpore de l’air pour un gâteau moelleux.”
+          "term": "Crémage",
+          "definition": "Technique de mélange beurre pommade + sucre jusqu’à blanchissement et légèreté : incorpore de l’air pour un gâteau moelleux."
         },
         {
-          “term”: “Beurre pommade”,
-          “definition”: “Beurre à température ambiante (18-20°C) qui s’écrase facilement sans fondre — état idéal pour le crémage.”
+          "term": "Beurre pommade",
+          "definition": "Beurre à température ambiante (18-20°C) qui s’écrase facilement sans fondre — état idéal pour le crémage."
         },
         {
-          “term”: “Levure chimique (bicarbonate)”,
-          “definition”: “Agent levant chimique : réagit avec l’humidité et la chaleur pour libérer du CO₂ → légèreté.”
+          "term": "Levure chimique (bicarbonate)",
+          "definition": "Agent levant chimique : réagit avec l’humidité et la chaleur pour libérer du CO₂ → légèreté."
         },
         {
-          “term”: “Tempérer les ingrédients”,
-          “definition”: “Amener œufs et beurre à température ambiante avant incorporation pour éviter les chocs thermiques.”
+          "term": "Tempérer les ingrédients",
+          "definition": "Amener œufs et beurre à température ambiante avant incorporation pour éviter les chocs thermiques."
         },
         {
-          “term”: “Test cure-dent”,
-          “definition”: “Insérer au centre d’un gâteau : sec = cuit ; avec traces de pâte crue = poursuivre la cuisson.”
+          "term": "Test cure-dent",
+          "definition": "Insérer au centre d’un gâteau : sec = cuit ; avec traces de pâte crue = poursuivre la cuisson."
         }
       ],
-      “guidedLab”: [
+      "guidedLab": [
         {
-          “task”: “Gâteau quatre-quarts : la base de tout”,
-          “duration”: “50 min”,
-          “instructions”: “200 g beurre pommade + 200 g sucre (crémer) + 4 œufs tempérés (un par un) + 200 g farine + 1 c. à café levure. Moule beurré, 170°C 40 min. Cure-dent test.”,
-          “expected”: “Gâteau doré, moelleux, cure-dent sec. Tu identifies le crémage, l’incorporation et la cuisson.”
+          "task": "Gâteau quatre-quarts : la base de tout",
+          "duration": "50 min",
+          "instructions": "200 g beurre pommade + 200 g sucre (crémer) + 4 œufs tempérés (un par un) + 200 g farine + 1 c. à café levure. Moule beurré, 170°C 40 min. Cure-dent test.",
+          "expected": "Gâteau doré, moelleux, cure-dent sec. Tu identifies le crémage, l’incorporation et la cuisson."
         },
         {
-          “task”: “Test blanc en neige dans une mousse au chocolat”,
-          “duration”: “30 min”,
-          “instructions”: “Faire fondre 150 g chocolat noir. Battre 3 blancs en neige ferme. Incorporer à la maryse. Réfrigérer 1h. Comparer avec une version où les blancs sont cassés.”,
-          “expected”: “Version réussie = mousse légère et aérée. Version ratée = crème dense. Comprendre le rôle de l’air.”
+          "task": "Test blanc en neige dans une mousse au chocolat",
+          "duration": "30 min",
+          "instructions": "Faire fondre 150 g chocolat noir. Battre 3 blancs en neige ferme. Incorporer à la maryse. Réfrigérer 1h. Comparer avec une version où les blancs sont cassés.",
+          "expected": "Version réussie = mousse légère et aérée. Version ratée = crème dense. Comprendre le rôle de l’air."
         }
       ],
-      “progressionStages”: [
+      "progressionStages": [
         {
-          “level”: “Débutant”,
-          “standard”: “Tu pèses tous les ingrédients et tu respectes l’ordre d’incorporation.”
+          "level": "Débutant",
+          "standard": "Tu pèses tous les ingrédients et tu respectes l’ordre d’incorporation."
         },
         {
-          “level”: “Intermédiaire”,
-          “standard”: “Tu identifies l’état du beurre nécessaire et tu incorpores les blancs sans les casser.”
+          "level": "Intermédiaire",
+          "standard": "Tu identifies l’état du beurre nécessaire et tu incorpores les blancs sans les casser."
         },
         {
-          “level”: “Excellent amateur”,
-          “standard”: “Tu lis une recette, identifies la famille de texture et les mécanismes clés avant même de commencer.”
+          "level": "Excellent amateur",
+          "standard": "Tu lis une recette, identifies la famille de texture et les mécanismes clés avant même de commencer."
         }
       ],
-      “assessmentRubric”: [
+      "assessmentRubric": [
         {
-          “criterion”: “Précision”,
-          “standard”: “Tous les ingrédients pesés au gramme près, ordre d’incorporation respecté.”
+          "criterion": "Précision",
+          "standard": "Tous les ingrédients pesés au gramme près, ordre d’incorporation respecté."
         },
         {
-          “criterion”: “Température”,
-          “standard”: “Beurre à l’état voulu (froid/pommade/fondu) selon la recette.”
+          "criterion": "Température",
+          "standard": "Beurre à l’état voulu (froid/pommade/fondu) selon la recette."
         },
         {
-          “criterion”: “Cuisson”,
-          “standard”: “Sortir du four sur signes sensoriels (couleur, rebond, cure-dent) et non sur le seul minuteur.”
+          "criterion": "Cuisson",
+          "standard": "Sortir du four sur signes sensoriels (couleur, rebond, cure-dent) et non sur le seul minuteur."
         },
         {
-          “criterion”: “Diagnostic”,
-          “standard”: “Identifier la cause d’un gâteau raté : sous-cuit, trop mélangé, levure inactive, blancs cassés.”
+          "criterion": "Diagnostic",
+          "standard": "Identifier la cause d’un gâteau raté : sous-cuit, trop mélangé, levure inactive, blancs cassés."
         }
       ],
-      “antiBacle”: [
-        “Ne jamais estimer les quantités à vue ou en volume pour les ingrédients secs : 20 % d’écart sur la farine change complètement la texture.”,
-        “Ne pas ouvrir le four pendant les 2/3 du temps de cuisson : le gâteau peut s’affaisser irrémédiablement.”,
-        “Ne pas substituer beurre fondu à beurre pommade ou inversement — ce ne sont pas des équivalents.”
+      "antiBacle": [
+        "Ne jamais estimer les quantités à vue ou en volume pour les ingrédients secs : 20 % d’écart sur la farine change complètement la texture.",
+        "Ne pas ouvrir le four pendant les 2/3 du temps de cuisson : le gâteau peut s’affaisser irrémédiablement.",
+        "Ne pas substituer beurre fondu à beurre pommade ou inversement — ce ne sont pas des équivalents."
       ],
-      “commonMisconceptions”: [
-        “Ajouter plus de levure ne fait pas monter davantage : au-delà de la dose correcte, le gâteau monte puis retombe, créant un centre creux et une texture caoutchouteuse.”
+      "commonMisconceptions": [
+        "Ajouter plus de levure ne fait pas monter davantage : au-delà de la dose correcte, le gâteau monte puis retombe, créant un centre creux et une texture caoutchouteuse."
       ],
-      “realKitchenTransfer”: “Ces principes (ratio, température, ordre, incorporation d’air, cuisson sur signes) s’appliquent à tous les gâteaux, quelle que soit la recette. Une fois les mécanismes compris, lire une nouvelle recette de pâtisserie devient une simple question d’identification des ratios.”,
-      “capstonePractice”: {
-        “title”: “Deux gâteaux, deux familles de texture”,
-        “instructions”: “Prépare un quatre-quarts moelleux (crémage + levure) et un fondant au chocolat (beurre fondu, pas de levure, blanc en neige). Compare les mécanismes, les textures et les signes de cuisson.”,
-        “expected”: “Tu expliques pourquoi les deux recettes donnent des textures radicalement différentes malgré des ingrédients similaires.”
+      "realKitchenTransfer": "Ces principes (ratio, température, ordre, incorporation d’air, cuisson sur signes) s’appliquent à tous les gâteaux, quelle que soit la recette. Une fois les mécanismes compris, lire une nouvelle recette de pâtisserie devient une simple question d’identification des ratios.",
+      "capstonePractice": {
+        "title": "Deux gâteaux, deux familles de texture",
+        "instructions": "Prépare un quatre-quarts moelleux (crémage + levure) et un fondant au chocolat (beurre fondu, pas de levure, blanc en neige). Compare les mécanismes, les textures et les signes de cuisson.",
+        "expected": "Tu expliques pourquoi les deux recettes donnent des textures radicalement différentes malgré des ingrédients similaires."
       },
-      “quizIds”: [
-        “q-v20-l-patisserie-1-0”,
+      "quizIds": [
+        "q-v20-l-patisserie-1-0",
         "q-v20-l-patisserie-1-1",
         "q-v20-l-patisserie-1-2",
         "q-v20-l-patisserie-1-3",
