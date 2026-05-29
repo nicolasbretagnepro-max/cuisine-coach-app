@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-label="Œufs brouillés doux">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8d7a7"/><stop offset="1" stop-color="#fffaf0"/></linearGradient>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#40220d" flood-opacity="0.18"/></filter>
+  </defs>
+  <rect width="900" height="560" fill="url(#g)"/>
+  <circle cx="730" cy="95" r="135" fill="#e88e4d" opacity="0.18"/>
+  <circle cx="160" cy="480" r="180" fill="#ffffff" opacity="0.32"/>
+  <ellipse cx="450" cy="310" rx="250" ry="105" fill="#fff8eb" filter="url(#s)"/>
+  <ellipse cx="450" cy="300" rx="210" ry="78" fill="#ffffff"/>
+  <circle cx="395" cy="285" r="58" fill="#e88e4d" opacity="0.9"/>
+  <path d="M455 245 C535 245 580 275 615 330 C535 318 488 330 440 365 C405 330 400 287 455 245Z" fill="#7aa85b" opacity="0.88"/>
+  <path d="M300 320 C350 250 420 245 510 285" fill="none" stroke="#5c3926" stroke-width="10" opacity="0.25" stroke-linecap="round"/>
+  <text x="70" y="105" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" fill="#5c3926">Œufs brouillés doux</text>
+  <text x="72" y="151" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#5c3926" opacity="0.72">Niveau 1 · 12 min · oeufs</text>
+  <text x="72" y="500" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#5c3926" opacity="0.62">Illustration pédagogique — remplaçable par photo réelle</text>
+</svg>

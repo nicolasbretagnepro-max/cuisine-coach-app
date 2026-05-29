@@ -1,4 +1,4 @@
-const CACHE_NAME = "coach-cuisine-v20-2026-05-27";
+const CACHE_NAME = "coach-cuisine-pedago-2026-05-29";
 const CORE_ASSETS = [
   "./",
   "./index.html",
@@ -7,6 +7,7 @@ const CORE_ASSETS = [
   "./app.js",
   "./manifest.webmanifest",
   "./assets/icon.svg",
+  "assets/recipes/recipe-placeholder.svg",
   "assets/recipes/r-aubergine-parmigiana.svg",
   "assets/recipes/r-bao-porc-simplifie.svg",
   "assets/recipes/r-bechamel.svg",

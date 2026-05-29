@@ -566,6 +566,12 @@
       .replaceAll("'", "&#039;");
   }
 
+  function renderRichText(value = "") {
+    return escapeHtml(value)
+      .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+      .replace(/\n/g, "<br>");
+  }
+
   function escapeAttr(value = "") {
     return escapeHtml(value).replaceAll("`", "&#096;");
   }
@@ -2282,7 +2288,7 @@
             ${methodSteps.map((step, index) => `
               <article class="technique-step">
                 <span class="step-number">${index + 1}</span>
-                <div><strong>${escapeHtml(step.title)}</strong><p>${escapeHtml(step.body)}</p></div>
+                <div><strong>${escapeHtml(step.title)}</strong><p>${renderRichText(step.body)}</p></div>
               </article>
             `).join("")}
           </div>
@@ -2423,6 +2429,7 @@
               <ul class="ingredients">${recipe.tools.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
             </section>
             ${recipe.successSigns?.length ? `<section class="card flat"><h3>Signes de réussite</h3><ul class="ingredients">${recipe.successSigns.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section>` : ""}
+            ${recipe.commonErrors?.length ? `<section class="card flat"><h3>Erreurs fréquentes</h3><div class="correction-grid">${recipe.commonErrors.slice(0, 4).map((item) => `<article class="correction-card"><strong>${escapeHtml(item.problem || item)}</strong>${item.fix ? `<p>${escapeHtml(item.fix)}</p>` : ""}</article>`).join("")}</div></section>` : ""}
             ${advancedDetails ? `
               <details class="card flat recipe-advanced-details">
                 <summary>Détails avancés</summary>
@@ -2483,15 +2490,15 @@
             ${renderPrepChecklist(recipe)}
             <article class="step-card">
               <h3>${escapeHtml(step.title)}</h3>
-              <p>${escapeHtml(step.instruction)}</p>
-              ${step.chefFocus ? `<div class="signal-card"><strong>Focus chef</strong><span>${escapeHtml(step.chefFocus)}</span></div>` : ""}
+              <p>${renderRichText(step.instruction)}</p>
+              ${step.chefFocus ? `<div class="signal-card"><strong>Focus chef</strong><span>${renderRichText(step.chefFocus)}</span></div>` : ""}
               ${renderStepPrecision(step)}
               ${renderStepDeepCoach(step)}
               ${renderAdaptiveGuidance(step, recipe)}
               ${step.sensory ? renderSensoryBlock(step.sensory) : ""}
-              ${step.checkpoint ? `<div class="signal-card"><strong>Point de contrôle</strong><span>${escapeHtml(step.checkpoint)}</span></div>` : ""}
-              ${step.mistake ? `<div class="mistake"><strong>Erreur fréquente :</strong> ${escapeHtml(step.mistake)}</div>` : ""}
-              ${step.correction ? `<div class="why"><strong>Correction :</strong> ${escapeHtml(step.correction)}</div>` : ""}
+              ${step.checkpoint ? `<div class="signal-card"><strong>Point de contrôle</strong><span>${renderRichText(step.checkpoint)}</span></div>` : ""}
+              ${step.mistake ? `<div class="mistake"><strong>Erreur fréquente :</strong> ${renderRichText(step.mistake)}</div>` : ""}
+              ${step.correction ? `<div class="why"><strong>Correction :</strong> ${renderRichText(step.correction)}</div>` : ""}
               ${step.timer ? `
                 <div class="timer-box">
                   <div>
